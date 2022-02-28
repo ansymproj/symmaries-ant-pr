@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanPrograma:setPgncgep(java.lang.String pgncgep)
+{
+this.pgncgep=pgncgep;
+ return;
+ } 
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAgcmail(java.lang.String agcmail)
+{
+this.agcmail=agcmail;
+ return;
+ } 
+

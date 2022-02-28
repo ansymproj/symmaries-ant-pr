@@ -1,0 +1,180 @@
+    public void inserir(com.grupooc.radiogrfm.struts.bean.BeanContrato)
+    {
+        com.grupooc.radiogrfm.dao.ModelContrato this;
+        com.grupooc.radiogrfm.struts.bean.BeanContrato contrato;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack4;
+        java.lang.String $stack7;
+        int $stack8;
+        java.sql.Date $stack20;
+        float $stack27;
+        java.lang.Exception $stack52;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelContrato;
+
+        contrato := @parameter0: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+     label1:
+        $stack4 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*145*/
+
+        st = interfaceinvoke $stack4.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" INSERT INTO CONTRATO( CRNCGCL, CRNCGAG, CRCPGTO, CRMTEXT, CRDINIC, CRDTERM, CRNVALR, CRNCGFP, CRNCGCP, CRLLIQU, CRNPERM, CRNCGMD, CRDCADT, CRCNOTA, CRNCGEP) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+/*145*/
+/*145*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrncgcl()>();
+/*146*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*146*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, $stack8);
+/*146*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrncgag()>();
+/*147*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*147*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(2, $stack8);
+/*147*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrcpgto()>();
+/*148*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.String: java.lang.String toUpperCase()>();
+/*148*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(3, $stack7);
+/*148*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrmtext()>();
+/*149*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.String: java.lang.String toUpperCase()>();
+/*149*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(4, $stack7);
+/*149*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrdinic()>();
+/*150*/
+
+        $stack20 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.sql.Date stringToDateSQL(java.lang.String)>($stack7);
+/*150*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setDate(int,java.sql.Date)>(5, $stack20);
+/*150*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrdterm()>();
+/*151*/
+
+        $stack20 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.sql.Date stringToDateSQL(java.lang.String)>($stack7);
+/*151*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setDate(int,java.sql.Date)>(6, $stack20);
+/*151*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrnvalr()>();
+/*152*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String converteFloatBR(java.lang.String)>($stack7);
+/*152*/
+
+        $stack27 = staticinvoke <java.lang.Float: float parseFloat(java.lang.String)>($stack7);
+/*152*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setFloat(int,float)>(7, $stack27);
+/*152*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrncgfp()>();
+/*153*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*153*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(8, $stack8);
+/*153*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrncgcp()>();
+/*154*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*154*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(9, $stack8);
+/*154*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrlliqu()>();
+/*155*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(10, $stack7);
+/*155*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrnperm()>();
+/*156*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String converteFloatBR(java.lang.String)>($stack7);
+/*156*/
+
+        $stack27 = staticinvoke <java.lang.Float: float parseFloat(java.lang.String)>($stack7);
+/*156*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setFloat(int,float)>(11, $stack27);
+/*156*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrncgmd()>();
+/*157*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*157*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(12, $stack8);
+/*157*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrdcadt()>();
+/*158*/
+
+        $stack20 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.sql.Date stringToDateSQL(java.lang.String)>($stack7);
+/*158*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setDate(int,java.sql.Date)>(13, $stack20);
+/*158*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrcnota()>();
+/*159*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(14, $stack7);
+/*159*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrncgep()>();
+/*160*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*160*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(15, $stack8);
+/*160*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: int executeUpdate()>();
+/*162*/
+
+     label2:
+        goto label4;
+/*166*/
+
+     label3:
+        $stack52 := @caughtexception;
+/*168*/
+
+        virtualinvoke $stack52.<java.lang.Exception: void printStackTrace()>();
+/*165*/
+
+     label4:
+        return;
+/*168*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

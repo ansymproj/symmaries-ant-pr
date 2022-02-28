@@ -1,0 +1,14 @@
+    public java.lang.String getCtncodg()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContato this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContato;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String ctncodg>;
+/*41*/
+
+        return $stack1;
+/*41*/
+    }
+

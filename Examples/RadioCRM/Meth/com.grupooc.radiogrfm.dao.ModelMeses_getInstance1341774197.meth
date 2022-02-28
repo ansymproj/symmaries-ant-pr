@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelMeses com.grupooc.radiogrfm.dao.ModelMeses:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelMeses $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelMeses;
+ $stack0#com.grupooc.radiogrfm.dao.ModelMeses();
+ return  $stack0;
+ } 
+

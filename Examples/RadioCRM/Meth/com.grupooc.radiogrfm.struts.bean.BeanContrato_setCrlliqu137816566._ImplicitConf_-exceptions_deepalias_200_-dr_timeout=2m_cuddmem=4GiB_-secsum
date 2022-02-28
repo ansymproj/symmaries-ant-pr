@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContrato:setCrlliqu (java.lang.String
+                                                                  crlliqu) {
+  guard = tt;
+  ret(obj_level(crlliqu)) = if ¬crlliqu.~>this ∨ pc ⊔ level(crlliqu) = ⊥ then obj_level(crlliqu) else if crlliqu.~>this ∧ pc ⊔ level(crlliqu) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crlliqu) ⊔ obj_level(crlliqu) ⊔ obj_level(this);
+  ret(crlliqu.~>crlliqu) = crlliqu.~>crlliqu ∨ crlliqu.~>this;
+  ret(crlliqu.~>this) = crlliqu.~>this;
+  ret(this.~>crlliqu) = tt;
+  ret(this.~>this) = crlliqu.~>this ∨ this.~>this;
+}

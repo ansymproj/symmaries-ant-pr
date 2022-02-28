@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrlativ (java.lang.String
+                                                                  crlativ) {
+  guard = tt;
+  ret(obj_level(crlativ)) = if ¬crlativ.~>this ∨ pc ⊔ level(crlativ) = ⊥ then obj_level(crlativ) else if crlativ.~>this ∧ pc ⊔ level(crlativ) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crlativ) ⊔ obj_level(crlativ) ⊔ obj_level(this);
+  ret(crlativ.~>crlativ) = crlativ.~>crlativ ∨ crlativ.~>this;
+  ret(crlativ.~>this) = crlativ.~>this;
+  ret(this.~>crlativ) = tt;
+  ret(this.~>this) = crlativ.~>this ∨ this.~>this;
+}

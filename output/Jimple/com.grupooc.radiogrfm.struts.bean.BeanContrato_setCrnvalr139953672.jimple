@@ -1,0 +1,16 @@
+    public void setCrnvalr(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crnvalr;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crnvalr := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crnvalr> = crnvalr;
+/*132*/
+
+        return;
+/*133*/
+    }
+

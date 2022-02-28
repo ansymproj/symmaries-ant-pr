@@ -1,0 +1,16 @@
+    public void setUsncgep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormUsuario this;
+        java.lang.String usncgep;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormUsuario;
+
+        usncgep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormUsuario: java.lang.String usncgep> = usncgep;
+/*23*/
+
+        return;
+/*24*/
+    }
+

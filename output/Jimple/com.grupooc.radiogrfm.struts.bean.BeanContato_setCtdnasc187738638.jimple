@@ -1,0 +1,16 @@
+    public void setCtdnasc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContato this;
+        java.lang.String ctdnasc;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContato;
+
+        ctdnasc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String ctdnasc> = ctdnasc;
+/*68*/
+
+        return;
+/*69*/
+    }
+

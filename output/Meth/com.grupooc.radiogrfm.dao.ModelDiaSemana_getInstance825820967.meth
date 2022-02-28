@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelDiaSemana com.grupooc.radiogrfm.dao.ModelDiaSemana:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelDiaSemana $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelDiaSemana;
+ $stack0#com.grupooc.radiogrfm.dao.ModelDiaSemana();
+ return  $stack0;
+ } 
+

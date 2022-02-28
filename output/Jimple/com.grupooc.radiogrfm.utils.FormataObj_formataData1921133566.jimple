@@ -1,0 +1,42 @@
+    public java.lang.String formataData(java.util.Date)
+    {
+        com.grupooc.radiogrfm.utils.FormataObj this;
+        java.util.Date data;
+        java.lang.String 'ret';
+        java.text.SimpleDateFormat $stack3;
+        java.util.Locale $stack4;
+
+        this := @this: com.grupooc.radiogrfm.utils.FormataObj;
+
+        data := @parameter0: java.util.Date;
+
+        'ret' = null;
+/*87*/
+
+        if data == null goto label1;
+/*88*/
+
+        $stack3 = new java.text.SimpleDateFormat;
+/*89*/
+
+        $stack4 = this.<com.grupooc.radiogrfm.utils.FormataObj: java.util.Locale local>;
+/*89*/
+
+        specialinvoke $stack3.<java.text.SimpleDateFormat: void <init>(java.lang.String,java.util.Locale)>("dd/MM/yyyy", $stack4);
+/*89*/
+
+        this.<com.grupooc.radiogrfm.utils.FormataObj: java.text.SimpleDateFormat formataData> = $stack3;
+/*89*/
+
+        $stack3 = this.<com.grupooc.radiogrfm.utils.FormataObj: java.text.SimpleDateFormat formataData>;
+/*90*/
+
+        'ret' = virtualinvoke $stack3.<java.text.SimpleDateFormat: java.lang.String format(java.util.Date)>(data);
+/*90*/
+/*90*/
+
+     label1:
+        return 'ret';
+/*92*/
+    }
+

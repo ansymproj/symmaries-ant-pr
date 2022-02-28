@@ -1,0 +1,36 @@
+    public static java.lang.Object copyProperties2(java.lang.Object, java.lang.Object) throws java.lang.Exception
+    {
+        java.lang.Object dest, orig, $stack3;
+        java.lang.Class $stack2;
+
+        dest := @parameter0: java.lang.Object;
+
+        orig := @parameter1: java.lang.Object;
+
+        if dest == null goto label1;
+/*142*/
+
+        $stack2 = virtualinvoke dest.<java.lang.Object: java.lang.Class getClass()>();
+/*142*/
+
+        $stack3 = virtualinvoke $stack2.<java.lang.Class: java.lang.Object newInstance()>();
+/*142*/
+
+        dest = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.Object copyProperties(java.lang.Object,java.lang.Object)>($stack3, dest);
+/*142*/
+
+        dest = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.Object copyProperties(java.lang.Object,java.lang.Object)>(dest, orig);
+/*142*/
+
+        goto label2;
+/*142*/
+
+     label1:
+        dest = null;
+/*142*/
+
+     label2:
+        return dest;
+/*142*/
+    }
+

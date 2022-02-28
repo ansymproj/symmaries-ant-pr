@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpncodg(java.lang.String epncodg)
+{
+this.epncodg=epncodg;
+ return;
+ } 
+

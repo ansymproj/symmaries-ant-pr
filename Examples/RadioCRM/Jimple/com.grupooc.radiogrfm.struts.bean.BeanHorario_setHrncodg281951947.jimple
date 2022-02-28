@@ -1,0 +1,16 @@
+    public void setHrncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanHorario this;
+        java.lang.String hrncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanHorario;
+
+        hrncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanHorario: java.lang.String hrncodg> = hrncodg;
+/*21*/
+
+        return;
+/*22*/
+    }
+

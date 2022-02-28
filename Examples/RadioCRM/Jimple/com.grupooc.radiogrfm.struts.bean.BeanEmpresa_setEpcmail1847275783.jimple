@@ -1,0 +1,16 @@
+    public void setEpcmail(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanEmpresa this;
+        java.lang.String epcmail;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanEmpresa;
+
+        epcmail := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanEmpresa: java.lang.String epcmail> = epcmail;
+/*79*/
+
+        return;
+/*80*/
+    }
+

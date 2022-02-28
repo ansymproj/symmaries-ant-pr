@@ -1,0 +1,19 @@
+void com.grupooc.radiogrfm.dao.ModelMidia:inserir(com.grupooc.radiogrfm.struts.bean.BeanMidia midia)
+{
+java.sql.PreparedStatement st;
+  java.sql.Connection $stack4;
+  java.lang.String $stack7;
+  java.lang.Exception $stack10;
+  label0:$stack4 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack4.prepareStatement("INSERT INTO MIDIA (MDCDESC) VALUES (?)");
+ $stack7 = midia.getMdcdesc();
+ $stack7 = $stack7.toUpperCase();
+ st.setString(1,$stack7);
+ st.executeUpdate();
+ label1:goto label2;
+ label3:$stack10 = catch;
+ $stack10.printStackTrace();
+ label2:return;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

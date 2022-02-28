@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAgcbair(java.lang.String agcbair)
+{
+this.agcbair=agcbair;
+ return;
+ } 
+

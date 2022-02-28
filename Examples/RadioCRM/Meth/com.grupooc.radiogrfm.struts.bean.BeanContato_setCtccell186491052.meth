@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContato:setCtccell(java.lang.String ctccell)
+{
+this.ctccell=ctccell;
+ return;
+ } 
+

@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormEmpresa:getEpclogr()
+{
+java.lang.String $stack1;
+  $stack1=this.epclogr;
+ return  $stack1;
+ } 
+

@@ -1,0 +1,16 @@
+    public void setEnncgte(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String enncgte;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        enncgte := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String enncgte> = enncgte;
+/*60*/
+
+        return;
+/*61*/
+    }
+

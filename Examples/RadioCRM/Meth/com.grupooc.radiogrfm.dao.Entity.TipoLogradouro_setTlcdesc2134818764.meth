@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.TipoLogradouro:setTlcdesc(java.lang.String tlcdesc)
+{
+this.tlcdesc=tlcdesc;
+ return;
+ } 
+

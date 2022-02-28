@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanHorario:setHrncodg (java.lang.String
+                                                                 hrncodg) {
+  guard = tt;
+  ret(obj_level(hrncodg)) = if ¬hrncodg.~>this ∨ pc ⊔ level(hrncodg) = ⊥ then obj_level(hrncodg) else if hrncodg.~>this ∧ pc ⊔ level(hrncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(hrncodg) ⊔ obj_level(hrncodg) ⊔ obj_level(this);
+  ret(hrncodg.~>hrncodg) = hrncodg.~>hrncodg ∨ hrncodg.~>this;
+  ret(hrncodg.~>this) = hrncodg.~>this;
+  ret(this.~>hrncodg) = tt;
+  ret(this.~>this) = hrncodg.~>this ∨ this.~>this;
+}

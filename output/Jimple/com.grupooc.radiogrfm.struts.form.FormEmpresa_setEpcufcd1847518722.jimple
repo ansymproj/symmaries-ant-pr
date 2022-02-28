@@ -1,0 +1,16 @@
+    public void setEpcufcd(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEmpresa this;
+        java.lang.String epcufcd;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEmpresa;
+
+        epcufcd := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEmpresa: java.lang.String epcufcd> = epcufcd;
+/*109*/
+
+        return;
+/*110*/
+    }
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanHorario:setHrncgpg (java.lang.String
+                                                                 hrncgpg) {
+  guard = tt;
+  ret(obj_level(hrncgpg)) = if ¬hrncgpg.~>this ∨ pc ⊔ level(hrncgpg) = ⊥ then obj_level(hrncgpg) else if hrncgpg.~>this ∧ pc ⊔ level(hrncgpg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(hrncgpg) ⊔ obj_level(hrncgpg) ⊔ obj_level(this);
+  ret(hrncgpg.~>hrncgpg) = hrncgpg.~>hrncgpg ∨ hrncgpg.~>this;
+  ret(hrncgpg.~>this) = hrncgpg.~>this;
+  ret(this.~>hrncgpg) = tt;
+  ret(this.~>this) = hrncgpg.~>this ∨ this.~>this;
+}

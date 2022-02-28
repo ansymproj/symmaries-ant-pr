@@ -1,0 +1,21 @@
+java.util.ArrayList com.grupooc.radiogrfm.dao.ModelOperacao:getOperacoesPaiDoUsuario(int usncodg)
+{
+java.util.ArrayList operacoes;
+  java.sql.PreparedStatement st;
+  java.sql.Connection $stack6;
+  java.util.List $stack8;
+  java.lang.Exception $stack10;
+  operacoes=new java.util.ArrayList;
+ operacoes#java.util.ArrayList();
+ label0:$stack6 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack6.prepareStatement("SELECT OPNCODG, OPNPART, OPCDESC, OPCHINT, OPCLINK FROM VW_OPERACAO_USUARIO WHERE OPNPART = 0 AND USNCODG = ?");
+ st.setInt(1,usncodg);
+ $stack8 = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanOperacao);
+ operacoes.addAll((java.util.Collection)$stack8);
+ label1:goto label2;
+ label3:$stack10 = catch;
+ $stack10.printStackTrace();
+ label2:return  operacoes;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

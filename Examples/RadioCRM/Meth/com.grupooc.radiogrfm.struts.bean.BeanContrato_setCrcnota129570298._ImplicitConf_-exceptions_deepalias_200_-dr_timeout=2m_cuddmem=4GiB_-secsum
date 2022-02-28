@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContrato:setCrcnota (java.lang.String
+                                                                  crcnota) {
+  guard = tt;
+  ret(obj_level(crcnota)) = if ¬crcnota.~>this ∨ pc ⊔ level(crcnota) = ⊥ then obj_level(crcnota) else if crcnota.~>this ∧ pc ⊔ level(crcnota) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crcnota) ⊔ obj_level(crcnota) ⊔ obj_level(this);
+  ret(crcnota.~>crcnota) = crcnota.~>crcnota ∨ crcnota.~>this;
+  ret(crcnota.~>this) = crcnota.~>this;
+  ret(this.~>crcnota) = tt;
+  ret(this.~>this) = crcnota.~>this ∨ this.~>this;
+}

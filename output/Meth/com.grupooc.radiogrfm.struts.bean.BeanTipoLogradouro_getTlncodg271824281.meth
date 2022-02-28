@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanTipoLogradouro:getTlncodg()
+{
+java.lang.String $stack1;
+  $stack1=this.tlncodg;
+ return  $stack1;
+ } 
+

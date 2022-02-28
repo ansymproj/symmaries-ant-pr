@@ -1,0 +1,16 @@
+    public void setUscpswd(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormUsuario this;
+        java.lang.String uscpswd;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormUsuario;
+
+        uscpswd := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormUsuario: java.lang.String uscpswd> = uscpswd;
+/*53*/
+
+        return;
+/*54*/
+    }
+

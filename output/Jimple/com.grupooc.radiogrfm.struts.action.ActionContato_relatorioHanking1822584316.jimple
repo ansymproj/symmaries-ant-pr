@@ -1,0 +1,286 @@
+    public org.apache.struts.action.ActionForward relatorioHanking(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionContato this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionMessages erros;
+        org.apache.struts.action.ActionForward fw;
+        com.grupooc.radiogrfm.struts.bean.BeanEmpresa beanEmpresa;
+        com.grupooc.radiogrfm.struts.bean.BeanUsuario usuario;
+        java.lang.String data1, data2, $stack27;
+        java.util.HashMap map;
+        javax.servlet.http.HttpSession $stack14;
+        java.lang.Object $stack15;
+        boolean $stack20;
+        java.lang.Integer $stack25;
+        java.util.Date $stack30, $stack61;
+        char $stack36;
+        org.apache.struts.action.ActionMessage $stack64;
+        java.lang.Exception $stack72;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionContato;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        erros = new org.apache.struts.action.ActionMessages;
+/*222*/
+
+        specialinvoke erros.<org.apache.struts.action.ActionMessages: void <init>()>();
+/*222*/
+
+        fw = new org.apache.struts.action.ActionForward;
+/*223*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*223*/
+
+        $stack14 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*224*/
+
+        $stack15 = interfaceinvoke $stack14.<javax.servlet.http.HttpSession: java.lang.Object getAttribute(java.lang.String)>("empresa");
+/*224*/
+
+        beanEmpresa = (com.grupooc.radiogrfm.struts.bean.BeanEmpresa) $stack15;
+/*224*/
+
+        $stack14 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*225*/
+
+        $stack15 = interfaceinvoke $stack14.<javax.servlet.http.HttpSession: java.lang.Object getAttribute(java.lang.String)>("usuario");
+/*225*/
+
+        usuario = (com.grupooc.radiogrfm.struts.bean.BeanUsuario) $stack15;
+/*225*/
+
+        data1 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("data1");
+/*227*/
+/*227*/
+
+        data2 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("data2");
+/*228*/
+/*228*/
+
+        $stack20 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: boolean validaData(java.lang.String)>(data1);
+/*230*/
+
+        if $stack20 != 0 goto label01;
+/*230*/
+
+        $stack64 = new org.apache.struts.action.ActionMessage;
+/*231*/
+
+        specialinvoke $stack64.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Data Inicial \u00c3\u00a9 inv\u00c3\u00a1lida.");
+/*231*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack64);
+/*231*/
+
+     label01:
+        $stack20 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: boolean validaData(java.lang.String)>(data2);
+/*233*/
+
+        if $stack20 != 0 goto label02;
+/*233*/
+
+        $stack64 = new org.apache.struts.action.ActionMessage;
+/*234*/
+
+        specialinvoke $stack64.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Data Final \u00c3\u00a9 inv\u00c3\u00a1lida.");
+/*234*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack64);
+/*234*/
+
+     label02:
+        $stack20 = virtualinvoke erros.<org.apache.struts.action.ActionMessages: boolean isEmpty()>();
+/*237*/
+
+        if $stack20 == 0 goto label03;
+/*237*/
+
+        $stack30 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.Date strBRToDate(java.lang.String)>(data1);
+/*238*/
+
+        $stack61 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.Date strBRToDate(java.lang.String)>(data2);
+/*238*/
+
+        $stack20 = virtualinvoke $stack30.<java.util.Date: boolean after(java.util.Date)>($stack61);
+/*238*/
+
+        if $stack20 == 0 goto label03;
+/*238*/
+
+        $stack64 = new org.apache.struts.action.ActionMessage;
+/*239*/
+
+        specialinvoke $stack64.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Data Inicial n\u00c3\u00a3o pode ser maior que a final.");
+/*239*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack64);
+/*239*/
+
+     label03:
+        $stack20 = virtualinvoke erros.<org.apache.struts.action.ActionMessages: boolean isEmpty()>();
+/*244*/
+
+        if $stack20 == 0 goto label04;
+/*244*/
+
+        if usuario != null goto label05;
+/*298*/
+
+     label04:
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/relatHanking.do");
+/*245*/
+
+        virtualinvoke this.<com.grupooc.radiogrfm.struts.action.ActionContato: void saveErrors(javax.servlet.http.HttpServletRequest,org.apache.struts.action.ActionMessages)>(request, erros);
+/*246*/
+
+        goto label18;
+/*246*/
+
+     label05:
+        map = new java.util.HashMap;
+/*251*/
+
+        specialinvoke map.<java.util.HashMap: void <init>()>();
+/*251*/
+
+        $stack25 = new java.lang.Integer;
+/*254*/
+
+        $stack27 = virtualinvoke beanEmpresa.<com.grupooc.radiogrfm.struts.bean.BeanEmpresa: java.lang.String getEpncodg()>();
+/*254*/
+
+        specialinvoke $stack25.<java.lang.Integer: void <init>(java.lang.String)>($stack27);
+/*254*/
+
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("EMPRESA", $stack25);
+/*254*/
+
+        $stack30 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.Date strBRToDate(java.lang.String)>(data1);
+/*255*/
+
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("DATA_INICIO", $stack30);
+/*255*/
+
+        $stack30 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.Date strBRToDate(java.lang.String)>(data2);
+/*256*/
+
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("DATA_FIM", $stack30);
+/*256*/
+
+        data1 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("tipo");
+/*258*/
+
+        $stack36 = virtualinvoke data1.<java.lang.String: char charAt(int)>(0);
+/*258*/
+
+        tableswitch($stack36)
+        {
+            case 49: goto label06;
+            case 50: goto label07;
+            case 51: goto label08;
+            case 52: goto label09;
+            case 53: goto label10;
+            case 54: goto label11;
+            case 55: goto label12;
+            case 56: goto label13;
+            default: goto label14;
+        };
+/*258*/
+
+     label06:
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("REPORT_NAME", "hanking_vendas");
+/*260*/
+
+        goto label15;
+/*261*/
+
+     label07:
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("REPORT_NAME", "hanking_vendas_graf");
+/*263*/
+
+        goto label15;
+/*264*/
+
+     label08:
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("REPORT_NAME", "hanking_compras");
+/*266*/
+
+        goto label15;
+/*267*/
+
+     label09:
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("REPORT_NAME", "hanking_compras_graf");
+/*269*/
+
+        goto label15;
+/*270*/
+
+     label10:
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("REPORT_NAME", "vendas_geral");
+/*272*/
+
+        goto label15;
+/*273*/
+
+     label11:
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("REPORT_NAME", "hanking_vendas_agencia");
+/*275*/
+
+        goto label15;
+/*276*/
+
+     label12:
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("REPORT_NAME", "vendas_geral_agencia");
+/*278*/
+
+        goto label15;
+/*279*/
+
+     label13:
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("REPORT_NAME", "vendas_geral_contato");
+/*281*/
+
+        goto label15;
+/*282*/
+
+     label14:
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("REPORT_NAME", "hanking_vendas");
+/*285*/
+
+     label15:
+        staticinvoke <com.grupooc.radiogrfm.utils.GeraRelatorio: void geracao(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map,boolean)>(request, response, map, 0);
+/*289*/
+
+        fw = null;
+/*291*/
+/*291*/
+
+     label16:
+        goto label18;
+/*295*/
+
+     label17:
+        $stack72 := @caughtexception;
+/*233*/
+
+        virtualinvoke $stack72.<java.lang.Exception: void printStackTrace()>();
+/*294*/
+
+     label18:
+        return fw;
+/*298*/
+
+        catch java.lang.Exception from label05 to label16 with label17;
+    }
+

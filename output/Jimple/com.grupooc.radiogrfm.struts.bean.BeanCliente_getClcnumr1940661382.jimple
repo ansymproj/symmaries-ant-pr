@@ -1,0 +1,14 @@
+    public java.lang.String getClcnumr()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clcnumr>;
+/*149*/
+
+        return $stack1;
+/*149*/
+    }
+

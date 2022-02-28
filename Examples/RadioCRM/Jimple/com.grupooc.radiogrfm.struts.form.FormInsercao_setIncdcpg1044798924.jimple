@@ -1,0 +1,16 @@
+    public void setIncdcpg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormInsercao this;
+        java.lang.String incdcpg;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormInsercao;
+
+        incdcpg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormInsercao: java.lang.String incdcpg> = incdcpg;
+/*100*/
+
+        return;
+/*101*/
+    }
+

@@ -1,0 +1,16 @@
+    public void setCdcdesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCidade this;
+        java.lang.String cdcdesc;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCidade;
+
+        cdcdesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCidade: java.lang.String cdcdesc> = cdcdesc;
+/*29*/
+
+        return;
+/*30*/
+    }
+

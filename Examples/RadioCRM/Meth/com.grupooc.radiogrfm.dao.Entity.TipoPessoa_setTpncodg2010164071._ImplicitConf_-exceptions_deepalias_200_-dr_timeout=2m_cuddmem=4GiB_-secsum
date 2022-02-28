@@ -1,0 +1,8 @@
+void com.grupooc.radiogrfm.dao.Entity.TipoPessoa:setTpncodg (java.lang.Integer
+                                                               tpncodg) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(tpncodg) ⊔ obj_level(this) ⊔ obj_level(tpncodg);
+  ret(obj_level(tpncodg)) = obj_level(tpncodg);
+  ret(this.~>this) = this.~>this;
+  ret(this.~>tpncodg) = tt;
+}

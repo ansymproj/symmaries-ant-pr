@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormAgencia:setAgccnpj(java.lang.String agccnpj)
+{
+this.agccnpj=agccnpj;
+ return;
+ } 
+

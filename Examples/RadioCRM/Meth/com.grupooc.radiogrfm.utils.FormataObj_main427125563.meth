@@ -1,0 +1,13 @@
+static void com.grupooc.radiogrfm.utils.FormataObj:main(java.lang.String[] args)
+{
+com.grupooc.radiogrfm.utils.FormataObj $stack1;
+  java.io.PrintStream $stack2;
+  java.lang.String $stack3;
+  $stack2=java.lang.System.out;
+ $stack1=new com.grupooc.radiogrfm.utils.FormataObj;
+ $stack1#com.grupooc.radiogrfm.utils.FormataObj();
+ $stack3 = $stack1.getValorMoedaPorExtenso(2345.56F);
+ $stack2.println($stack3);
+ return;
+ } 
+

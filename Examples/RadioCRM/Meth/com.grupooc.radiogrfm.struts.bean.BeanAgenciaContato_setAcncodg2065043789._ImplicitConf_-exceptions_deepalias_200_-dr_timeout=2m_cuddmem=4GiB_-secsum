@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato:setAcncodg (
+  java.lang.String acncodg) {
+  guard = tt;
+  ret(obj_level(acncodg)) = if ¬acncodg.~>this ∨ pc ⊔ level(acncodg) = ⊥ then obj_level(acncodg) else if acncodg.~>this ∧ pc ⊔ level(acncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(acncodg) ⊔ obj_level(acncodg) ⊔ obj_level(this);
+  ret(acncodg.~>acncodg) = acncodg.~>acncodg ∨ acncodg.~>this;
+  ret(acncodg.~>this) = acncodg.~>this;
+  ret(this.~>acncodg) = tt;
+  ret(this.~>this) = acncodg.~>this ∨ this.~>this;
+}

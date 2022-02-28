@@ -1,0 +1,24 @@
+static java.lang.String com.grupooc.radiogrfm.utils.CPF:dv(java.lang.String @s)
+{
+int dv1;
+  java.lang.StringBuilder $stack3;
+  java.lang.StringBuilder $stack7;
+  java.lang.String s;
+s=@s;
+dv1 = com.grupooc.radiogrfm.utils.CPF.dvFatorX(s);
+ $stack3=new java.lang.StringBuilder;
+ $stack3#java.lang.StringBuilder();
+ $stack3 = $stack3.append("");
+ $stack3 = $stack3.append(dv1);
+ $stack3 = $stack3.append("");
+ $stack7=new java.lang.StringBuilder;
+ $stack7#java.lang.StringBuilder();
+ $stack7 = $stack7.append(s);
+ $stack7 = $stack7.append(dv1);
+ s = $stack7.toString();
+ dv1 = com.grupooc.radiogrfm.utils.CPF.dvFatorX(s);
+ $stack3 = $stack3.append(dv1);
+ s = $stack3.toString();
+ return  s;
+ } 
+

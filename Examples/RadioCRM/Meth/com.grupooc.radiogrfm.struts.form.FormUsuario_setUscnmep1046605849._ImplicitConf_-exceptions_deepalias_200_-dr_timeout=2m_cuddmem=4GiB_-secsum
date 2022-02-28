@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormUsuario:setUscnmep (java.lang.String
+                                                                 uscnmep) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(uscnmep) ⊔ obj_level(this) ⊔ obj_level(uscnmep);
+  ret(obj_level(uscnmep)) = if ¬uscnmep.~>this ∨ pc ⊔ level(uscnmep) = ⊥ then obj_level(uscnmep) else if uscnmep.~>this ∧ pc ⊔ level(uscnmep) = ⊤ then ⊤ else ⊥;
+  ret(this.~>this) = this.~>this ∨ uscnmep.~>this;
+  ret(this.~>uscnmep) = tt;
+  ret(uscnmep.~>this) = uscnmep.~>this;
+  ret(uscnmep.~>uscnmep) = uscnmep.~>this ∨ uscnmep.~>uscnmep;
+}

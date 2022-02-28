@@ -1,0 +1,53 @@
+    public static boolean validar(java.lang.String)
+    {
+        java.lang.String s, $stack4;
+        boolean $stack1;
+        int $stack3;
+
+        s := @parameter0: java.lang.String;
+
+        if s == null goto label1;
+/*25*/
+
+        $stack1 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: boolean isDigit(java.lang.String)>(s);
+/*25*/
+
+        if $stack1 == 0 goto label1;
+/*25*/
+
+        $stack3 = virtualinvoke s.<java.lang.String: int length()>();
+/*25*/
+
+        if $stack3 != 11 goto label1;
+/*25*/
+
+        $stack4 = virtualinvoke s.<java.lang.String: java.lang.String substring(int,int)>(0, 9);
+/*25*/
+
+        $stack4 = staticinvoke <com.grupooc.radiogrfm.utils.CPF: java.lang.String dv(java.lang.String)>($stack4);
+/*25*/
+
+        s = virtualinvoke s.<java.lang.String: java.lang.String substring(int)>(9);
+/*25*/
+
+        $stack1 = virtualinvoke $stack4.<java.lang.String: boolean equals(java.lang.Object)>(s);
+/*25*/
+
+        if $stack1 == 0 goto label1;
+/*25*/
+
+        $stack1 = 1;
+/*25*/
+
+        goto label2;
+/*25*/
+
+     label1:
+        $stack1 = 0;
+/*25*/
+
+     label2:
+        return $stack1;
+/*25*/
+    }
+

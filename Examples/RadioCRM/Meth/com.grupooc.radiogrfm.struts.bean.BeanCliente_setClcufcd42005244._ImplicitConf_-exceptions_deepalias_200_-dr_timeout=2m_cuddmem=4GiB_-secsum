@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcufcd (java.lang.String
+                                                                 clcufcd) {
+  guard = tt;
+  ret(obj_level(clcufcd)) = if ¬clcufcd.~>this ∨ pc ⊔ level(clcufcd) = ⊥ then obj_level(clcufcd) else if clcufcd.~>this ∧ pc ⊔ level(clcufcd) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcufcd) ⊔ obj_level(clcufcd) ⊔ obj_level(this);
+  ret(clcufcd.~>clcufcd) = clcufcd.~>clcufcd ∨ clcufcd.~>this;
+  ret(clcufcd.~>this) = clcufcd.~>this;
+  ret(this.~>clcufcd) = tt;
+  ret(this.~>this) = clcufcd.~>this ∨ this.~>this;
+}

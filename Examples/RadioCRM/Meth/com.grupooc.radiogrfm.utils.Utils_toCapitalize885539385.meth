@@ -1,0 +1,10 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:toCapitalize(java.lang.String @str)
+{
+java.util.Locale $stack1;
+  java.lang.String str;
+str=@str;
+$stack1 = java.util.Locale.getDefault();
+ str = com.grupooc.radiogrfm.utils.Utils.toCapitazile(str,$stack1);
+ return  str;
+ } 
+

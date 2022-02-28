@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContrato:setCrndesc (java.lang.String
+                                                                  crndesc) {
+  guard = tt;
+  ret(obj_level(crndesc)) = if ¬crndesc.~>this ∨ pc ⊔ level(crndesc) = ⊥ then obj_level(crndesc) else if crndesc.~>this ∧ pc ⊔ level(crndesc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crndesc) ⊔ obj_level(crndesc) ⊔ obj_level(this);
+  ret(crndesc.~>crndesc) = crndesc.~>crndesc ∨ crndesc.~>this;
+  ret(crndesc.~>this) = crndesc.~>this;
+  ret(this.~>crndesc) = tt;
+  ret(this.~>this) = crndesc.~>this ∨ this.~>this;
+}

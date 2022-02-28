@@ -1,0 +1,16 @@
+java.lang.String com.grupooc.radiogrfm.utils.FormataObj:getDiaSemanaPorExtenso(java.util.Date data)
+{
+java.lang.String ret;
+  java.text.SimpleDateFormat $stack3;
+  java.util.Locale $stack4;
+  ret=null;
+ if (data==null) goto label0;
+ $stack3=new java.text.SimpleDateFormat;
+ $stack4=this.local;
+ $stack3#java.text.SimpleDateFormat("EEEEEE",$stack4);
+ this.formataData=$stack3;
+ $stack3=this.formataData;
+ ret = $stack3.format(data);
+ label0:return  ret;
+ } 
+

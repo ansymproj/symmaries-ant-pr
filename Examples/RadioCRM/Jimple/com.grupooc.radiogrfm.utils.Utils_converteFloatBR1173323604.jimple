@@ -1,0 +1,46 @@
+    public static java.lang.String converteFloatBR(java.lang.String)
+    {
+        java.lang.String floatV, x;
+        boolean $stack3;
+        java.lang.Exception $stack6;
+
+        floatV := @parameter0: java.lang.String;
+
+        x = "0";
+/*48*/
+
+     label1:
+        if floatV == null goto label2;
+/*50*/
+
+        $stack3 = virtualinvoke floatV.<java.lang.String: boolean equals(java.lang.Object)>("");
+/*56*/
+
+        if $stack3 != 0 goto label2;
+/*56*/
+
+        floatV = virtualinvoke floatV.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>(".", "");
+/*51*/
+
+        x = virtualinvoke floatV.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>(",", ".");
+/*51*/
+/*51*/
+
+     label2:
+        goto label4;
+/*55*/
+
+     label3:
+        $stack6 := @caughtexception;
+/*55*/
+
+        virtualinvoke $stack6.<java.lang.Exception: void printStackTrace()>();
+/*54*/
+
+     label4:
+        return x;
+/*56*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

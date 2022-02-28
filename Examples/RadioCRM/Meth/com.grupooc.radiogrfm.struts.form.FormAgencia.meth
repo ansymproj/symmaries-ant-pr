@@ -1,0 +1,9 @@
+com.grupooc.radiogrfm.struts.form.FormAgencia()
+{
+this#org.apache.struts.action.ActionForm();
+ this.agncgtp="1";
+ this.agncgtl="33";
+ this.agcufcd="PE";
+ return;
+ } 
+

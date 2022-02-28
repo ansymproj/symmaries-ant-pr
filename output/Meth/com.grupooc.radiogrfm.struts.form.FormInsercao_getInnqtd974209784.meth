@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormInsercao:getInnqtd()
+{
+java.lang.String $stack1;
+  $stack1=this.innqtd;
+ return  $stack1;
+ } 
+

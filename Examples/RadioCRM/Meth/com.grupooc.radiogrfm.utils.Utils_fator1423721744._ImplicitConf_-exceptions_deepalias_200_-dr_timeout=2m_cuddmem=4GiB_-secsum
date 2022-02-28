@@ -1,0 +1,7 @@
+static int com.grupooc.radiogrfm.utils.Utils:fator (java.lang.String s,
+                                                    int min, int max) {
+  guard = tt;
+  ret(level()) = pc ⊔ level(max) ⊔ level(min) ⊔ level(s) ⊔ obj_level(s);
+  ret(obj_level(s)) = obj_level(s);
+  ret(s.~>s) = s.~>s;
+}

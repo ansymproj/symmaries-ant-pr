@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncpai(java.lang.String encpai)
+{
+this.encpai=encpai;
+ return;
+ } 
+

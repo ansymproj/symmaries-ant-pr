@@ -1,0 +1,16 @@
+    public void setEncapel(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encapel;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encapel := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encapel> = encapel;
+/*132*/
+
+        return;
+/*133*/
+    }
+

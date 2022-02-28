@@ -1,0 +1,16 @@
+    public void setMdncgep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormMidia this;
+        java.lang.String mdncgep;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormMidia;
+
+        mdncgep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormMidia: java.lang.String mdncgep> = mdncgep;
+/*19*/
+
+        return;
+/*20*/
+    }
+

@@ -1,0 +1,13 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.struts.form.FormEmpresa this;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEmpresa;
+
+        specialinvoke this.<org.apache.struts.action.ActionForm: void <init>()>();
+/*5*/
+
+        return;
+/*5*/
+    }
+

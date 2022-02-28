@@ -1,0 +1,16 @@
+    public void setInnvalr(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao this;
+        java.lang.String innvalr;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanInsercao;
+
+        innvalr := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String innvalr> = innvalr;
+/*75*/
+
+        return;
+/*76*/
+    }
+

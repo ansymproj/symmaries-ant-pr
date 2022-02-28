@@ -1,0 +1,16 @@
+    public void setFpncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento this;
+        java.lang.String fpncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento;
+
+        fpncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento: java.lang.String fpncodg> = fpncodg;
+/*16*/
+
+        return;
+/*17*/
+    }
+

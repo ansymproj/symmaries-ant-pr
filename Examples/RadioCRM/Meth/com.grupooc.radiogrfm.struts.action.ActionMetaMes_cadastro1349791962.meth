@@ -1,0 +1,53 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionMetaMes:cadastro(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  com.grupooc.radiogrfm.struts.form.FormMetaMes formMetaMes;
+  org.apache.struts.action.ActionMessages erros;
+  com.grupooc.radiogrfm.struts.bean.BeanMetaMes metaMes;
+  java.lang.String $stack11;
+  boolean $stack13;
+  com.grupooc.radiogrfm.dao.ModelMetaMes $stack16;
+  java.lang.StringBuilder $stack17;
+  javax.servlet.http.HttpSession $stack22;
+  org.apache.struts.action.ActionMessage $stack25;
+  java.lang.Exception $stack28;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ formMetaMes=(com.grupooc.radiogrfm.struts.form.FormMetaMes) form;
+ erros=new org.apache.struts.action.ActionMessages;
+ erros#org.apache.struts.action.ActionMessages();
+ $stack11 = formMetaMes.getMmnvalr();
+ $stack11 = com.grupooc.radiogrfm.utils.Utils.converteFloatBR($stack11);
+ $stack13 = com.grupooc.radiogrfm.utils.ValidaObjeto.validaFloat($stack11);
+ if ($stack13!=0) goto label0;
+ $stack25=new org.apache.struts.action.ActionMessage;
+ $stack25#org.apache.struts.action.ActionMessage("errors.default",(java.lang.Object)"Valor da Meta esta incorreto.");
+ erros.add("org.apache.struts.action.GLOBAL_MESSAGE",$stack25);
+ label0:$stack13 = erros.isEmpty();
+ if ($stack13!=0) goto label1;
+ fw.setPath("/metaMesNovo.do");
+ this.saveErrors(request,erros);
+ goto label2;
+ label1:metaMes=new com.grupooc.radiogrfm.struts.bean.BeanMetaMes;
+ metaMes#com.grupooc.radiogrfm.struts.bean.BeanMetaMes();
+ org.apache.commons.beanutils.BeanUtils.copyProperties((java.lang.Object)metaMes,(java.lang.Object)formMetaMes);
+ $stack16 = com.grupooc.radiogrfm.dao.ModelMetaMes.getInstance();
+ $stack16.inserir(metaMes);
+ $stack17=new java.lang.StringBuilder;
+ $stack17#java.lang.StringBuilder();
+ $stack17 = $stack17.append("/actionMetaMes.do?m=lista&mtncodg=");
+ $stack11 = metaMes.getMmncgmt();
+ $stack17 = $stack17.append($stack11);
+ $stack11 = $stack17.toString();
+ fw.setPath($stack11);
+ $stack22 = request.getSession();
+ $stack22.removeAttribute("formMetaMes");
+ $stack22 = request.getSession();
+ $stack22.removeAttribute("ls_meses");
+ label3:goto label2;
+ label4:$stack28 = catch;
+ $stack28.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label1 - label3 : label4;
+} 
+

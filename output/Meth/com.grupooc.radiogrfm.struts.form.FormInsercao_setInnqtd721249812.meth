@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormInsercao:setInnqtd(java.lang.String innqtd)
+{
+this.innqtd=innqtd;
+ return;
+ } 
+

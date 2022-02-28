@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAgccnpj(java.lang.String agccnpj)
+{
+this.agccnpj=agccnpj;
+ return;
+ } 
+

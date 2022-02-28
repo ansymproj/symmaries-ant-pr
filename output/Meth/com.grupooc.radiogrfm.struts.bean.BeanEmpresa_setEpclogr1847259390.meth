@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpclogr(java.lang.String epclogr)
+{
+this.epclogr=epclogr;
+ return;
+ } 
+

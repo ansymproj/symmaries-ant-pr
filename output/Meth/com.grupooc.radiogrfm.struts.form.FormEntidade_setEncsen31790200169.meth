@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncsen3(java.lang.String encsen3)
+{
+this.encsen3=encsen3;
+ return;
+ } 
+

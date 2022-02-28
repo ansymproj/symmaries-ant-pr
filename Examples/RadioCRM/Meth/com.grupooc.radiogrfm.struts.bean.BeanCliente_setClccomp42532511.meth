@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClccomp(java.lang.String clccomp)
+{
+this.clccomp=clccomp;
+ return;
+ } 
+

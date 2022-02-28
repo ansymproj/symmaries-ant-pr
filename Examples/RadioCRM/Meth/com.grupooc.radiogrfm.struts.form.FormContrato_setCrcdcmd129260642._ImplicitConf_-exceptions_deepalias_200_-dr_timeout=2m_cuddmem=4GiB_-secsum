@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrcdcmd (java.lang.String
+                                                                  crcdcmd) {
+  guard = tt;
+  ret(obj_level(crcdcmd)) = if ¬crcdcmd.~>this ∨ pc ⊔ level(crcdcmd) = ⊥ then obj_level(crcdcmd) else if crcdcmd.~>this ∧ pc ⊔ level(crcdcmd) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crcdcmd) ⊔ obj_level(crcdcmd) ⊔ obj_level(this);
+  ret(crcdcmd.~>crcdcmd) = crcdcmd.~>crcdcmd ∨ crcdcmd.~>this;
+  ret(crcdcmd.~>this) = crcdcmd.~>this;
+  ret(this.~>crcdcmd) = tt;
+  ret(this.~>this) = crcdcmd.~>this ∨ this.~>this;
+}

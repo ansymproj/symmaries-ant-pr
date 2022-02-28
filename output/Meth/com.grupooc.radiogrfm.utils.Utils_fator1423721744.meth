@@ -1,0 +1,29 @@
+static int com.grupooc.radiogrfm.utils.Utils:fator(java.lang.String s,int min,int max)
+{
+int ret;
+  int peso;
+  char[] d;
+  int i;
+  char $stack9;
+  int $stack10;
+  ret=0;
+ peso=min;
+ d = s.toCharArray();
+ i=#d;
+ i=(i-1);
+ label0:if (i<0) goto label1;
+ $stack9=d[i];
+ $stack10=($stack9-48);
+ $stack10=($stack10 * peso);
+ ret=(ret+$stack10);
+ peso=(peso+1);
+ peso=(peso-min);
+ $stack10=(max+1);
+ $stack10=($stack10-min);
+ peso=(peso%$stack10);
+ peso=(min+peso);
+ i=(i+-1);
+ goto label0;
+ label1:return  ret;
+ } 
+

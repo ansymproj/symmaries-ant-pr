@@ -1,0 +1,14 @@
+    public java.lang.String getCdncodg()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCidade this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCidade;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanCidade: java.lang.String cdncodg>;
+/*14*/
+
+        return $stack1;
+/*14*/
+    }
+

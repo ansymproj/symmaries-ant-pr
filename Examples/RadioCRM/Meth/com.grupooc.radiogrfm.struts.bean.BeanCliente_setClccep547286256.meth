@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClccep(java.lang.String clccep)
+{
+this.clccep=clccep;
+ return;
+ } 
+

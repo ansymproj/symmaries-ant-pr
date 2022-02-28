@@ -1,0 +1,16 @@
+    public void setDsncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanDiaSemana this;
+        java.lang.String dsncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanDiaSemana;
+
+        dsncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanDiaSemana: java.lang.String dsncodg> = dsncodg;
+/*16*/
+
+        return;
+/*17*/
+    }
+

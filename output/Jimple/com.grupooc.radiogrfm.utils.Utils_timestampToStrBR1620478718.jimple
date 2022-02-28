@@ -1,0 +1,14 @@
+    public static java.lang.String timestampToStrBR(java.util.Date)
+    {
+        java.util.Date date;
+        java.lang.String $stack1;
+
+        date := @parameter0: java.util.Date;
+
+        $stack1 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String dateToStrBR(java.lang.String,java.util.Date)>("dd/MM/yyyy hh:mm:ss", date);
+/*314*/
+
+        return $stack1;
+/*314*/
+    }
+

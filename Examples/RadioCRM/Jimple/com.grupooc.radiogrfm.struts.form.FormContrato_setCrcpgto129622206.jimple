@@ -1,0 +1,16 @@
+    public void setCrcpgto(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContrato this;
+        java.lang.String crcpgto;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContrato;
+
+        crcpgto := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContrato: java.lang.String crcpgto> = crcpgto;
+/*198*/
+
+        return;
+/*199*/
+    }
+

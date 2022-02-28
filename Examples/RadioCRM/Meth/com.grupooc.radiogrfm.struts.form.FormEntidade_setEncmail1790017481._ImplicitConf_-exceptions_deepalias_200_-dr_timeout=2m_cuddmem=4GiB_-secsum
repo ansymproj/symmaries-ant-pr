@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncmail (java.lang.String
+                                                                  encmail) {
+  guard = tt;
+  ret(obj_level(encmail)) = if ¬encmail.~>this ∨ pc ⊔ level(encmail) = ⊥ then obj_level(encmail) else if encmail.~>this ∧ pc ⊔ level(encmail) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(encmail) ⊔ obj_level(encmail) ⊔ obj_level(this);
+  ret(encmail.~>encmail) = encmail.~>encmail ∨ encmail.~>this;
+  ret(encmail.~>this) = encmail.~>this;
+  ret(this.~>encmail) = tt;
+  ret(this.~>this) = encmail.~>this ∨ this.~>this;
+}

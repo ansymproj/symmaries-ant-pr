@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanUsuario:setUscsenh(java.lang.String uscsenh)
+{
+this.uscsenh=uscsenh;
+ return;
+ } 
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContrato:setCrbcanc(java.lang.String crbcanc)
+{
+this.crbcanc=crbcanc;
+ return;
+ } 
+

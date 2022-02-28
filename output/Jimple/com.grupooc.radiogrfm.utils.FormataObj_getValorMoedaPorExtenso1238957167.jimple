@@ -1,0 +1,20 @@
+    public java.lang.String getValorMoedaPorExtenso(float)
+    {
+        com.grupooc.radiogrfm.utils.FormataObj this;
+        float numero;
+        java.lang.String $stack2;
+
+        this := @this: com.grupooc.radiogrfm.utils.FormataObj;
+
+        numero := @parameter0: float;
+
+        $stack2 = virtualinvoke this.<com.grupooc.radiogrfm.utils.FormataObj: java.lang.String formataValor(float)>(numero);
+/*34*/
+
+        $stack2 = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String converteMoeda(java.lang.String)>($stack2);
+/*34*/
+
+        return $stack2;
+/*34*/
+    }
+

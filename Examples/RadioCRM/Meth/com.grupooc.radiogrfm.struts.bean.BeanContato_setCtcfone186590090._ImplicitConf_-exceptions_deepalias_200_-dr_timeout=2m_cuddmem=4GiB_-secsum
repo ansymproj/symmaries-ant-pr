@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContato:setCtcfone (java.lang.String
+                                                                 ctcfone) {
+  guard = tt;
+  ret(obj_level(ctcfone)) = if ¬ctcfone.~>this ∨ pc ⊔ level(ctcfone) = ⊥ then obj_level(ctcfone) else if ctcfone.~>this ∧ pc ⊔ level(ctcfone) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(ctcfone) ⊔ obj_level(ctcfone) ⊔ obj_level(this);
+  ret(ctcfone.~>ctcfone) = ctcfone.~>ctcfone ∨ ctcfone.~>this;
+  ret(ctcfone.~>this) = ctcfone.~>this;
+  ret(this.~>ctcfone) = tt;
+  ret(this.~>this) = ctcfone.~>this ∨ this.~>this;
+}

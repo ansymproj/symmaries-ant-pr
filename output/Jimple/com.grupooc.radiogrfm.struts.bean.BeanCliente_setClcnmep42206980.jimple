@@ -1,0 +1,16 @@
+    public void setClcnmep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clcnmep;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clcnmep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clcnmep> = clcnmep;
+/*62*/
+
+        return;
+/*63*/
+    }
+

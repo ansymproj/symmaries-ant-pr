@@ -1,0 +1,80 @@
+    public static java.lang.Object getAtributo(java.lang.Class, java.lang.String, java.lang.Class)
+    {
+        java.lang.Class c, classTipo;
+        java.lang.String atributo;
+        java.lang.Object 'ret', $stack12;
+        java.lang.reflect.Method m;
+        java.lang.StringBuilder $stack5;
+        java.lang.Class[] $stack10;
+        java.lang.Object[] $stack13;
+        java.lang.Exception $stack16;
+
+        c := @parameter0: java.lang.Class;
+
+        atributo := @parameter1: java.lang.String;
+
+        classTipo := @parameter2: java.lang.Class;
+
+        'ret' = null;
+/*366*/
+
+     label1:
+        $stack5 = new java.lang.StringBuilder;
+/*368*/
+
+        specialinvoke $stack5.<java.lang.StringBuilder: void <init>()>();
+/*368*/
+
+        $stack5 = virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("get");
+/*368*/
+
+        atributo = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String toCapitalize(java.lang.String)>(atributo);
+/*368*/
+
+        $stack5 = virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(atributo);
+/*368*/
+
+        atributo = virtualinvoke $stack5.<java.lang.StringBuilder: java.lang.String toString()>();
+/*368*/
+
+        $stack10 = newarray (java.lang.Class)[1];
+/*368*/
+
+        $stack10[0] = classTipo;
+/*368*/
+
+        m = virtualinvoke c.<java.lang.Class: java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])>(atributo, $stack10);
+/*368*/
+/*368*/
+
+        $stack12 = virtualinvoke c.<java.lang.Class: java.lang.Object newInstance()>();
+/*369*/
+
+        $stack13 = newarray (java.lang.Object)[0];
+/*369*/
+
+        $stack12 = virtualinvoke m.<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>($stack12, $stack13);
+/*369*/
+
+        'ret' = virtualinvoke classTipo.<java.lang.Class: java.lang.Object cast(java.lang.Object)>($stack12);
+/*369*/
+/*369*/
+
+     label2:
+        goto label4;
+/*372*/
+
+     label3:
+        $stack16 := @caughtexception;
+/*373*/
+
+        virtualinvoke $stack16.<java.lang.Exception: void printStackTrace()>();
+/*371*/
+
+     label4:
+        return 'ret';
+/*373*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

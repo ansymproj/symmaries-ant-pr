@@ -1,0 +1,16 @@
+    public void setUscnome(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormUsuario this;
+        java.lang.String uscnome;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormUsuario;
+
+        uscnome := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormUsuario: java.lang.String uscnome> = uscnome;
+/*41*/
+
+        return;
+/*42*/
+    }
+

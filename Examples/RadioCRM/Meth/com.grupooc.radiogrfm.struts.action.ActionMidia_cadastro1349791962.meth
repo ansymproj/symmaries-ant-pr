@@ -1,0 +1,43 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionMidia:cadastro(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  com.grupooc.radiogrfm.struts.form.FormMidia formMidia;
+  org.apache.struts.action.ActionMessages erros;
+  com.grupooc.radiogrfm.struts.bean.BeanMidia midia;
+  java.lang.String $stack11;
+  boolean $stack12;
+  com.grupooc.radiogrfm.dao.ModelMidia $stack15;
+  javax.servlet.http.HttpSession $stack17;
+  org.apache.struts.action.ActionMessage $stack19;
+  java.lang.Exception $stack22;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ formMidia=(com.grupooc.radiogrfm.struts.form.FormMidia) form;
+ erros=new org.apache.struts.action.ActionMessages;
+ erros#org.apache.struts.action.ActionMessages();
+ $stack11 = formMidia.getMdcdesc();
+ $stack12 = com.grupooc.radiogrfm.utils.ValidaObjeto.validaString($stack11);
+ if ($stack12!=0) goto label0;
+ $stack19=new org.apache.struts.action.ActionMessage;
+ $stack19#org.apache.struts.action.ActionMessage("errors.default",(java.lang.Object)"Descri\u00ef\u00bf\u00bd\u00ef\u00bf\u00bdo \u00ef\u00bf\u00bd obrigat\u00ef\u00bf\u00bdria.");
+ erros.add("org.apache.struts.action.GLOBAL_MESSAGE",$stack19);
+ label0:$stack12 = erros.isEmpty();
+ if ($stack12!=0) goto label1;
+ fw.setPath("/midiaNovo.do");
+ this.saveErrors(request,erros);
+ goto label2;
+ label1:midia=new com.grupooc.radiogrfm.struts.bean.BeanMidia;
+ midia#com.grupooc.radiogrfm.struts.bean.BeanMidia();
+ org.apache.commons.beanutils.BeanUtils.copyProperties((java.lang.Object)midia,(java.lang.Object)formMidia);
+ $stack15 = com.grupooc.radiogrfm.dao.ModelMidia.getInstance();
+ $stack15.inserir(midia);
+ fw = this.lista(mapping,form,request,response);
+ $stack17 = request.getSession();
+ $stack17.removeAttribute("formMidia");
+ label3:goto label2;
+ label4:$stack22 = catch;
+ $stack22.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label1 - label3 : label4;
+} 
+

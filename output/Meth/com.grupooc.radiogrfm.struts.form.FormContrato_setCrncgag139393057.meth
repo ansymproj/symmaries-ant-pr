@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrncgag(java.lang.String crncgag)
+{
+this.crncgag=crncgag;
+ return;
+ } 
+

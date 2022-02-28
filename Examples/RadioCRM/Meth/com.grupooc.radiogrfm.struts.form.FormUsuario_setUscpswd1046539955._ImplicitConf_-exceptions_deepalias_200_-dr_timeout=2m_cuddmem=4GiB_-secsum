@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormUsuario:setUscpswd (java.lang.String
+                                                                 uscpswd) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(uscpswd) ⊔ obj_level(this) ⊔ obj_level(uscpswd);
+  ret(obj_level(uscpswd)) = if ¬uscpswd.~>this ∨ pc ⊔ level(uscpswd) = ⊥ then obj_level(uscpswd) else if uscpswd.~>this ∧ pc ⊔ level(uscpswd) = ⊤ then ⊤ else ⊥;
+  ret(this.~>this) = this.~>this ∨ uscpswd.~>this;
+  ret(this.~>uscpswd) = tt;
+  ret(uscpswd.~>this) = uscpswd.~>this;
+  ret(uscpswd.~>uscpswd) = uscpswd.~>this ∨ uscpswd.~>uscpswd;
+}

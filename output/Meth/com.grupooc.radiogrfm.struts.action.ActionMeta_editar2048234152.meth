@@ -1,0 +1,25 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionMeta:editar(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  com.grupooc.radiogrfm.struts.form.FormMeta formHorario;
+  java.lang.String mtncodg;
+  com.grupooc.radiogrfm.struts.bean.BeanMeta horario;
+  com.grupooc.radiogrfm.dao.ModelMeta $stack11;
+  int $stack12;
+  java.lang.Exception $stack14;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ formHorario=(com.grupooc.radiogrfm.struts.form.FormMeta) form;
+ label0:mtncodg = request.getParameter("mtncodg");
+ $stack11 = com.grupooc.radiogrfm.dao.ModelMeta.getInstance();
+ $stack12 = java.lang.Integer.parseInt(mtncodg);
+ horario = $stack11.getMeta($stack12);
+ org.apache.commons.beanutils.BeanUtils.copyProperties((java.lang.Object)formHorario,(java.lang.Object)horario);
+ fw.setPath("/metaEditar.do");
+ label1:goto label2;
+ label3:$stack14 = catch;
+ $stack14.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

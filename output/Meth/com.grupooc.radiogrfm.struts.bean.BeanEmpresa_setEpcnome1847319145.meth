@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpcnome(java.lang.String epcnome)
+{
+this.epcnome=epcnome;
+ return;
+ } 
+

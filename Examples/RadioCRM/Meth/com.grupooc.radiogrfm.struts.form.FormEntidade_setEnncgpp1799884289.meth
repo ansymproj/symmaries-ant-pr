@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEnncgpp(java.lang.String enncgpp)
+{
+this.enncgpp=enncgpp;
+ return;
+ } 
+

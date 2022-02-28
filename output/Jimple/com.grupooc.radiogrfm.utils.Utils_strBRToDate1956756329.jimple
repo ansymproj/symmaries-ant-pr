@@ -1,0 +1,34 @@
+    public static java.util.Date strBRToDate(java.lang.String, java.lang.String) throws java.text.ParseException
+    {
+        java.lang.String format, value;
+        java.text.SimpleDateFormat $stack2;
+        java.util.Date $stack3;
+
+        format := @parameter0: java.lang.String;
+
+        value := @parameter1: java.lang.String;
+
+        if value != null goto label1;
+/*298*/
+
+        $stack3 = null;
+/*298*/
+
+        goto label2;
+/*298*/
+
+     label1:
+        $stack2 = new java.text.SimpleDateFormat;
+/*298*/
+
+        specialinvoke $stack2.<java.text.SimpleDateFormat: void <init>(java.lang.String)>(format);
+/*298*/
+
+        $stack3 = virtualinvoke $stack2.<java.text.SimpleDateFormat: java.util.Date parse(java.lang.String)>(value);
+/*298*/
+
+     label2:
+        return $stack3;
+/*298*/
+    }
+

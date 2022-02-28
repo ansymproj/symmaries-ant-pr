@@ -1,0 +1,16 @@
+    public void setAgcmail(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.Entity.Agencia this;
+        java.lang.String agcmail;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Agencia;
+
+        agcmail := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.Agencia: java.lang.String agcmail> = agcmail;
+/*79*/
+
+        return;
+/*80*/
+    }
+

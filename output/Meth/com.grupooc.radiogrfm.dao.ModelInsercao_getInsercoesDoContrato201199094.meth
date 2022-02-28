@@ -1,0 +1,21 @@
+java.util.ArrayList com.grupooc.radiogrfm.dao.ModelInsercao:getInsercoesDoContrato(int crncodg)
+{
+java.util.ArrayList horarios;
+  java.sql.PreparedStatement st;
+  java.sql.Connection $stack6;
+  java.util.List $stack8;
+  java.lang.Exception $stack10;
+  horarios=new java.util.ArrayList;
+ horarios#java.util.ArrayList();
+ label0:$stack6 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack6.prepareStatement("SELECT * FROM VW_INSERCAO WHERE INNCGCR = ?");
+ st.setInt(1,crncodg);
+ $stack8 = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanInsercao);
+ horarios.addAll((java.util.Collection)$stack8);
+ label1:goto label2;
+ label3:$stack10 = catch;
+ $stack10.printStackTrace();
+ label2:return  horarios;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

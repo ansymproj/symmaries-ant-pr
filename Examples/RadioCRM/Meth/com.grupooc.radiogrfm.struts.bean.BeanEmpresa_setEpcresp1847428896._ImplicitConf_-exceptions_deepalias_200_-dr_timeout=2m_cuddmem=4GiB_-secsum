@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpcresp (java.lang.String
+                                                                 epcresp) {
+  guard = tt;
+  ret(obj_level(epcresp)) = if ¬epcresp.~>this ∨ pc ⊔ level(epcresp) = ⊥ then obj_level(epcresp) else if epcresp.~>this ∧ pc ⊔ level(epcresp) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(epcresp) ⊔ obj_level(epcresp) ⊔ obj_level(this);
+  ret(epcresp.~>epcresp) = epcresp.~>epcresp ∨ epcresp.~>this;
+  ret(epcresp.~>this) = epcresp.~>this;
+  ret(this.~>epcresp) = tt;
+  ret(this.~>this) = epcresp.~>this ∨ this.~>this;
+}

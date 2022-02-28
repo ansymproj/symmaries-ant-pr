@@ -1,0 +1,16 @@
+    public void setEncconj(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encconj;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encconj := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encconj> = encconj;
+/*126*/
+
+        return;
+/*127*/
+    }
+

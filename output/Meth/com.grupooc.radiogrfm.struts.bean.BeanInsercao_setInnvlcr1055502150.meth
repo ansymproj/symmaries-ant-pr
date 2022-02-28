@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanInsercao:setInnvlcr(java.lang.String innvlcr)
+{
+this.innvlcr=innvlcr;
+ return;
+ } 
+

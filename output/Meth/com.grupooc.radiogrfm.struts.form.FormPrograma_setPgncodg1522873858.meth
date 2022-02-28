@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormPrograma:setPgncodg(java.lang.String pgncodg)
+{
+this.pgncodg=pgncodg;
+ return;
+ } 
+

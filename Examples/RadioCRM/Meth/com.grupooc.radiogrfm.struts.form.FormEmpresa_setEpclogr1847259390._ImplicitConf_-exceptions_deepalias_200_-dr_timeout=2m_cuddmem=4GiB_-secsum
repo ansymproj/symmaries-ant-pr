@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEmpresa:setEpclogr (java.lang.String
+                                                                 epclogr) {
+  guard = tt;
+  ret(obj_level(epclogr)) = if ¬epclogr.~>this ∨ pc ⊔ level(epclogr) = ⊥ then obj_level(epclogr) else if epclogr.~>this ∧ pc ⊔ level(epclogr) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(epclogr) ⊔ obj_level(epclogr) ⊔ obj_level(this);
+  ret(epclogr.~>epclogr) = epclogr.~>epclogr ∨ epclogr.~>this;
+  ret(epclogr.~>this) = epclogr.~>this;
+  ret(this.~>epclogr) = tt;
+  ret(this.~>this) = epclogr.~>this ∨ this.~>this;
+}

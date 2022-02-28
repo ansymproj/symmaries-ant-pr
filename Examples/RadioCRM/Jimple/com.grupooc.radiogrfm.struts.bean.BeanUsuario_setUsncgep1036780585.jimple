@@ -1,0 +1,16 @@
+    public void setUsncgep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanUsuario this;
+        java.lang.String usncgep;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanUsuario;
+
+        usncgep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanUsuario: java.lang.String usncgep> = usncgep;
+/*21*/
+
+        return;
+/*22*/
+    }
+

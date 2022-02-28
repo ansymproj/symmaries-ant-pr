@@ -1,0 +1,8 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:zerosEsquerda(int tam,java.lang.String @str)
+{
+java.lang.String str;
+str=@str;
+str = com.grupooc.radiogrfm.utils.Utils.preencherEsquerda((char)48,tam,str);
+ return  str;
+ } 
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContato:setCtcfunc (java.lang.String
+                                                                 ctcfunc) {
+  guard = tt;
+  ret(obj_level(ctcfunc)) = if ¬ctcfunc.~>this ∨ pc ⊔ level(ctcfunc) = ⊥ then obj_level(ctcfunc) else if ctcfunc.~>this ∧ pc ⊔ level(ctcfunc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(ctcfunc) ⊔ obj_level(ctcfunc) ⊔ obj_level(this);
+  ret(ctcfunc.~>ctcfunc) = ctcfunc.~>ctcfunc ∨ ctcfunc.~>this;
+  ret(ctcfunc.~>this) = ctcfunc.~>this;
+  ret(this.~>ctcfunc) = tt;
+  ret(this.~>this) = ctcfunc.~>this ∨ this.~>this;
+}

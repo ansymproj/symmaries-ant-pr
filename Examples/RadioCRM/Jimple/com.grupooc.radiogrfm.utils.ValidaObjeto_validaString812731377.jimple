@@ -1,0 +1,35 @@
+    public static boolean validaString(java.lang.String)
+    {
+        java.lang.String str;
+        boolean $stack1;
+
+        str := @parameter0: java.lang.String;
+
+        if str != null goto label1;
+/*61*/
+
+        return 0;
+/*62*/
+
+     label1:
+        $stack1 = virtualinvoke str.<java.lang.String: boolean equals(java.lang.Object)>("");
+/*64*/
+
+        if $stack1 != 0 goto label2;
+/*64*/
+
+        $stack1 = 1;
+/*64*/
+
+        goto label3;
+/*64*/
+
+     label2:
+        $stack1 = 0;
+/*64*/
+
+     label3:
+        return $stack1;
+/*64*/
+    }
+

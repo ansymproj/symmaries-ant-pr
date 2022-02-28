@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClmobs(java.lang.String clmobs)
+{
+this.clmobs=clmobs;
+ return;
+ } 
+

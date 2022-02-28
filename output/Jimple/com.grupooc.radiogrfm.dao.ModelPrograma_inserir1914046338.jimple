@@ -1,0 +1,83 @@
+    public void inserir(com.grupooc.radiogrfm.struts.bean.BeanPrograma)
+    {
+        com.grupooc.radiogrfm.dao.ModelPrograma this;
+        com.grupooc.radiogrfm.struts.bean.BeanPrograma programa;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack4;
+        java.lang.String $stack7;
+        int $stack11;
+        float $stack15;
+        java.lang.Exception $stack20;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelPrograma;
+
+        programa := @parameter0: com.grupooc.radiogrfm.struts.bean.BeanPrograma;
+
+     label1:
+        $stack4 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*93*/
+
+        st = interfaceinvoke $stack4.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" INSERT INTO PROGRAMA (PGCDESC, PGNDURC, PGYVALR, PGNCGEP) VALUES (?,?,?, ?)");
+/*93*/
+/*93*/
+
+        $stack7 = virtualinvoke programa.<com.grupooc.radiogrfm.struts.bean.BeanPrograma: java.lang.String getPgcdesc()>();
+/*94*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.String: java.lang.String toUpperCase()>();
+/*94*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(1, $stack7);
+/*94*/
+
+        $stack7 = virtualinvoke programa.<com.grupooc.radiogrfm.struts.bean.BeanPrograma: java.lang.String getPgndurc()>();
+/*95*/
+
+        $stack11 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*95*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(2, $stack11);
+/*95*/
+
+        $stack7 = virtualinvoke programa.<com.grupooc.radiogrfm.struts.bean.BeanPrograma: java.lang.String getPgyvalr()>();
+/*96*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String converteFloatBR(java.lang.String)>($stack7);
+/*96*/
+
+        $stack15 = staticinvoke <java.lang.Float: float parseFloat(java.lang.String)>($stack7);
+/*96*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setFloat(int,float)>(3, $stack15);
+/*96*/
+
+        $stack7 = virtualinvoke programa.<com.grupooc.radiogrfm.struts.bean.BeanPrograma: java.lang.String getPgncgep()>();
+/*97*/
+
+        $stack11 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*97*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(4, $stack11);
+/*97*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: int executeUpdate()>();
+/*99*/
+
+     label2:
+        goto label4;
+/*103*/
+
+     label3:
+        $stack20 := @caughtexception;
+/*104*/
+
+        virtualinvoke $stack20.<java.lang.Exception: void printStackTrace()>();
+/*102*/
+
+     label4:
+        return;
+/*104*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

@@ -1,0 +1,16 @@
+    public void setAgncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+        java.lang.String agncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        agncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agncodg> = agncodg;
+/*50*/
+
+        return;
+/*51*/
+    }
+

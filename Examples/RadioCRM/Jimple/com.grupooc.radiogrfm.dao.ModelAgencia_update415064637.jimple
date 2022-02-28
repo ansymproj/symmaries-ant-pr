@@ -1,0 +1,182 @@
+    public void update(com.grupooc.radiogrfm.struts.bean.BeanAgencia)
+    {
+        com.grupooc.radiogrfm.dao.ModelAgencia this;
+        com.grupooc.radiogrfm.struts.bean.BeanAgencia agencia;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack4;
+        java.lang.String $stack7;
+        int $stack22;
+        float $stack48;
+        java.lang.Exception $stack53;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelAgencia;
+
+        agencia := @parameter0: com.grupooc.radiogrfm.struts.bean.BeanAgencia;
+
+     label1:
+        $stack4 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*58*/
+
+        st = interfaceinvoke $stack4.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" UPDATE AGENCIA SET AGCNOME = ?,AGCCNPJ = ?,AGCRZSC = ?,AGCFONE = ?,AGCMAIL = ?, AGNCGTL = ?,AGLENDR = ?,AGCNUMR = ?,AGCCOMP = ?,AGNCGCD = ?,AGCCEP = ?,AGCBAIR = ?, AGMOBS = ?, AGNCGTP = ?, AGNCOMS = ?  WHERE AGNCODG = ?");
+/*58*/
+/*58*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgcnome()>();
+/*59*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.String: java.lang.String toUpperCase()>();
+/*59*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(1, $stack7);
+/*59*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgccnpj()>();
+/*60*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: java.lang.String removeCharOfInteger(java.lang.String)>($stack7);
+/*60*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(2, $stack7);
+/*60*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgcrzsc()>();
+/*61*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.String: java.lang.String toUpperCase()>();
+/*61*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(3, $stack7);
+/*61*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgcfone()>();
+/*62*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: java.lang.String removeCharOfInteger(java.lang.String)>($stack7);
+/*62*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(4, $stack7);
+/*62*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgcmail()>();
+/*63*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(5, $stack7);
+/*63*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgncgtl()>();
+/*64*/
+
+        $stack22 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*64*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(6, $stack22);
+/*64*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAglendr()>();
+/*65*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.String: java.lang.String toUpperCase()>();
+/*65*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(7, $stack7);
+/*65*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgcnumr()>();
+/*66*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(8, $stack7);
+/*66*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgccomp()>();
+/*67*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.String: java.lang.String toUpperCase()>();
+/*67*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(9, $stack7);
+/*67*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgncgcd()>();
+/*68*/
+
+        $stack22 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*68*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(10, $stack22);
+/*68*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgccep()>();
+/*69*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: java.lang.String removeCharOfInteger(java.lang.String)>($stack7);
+/*69*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(11, $stack7);
+/*69*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgcbair()>();
+/*70*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.String: java.lang.String toUpperCase()>();
+/*70*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(12, $stack7);
+/*70*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgmobs()>();
+/*71*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(13, $stack7);
+/*71*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgncgtp()>();
+/*72*/
+
+        $stack22 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*72*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(14, $stack22);
+/*72*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgncoms()>();
+/*73*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String converteFloatBR(java.lang.String)>($stack7);
+/*73*/
+
+        $stack48 = staticinvoke <java.lang.Float: float parseFloat(java.lang.String)>($stack7);
+/*73*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setFloat(int,float)>(15, $stack48);
+/*73*/
+
+        $stack7 = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgncodg()>();
+/*74*/
+
+        $stack22 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*74*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(16, $stack22);
+/*74*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: int executeUpdate()>();
+/*76*/
+
+     label2:
+        goto label4;
+/*80*/
+
+     label3:
+        $stack53 := @caughtexception;
+/*81*/
+
+        virtualinvoke $stack53.<java.lang.Exception: void printStackTrace()>();
+/*79*/
+
+     label4:
+        return;
+/*81*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

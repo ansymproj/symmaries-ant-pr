@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento:setFpcdesc(java.lang.String fpcdesc)
+{
+this.fpcdesc=fpcdesc;
+ return;
+ } 
+

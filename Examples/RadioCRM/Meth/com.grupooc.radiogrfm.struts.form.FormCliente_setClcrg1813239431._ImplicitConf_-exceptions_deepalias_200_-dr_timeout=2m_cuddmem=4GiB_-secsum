@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClcrg (java.lang.String
+                                                               clcrg) {
+  guard = tt;
+  ret(obj_level(clcrg)) = if ¬clcrg.~>this ∨ pc ⊔ level(clcrg) = ⊥ then obj_level(clcrg) else if clcrg.~>this ∧ pc ⊔ level(clcrg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcrg) ⊔ obj_level(clcrg) ⊔ obj_level(this);
+  ret(clcrg.~>clcrg) = clcrg.~>clcrg ∨ clcrg.~>this;
+  ret(clcrg.~>this) = clcrg.~>this;
+  ret(this.~>clcrg) = tt;
+  ret(this.~>this) = clcrg.~>this ∨ this.~>this;
+}

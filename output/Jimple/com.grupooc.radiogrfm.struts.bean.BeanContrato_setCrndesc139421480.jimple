@@ -1,0 +1,16 @@
+    public void setCrndesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crndesc;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crndesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crndesc> = crndesc;
+/*138*/
+
+        return;
+/*139*/
+    }
+

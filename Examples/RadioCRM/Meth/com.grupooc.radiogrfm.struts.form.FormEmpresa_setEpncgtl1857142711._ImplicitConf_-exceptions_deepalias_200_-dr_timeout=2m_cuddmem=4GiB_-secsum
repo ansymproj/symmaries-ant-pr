@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEmpresa:setEpncgtl (java.lang.String
+                                                                 epncgtl) {
+  guard = tt;
+  ret(obj_level(epncgtl)) = if ¬epncgtl.~>this ∨ pc ⊔ level(epncgtl) = ⊥ then obj_level(epncgtl) else if epncgtl.~>this ∧ pc ⊔ level(epncgtl) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(epncgtl) ⊔ obj_level(epncgtl) ⊔ obj_level(this);
+  ret(epncgtl.~>epncgtl) = epncgtl.~>epncgtl ∨ epncgtl.~>this;
+  ret(epncgtl.~>this) = epncgtl.~>this;
+  ret(this.~>epncgtl) = tt;
+  ret(this.~>this) = epncgtl.~>this ∨ this.~>this;
+}

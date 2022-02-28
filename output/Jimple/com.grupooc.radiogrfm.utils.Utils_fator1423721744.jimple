@@ -1,0 +1,74 @@
+    public static int fator(java.lang.String, int, int)
+    {
+        java.lang.String s;
+        int min, max, 'ret', peso, i, $stack10;
+        char[] d;
+        char $stack9;
+
+        s := @parameter0: java.lang.String;
+
+        min := @parameter1: int;
+
+        max := @parameter2: int;
+
+        'ret' = 0;
+/*243*/
+
+        peso = min;
+/*244*/
+
+        d = virtualinvoke s.<java.lang.String: char[] toCharArray()>();
+/*245*/
+/*245*/
+
+        i = lengthof d;
+/*246*/
+
+        i = i - 1;
+/*246*/
+
+     label1:
+        if i < 0 goto label2;
+/*246*/
+
+        $stack9 = d[i];
+/*247*/
+
+        $stack10 = $stack9 - 48;
+/*247*/
+
+        $stack10 = $stack10 * peso;
+/*247*/
+
+        'ret' = 'ret' + $stack10;
+/*247*/
+
+        peso = peso + 1;
+/*248*/
+
+        peso = peso - min;
+/*248*/
+
+        $stack10 = max + 1;
+/*248*/
+
+        $stack10 = $stack10 - min;
+/*248*/
+
+        peso = peso % $stack10;
+/*248*/
+
+        peso = min + peso;
+/*248*/
+
+        i = i + -1;
+/*246*/
+
+        goto label1;
+/*246*/
+
+     label2:
+        return 'ret';
+/*250*/
+    }
+

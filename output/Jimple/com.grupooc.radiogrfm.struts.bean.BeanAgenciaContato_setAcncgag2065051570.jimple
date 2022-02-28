@@ -1,0 +1,16 @@
+    public void setAcncgag(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato this;
+        java.lang.String acncgag;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato;
+
+        acncgag := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato: java.lang.String acncgag> = acncgag;
+/*37*/
+
+        return;
+/*38*/
+    }
+

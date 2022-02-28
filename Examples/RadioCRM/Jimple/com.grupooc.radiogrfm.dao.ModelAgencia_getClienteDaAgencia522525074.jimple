@@ -1,0 +1,56 @@
+    public java.util.List getClienteDaAgencia(java.lang.Integer)
+    {
+        com.grupooc.radiogrfm.dao.ModelAgencia this;
+        java.lang.Integer agncodg;
+        java.util.ArrayList programas;
+        java.lang.Exception sql;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack6;
+        int $stack9;
+        java.util.List $stack10;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelAgencia;
+
+        agncodg := @parameter0: java.lang.Integer;
+
+        programas = new java.util.ArrayList;
+/*117*/
+
+        specialinvoke programas.<java.util.ArrayList: void <init>()>();
+/*117*/
+
+     label1:
+        $stack6 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*123*/
+
+        st = interfaceinvoke $stack6.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" SELECT DISTINCT * FROM VW_CLIENTE WHERE EXISTS(SELECT * FROM CONTRATO WHERE CRNCGCL = VW_CLIENTE.CLNCODG AND CRNCGAG = ?) ");
+/*123*/
+/*123*/
+
+        $stack9 = virtualinvoke agncodg.<java.lang.Integer: int intValue()>();
+/*124*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, $stack9);
+/*124*/
+
+        $stack10 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.List getObjectsStr(java.sql.PreparedStatement,java.lang.Class)>(st, class "Lcom/grupooc/radiogrfm/struts/bean/BeanCliente;");
+/*126*/
+
+        interfaceinvoke programas.<java.util.List: boolean addAll(java.util.Collection)>($stack10);
+/*126*/
+
+     label2:
+        goto label4;
+/*130*/
+
+     label3:
+        sql := @caughtexception;
+/*131*/
+
+     label4:
+        return programas;
+/*131*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

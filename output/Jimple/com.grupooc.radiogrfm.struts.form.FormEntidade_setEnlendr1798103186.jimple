@@ -1,0 +1,16 @@
+    public void setEnlendr(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String enlendr;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        enlendr := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String enlendr> = enlendr;
+/*174*/
+
+        return;
+/*175*/
+    }
+

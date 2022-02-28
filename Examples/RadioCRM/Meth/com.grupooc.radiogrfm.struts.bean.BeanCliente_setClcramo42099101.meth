@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcramo(java.lang.String clcramo)
+{
+this.clcramo=clcramo;
+ return;
+ } 
+

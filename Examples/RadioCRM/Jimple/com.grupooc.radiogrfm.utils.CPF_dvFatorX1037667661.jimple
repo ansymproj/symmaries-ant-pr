@@ -1,0 +1,23 @@
+    private static int dvFatorX(java.lang.String)
+    {
+        java.lang.String s;
+        int $stack2;
+
+        s := @parameter0: java.lang.String;
+
+        $stack2 = virtualinvoke s.<java.lang.String: int length()>();
+/*13*/
+
+        $stack2 = $stack2 + 1;
+/*13*/
+
+        $stack2 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: int fator(java.lang.String,int,int)>(s, 2, $stack2);
+/*13*/
+
+        $stack2 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: int mod11(int)>($stack2);
+/*13*/
+
+        return $stack2;
+/*13*/
+    }
+

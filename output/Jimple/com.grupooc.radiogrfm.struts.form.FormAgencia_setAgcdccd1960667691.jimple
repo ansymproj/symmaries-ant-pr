@@ -1,0 +1,16 @@
+    public void setAgcdccd(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+        java.lang.String agcdccd;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        agcdccd := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agcdccd> = agcdccd;
+/*128*/
+
+        return;
+/*129*/
+    }
+

@@ -1,0 +1,16 @@
+    public void setUscpsw2(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormUsuario this;
+        java.lang.String uscpsw2;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormUsuario;
+
+        uscpsw2 := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormUsuario: java.lang.String uscpsw2> = uscpsw2;
+/*65*/
+
+        return;
+/*66*/
+    }
+

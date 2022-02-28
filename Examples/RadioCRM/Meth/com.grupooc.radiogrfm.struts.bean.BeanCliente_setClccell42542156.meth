@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClccell(java.lang.String clccell)
+{
+this.clccell=clccell;
+ return;
+ } 
+

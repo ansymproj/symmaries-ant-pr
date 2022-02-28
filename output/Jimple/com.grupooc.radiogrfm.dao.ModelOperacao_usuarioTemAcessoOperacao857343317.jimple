@@ -1,0 +1,74 @@
+    public boolean usuarioTemAcessoOperacao(int, int)
+    {
+        com.grupooc.radiogrfm.dao.ModelOperacao this;
+        int usncodg, opncodg;
+        boolean 'ret', $stack9;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack6;
+        java.util.List $stack8;
+        java.lang.Exception $stack11;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelOperacao;
+
+        usncodg := @parameter0: int;
+
+        opncodg := @parameter1: int;
+
+        'ret' = 0;
+/*38*/
+
+     label1:
+        $stack6 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*41*/
+
+        st = interfaceinvoke $stack6.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("SELECT OPNCODG, OPNPART, OPCDESC, OPCHINT, OPCLINK FROM VW_OPERACAO_USUARIO WHERE OPNCODG = ? AND OPNCGEN = ?");
+/*41*/
+/*41*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, opncodg);
+/*42*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(2, usncodg);
+/*43*/
+
+        $stack8 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.List getObjectsStr(java.sql.PreparedStatement,java.lang.Class)>(st, class "Lcom/grupooc/radiogrfm/struts/bean/BeanOperacao;");
+/*45*/
+
+        $stack9 = interfaceinvoke $stack8.<java.util.List: boolean isEmpty()>();
+/*45*/
+
+        if $stack9 != 0 goto label2;
+/*45*/
+
+        $stack9 = 1;
+/*50*/
+
+        goto label3;
+/*50*/
+
+     label2:
+        $stack9 = 0;
+/*50*/
+
+     label3:
+        'ret' = $stack9;
+/*45*/
+
+     label4:
+        goto label6;
+/*49*/
+
+     label5:
+        $stack11 := @caughtexception;
+/*49*/
+
+        virtualinvoke $stack11.<java.lang.Exception: void printStackTrace()>();
+/*48*/
+
+     label6:
+        return 'ret';
+/*50*/
+
+        catch java.lang.Exception from label1 to label4 with label5;
+    }
+

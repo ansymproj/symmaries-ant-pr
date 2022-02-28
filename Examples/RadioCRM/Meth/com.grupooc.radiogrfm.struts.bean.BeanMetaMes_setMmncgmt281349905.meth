@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanMetaMes:setMmncgmt(java.lang.String mmncgmt)
+{
+this.mmncgmt=mmncgmt;
+ return;
+ } 
+

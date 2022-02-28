@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanPrograma:setPgcnmep (java.lang.String
+                                                                  pgcnmep) {
+  guard = tt;
+  ret(obj_level(pgcnmep)) = if ¬pgcnmep.~>this ∨ pc ⊔ level(pgcnmep) = ⊥ then obj_level(pgcnmep) else if pgcnmep.~>this ∧ pc ⊔ level(pgcnmep) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(pgcnmep) ⊔ obj_level(pgcnmep) ⊔ obj_level(this);
+  ret(pgcnmep.~>pgcnmep) = pgcnmep.~>pgcnmep ∨ pgcnmep.~>this;
+  ret(pgcnmep.~>this) = pgcnmep.~>this;
+  ret(this.~>pgcnmep) = tt;
+  ret(this.~>this) = pgcnmep.~>this ∨ this.~>this;
+}

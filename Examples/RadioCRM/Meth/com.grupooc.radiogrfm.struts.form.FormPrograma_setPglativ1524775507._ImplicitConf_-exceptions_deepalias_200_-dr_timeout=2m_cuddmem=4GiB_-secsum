@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormPrograma:setPglativ (java.lang.String
+                                                                  pglativ) {
+  guard = tt;
+  ret(obj_level(pglativ)) = if ¬pglativ.~>this ∨ pc ⊔ level(pglativ) = ⊥ then obj_level(pglativ) else if pglativ.~>this ∧ pc ⊔ level(pglativ) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(pglativ) ⊔ obj_level(pglativ) ⊔ obj_level(this);
+  ret(pglativ.~>pglativ) = pglativ.~>pglativ ∨ pglativ.~>this;
+  ret(pglativ.~>this) = pglativ.~>this;
+  ret(this.~>pglativ) = tt;
+  ret(this.~>this) = pglativ.~>this ∨ this.~>this;
+}

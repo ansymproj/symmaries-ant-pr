@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormPrograma:setPgncodg (java.lang.String
+                                                                  pgncodg) {
+  guard = tt;
+  ret(obj_level(pgncodg)) = if ¬pgncodg.~>this ∨ pc ⊔ level(pgncodg) = ⊥ then obj_level(pgncodg) else if pgncodg.~>this ∧ pc ⊔ level(pgncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(pgncodg) ⊔ obj_level(pgncodg) ⊔ obj_level(this);
+  ret(pgncodg.~>pgncodg) = pgncodg.~>pgncodg ∨ pgncodg.~>this;
+  ret(pgncodg.~>this) = pgncodg.~>this;
+  ret(this.~>pgncodg) = tt;
+  ret(this.~>this) = pgncodg.~>this ∨ this.~>this;
+}

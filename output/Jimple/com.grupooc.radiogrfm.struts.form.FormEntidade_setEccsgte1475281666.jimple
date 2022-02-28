@@ -1,0 +1,16 @@
+    public void setEccsgte(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String eccsgte;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        eccsgte := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String eccsgte> = eccsgte;
+/*72*/
+
+        return;
+/*73*/
+    }
+

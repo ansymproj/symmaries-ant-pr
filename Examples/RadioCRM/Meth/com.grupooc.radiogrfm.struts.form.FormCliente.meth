@@ -1,0 +1,9 @@
+com.grupooc.radiogrfm.struts.form.FormCliente()
+{
+this#org.apache.struts.action.ActionForm();
+ this.clncgtp="1";
+ this.clncgtl="33";
+ this.clcufcd="PE";
+ return;
+ } 
+

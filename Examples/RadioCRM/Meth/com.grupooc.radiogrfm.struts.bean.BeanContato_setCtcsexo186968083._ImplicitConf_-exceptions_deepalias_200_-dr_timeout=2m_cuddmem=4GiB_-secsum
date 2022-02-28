@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContato:setCtcsexo (java.lang.String
+                                                                 ctcsexo) {
+  guard = tt;
+  ret(obj_level(ctcsexo)) = if ¬ctcsexo.~>this ∨ pc ⊔ level(ctcsexo) = ⊥ then obj_level(ctcsexo) else if ctcsexo.~>this ∧ pc ⊔ level(ctcsexo) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(ctcsexo) ⊔ obj_level(ctcsexo) ⊔ obj_level(this);
+  ret(ctcsexo.~>ctcsexo) = ctcsexo.~>ctcsexo ∨ ctcsexo.~>this;
+  ret(ctcsexo.~>this) = ctcsexo.~>this;
+  ret(this.~>ctcsexo) = tt;
+  ret(this.~>this) = ctcsexo.~>this ∨ this.~>this;
+}

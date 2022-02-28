@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpcices(java.lang.String epcices)
+{
+this.epcices=epcices;
+ return;
+ } 
+

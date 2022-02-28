@@ -1,0 +1,27 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionInsercao:lista(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  java.lang.String crncodg;
+  com.grupooc.radiogrfm.dao.ModelInsercao $stack10;
+  int $stack11;
+  java.util.ArrayList $stack12;
+  java.lang.Exception $stack17;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ label0:crncodg = request.getParameter("crncodg");
+ $stack10 = com.grupooc.radiogrfm.dao.ModelInsercao.getInstance();
+ $stack11 = java.lang.Integer.parseInt(crncodg);
+ $stack12 = $stack10.getInsercoesDoContrato($stack11);
+ request.setAttribute("ls_insercao",(java.lang.Object)$stack12);
+ $stack10 = com.grupooc.radiogrfm.dao.ModelInsercao.getInstance();
+ $stack11 = java.lang.Integer.parseInt(crncodg);
+ crncodg = $stack10.valorInsercoesDoContrato($stack11);
+ request.setAttribute("valor",(java.lang.Object)crncodg);
+ fw.setPath("/insercaoLista.do");
+ label1:goto label2;
+ label3:$stack17 = catch;
+ $stack17.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

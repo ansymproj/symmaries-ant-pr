@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanLocutor:getLccnome()
+{
+java.lang.String $stack1;
+  $stack1=this.lccnome;
+ return  $stack1;
+ } 
+

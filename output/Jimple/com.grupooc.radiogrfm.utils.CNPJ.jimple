@@ -1,0 +1,13 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.utils.CNPJ this;
+
+        this := @this: com.grupooc.radiogrfm.utils.CNPJ;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+/*3*/
+
+        return;
+/*3*/
+    }
+

@@ -1,0 +1,7 @@
+com.grupooc.radiogrfm.struts.form.FormContato()
+{
+this#org.apache.struts.action.ActionForm();
+ this.ctcsexo="M";
+ return;
+ } 
+

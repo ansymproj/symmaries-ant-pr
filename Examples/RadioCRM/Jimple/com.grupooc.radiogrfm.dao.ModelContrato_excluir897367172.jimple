@@ -1,0 +1,52 @@
+    public void excluir(com.grupooc.radiogrfm.struts.bean.BeanContrato)
+    {
+        com.grupooc.radiogrfm.dao.ModelContrato this;
+        com.grupooc.radiogrfm.struts.bean.BeanContrato contrato;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack4;
+        java.lang.String $stack7;
+        int $stack8;
+        java.lang.Exception $stack10;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelContrato;
+
+        contrato := @parameter0: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+     label1:
+        $stack4 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*174*/
+
+        st = interfaceinvoke $stack4.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" DELETE FROM CONTRATO WHERE CRNCODG = (?)");
+/*174*/
+/*174*/
+
+        $stack7 = virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String getCrncodg()>();
+/*176*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*176*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, $stack8);
+/*176*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: int executeUpdate()>();
+/*178*/
+
+     label2:
+        goto label4;
+/*182*/
+
+     label3:
+        $stack10 := @caughtexception;
+/*184*/
+
+        virtualinvoke $stack10.<java.lang.Exception: void printStackTrace()>();
+/*181*/
+
+     label4:
+        return;
+/*184*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

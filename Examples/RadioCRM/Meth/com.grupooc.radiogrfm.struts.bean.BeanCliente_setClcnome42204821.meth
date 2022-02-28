@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcnome(java.lang.String clcnome)
+{
+this.clcnome=clcnome;
+ return;
+ } 
+

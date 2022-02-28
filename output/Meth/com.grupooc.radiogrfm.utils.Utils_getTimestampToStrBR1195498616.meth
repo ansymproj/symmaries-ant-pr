@@ -1,0 +1,10 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:getTimestampToStrBR(java.sql.ResultSet rs,java.lang.String @value)
+{
+java.sql.Timestamp $stack2;
+  java.lang.String value;
+value=@value;
+$stack2 = rs.getTimestamp(value);
+ value = com.grupooc.radiogrfm.utils.Utils.timestampToStrBR((java.util.Date)$stack2);
+ return  value;
+ } 
+

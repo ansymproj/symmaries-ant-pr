@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClctpdc (java.lang.String
+                                                                 clctpdc) {
+  guard = tt;
+  ret(obj_level(clctpdc)) = if ¬clctpdc.~>this ∨ pc ⊔ level(clctpdc) = ⊥ then obj_level(clctpdc) else if clctpdc.~>this ∧ pc ⊔ level(clctpdc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clctpdc) ⊔ obj_level(clctpdc) ⊔ obj_level(this);
+  ret(clctpdc.~>clctpdc) = clctpdc.~>clctpdc ∨ clctpdc.~>this;
+  ret(clctpdc.~>this) = clctpdc.~>this;
+  ret(this.~>clctpdc) = tt;
+  ret(this.~>this) = clctpdc.~>this ∨ this.~>this;
+}

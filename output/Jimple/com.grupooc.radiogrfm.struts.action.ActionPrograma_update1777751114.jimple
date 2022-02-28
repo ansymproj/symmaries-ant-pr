@@ -1,0 +1,162 @@
+    public org.apache.struts.action.ActionForward update(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionPrograma this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        com.grupooc.radiogrfm.struts.form.FormPrograma formPrograma;
+        org.apache.struts.action.ActionMessages erros;
+        com.grupooc.radiogrfm.struts.bean.BeanPrograma programa;
+        java.lang.String $stack11;
+        boolean $stack12;
+        com.grupooc.radiogrfm.dao.ModelPrograma $stack20;
+        javax.servlet.http.HttpSession $stack22;
+        org.apache.struts.action.ActionMessage $stack24;
+        java.lang.Exception $stack33;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionPrograma;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*89*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*89*/
+
+        formPrograma = (com.grupooc.radiogrfm.struts.form.FormPrograma) form;
+/*90*/
+
+        erros = new org.apache.struts.action.ActionMessages;
+/*91*/
+
+        specialinvoke erros.<org.apache.struts.action.ActionMessages: void <init>()>();
+/*91*/
+
+        $stack11 = virtualinvoke formPrograma.<com.grupooc.radiogrfm.struts.form.FormPrograma: java.lang.String getPgcdesc()>();
+/*95*/
+
+        $stack12 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: boolean validaString(java.lang.String)>($stack11);
+/*95*/
+
+        if $stack12 != 0 goto label1;
+/*95*/
+
+        $stack24 = new org.apache.struts.action.ActionMessage;
+/*96*/
+
+        specialinvoke $stack24.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Nome do programa \u00ef\u00bf\u00bd obrigat\u00ef\u00bf\u00bdrio.");
+/*96*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack24);
+/*96*/
+
+     label1:
+        $stack11 = virtualinvoke formPrograma.<com.grupooc.radiogrfm.struts.form.FormPrograma: java.lang.String getPgyvalr()>();
+/*99*/
+
+        $stack11 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String converteFloatBR(java.lang.String)>($stack11);
+/*99*/
+
+        $stack12 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: boolean validaFloat(java.lang.String)>($stack11);
+/*99*/
+
+        if $stack12 != 0 goto label2;
+/*99*/
+
+        $stack24 = new org.apache.struts.action.ActionMessage;
+/*100*/
+
+        specialinvoke $stack24.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Valor informado \u00ef\u00bf\u00bd inv\u00ef\u00bf\u00bdlido.");
+/*100*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack24);
+/*100*/
+
+     label2:
+        $stack11 = virtualinvoke formPrograma.<com.grupooc.radiogrfm.struts.form.FormPrograma: java.lang.String getPgndurc()>();
+/*104*/
+
+        $stack12 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: boolean validaInteiro(java.lang.String)>($stack11);
+/*104*/
+
+        if $stack12 != 0 goto label3;
+/*104*/
+
+        $stack24 = new org.apache.struts.action.ActionMessage;
+/*105*/
+
+        specialinvoke $stack24.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Dura\u00ef\u00bf\u00bd\u00ef\u00bf\u00bdo do programa \u00ef\u00bf\u00bd inv\u00ef\u00bf\u00bdlido.");
+/*105*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack24);
+/*105*/
+
+     label3:
+        $stack12 = virtualinvoke erros.<org.apache.struts.action.ActionMessages: boolean isEmpty()>();
+/*108*/
+
+        if $stack12 != 0 goto label4;
+/*108*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/programaEditar.do");
+/*109*/
+
+        virtualinvoke this.<com.grupooc.radiogrfm.struts.action.ActionPrograma: void saveErrors(javax.servlet.http.HttpServletRequest,org.apache.struts.action.ActionMessages)>(request, erros);
+/*110*/
+
+        goto label7;
+/*110*/
+
+     label4:
+        programa = new com.grupooc.radiogrfm.struts.bean.BeanPrograma;
+/*115*/
+
+        specialinvoke programa.<com.grupooc.radiogrfm.struts.bean.BeanPrograma: void <init>()>();
+/*115*/
+
+        staticinvoke <org.apache.commons.beanutils.BeanUtils: void copyProperties(java.lang.Object,java.lang.Object)>(programa, formPrograma);
+/*117*/
+
+        $stack20 = staticinvoke <com.grupooc.radiogrfm.dao.ModelPrograma: com.grupooc.radiogrfm.dao.ModelPrograma getInstance()>();
+/*119*/
+
+        virtualinvoke $stack20.<com.grupooc.radiogrfm.dao.ModelPrograma: void update(com.grupooc.radiogrfm.struts.bean.BeanPrograma)>(programa);
+/*119*/
+
+        fw = virtualinvoke this.<com.grupooc.radiogrfm.struts.action.ActionPrograma: org.apache.struts.action.ActionForward lista(org.apache.struts.action.ActionMapping,org.apache.struts.action.ActionForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>(mapping, form, request, response);
+/*121*/
+/*121*/
+
+        $stack22 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*123*/
+
+        interfaceinvoke $stack22.<javax.servlet.http.HttpSession: void removeAttribute(java.lang.String)>("formPrograma");
+/*123*/
+
+     label5:
+        goto label7;
+/*127*/
+
+     label6:
+        $stack33 := @caughtexception;
+/*99*/
+
+        virtualinvoke $stack33.<java.lang.Exception: void printStackTrace()>();
+/*126*/
+
+     label7:
+        return fw;
+/*129*/
+
+        catch java.lang.Exception from label4 to label5 with label6;
+    }
+

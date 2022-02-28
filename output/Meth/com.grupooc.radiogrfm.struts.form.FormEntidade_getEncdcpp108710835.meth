@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormEntidade:getEncdcpp()
+{
+java.lang.String $stack1;
+  $stack1=this.encdcpp;
+ return  $stack1;
+ } 
+

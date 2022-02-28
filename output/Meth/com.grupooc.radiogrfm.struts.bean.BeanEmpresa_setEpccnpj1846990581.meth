@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpccnpj(java.lang.String epccnpj)
+{
+this.epccnpj=epccnpj;
+ return;
+ } 
+

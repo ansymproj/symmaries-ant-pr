@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrcramo(java.lang.String crcramo)
+{
+this.crcramo=crcramo;
+ return;
+ } 
+

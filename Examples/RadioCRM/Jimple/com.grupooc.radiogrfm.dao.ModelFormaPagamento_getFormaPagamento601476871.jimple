@@ -1,0 +1,64 @@
+    public com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento getFormaPagamento(int)
+    {
+        com.grupooc.radiogrfm.dao.ModelFormaPagamento this;
+        int fpncodg;
+        com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento dia;
+        java.sql.PreparedStatement st;
+        java.util.List l;
+        java.sql.Connection $stack6;
+        boolean $stack9;
+        java.lang.Object $stack10;
+        java.lang.Exception $stack11;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelFormaPagamento;
+
+        fpncodg := @parameter0: int;
+
+        dia = null;
+/*31*/
+
+     label1:
+        $stack6 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*34*/
+
+        st = interfaceinvoke $stack6.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("SELECT * FROM VW_FORMAPAGAMENTO WHERE FPNCODG = ?");
+/*34*/
+/*34*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, fpncodg);
+/*35*/
+
+        l = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.List getObjectsStr(java.sql.PreparedStatement,java.lang.Class)>(st, class "Lcom/grupooc/radiogrfm/struts/bean/BeanFormaPagamento;");
+/*37*/
+/*37*/
+
+        $stack9 = interfaceinvoke l.<java.util.List: boolean isEmpty()>();
+/*39*/
+
+        if $stack9 != 0 goto label2;
+/*39*/
+
+        $stack10 = interfaceinvoke l.<java.util.List: java.lang.Object get(int)>(0);
+/*40*/
+
+        dia = (com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento) $stack10;
+/*40*/
+
+     label2:
+        goto label4;
+/*44*/
+
+     label3:
+        $stack11 := @caughtexception;
+/*44*/
+
+        virtualinvoke $stack11.<java.lang.Exception: void printStackTrace()>();
+/*43*/
+
+     label4:
+        return dia;
+/*45*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

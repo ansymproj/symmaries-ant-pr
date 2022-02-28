@@ -1,0 +1,64 @@
+    public static java.sql.Date stringToDateSQL(java.lang.String)
+    {
+        java.lang.String datastr;
+        java.sql.Date data, $stack4;
+        boolean $stack3;
+        java.text.SimpleDateFormat $stack5;
+        java.util.Date $stack6;
+        long $stack7;
+        java.lang.Exception $stack8;
+
+        datastr := @parameter0: java.lang.String;
+
+        data = null;
+/*103*/
+
+     label1:
+        if datastr == null goto label2;
+/*105*/
+
+        $stack3 = virtualinvoke datastr.<java.lang.String: boolean equals(java.lang.Object)>("");
+/*115*/
+
+        if $stack3 != 0 goto label2;
+/*115*/
+
+        $stack4 = new java.sql.Date;
+/*106*/
+
+        $stack5 = new java.text.SimpleDateFormat;
+/*106*/
+
+        specialinvoke $stack5.<java.text.SimpleDateFormat: void <init>(java.lang.String)>("dd/MM/yyyy");
+/*106*/
+
+        $stack6 = virtualinvoke $stack5.<java.text.SimpleDateFormat: java.util.Date parse(java.lang.String)>(datastr);
+/*106*/
+
+        $stack7 = virtualinvoke $stack6.<java.util.Date: long getTime()>();
+/*106*/
+
+        specialinvoke $stack4.<java.sql.Date: void <init>(long)>($stack7);
+/*106*/
+
+        data = $stack4;
+/*106*/
+
+     label2:
+        goto label4;
+/*113*/
+
+     label3:
+        $stack8 := @caughtexception;
+/*113*/
+
+        virtualinvoke $stack8.<java.lang.Exception: void printStackTrace()>();
+/*112*/
+
+     label4:
+        return data;
+/*115*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

@@ -1,0 +1,64 @@
+    public com.grupooc.radiogrfm.struts.bean.BeanCliente getCliente(int)
+    {
+        com.grupooc.radiogrfm.dao.ModelCliente this;
+        int clncodg;
+        com.grupooc.radiogrfm.struts.bean.BeanCliente programa;
+        java.sql.PreparedStatement st;
+        java.util.List l;
+        java.sql.Connection $stack6;
+        boolean $stack9;
+        java.lang.Object $stack10;
+        java.lang.Exception $stack11;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelCliente;
+
+        clncodg := @parameter0: int;
+
+        programa = null;
+/*48*/
+
+     label1:
+        $stack6 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*51*/
+
+        st = interfaceinvoke $stack6.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("SELECT * FROM VW_CLIENTE WHERE CLNCODG = ?");
+/*51*/
+/*51*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, clncodg);
+/*52*/
+
+        l = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.List getObjectsStr(java.sql.PreparedStatement,java.lang.Class)>(st, class "Lcom/grupooc/radiogrfm/struts/bean/BeanCliente;");
+/*54*/
+/*54*/
+
+        $stack9 = interfaceinvoke l.<java.util.List: boolean isEmpty()>();
+/*56*/
+
+        if $stack9 != 0 goto label2;
+/*56*/
+
+        $stack10 = interfaceinvoke l.<java.util.List: java.lang.Object get(int)>(0);
+/*57*/
+
+        programa = (com.grupooc.radiogrfm.struts.bean.BeanCliente) $stack10;
+/*57*/
+
+     label2:
+        goto label4;
+/*61*/
+
+     label3:
+        $stack11 := @caughtexception;
+/*61*/
+
+        virtualinvoke $stack11.<java.lang.Exception: void printStackTrace()>();
+/*60*/
+
+     label4:
+        return programa;
+/*62*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

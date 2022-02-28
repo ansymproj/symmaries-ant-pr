@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContrato:setCrcdccp(java.lang.String crcdccp)
+{
+this.crcdccp=crcdccp;
+ return;
+ } 
+

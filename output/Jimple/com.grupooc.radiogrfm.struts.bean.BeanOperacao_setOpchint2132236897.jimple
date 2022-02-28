@@ -1,0 +1,16 @@
+    public void setOpchint(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanOperacao this;
+        java.lang.String opchint;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanOperacao;
+
+        opchint := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanOperacao: java.lang.String opchint> = opchint;
+/*36*/
+
+        return;
+/*37*/
+    }
+

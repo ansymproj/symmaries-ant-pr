@@ -1,0 +1,14 @@
+    public java.lang.String getHrncgpg()
+    {
+        com.grupooc.radiogrfm.struts.form.FormHorario this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormHorario;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormHorario: java.lang.String hrncgpg>;
+/*24*/
+
+        return $stack1;
+/*24*/
+    }
+

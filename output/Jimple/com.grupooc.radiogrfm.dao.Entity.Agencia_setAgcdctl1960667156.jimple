@@ -1,0 +1,16 @@
+    public void setAgcdctl(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.Entity.Agencia this;
+        java.lang.String agcdctl;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Agencia;
+
+        agcdctl := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.Agencia: java.lang.String agcdctl> = agcdctl;
+/*91*/
+
+        return;
+/*92*/
+    }
+

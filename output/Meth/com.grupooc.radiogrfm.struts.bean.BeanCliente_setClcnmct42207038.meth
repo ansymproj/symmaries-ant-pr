@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcnmct(java.lang.String clcnmct)
+{
+this.clcnmct=clcnmct;
+ return;
+ } 
+

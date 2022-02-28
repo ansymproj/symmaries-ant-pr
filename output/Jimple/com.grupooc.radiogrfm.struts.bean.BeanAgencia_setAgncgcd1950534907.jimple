@@ -1,0 +1,16 @@
+    public void setAgncgcd(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanAgencia this;
+        java.lang.String agncgcd;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanAgencia;
+
+        agncgcd := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String agncgcd> = agncgcd;
+/*115*/
+
+        return;
+/*116*/
+    }
+

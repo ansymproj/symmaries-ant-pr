@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormAgencia:setAgncgtl (java.lang.String
+                                                                 agncgtl) {
+  guard = tt;
+  ret(obj_level(agncgtl)) = if ¬agncgtl.~>this ∨ pc ⊔ level(agncgtl) = ⊥ then obj_level(agncgtl) else if agncgtl.~>this ∧ pc ⊔ level(agncgtl) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(agncgtl) ⊔ obj_level(agncgtl) ⊔ obj_level(this);
+  ret(agncgtl.~>agncgtl) = agncgtl.~>agncgtl ∨ agncgtl.~>this;
+  ret(agncgtl.~>this) = agncgtl.~>this;
+  ret(this.~>agncgtl) = tt;
+  ret(this.~>this) = agncgtl.~>this ∨ this.~>this;
+}

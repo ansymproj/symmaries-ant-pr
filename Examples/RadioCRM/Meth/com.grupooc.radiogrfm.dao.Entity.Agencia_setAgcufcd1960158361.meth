@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAgcufcd(java.lang.String agcufcd)
+{
+this.agcufcd=agcufcd;
+ return;
+ } 
+

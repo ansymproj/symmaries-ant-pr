@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAgccep (java.lang.String
+                                                                agccep) {
+  guard = tt;
+  ret(obj_level(agccep)) = if ¬agccep.~>this ∨ pc ⊔ level(agccep) = ⊥ then obj_level(agccep) else if agccep.~>this ∧ pc ⊔ level(agccep) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(agccep) ⊔ obj_level(agccep) ⊔ obj_level(this);
+  ret(agccep.~>agccep) = agccep.~>agccep ∨ agccep.~>this;
+  ret(agccep.~>this) = agccep.~>this;
+  ret(this.~>agccep) = tt;
+  ret(this.~>this) = agccep.~>this ∨ this.~>this;
+}

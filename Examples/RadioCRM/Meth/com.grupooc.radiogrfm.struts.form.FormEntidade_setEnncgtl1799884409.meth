@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEnncgtl(java.lang.String enncgtl)
+{
+this.enncgtl=enncgtl;
+ return;
+ } 
+

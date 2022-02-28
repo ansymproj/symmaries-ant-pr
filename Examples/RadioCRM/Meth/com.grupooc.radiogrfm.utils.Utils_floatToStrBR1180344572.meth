@@ -1,0 +1,14 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:floatToStrBR(java.lang.String @format,java.lang.Float value)
+{
+java.text.DecimalFormat $stack2;
+  java.lang.String format;
+format=@format;
+if (value!=null) goto label0;
+ format=null;
+ goto label1;
+ label0:$stack2=new java.text.DecimalFormat;
+ $stack2#java.text.DecimalFormat(format);
+ format = $stack2.format((java.lang.Object)value);
+ label1:return  format;
+ } 
+

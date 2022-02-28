@@ -1,0 +1,14 @@
+    public java.lang.String getCdcuf()
+    {
+        com.grupooc.radiogrfm.dao.Entity.Cidade this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Cidade;
+
+        $stack1 = this.<com.grupooc.radiogrfm.dao.Entity.Cidade: java.lang.String cdcuf>;
+/*20*/
+
+        return $stack1;
+/*20*/
+    }
+

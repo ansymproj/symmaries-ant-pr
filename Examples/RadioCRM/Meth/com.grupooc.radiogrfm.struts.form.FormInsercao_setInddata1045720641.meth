@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormInsercao:setInddata(java.lang.String inddata)
+{
+this.inddata=inddata;
+ return;
+ } 
+

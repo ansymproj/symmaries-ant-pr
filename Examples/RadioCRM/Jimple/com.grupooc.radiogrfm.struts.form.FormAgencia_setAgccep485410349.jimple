@@ -1,0 +1,16 @@
+    public void setAgccep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+        java.lang.String agccep;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        agccep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agccep> = agccep;
+/*134*/
+
+        return;
+/*135*/
+    }
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEmpresa:setEpncodg(java.lang.String epncodg)
+{
+this.epncodg=epncodg;
+ return;
+ } 
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrdcanc (java.lang.String
+                                                                  crdcanc) {
+  guard = tt;
+  ret(obj_level(crdcanc)) = if ¬crdcanc.~>this ∨ pc ⊔ level(crdcanc) = ⊥ then obj_level(crdcanc) else if crdcanc.~>this ∧ pc ⊔ level(crdcanc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crdcanc) ⊔ obj_level(crdcanc) ⊔ obj_level(this);
+  ret(crdcanc.~>crdcanc) = crdcanc.~>crdcanc ∨ crdcanc.~>this;
+  ret(crdcanc.~>this) = crdcanc.~>this;
+  ret(this.~>crdcanc) = tt;
+  ret(this.~>this) = crdcanc.~>this ∨ this.~>this;
+}

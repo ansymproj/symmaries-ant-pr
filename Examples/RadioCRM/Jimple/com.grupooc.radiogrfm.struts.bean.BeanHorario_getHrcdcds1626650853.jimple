@@ -1,0 +1,14 @@
+    public java.lang.String getHrcdcds()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanHorario this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanHorario;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanHorario: java.lang.String hrcdcds>;
+/*42*/
+
+        return $stack1;
+/*42*/
+    }
+

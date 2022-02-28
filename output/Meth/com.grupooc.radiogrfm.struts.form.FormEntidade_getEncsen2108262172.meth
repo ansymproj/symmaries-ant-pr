@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormEntidade:getEncsen2()
+{
+java.lang.String $stack1;
+  $stack1=this.encsen2;
+ return  $stack1;
+ } 
+

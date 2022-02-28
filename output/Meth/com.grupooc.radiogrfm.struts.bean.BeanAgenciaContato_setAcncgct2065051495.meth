@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato:setAcncgct(java.lang.String acncgct)
+{
+this.acncgct=acncgct;
+ return;
+ } 
+

@@ -1,0 +1,16 @@
+    public void setMtyacum(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMeta this;
+        java.lang.String mtyacum;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMeta;
+
+        mtyacum := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanMeta: java.lang.String mtyacum> = mtyacum;
+/*18*/
+
+        return;
+/*19*/
+    }
+

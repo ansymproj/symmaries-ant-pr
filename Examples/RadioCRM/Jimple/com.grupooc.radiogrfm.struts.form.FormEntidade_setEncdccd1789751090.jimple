@@ -1,0 +1,16 @@
+    public void setEncdccd(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encdccd;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encdccd := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encdccd> = encdccd;
+/*210*/
+
+        return;
+/*211*/
+    }
+

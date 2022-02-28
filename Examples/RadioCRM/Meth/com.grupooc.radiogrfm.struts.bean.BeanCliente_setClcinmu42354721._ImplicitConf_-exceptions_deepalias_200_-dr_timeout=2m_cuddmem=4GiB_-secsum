@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcinmu (java.lang.String
+                                                                 clcinmu) {
+  guard = tt;
+  ret(obj_level(clcinmu)) = if ¬clcinmu.~>this ∨ pc ⊔ level(clcinmu) = ⊥ then obj_level(clcinmu) else if clcinmu.~>this ∧ pc ⊔ level(clcinmu) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcinmu) ⊔ obj_level(clcinmu) ⊔ obj_level(this);
+  ret(clcinmu.~>clcinmu) = clcinmu.~>clcinmu ∨ clcinmu.~>this;
+  ret(clcinmu.~>this) = clcinmu.~>this;
+  ret(this.~>clcinmu) = tt;
+  ret(this.~>this) = clcinmu.~>this ∨ this.~>this;
+}

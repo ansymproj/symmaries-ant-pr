@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormInsercao:setInncodg(java.lang.String inncodg)
+{
+this.inncodg=inncodg;
+ return;
+ } 
+

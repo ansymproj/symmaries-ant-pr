@@ -1,0 +1,72 @@
+    public org.apache.struts.action.ActionForward opcoes(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionCliente this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        java.lang.String clncodg;
+        javax.servlet.http.HttpSession $stack9;
+        com.grupooc.radiogrfm.dao.ModelCliente $stack11;
+        int $stack12;
+        com.grupooc.radiogrfm.struts.bean.BeanCliente $stack13;
+        java.lang.Exception $stack14;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionCliente;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*345*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*345*/
+
+     label1:
+        clncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("clncodg");
+/*348*/
+/*348*/
+
+        $stack9 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*349*/
+
+        $stack11 = staticinvoke <com.grupooc.radiogrfm.dao.ModelCliente: com.grupooc.radiogrfm.dao.ModelCliente getInstance()>();
+/*349*/
+
+        $stack12 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(clncodg);
+/*349*/
+
+        $stack13 = virtualinvoke $stack11.<com.grupooc.radiogrfm.dao.ModelCliente: com.grupooc.radiogrfm.struts.bean.BeanCliente getCliente(int)>($stack12);
+/*349*/
+
+        interfaceinvoke $stack9.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("cliente", $stack13);
+/*349*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/clientePage.do");
+/*350*/
+
+     label2:
+        goto label4;
+/*354*/
+
+     label3:
+        $stack14 := @caughtexception;
+/*356*/
+
+        virtualinvoke $stack14.<java.lang.Exception: void printStackTrace()>();
+/*353*/
+
+     label4:
+        return fw;
+/*356*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

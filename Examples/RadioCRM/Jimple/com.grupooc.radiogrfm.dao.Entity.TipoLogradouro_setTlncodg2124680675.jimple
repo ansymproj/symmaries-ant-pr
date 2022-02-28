@@ -1,0 +1,16 @@
+    public void setTlncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.Entity.TipoLogradouro this;
+        java.lang.String tlncodg;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.TipoLogradouro;
+
+        tlncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.TipoLogradouro: java.lang.String tlncodg> = tlncodg;
+/*16*/
+
+        return;
+/*17*/
+    }
+

@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.dao.Entity.Agencia:getAglativ()
+{
+java.lang.String $stack1;
+  $stack1=this.aglativ;
+ return  $stack1;
+ } 
+

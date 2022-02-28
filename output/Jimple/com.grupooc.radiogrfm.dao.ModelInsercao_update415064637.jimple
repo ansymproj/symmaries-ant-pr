@@ -1,0 +1,102 @@
+    public void update(com.grupooc.radiogrfm.struts.bean.BeanInsercao)
+    {
+        com.grupooc.radiogrfm.dao.ModelInsercao this;
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao insercao;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack4;
+        java.lang.String $stack7;
+        int $stack8;
+        java.sql.Date $stack14;
+        float $stack18;
+        java.lang.Exception $stack26;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelInsercao;
+
+        insercao := @parameter0: com.grupooc.radiogrfm.struts.bean.BeanInsercao;
+
+     label1:
+        $stack4 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*91*/
+
+        st = interfaceinvoke $stack4.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" UPDATE INSERCAO SET INNCGCR = ?,INNCGPG = ?,INDDATA = ?,INNDESC = ?,INNQTD = ?  WHERE INNCODG = ?");
+/*91*/
+/*91*/
+
+        $stack7 = virtualinvoke insercao.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String getInncgcr()>();
+/*93*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*93*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, $stack8);
+/*93*/
+
+        $stack7 = virtualinvoke insercao.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String getInncgpg()>();
+/*94*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*94*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(2, $stack8);
+/*94*/
+
+        $stack7 = virtualinvoke insercao.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String getInddata()>();
+/*95*/
+
+        $stack14 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.sql.Date stringToDateSQL(java.lang.String)>($stack7);
+/*95*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setDate(int,java.sql.Date)>(3, $stack14);
+/*95*/
+
+        $stack7 = virtualinvoke insercao.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String getInndesc()>();
+/*96*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String converteFloatBR(java.lang.String)>($stack7);
+/*96*/
+
+        $stack18 = staticinvoke <java.lang.Float: float parseFloat(java.lang.String)>($stack7);
+/*96*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setFloat(int,float)>(4, $stack18);
+/*96*/
+
+        $stack7 = virtualinvoke insercao.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String getInnqtd()>();
+/*97*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*97*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(5, $stack8);
+/*97*/
+
+        $stack7 = virtualinvoke insercao.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String getInncodg()>();
+/*98*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*98*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(6, $stack8);
+/*98*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: int executeUpdate()>();
+/*100*/
+
+     label2:
+        goto label4;
+/*105*/
+
+     label3:
+        $stack26 := @caughtexception;
+/*107*/
+
+        virtualinvoke $stack26.<java.lang.Exception: void printStackTrace()>();
+/*104*/
+
+     label4:
+        return;
+/*107*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

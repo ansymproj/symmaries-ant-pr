@@ -1,0 +1,28 @@
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        com.grupooc.radiogrfm.utils.FormataObj $stack1;
+        java.io.PrintStream $stack2;
+        java.lang.String $stack3;
+
+        args := @parameter0: java.lang.String[];
+
+        $stack2 = <java.lang.System: java.io.PrintStream out>;
+/*96*/
+
+        $stack1 = new com.grupooc.radiogrfm.utils.FormataObj;
+/*96*/
+
+        specialinvoke $stack1.<com.grupooc.radiogrfm.utils.FormataObj: void <init>()>();
+/*96*/
+
+        $stack3 = virtualinvoke $stack1.<com.grupooc.radiogrfm.utils.FormataObj: java.lang.String getValorMoedaPorExtenso(float)>(2345.56F);
+/*96*/
+
+        virtualinvoke $stack2.<java.io.PrintStream: void println(java.lang.String)>($stack3);
+/*96*/
+
+        return;
+/*97*/
+    }
+

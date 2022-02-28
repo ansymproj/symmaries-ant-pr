@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanInsercao:getInncgcr()
+{
+java.lang.String $stack1;
+  $stack1=this.inncgcr;
+ return  $stack1;
+ } 
+

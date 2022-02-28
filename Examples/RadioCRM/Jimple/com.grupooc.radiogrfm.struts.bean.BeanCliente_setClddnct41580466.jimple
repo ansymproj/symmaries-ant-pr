@@ -1,0 +1,16 @@
+    public void setClddnct(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clddnct;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clddnct := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clddnct> = clddnct;
+/*224*/
+
+        return;
+/*225*/
+    }
+

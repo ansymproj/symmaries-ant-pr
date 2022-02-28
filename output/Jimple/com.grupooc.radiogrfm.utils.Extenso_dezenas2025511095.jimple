@@ -1,0 +1,66 @@
+    private static java.lang.String dezenas(int)
+    {
+        int numero, $stack4;
+        java.lang.StringBuilder $stack1;
+        java.lang.String $stack2;
+        java.lang.String[] $stack5;
+
+        numero := @parameter0: int;
+
+        if numero != 0 goto label1;
+/*75*/
+
+        return "";
+/*76*/
+
+     label1:
+        if numero >= 20 goto label2;
+/*77*/
+
+        $stack2 = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String unidades(int)>(numero);
+/*78*/
+
+        return $stack2;
+/*78*/
+
+     label2:
+        $stack1 = new java.lang.StringBuilder;
+/*79*/
+
+        specialinvoke $stack1.<java.lang.StringBuilder: void <init>()>();
+/*79*/
+
+        $stack2 = <com.grupooc.radiogrfm.utils.Extenso: java.lang.String SEPARADOR_MENOR>;
+/*79*/
+
+        $stack1 = virtualinvoke $stack1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack2);
+/*79*/
+
+        $stack5 = <com.grupooc.radiogrfm.utils.Extenso: java.lang.String[] dezenas>;
+/*79*/
+
+        $stack4 = numero / 10;
+/*79*/
+
+        $stack2 = $stack5[$stack4];
+/*79*/
+
+        $stack1 = virtualinvoke $stack1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack2);
+/*79*/
+
+        numero = numero % 10;
+/*79*/
+
+        $stack2 = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String unidades(int)>(numero);
+/*79*/
+
+        $stack1 = virtualinvoke $stack1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack2);
+/*79*/
+
+        $stack2 = virtualinvoke $stack1.<java.lang.StringBuilder: java.lang.String toString()>();
+/*79*/
+
+        return $stack2;
+/*79*/
+    }
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormUsuario:setUsncodg (java.lang.String
+                                                                 usncodg) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(usncodg) ⊔ obj_level(this) ⊔ obj_level(usncodg);
+  ret(obj_level(usncodg)) = if ¬usncodg.~>this ∨ pc ⊔ level(usncodg) = ⊥ then obj_level(usncodg) else if usncodg.~>this ∧ pc ⊔ level(usncodg) = ⊤ then ⊤ else ⊥;
+  ret(this.~>this) = this.~>this ∨ usncodg.~>this;
+  ret(this.~>usncodg) = tt;
+  ret(usncodg.~>this) = usncodg.~>this;
+  ret(usncodg.~>usncodg) = usncodg.~>this ∨ usncodg.~>usncodg;
+}

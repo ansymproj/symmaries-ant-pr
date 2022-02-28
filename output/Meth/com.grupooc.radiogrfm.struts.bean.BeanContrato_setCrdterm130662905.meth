@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContrato:setCrdterm(java.lang.String crdterm)
+{
+this.crdterm=crdterm;
+ return;
+ } 
+

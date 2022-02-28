@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanMidia:setMdncodg (java.lang.String
+                                                               mdncodg) {
+  guard = tt;
+  ret(obj_level(mdncodg)) = if ¬mdncodg.~>this ∨ pc ⊔ level(mdncodg) = ⊥ then obj_level(mdncodg) else if mdncodg.~>this ∧ pc ⊔ level(mdncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(mdncodg) ⊔ obj_level(mdncodg) ⊔ obj_level(this);
+  ret(mdncodg.~>mdncodg) = mdncodg.~>mdncodg ∨ mdncodg.~>this;
+  ret(mdncodg.~>this) = mdncodg.~>this;
+  ret(this.~>mdncodg) = tt;
+  ret(this.~>this) = mdncodg.~>this ∨ this.~>this;
+}

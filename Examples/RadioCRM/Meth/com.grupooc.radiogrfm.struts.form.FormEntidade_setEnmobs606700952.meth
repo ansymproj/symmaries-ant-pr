@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEnmobs(java.lang.String enmobs)
+{
+this.enmobs=enmobs;
+ return;
+ } 
+

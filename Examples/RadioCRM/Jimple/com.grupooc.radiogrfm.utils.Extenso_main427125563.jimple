@@ -1,0 +1,21 @@
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        java.io.PrintStream $stack1;
+        java.lang.String $stack2;
+
+        args := @parameter0: java.lang.String[];
+
+        $stack1 = <java.lang.System: java.io.PrintStream out>;
+/*159*/
+
+        $stack2 = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String converteMoeda(java.lang.String)>("1.987.876,45");
+/*159*/
+
+        virtualinvoke $stack1.<java.io.PrintStream: void println(java.lang.String)>($stack2);
+/*159*/
+
+        return;
+/*160*/
+    }
+

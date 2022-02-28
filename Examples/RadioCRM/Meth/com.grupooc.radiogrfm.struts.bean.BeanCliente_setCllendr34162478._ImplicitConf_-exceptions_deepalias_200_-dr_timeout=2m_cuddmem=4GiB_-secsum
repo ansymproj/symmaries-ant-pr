@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setCllendr (java.lang.String
+                                                                 cllendr) {
+  guard = tt;
+  ret(obj_level(cllendr)) = if ¬cllendr.~>this ∨ pc ⊔ level(cllendr) = ⊥ then obj_level(cllendr) else if cllendr.~>this ∧ pc ⊔ level(cllendr) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(cllendr) ⊔ obj_level(cllendr) ⊔ obj_level(this);
+  ret(cllendr.~>cllendr) = cllendr.~>cllendr ∨ cllendr.~>this;
+  ret(cllendr.~>this) = cllendr.~>this;
+  ret(this.~>cllendr) = tt;
+  ret(this.~>this) = cllendr.~>this ∨ this.~>this;
+}

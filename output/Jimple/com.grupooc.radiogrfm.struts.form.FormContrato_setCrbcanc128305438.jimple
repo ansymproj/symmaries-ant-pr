@@ -1,0 +1,16 @@
+    public void setCrbcanc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContrato this;
+        java.lang.String crbcanc;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContrato;
+
+        crbcanc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContrato: java.lang.String crbcanc> = crbcanc;
+/*168*/
+
+        return;
+/*169*/
+    }
+

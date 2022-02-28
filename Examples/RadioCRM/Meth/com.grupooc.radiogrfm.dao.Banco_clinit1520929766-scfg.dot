@@ -1,0 +1,19 @@
+digraph G {
+  node [shape=box, ];
+  "pc-1_js1" [label="〈static com.grupooc.radiogrfm.dao.Banco〉\n\
+tt", ];
+  "pc0_js1" [label="〈com.grupooc.radiogrfm.dao.Banco.con = null, js1〉", ];
+  "pc1_js1" [label="〈return, js1〉", ];
+  "pc2_js1" [label="〈sink, js1〉\n\
+tt", ];
+  
+  
+  "pc-1_js1" -> "pc0_js1" [label="ok(com.grupooc.radiogrfm.dao.Banco),\n\
+{}",
+                           ];
+  "pc0_js1" -> "pc1_js1" [label="tt,\n\
+{}", ];
+  "pc1_js1" -> "pc2_js1" [label="tt,\n\
+{ϕ := S1}", ];
+  
+  }

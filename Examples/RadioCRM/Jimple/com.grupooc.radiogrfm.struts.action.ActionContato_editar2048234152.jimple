@@ -1,0 +1,73 @@
+    public org.apache.struts.action.ActionForward editar(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionContato this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        com.grupooc.radiogrfm.struts.form.FormContato formContato;
+        java.lang.String ctncodg;
+        com.grupooc.radiogrfm.struts.bean.BeanContato contato;
+        com.grupooc.radiogrfm.dao.ModelContato $stack11;
+        int $stack12;
+        java.lang.Exception $stack14;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionContato;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*70*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*70*/
+
+        formContato = (com.grupooc.radiogrfm.struts.form.FormContato) form;
+/*71*/
+
+     label1:
+        ctncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("ctncodg");
+/*75*/
+/*75*/
+
+        $stack11 = staticinvoke <com.grupooc.radiogrfm.dao.ModelContato: com.grupooc.radiogrfm.dao.ModelContato getInstance()>();
+/*76*/
+
+        $stack12 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(ctncodg);
+/*76*/
+
+        contato = virtualinvoke $stack11.<com.grupooc.radiogrfm.dao.ModelContato: com.grupooc.radiogrfm.struts.bean.BeanContato getContato(int)>($stack12);
+/*76*/
+/*76*/
+
+        staticinvoke <org.apache.commons.beanutils.BeanUtils: void copyProperties(java.lang.Object,java.lang.Object)>(formContato, contato);
+/*78*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/contatoEditar.do");
+/*80*/
+
+     label2:
+        goto label4;
+/*84*/
+
+     label3:
+        $stack14 := @caughtexception;
+/*86*/
+
+        virtualinvoke $stack14.<java.lang.Exception: void printStackTrace()>();
+/*83*/
+
+     label4:
+        return fw;
+/*86*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

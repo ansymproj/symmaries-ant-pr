@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormCliente:getClcbair()
+{
+java.lang.String $stack1;
+  $stack1=this.clcbair;
+ return  $stack1;
+ } 
+

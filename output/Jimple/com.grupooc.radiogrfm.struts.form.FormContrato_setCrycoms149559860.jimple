@@ -1,0 +1,16 @@
+    public void setCrycoms(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContrato this;
+        java.lang.String crycoms;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContrato;
+
+        crycoms := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContrato: java.lang.String crycoms> = crycoms;
+/*240*/
+
+        return;
+/*241*/
+    }
+

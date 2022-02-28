@@ -1,0 +1,16 @@
+    public void setInndesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormInsercao this;
+        java.lang.String inndesc;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormInsercao;
+
+        inndesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormInsercao: java.lang.String inndesc> = inndesc;
+/*94*/
+
+        return;
+/*95*/
+    }
+

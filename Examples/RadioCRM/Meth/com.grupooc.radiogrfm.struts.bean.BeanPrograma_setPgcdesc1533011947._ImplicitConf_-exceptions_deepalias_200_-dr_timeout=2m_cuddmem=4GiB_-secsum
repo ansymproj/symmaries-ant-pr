@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanPrograma:setPgcdesc (java.lang.String
+                                                                  pgcdesc) {
+  guard = tt;
+  ret(obj_level(pgcdesc)) = if ¬pgcdesc.~>this ∨ pc ⊔ level(pgcdesc) = ⊥ then obj_level(pgcdesc) else if pgcdesc.~>this ∧ pc ⊔ level(pgcdesc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(pgcdesc) ⊔ obj_level(pgcdesc) ⊔ obj_level(this);
+  ret(pgcdesc.~>pgcdesc) = pgcdesc.~>pgcdesc ∨ pgcdesc.~>this;
+  ret(pgcdesc.~>this) = pgcdesc.~>this;
+  ret(this.~>pgcdesc) = tt;
+  ret(this.~>this) = pgcdesc.~>this ∨ this.~>this;
+}

@@ -1,0 +1,8 @@
+void com.grupooc.radiogrfm.dao.Entity.Cidade:setCdncodg (java.lang.Integer
+                                                           cdncodg) {
+  guard = tt;
+  ret(obj_level(cdncodg)) = obj_level(cdncodg);
+  ret(obj_level(this)) = pc ⊔ level(cdncodg) ⊔ obj_level(cdncodg) ⊔ obj_level(this);
+  ret(this.~>cdncodg) = tt;
+  ret(this.~>this) = this.~>this;
+}

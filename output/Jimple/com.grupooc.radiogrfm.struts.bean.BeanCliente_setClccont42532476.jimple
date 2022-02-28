@@ -1,0 +1,16 @@
+    public void setClccont(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clccont;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clccont := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clccont> = clccont;
+/*218*/
+
+        return;
+/*219*/
+    }
+

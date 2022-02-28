@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanInsercao:setInndrpg (java.lang.String
+                                                                  inndrpg) {
+  guard = tt;
+  ret(obj_level(inndrpg)) = if ¬inndrpg.~>this ∨ pc ⊔ level(inndrpg) = ⊥ then obj_level(inndrpg) else if inndrpg.~>this ∧ pc ⊔ level(inndrpg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(inndrpg) ⊔ obj_level(inndrpg) ⊔ obj_level(this);
+  ret(inndrpg.~>inndrpg) = inndrpg.~>inndrpg ∨ inndrpg.~>this;
+  ret(inndrpg.~>this) = inndrpg.~>this;
+  ret(this.~>inndrpg) = tt;
+  ret(this.~>this) = inndrpg.~>this ∨ this.~>this;
+}

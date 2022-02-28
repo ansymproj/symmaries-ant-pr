@@ -1,0 +1,14 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:getTimestampToStrBR (
+  java.sql.ResultSet rs, java.lang.String @value) {
+  guard = pc ⊔ obj_level(@value) ⊔ obj_level(rs) = ⊥;
+  ret(level()) = ⊤;
+  ret(obj_level()) = ⊤;
+  ret(obj_level(@value)) = ⊥;
+  ret(obj_level(rs)) = ⊥;
+  ret(~@value) = tt;
+  ret(.~>@value) = @value.~>@value;
+  ret(@value.~>) = @value.~>@value;
+  ret(@value.~>@value) = @value.~>@value;
+  ret(@value.~>rs) = @value.~>rs;
+  ret(rs.~>) = @value.~>rs;
+}

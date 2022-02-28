@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanCliente:getClcnumr()
+{
+java.lang.String $stack1;
+  $stack1=this.clcnumr;
+ return  $stack1;
+ } 
+

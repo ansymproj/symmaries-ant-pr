@@ -1,0 +1,48 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Extenso:converteMoeda(java.lang.String @valorFormatado)
+{
+java.lang.String ret;
+  java.lang.String[] valores;
+  int $stack3;
+  java.lang.StringBuilder $stack7;
+  java.math.BigInteger $stack8;
+  java.lang.RuntimeException $stack27;
+  java.lang.String valorFormatado;
+valorFormatado=@valorFormatado;
+ret="";
+ if (valorFormatado!=null) goto label0;
+ $stack27=new java.lang.RuntimeException;
+ $stack27#java.lang.RuntimeException("Numero n\u00e3o pode ser negativo nem zero");
+ throw $stack27;
+ label0:$stack3 = valorFormatado.length();
+ if ($stack3<1) goto label1;
+ valorFormatado = valorFormatado.replace((java.lang.CharSequence)".",(java.lang.CharSequence)"");
+ valorFormatado = valorFormatado.replace((java.lang.CharSequence)",",(java.lang.CharSequence)".");
+ valores = valorFormatado.split("[.]");
+ $stack7=new java.lang.StringBuilder;
+ $stack7#java.lang.StringBuilder();
+ $stack8=new java.math.BigInteger;
+ valorFormatado=valores[0];
+ $stack8#java.math.BigInteger(valorFormatado);
+ valorFormatado = com.grupooc.radiogrfm.utils.Extenso.converte($stack8);
+ $stack7 = $stack7.append(valorFormatado);
+ $stack7 = $stack7.append(" reais ");
+ ret = $stack7.toString();
+ $stack3=#valores;
+ if ($stack3!=2) goto label1;
+ valorFormatado=valores[1];
+ $stack3 = java.lang.Integer.parseInt(valorFormatado);
+ if ($stack3<=0) goto label1;
+ $stack7=new java.lang.StringBuilder;
+ $stack7#java.lang.StringBuilder();
+ $stack7 = $stack7.append(ret);
+ $stack7 = $stack7.append("e ");
+ $stack8=new java.math.BigInteger;
+ valorFormatado=valores[1];
+ $stack8#java.math.BigInteger(valorFormatado);
+ valorFormatado = com.grupooc.radiogrfm.utils.Extenso.converte($stack8);
+ $stack7 = $stack7.append(valorFormatado);
+ $stack7 = $stack7.append(" centavos");
+ ret = $stack7.toString();
+ label1:return  ret;
+ } 
+

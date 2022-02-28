@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento:setFpcdesc (
+  java.lang.String fpcdesc) {
+  guard = tt;
+  ret(obj_level(fpcdesc)) = if ¬fpcdesc.~>this ∨ pc ⊔ level(fpcdesc) = ⊥ then obj_level(fpcdesc) else if fpcdesc.~>this ∧ pc ⊔ level(fpcdesc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(fpcdesc) ⊔ obj_level(fpcdesc) ⊔ obj_level(this);
+  ret(fpcdesc.~>fpcdesc) = fpcdesc.~>fpcdesc ∨ fpcdesc.~>this;
+  ret(fpcdesc.~>this) = fpcdesc.~>this;
+  ret(this.~>fpcdesc) = tt;
+  ret(this.~>this) = fpcdesc.~>this ∨ this.~>this;
+}

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAgcfone (java.lang.String
+                                                                 agcfone) {
+  guard = tt;
+  ret(obj_level(agcfone)) = if ¬agcfone.~>this ∨ pc ⊔ level(agcfone) = ⊥ then obj_level(agcfone) else if agcfone.~>this ∧ pc ⊔ level(agcfone) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(agcfone) ⊔ obj_level(agcfone) ⊔ obj_level(this);
+  ret(agcfone.~>agcfone) = agcfone.~>agcfone ∨ agcfone.~>this;
+  ret(agcfone.~>this) = agcfone.~>this;
+  ret(this.~>agcfone) = tt;
+  ret(this.~>this) = agcfone.~>this ∨ this.~>this;
+}

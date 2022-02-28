@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContato:setCtcmail(java.lang.String ctcmail)
+{
+this.ctcmail=ctcmail;
+ return;
+ } 
+

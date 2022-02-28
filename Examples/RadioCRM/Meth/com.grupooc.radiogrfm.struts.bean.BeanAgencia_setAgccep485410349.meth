@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAgccep(java.lang.String agccep)
+{
+this.agccep=agccep;
+ return;
+ } 
+

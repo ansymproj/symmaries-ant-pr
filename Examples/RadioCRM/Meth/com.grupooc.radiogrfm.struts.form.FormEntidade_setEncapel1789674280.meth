@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncapel(java.lang.String encapel)
+{
+this.encapel=encapel;
+ return;
+ } 
+

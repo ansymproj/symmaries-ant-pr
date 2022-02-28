@@ -1,0 +1,89 @@
+    public static java.util.Collection getCollectionBean(java.util.Collection, java.lang.Object, int)
+    {
+        java.util.Collection collection;
+        java.lang.Object obj0, $stack13;
+        int max, i;
+        java.util.Iterator iter;
+        java.util.ArrayList collection2, $stack14;
+        boolean $stack9;
+
+        collection := @parameter0: java.util.Collection;
+
+        obj0 := @parameter1: java.lang.Object;
+
+        max := @parameter2: int;
+
+        if collection == null goto label1;
+/*156*/
+
+        $stack9 = interfaceinvoke collection.<java.util.Collection: boolean isEmpty()>();
+/*160*/
+
+        if $stack9 != 0 goto label1;
+/*160*/
+
+        iter = interfaceinvoke collection.<java.util.Collection: java.util.Iterator iterator()>();
+/*160*/
+
+        goto label2;
+/*160*/
+
+     label1:
+        collection2 = new java.util.ArrayList;
+/*156*/
+
+        specialinvoke collection2.<java.util.ArrayList: void <init>()>();
+/*156*/
+
+        iter = virtualinvoke collection2.<java.util.ArrayList: java.util.Iterator iterator()>();
+/*156*/
+
+     label2:
+        collection2 = new java.util.ArrayList;
+/*159*/
+
+        specialinvoke collection2.<java.util.ArrayList: void <init>()>();
+/*159*/
+
+        i = 0;
+/*160*/
+/*160*/
+
+     label3:
+        if i >= max goto label6;
+/*160*/
+
+        $stack14 = collection2;
+/*160*/
+
+        $stack9 = interfaceinvoke iter.<java.util.Iterator: boolean hasNext()>();
+/*161*/
+
+        if $stack9 == 0 goto label4;
+/*161*/
+
+        $stack13 = interfaceinvoke iter.<java.util.Iterator: java.lang.Object next()>();
+/*160*/
+
+        goto label5;
+/*160*/
+
+     label4:
+        $stack13 = obj0;
+/*160*/
+
+     label5:
+        interfaceinvoke $stack14.<java.util.Collection: boolean add(java.lang.Object)>($stack13);
+/*161*/
+
+        i = i + 1;
+/*160*/
+
+        goto label3;
+/*160*/
+
+     label6:
+        return collection2;
+/*163*/
+    }
+

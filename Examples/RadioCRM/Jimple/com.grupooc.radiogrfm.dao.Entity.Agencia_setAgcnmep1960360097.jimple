@@ -1,0 +1,16 @@
+    public void setAgcnmep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.Entity.Agencia this;
+        java.lang.String agcnmep;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Agencia;
+
+        agcnmep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.Agencia: java.lang.String agcnmep> = agcnmep;
+/*43*/
+
+        return;
+/*44*/
+    }
+

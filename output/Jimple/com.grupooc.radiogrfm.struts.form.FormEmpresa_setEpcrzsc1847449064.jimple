@@ -1,0 +1,16 @@
+    public void setEpcrzsc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEmpresa this;
+        java.lang.String epcrzsc;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEmpresa;
+
+        epcrzsc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEmpresa: java.lang.String epcrzsc> = epcrzsc;
+/*55*/
+
+        return;
+/*56*/
+    }
+

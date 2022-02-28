@@ -1,0 +1,6 @@
+com.grupooc.radiogrfm.struts.action.ActionCliente()
+{
+this#org.apache.struts.actions.DispatchAction();
+ return;
+ } 
+

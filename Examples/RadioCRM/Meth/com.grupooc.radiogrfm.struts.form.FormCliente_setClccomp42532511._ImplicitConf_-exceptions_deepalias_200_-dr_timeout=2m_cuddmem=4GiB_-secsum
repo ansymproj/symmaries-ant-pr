@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClccomp (java.lang.String
+                                                                 clccomp) {
+  guard = tt;
+  ret(obj_level(clccomp)) = if ¬clccomp.~>this ∨ pc ⊔ level(clccomp) = ⊥ then obj_level(clccomp) else if clccomp.~>this ∧ pc ⊔ level(clccomp) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clccomp) ⊔ obj_level(clccomp) ⊔ obj_level(this);
+  ret(clccomp.~>clccomp) = clccomp.~>clccomp ∨ clccomp.~>this;
+  ret(clccomp.~>this) = clccomp.~>this;
+  ret(this.~>clccomp) = tt;
+  ret(this.~>this) = clccomp.~>this ∨ this.~>this;
+}

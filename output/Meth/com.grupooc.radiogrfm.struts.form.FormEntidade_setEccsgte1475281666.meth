@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEccsgte(java.lang.String eccsgte)
+{
+this.eccsgte=eccsgte;
+ return;
+ } 
+

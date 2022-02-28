@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncbair (java.lang.String
+                                                                  encbair) {
+  guard = tt;
+  ret(obj_level(encbair)) = if ¬encbair.~>this ∨ pc ⊔ level(encbair) = ⊥ then obj_level(encbair) else if encbair.~>this ∧ pc ⊔ level(encbair) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(encbair) ⊔ obj_level(encbair) ⊔ obj_level(this);
+  ret(encbair.~>encbair) = encbair.~>encbair ∨ encbair.~>this;
+  ret(encbair.~>this) = encbair.~>this;
+  ret(this.~>encbair) = tt;
+  ret(this.~>this) = encbair.~>this ∨ this.~>this;
+}

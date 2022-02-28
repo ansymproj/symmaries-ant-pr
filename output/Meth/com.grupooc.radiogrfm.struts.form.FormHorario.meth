@@ -1,0 +1,6 @@
+com.grupooc.radiogrfm.struts.form.FormHorario()
+{
+this#org.apache.struts.action.ActionForm();
+ return;
+ } 
+

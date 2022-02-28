@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpcbair(java.lang.String epcbair)
+{
+this.epcbair=epcbair;
+ return;
+ } 
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanUsuario:setUslativ (java.lang.String
+                                                                 uslativ) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(uslativ) ⊔ obj_level(this) ⊔ obj_level(uslativ);
+  ret(obj_level(uslativ)) = if ¬uslativ.~>this ∨ pc ⊔ level(uslativ) = ⊥ then obj_level(uslativ) else if uslativ.~>this ∧ pc ⊔ level(uslativ) = ⊤ then ⊤ else ⊥;
+  ret(this.~>this) = this.~>this ∨ uslativ.~>this;
+  ret(this.~>uslativ) = tt;
+  ret(uslativ.~>this) = uslativ.~>this;
+  ret(uslativ.~>uslativ) = uslativ.~>this ∨ uslativ.~>uslativ;
+}

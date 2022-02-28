@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncsen2 (java.lang.String
+                                                                  encsen2) {
+  guard = tt;
+  ret(obj_level(encsen2)) = if ¬encsen2.~>this ∨ pc ⊔ level(encsen2) = ⊥ then obj_level(encsen2) else if encsen2.~>this ∧ pc ⊔ level(encsen2) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(encsen2) ⊔ obj_level(encsen2) ⊔ obj_level(this);
+  ret(encsen2.~>encsen2) = encsen2.~>encsen2 ∨ encsen2.~>this;
+  ret(encsen2.~>this) = encsen2.~>this;
+  ret(this.~>encsen2) = tt;
+  ret(this.~>this) = encsen2.~>this ∨ this.~>this;
+}

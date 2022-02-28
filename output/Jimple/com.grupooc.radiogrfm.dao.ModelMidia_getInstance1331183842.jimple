@@ -1,0 +1,14 @@
+    public static com.grupooc.radiogrfm.dao.ModelMidia getInstance()
+    {
+        com.grupooc.radiogrfm.dao.ModelMidia $stack0;
+
+        $stack0 = new com.grupooc.radiogrfm.dao.ModelMidia;
+/*13*/
+
+        specialinvoke $stack0.<com.grupooc.radiogrfm.dao.ModelMidia: void <init>()>();
+/*13*/
+
+        return $stack0;
+/*13*/
+    }
+

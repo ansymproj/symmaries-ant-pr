@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEmpresa:setEpcbair (java.lang.String
+                                                                 epcbair) {
+  guard = tt;
+  ret(obj_level(epcbair)) = if ¬epcbair.~>this ∨ pc ⊔ level(epcbair) = ⊥ then obj_level(epcbair) else if epcbair.~>this ∧ pc ⊔ level(epcbair) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(epcbair) ⊔ obj_level(epcbair) ⊔ obj_level(this);
+  ret(epcbair.~>epcbair) = epcbair.~>epcbair ∨ epcbair.~>this;
+  ret(epcbair.~>this) = epcbair.~>this;
+  ret(this.~>epcbair) = tt;
+  ret(this.~>this) = epcbair.~>this ∨ this.~>this;
+}

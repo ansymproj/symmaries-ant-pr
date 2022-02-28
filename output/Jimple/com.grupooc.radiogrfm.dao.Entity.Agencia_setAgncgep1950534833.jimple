@@ -1,0 +1,16 @@
+    public void setAgncgep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.Entity.Agencia this;
+        java.lang.String agncgep;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Agencia;
+
+        agncgep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.Agencia: java.lang.String agncgep> = agncgep;
+/*37*/
+
+        return;
+/*38*/
+    }
+

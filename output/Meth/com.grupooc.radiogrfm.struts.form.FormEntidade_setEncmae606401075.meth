@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncmae(java.lang.String encmae)
+{
+this.encmae=encmae;
+ return;
+ } 
+

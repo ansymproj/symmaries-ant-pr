@@ -1,0 +1,16 @@
+    public void setTpncodg(java.lang.Integer)
+    {
+        com.grupooc.radiogrfm.dao.Entity.TipoPessoa this;
+        java.lang.Integer tpncodg;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.TipoPessoa;
+
+        tpncodg := @parameter0: java.lang.Integer;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.TipoPessoa: java.lang.Integer tpncodg> = tpncodg;
+/*17*/
+
+        return;
+/*18*/
+    }
+

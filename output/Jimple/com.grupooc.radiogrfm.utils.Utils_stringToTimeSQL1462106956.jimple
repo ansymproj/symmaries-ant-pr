@@ -1,0 +1,51 @@
+    public static java.util.Date stringToTimeSQL(java.lang.String)
+    {
+        java.lang.String datastr;
+        java.util.Date data;
+        boolean $stack3;
+        java.text.SimpleDateFormat $stack4;
+        java.lang.Exception $stack6;
+
+        datastr := @parameter0: java.lang.String;
+
+        data = null;
+/*119*/
+
+     label1:
+        if datastr == null goto label2;
+/*121*/
+
+        $stack3 = virtualinvoke datastr.<java.lang.String: boolean equals(java.lang.Object)>("");
+/*128*/
+
+        if $stack3 != 0 goto label2;
+/*128*/
+
+        $stack4 = new java.text.SimpleDateFormat;
+/*122*/
+
+        specialinvoke $stack4.<java.text.SimpleDateFormat: void <init>(java.lang.String)>("HH:mm");
+/*122*/
+
+        data = virtualinvoke $stack4.<java.text.SimpleDateFormat: java.util.Date parse(java.lang.String)>(datastr);
+/*122*/
+/*122*/
+
+     label2:
+        goto label4;
+/*126*/
+
+     label3:
+        $stack6 := @caughtexception;
+/*126*/
+
+        virtualinvoke $stack6.<java.lang.Exception: void printStackTrace()>();
+/*125*/
+
+     label4:
+        return data;
+/*128*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

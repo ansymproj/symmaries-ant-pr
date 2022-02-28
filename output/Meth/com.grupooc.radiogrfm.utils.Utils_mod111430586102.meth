@@ -1,0 +1,10 @@
+static int com.grupooc.radiogrfm.utils.Utils:mod11(int valor)
+{
+valor=(valor%11);
+ if (valor<=1) goto label0;
+ valor=(11-valor);
+ goto label1;
+ label0:valor=0;
+ label1:return  valor;
+ } 
+

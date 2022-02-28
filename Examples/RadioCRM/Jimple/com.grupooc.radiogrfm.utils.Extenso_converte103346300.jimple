@@ -1,0 +1,58 @@
+    public static java.lang.String converte(java.math.BigInteger)
+    {
+        java.math.BigInteger numero, $stack1;
+        boolean $stack2;
+        int $stack4;
+        java.lang.String $stack5;
+        java.lang.RuntimeException $stack8;
+
+        numero := @parameter0: java.math.BigInteger;
+
+        $stack1 = <java.math.BigInteger: java.math.BigInteger ZERO>;
+/*133*/
+
+        $stack2 = virtualinvoke numero.<java.math.BigInteger: boolean equals(java.lang.Object)>($stack1);
+/*133*/
+
+        if $stack2 == 0 goto label1;
+/*133*/
+
+        $stack5 = <com.grupooc.radiogrfm.utils.Extenso: java.lang.String ZERO>;
+/*134*/
+
+        return $stack5;
+/*134*/
+
+     label1:
+        $stack1 = <com.grupooc.radiogrfm.utils.Extenso: java.math.BigInteger NUMERO_MAXIMO>;
+/*135*/
+
+        $stack4 = virtualinvoke $stack1.<java.math.BigInteger: int compareTo(java.math.BigInteger)>(numero);
+/*135*/
+
+        if $stack4 >= 0 goto label2;
+/*135*/
+
+        $stack8 = new java.lang.RuntimeException;
+/*136*/
+
+        specialinvoke $stack8.<java.lang.RuntimeException: void <init>(java.lang.String)>("Numero acima do permitido");
+/*136*/
+
+        throw $stack8;
+/*136*/
+
+     label2:
+        $stack5 = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String ordens(java.math.BigInteger,int)>(numero, 1);
+/*137*/
+
+        $stack5 = virtualinvoke $stack5.<java.lang.String: java.lang.String substring(int)>(3);
+/*137*/
+
+        $stack5 = virtualinvoke $stack5.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>(" ,", ",");
+/*137*/
+
+        return $stack5;
+/*137*/
+    }
+

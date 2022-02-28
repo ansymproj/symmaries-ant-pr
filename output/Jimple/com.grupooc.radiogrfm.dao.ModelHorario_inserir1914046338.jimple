@@ -1,0 +1,80 @@
+    public void inserir(com.grupooc.radiogrfm.struts.bean.BeanHorario)
+    {
+        com.grupooc.radiogrfm.dao.ModelHorario this;
+        com.grupooc.radiogrfm.struts.bean.BeanHorario horario;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack4;
+        java.lang.String $stack7;
+        int $stack8;
+        java.sql.Time $stack14;
+        java.lang.Exception $stack19;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelHorario;
+
+        horario := @parameter0: com.grupooc.radiogrfm.struts.bean.BeanHorario;
+
+     label1:
+        $stack4 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*55*/
+
+        st = interfaceinvoke $stack4.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("INSERT INTO HORARIO (HRNCGPG, HRNCGDS, HRHINIC, HRHTERM) VALUES (?,?,?,?)");
+/*55*/
+/*55*/
+
+        $stack7 = virtualinvoke horario.<com.grupooc.radiogrfm.struts.bean.BeanHorario: java.lang.String getHrncgpg()>();
+/*57*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*57*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, $stack8);
+/*57*/
+
+        $stack7 = virtualinvoke horario.<com.grupooc.radiogrfm.struts.bean.BeanHorario: java.lang.String getHrncgds()>();
+/*58*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*58*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(2, $stack8);
+/*58*/
+
+        $stack7 = virtualinvoke horario.<com.grupooc.radiogrfm.struts.bean.BeanHorario: java.lang.String getHrhinic()>();
+/*59*/
+
+        $stack14 = staticinvoke <java.sql.Time: java.sql.Time valueOf(java.lang.String)>($stack7);
+/*59*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setTime(int,java.sql.Time)>(3, $stack14);
+/*59*/
+
+        $stack7 = virtualinvoke horario.<com.grupooc.radiogrfm.struts.bean.BeanHorario: java.lang.String getHrhterm()>();
+/*60*/
+
+        $stack14 = staticinvoke <java.sql.Time: java.sql.Time valueOf(java.lang.String)>($stack7);
+/*60*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setTime(int,java.sql.Time)>(4, $stack14);
+/*60*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: int executeUpdate()>();
+/*62*/
+
+     label2:
+        goto label4;
+/*67*/
+
+     label3:
+        $stack19 := @caughtexception;
+/*68*/
+
+        virtualinvoke $stack19.<java.lang.Exception: void printStackTrace()>();
+/*66*/
+
+     label4:
+        return;
+/*68*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

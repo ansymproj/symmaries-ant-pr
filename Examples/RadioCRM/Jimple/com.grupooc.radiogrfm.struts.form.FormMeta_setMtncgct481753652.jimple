@@ -1,0 +1,16 @@
+    public void setMtncgct(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormMeta this;
+        java.lang.String mtncgct;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormMeta;
+
+        mtncgct := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormMeta: java.lang.String mtncgct> = mtncgct;
+/*30*/
+
+        return;
+/*31*/
+    }
+

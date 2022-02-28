@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormMetaMes:setMmnvalr(java.lang.String mmnvalr)
+{
+this.mmnvalr=mmnvalr;
+ return;
+ } 
+

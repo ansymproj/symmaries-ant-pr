@@ -1,0 +1,16 @@
+    public void setCrcnmep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crcnmep;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crcnmep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crcnmep> = crcnmep;
+/*59*/
+
+        return;
+/*60*/
+    }
+

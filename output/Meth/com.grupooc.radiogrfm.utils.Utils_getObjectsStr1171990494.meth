@@ -1,0 +1,38 @@
+static java.util.List com.grupooc.radiogrfm.utils.Utils:getObjectsStr(java.sql.PreparedStatement st,java.lang.Class class0)
+{
+java.util.ArrayList lista;
+  java.sql.ResultSetMetaData metaData;
+  java.sql.ResultSet rs;
+  int colls;
+  java.lang.Object object;
+  int i;
+  java.lang.String className;
+  java.lang.String atributo;
+  boolean $stack14;
+  java.lang.Class $stack20;
+  java.lang.Exception $stack23;
+  lista=new java.util.ArrayList;
+ lista#java.util.ArrayList();
+ label0:metaData = st.getMetaData();
+ rs = st.executeQuery();
+ colls = metaData.getColumnCount();
+ label1:$stack14 = rs.next();
+ if ($stack14==0) goto label2;
+ object = class0.newInstance();
+ i=1;
+ label3:if (i>colls) goto label4;
+ className = metaData.getColumnClassName(i);
+ atributo = metaData.getColumnName(i);
+ $stack20 = java.lang.Class.forName(className);
+ com.grupooc.radiogrfm.utils.Utils.setAtributoStr(object,class0,$stack20,rs,atributo);
+ i=(i+1);
+ goto label3;
+ label4:lista.add(object);
+ goto label1;
+ label2:goto label5;
+ label6:$stack23 = catch;
+ $stack23.printStackTrace();
+ label5:return  lista;
+ catch java.lang.Exception: label0 - label2 : label6;
+} 
+

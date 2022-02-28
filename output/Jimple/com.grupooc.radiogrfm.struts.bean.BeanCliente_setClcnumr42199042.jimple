@@ -1,0 +1,16 @@
+    public void setClcnumr(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clcnumr;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clcnumr := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clcnumr> = clcnumr;
+/*152*/
+
+        return;
+/*153*/
+    }
+

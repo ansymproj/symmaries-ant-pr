@@ -1,0 +1,16 @@
+    public void setOpclink(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanOperacao this;
+        java.lang.String opclink;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanOperacao;
+
+        opclink := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanOperacao: java.lang.String opclink> = opclink;
+/*42*/
+
+        return;
+/*43*/
+    }
+

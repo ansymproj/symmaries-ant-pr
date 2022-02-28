@@ -1,0 +1,14 @@
+    public java.lang.String getDscdesc()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanDiaSemana this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanDiaSemana;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanDiaSemana: java.lang.String dscdesc>;
+/*19*/
+
+        return $stack1;
+/*19*/
+    }
+

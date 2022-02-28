@@ -1,0 +1,25 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionContato:opcoes(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  java.lang.String ctncodg;
+  javax.servlet.http.HttpSession $stack9;
+  com.grupooc.radiogrfm.dao.ModelContato $stack11;
+  int $stack12;
+  com.grupooc.radiogrfm.struts.bean.BeanContato $stack13;
+  java.lang.Exception $stack14;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ label0:ctncodg = request.getParameter("ctncodg");
+ $stack9 = request.getSession();
+ $stack11 = com.grupooc.radiogrfm.dao.ModelContato.getInstance();
+ $stack12 = java.lang.Integer.parseInt(ctncodg);
+ $stack13 = $stack11.getContato($stack12);
+ $stack9.setAttribute("contato",(java.lang.Object)$stack13);
+ fw.setPath("/contatoPage.do");
+ label1:goto label2;
+ label3:$stack14 = catch;
+ $stack14.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

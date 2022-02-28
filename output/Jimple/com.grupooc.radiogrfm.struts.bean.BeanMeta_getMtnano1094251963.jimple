@@ -1,0 +1,14 @@
+    public java.lang.String getMtnano()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMeta this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMeta;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanMeta: java.lang.String mtnano>;
+/*33*/
+
+        return $stack1;
+/*33*/
+    }
+

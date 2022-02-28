@@ -1,0 +1,16 @@
+    public void setCrnperm(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crnperm;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crnperm := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crnperm> = crnperm;
+/*204*/
+
+        return;
+/*205*/
+    }
+

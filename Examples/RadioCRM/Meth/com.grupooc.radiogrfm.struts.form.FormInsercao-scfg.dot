@@ -1,0 +1,25 @@
+digraph G {
+  node [shape=box, ];
+  "pc-1_js1" [label="〈com.grupooc.radiogrfm.struts.form.FormInsercao ()〉\n\
+tt",
+              ];
+  "pc0_js1" [label="〈this#org.apache.struts.action.ActionForm (), js1〉\n\
+tt",
+             ];
+  "pc1_js1" [label="〈return, js1〉", ];
+  "pc2_js1" [label="〈sink, js1〉\n\
+obj_level(this) ⊑ ret(obj_level(this))' ∧ (ret(this.~>this)' ∨ ¬this.~>this)",
+             ];
+  
+  
+  "pc-1_js1" -> "pc0_js1" [label="ok(com.grupooc.radiogrfm.struts.form.FormInsercao),\n\
+{ret(this.~>this)' := ret(this.~>this),\n\
+ ret(obj_level(this))' := ret(obj_level(this))}",
+                           ];
+  "pc0_js1" -> "pc1_js1" [label="tt,\n\
+{obj_level(this) := pc ⊔ level(this) ⊔ obj_level(this)}",
+                          ];
+  "pc1_js1" -> "pc2_js1" [label="tt,\n\
+{ϕ := S1}", ];
+  
+  }

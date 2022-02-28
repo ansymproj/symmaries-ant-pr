@@ -1,0 +1,14 @@
+    public java.lang.String getUsclogn()
+    {
+        com.grupooc.radiogrfm.struts.form.FormUsuario this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormUsuario;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormUsuario: java.lang.String usclogn>;
+/*44*/
+
+        return $stack1;
+/*44*/
+    }
+

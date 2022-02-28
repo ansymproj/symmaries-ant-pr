@@ -1,0 +1,79 @@
+    public org.apache.struts.action.ActionForward lista(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionPrograma this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        com.grupooc.radiogrfm.struts.bean.BeanEmpresa beanEmpresa;
+        javax.servlet.http.HttpSession $stack9;
+        java.lang.Object $stack10;
+        com.grupooc.radiogrfm.dao.ModelPrograma $stack12;
+        java.lang.String $stack13;
+        int $stack14;
+        java.util.ArrayList $stack15;
+        java.lang.Exception $stack16;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionPrograma;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*27*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*27*/
+
+        $stack9 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*28*/
+
+        $stack10 = interfaceinvoke $stack9.<javax.servlet.http.HttpSession: java.lang.Object getAttribute(java.lang.String)>("empresa");
+/*28*/
+
+        beanEmpresa = (com.grupooc.radiogrfm.struts.bean.BeanEmpresa) $stack10;
+/*28*/
+
+     label1:
+        $stack12 = staticinvoke <com.grupooc.radiogrfm.dao.ModelPrograma: com.grupooc.radiogrfm.dao.ModelPrograma getInstance()>();
+/*31*/
+
+        $stack13 = virtualinvoke beanEmpresa.<com.grupooc.radiogrfm.struts.bean.BeanEmpresa: java.lang.String getEpncodg()>();
+/*31*/
+
+        $stack14 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack13);
+/*31*/
+
+        $stack15 = virtualinvoke $stack12.<com.grupooc.radiogrfm.dao.ModelPrograma: java.util.ArrayList getProgramas(int)>($stack14);
+/*31*/
+
+        interfaceinvoke request.<javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("ls_programa", $stack15);
+/*31*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/programaLista.do");
+/*33*/
+
+     label2:
+        goto label4;
+/*37*/
+
+     label3:
+        $stack16 := @caughtexception;
+/*39*/
+
+        virtualinvoke $stack16.<java.lang.Exception: void printStackTrace()>();
+/*36*/
+
+     label4:
+        return fw;
+/*39*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

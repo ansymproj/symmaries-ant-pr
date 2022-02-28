@@ -1,0 +1,65 @@
+    public static java.lang.Integer getInt(java.lang.String)
+    {
+        java.lang.String value;
+        java.lang.Integer i, $stack4, $stack6;
+        boolean $stack3;
+        java.lang.Exception $stack7;
+
+        value := @parameter0: java.lang.String;
+
+        i = null;
+/*146*/
+
+     label1:
+        if value == null goto label2;
+/*148*/
+
+        $stack3 = virtualinvoke value.<java.lang.String: boolean equals(java.lang.Object)>("");
+/*152*/
+
+        if $stack3 != 0 goto label2;
+/*152*/
+
+        $stack3 = virtualinvoke value.<java.lang.String: boolean equals(java.lang.Object)>("0");
+/*151*/
+
+        if $stack3 != 0 goto label2;
+/*151*/
+
+        $stack6 = new java.lang.Integer;
+/*151*/
+
+        $stack4 = $stack6;
+
+        specialinvoke $stack6.<java.lang.Integer: void <init>(java.lang.String)>(value);
+/*151*/
+
+        goto label3;
+/*151*/
+
+     label2:
+        $stack4 = null;
+/*152*/
+
+     label3:
+        i = $stack4;
+/*148*/
+
+     label4:
+        goto label6;
+/*151*/
+
+     label5:
+        $stack7 := @caughtexception;
+/*151*/
+
+        virtualinvoke $stack7.<java.lang.Exception: void printStackTrace()>();
+/*150*/
+
+     label6:
+        return i;
+/*152*/
+
+        catch java.lang.Exception from label1 to label4 with label5;
+    }
+

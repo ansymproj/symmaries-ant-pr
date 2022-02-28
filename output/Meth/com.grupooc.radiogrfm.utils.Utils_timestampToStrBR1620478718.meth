@@ -1,0 +1,7 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:timestampToStrBR(java.util.Date date)
+{
+java.lang.String $stack1;
+  $stack1 = com.grupooc.radiogrfm.utils.Utils.dateToStrBR("dd/MM/yyyy hh:mm:ss",date);
+ return  $stack1;
+ } 
+

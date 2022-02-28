@@ -1,0 +1,14 @@
+    public java.lang.String getMdcdesc()
+    {
+        com.grupooc.radiogrfm.struts.form.FormMidia this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormMidia;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormMidia: java.lang.String mdcdesc>;
+/*40*/
+
+        return $stack1;
+/*40*/
+    }
+

@@ -1,0 +1,77 @@
+    public static void setAtributo(java.lang.Object, java.lang.Class, java.lang.String, java.lang.Class, java.lang.Object)
+    {
+        java.lang.Object object, value;
+        java.lang.Class c, classTipo;
+        java.lang.String atributo;
+        java.lang.reflect.Method m;
+        java.lang.StringBuilder $stack6;
+        java.lang.Class[] $stack11;
+        java.lang.Object[] $stack13;
+        java.lang.Exception $stack15;
+
+        object := @parameter0: java.lang.Object;
+
+        c := @parameter1: java.lang.Class;
+
+        atributo := @parameter2: java.lang.String;
+
+        classTipo := @parameter3: java.lang.Class;
+
+        value := @parameter4: java.lang.Object;
+
+     label1:
+        $stack6 = new java.lang.StringBuilder;
+/*388*/
+
+        specialinvoke $stack6.<java.lang.StringBuilder: void <init>()>();
+/*388*/
+
+        $stack6 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("set");
+/*388*/
+
+        atributo = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String toCapitalize(java.lang.String)>(atributo);
+/*388*/
+
+        $stack6 = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(atributo);
+/*388*/
+
+        atributo = virtualinvoke $stack6.<java.lang.StringBuilder: java.lang.String toString()>();
+/*388*/
+
+        $stack11 = newarray (java.lang.Class)[1];
+/*388*/
+
+        $stack11[0] = classTipo;
+/*388*/
+
+        m = virtualinvoke c.<java.lang.Class: java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])>(atributo, $stack11);
+/*388*/
+/*388*/
+
+        $stack13 = newarray (java.lang.Object)[1];
+/*389*/
+
+        $stack13[0] = value;
+/*389*/
+
+        virtualinvoke m.<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>(object, $stack13);
+/*389*/
+
+     label2:
+        goto label4;
+/*392*/
+
+     label3:
+        $stack15 := @caughtexception;
+/*393*/
+
+        virtualinvoke $stack15.<java.lang.Exception: void printStackTrace()>();
+/*391*/
+
+     label4:
+        return;
+/*393*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

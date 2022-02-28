@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncsexo(java.lang.String encsexo)
+{
+this.encsexo=encsexo;
+ return;
+ } 
+

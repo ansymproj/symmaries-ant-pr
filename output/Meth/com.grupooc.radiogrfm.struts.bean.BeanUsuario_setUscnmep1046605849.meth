@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanUsuario:setUscnmep(java.lang.String uscnmep)
+{
+this.uscnmep=uscnmep;
+ return;
+ } 
+

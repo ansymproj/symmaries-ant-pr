@@ -1,0 +1,14 @@
+    public java.lang.String getOpnpart()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanOperacao this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanOperacao;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanOperacao: java.lang.String opnpart>;
+/*21*/
+
+        return $stack1;
+/*21*/
+    }
+

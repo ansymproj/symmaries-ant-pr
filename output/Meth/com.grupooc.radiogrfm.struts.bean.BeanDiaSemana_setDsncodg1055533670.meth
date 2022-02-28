@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanDiaSemana:setDsncodg(java.lang.String dsncodg)
+{
+this.dsncodg=dsncodg;
+ return;
+ } 
+

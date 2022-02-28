@@ -1,0 +1,14 @@
+    public java.lang.String getAgcnmep()
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agcnmep>;
+/*41*/
+
+        return $stack1;
+/*41*/
+    }
+

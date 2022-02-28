@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpclogo (java.lang.String
+                                                                 epclogo) {
+  guard = tt;
+  ret(obj_level(epclogo)) = if ¬epclogo.~>this ∨ pc ⊔ level(epclogo) = ⊥ then obj_level(epclogo) else if epclogo.~>this ∧ pc ⊔ level(epclogo) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(epclogo) ⊔ obj_level(epclogo) ⊔ obj_level(this);
+  ret(epclogo.~>epclogo) = epclogo.~>epclogo ∨ epclogo.~>this;
+  ret(epclogo.~>this) = epclogo.~>this;
+  ret(this.~>epclogo) = tt;
+  ret(this.~>this) = epclogo.~>this ∨ this.~>this;
+}

@@ -1,0 +1,16 @@
+    public void setCdncodg(java.lang.Integer)
+    {
+        com.grupooc.radiogrfm.dao.Entity.Cidade this;
+        java.lang.Integer cdncodg;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Cidade;
+
+        cdncodg := @parameter0: java.lang.Integer;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.Cidade: java.lang.Integer cdncodg> = cdncodg;
+/*17*/
+
+        return;
+/*18*/
+    }
+

@@ -1,0 +1,33 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionCliente:pesquisa(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  com.grupooc.radiogrfm.struts.bean.BeanEmpresa beanEmpresa;
+  java.lang.String clcnome;
+  javax.servlet.http.HttpSession $stack9;
+  java.lang.Object $stack10;
+  com.grupooc.radiogrfm.dao.ModelCliente $stack13;
+  java.lang.String $stack14;
+  int $stack15;
+  java.util.List $stack16;
+  java.lang.Exception $stack18;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ $stack9 = request.getSession();
+ $stack10 = $stack9.getAttribute("empresa");
+ beanEmpresa=(com.grupooc.radiogrfm.struts.bean.BeanEmpresa) $stack10;
+ label0:clcnome = request.getParameter("clcnome");
+ $stack13 = com.grupooc.radiogrfm.dao.ModelCliente.getInstance();
+ $stack14 = beanEmpresa.getEpncodg();
+ $stack15 = java.lang.Integer.parseInt($stack14);
+ $stack16 = $stack13.getClientesPorNomeDoc(clcnome,$stack15);
+ request.setAttribute("ls_cliente",(java.lang.Object)$stack16);
+ $stack9 = request.getSession();
+ $stack9.removeAttribute("formCliente");
+ fw.setPath("/clientePesquisa.do");
+ label1:goto label2;
+ label3:$stack18 = catch;
+ $stack18.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

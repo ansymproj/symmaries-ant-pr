@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpclogo(java.lang.String epclogo)
+{
+this.epclogo=epclogo;
+ return;
+ } 
+

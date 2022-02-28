@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpcrzsc(java.lang.String epcrzsc)
+{
+this.epcrzsc=epcrzsc;
+ return;
+ } 
+

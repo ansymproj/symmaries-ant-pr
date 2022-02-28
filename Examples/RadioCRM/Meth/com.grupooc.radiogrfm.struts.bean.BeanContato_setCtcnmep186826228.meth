@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContato:setCtcnmep(java.lang.String ctcnmep)
+{
+this.ctcnmep=ctcnmep;
+ return;
+ } 
+

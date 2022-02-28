@@ -1,0 +1,14 @@
+    public java.lang.String getCtdnasc()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContato this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContato;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String ctdnasc>;
+/*65*/
+
+        return $stack1;
+/*65*/
+    }
+

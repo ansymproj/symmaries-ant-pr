@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setCllativ (java.lang.String
+                                                                 cllativ) {
+  guard = tt;
+  ret(obj_level(cllativ)) = if ¬cllativ.~>this ∨ pc ⊔ level(cllativ) = ⊥ then obj_level(cllativ) else if cllativ.~>this ∧ pc ⊔ level(cllativ) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(cllativ) ⊔ obj_level(cllativ) ⊔ obj_level(this);
+  ret(cllativ.~>cllativ) = cllativ.~>cllativ ∨ cllativ.~>this;
+  ret(cllativ.~>this) = cllativ.~>this;
+  ret(this.~>cllativ) = tt;
+  ret(this.~>this) = cllativ.~>this ∨ this.~>this;
+}

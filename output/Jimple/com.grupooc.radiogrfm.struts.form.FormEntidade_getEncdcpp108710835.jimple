@@ -1,0 +1,14 @@
+    public java.lang.String getEncdcpp()
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encdcpp>;
+/*81*/
+
+        return $stack1;
+/*81*/
+    }
+

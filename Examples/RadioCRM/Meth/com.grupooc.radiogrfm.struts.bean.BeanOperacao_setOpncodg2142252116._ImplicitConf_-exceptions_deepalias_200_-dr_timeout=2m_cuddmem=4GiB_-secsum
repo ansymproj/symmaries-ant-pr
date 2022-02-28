@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanOperacao:setOpncodg (java.lang.String
+                                                                  opncodg) {
+  guard = tt;
+  ret(obj_level(opncodg)) = if ¬opncodg.~>this ∨ pc ⊔ level(opncodg) = ⊥ then obj_level(opncodg) else if opncodg.~>this ∧ pc ⊔ level(opncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(opncodg) ⊔ obj_level(opncodg) ⊔ obj_level(this);
+  ret(opncodg.~>opncodg) = opncodg.~>opncodg ∨ opncodg.~>this;
+  ret(opncodg.~>this) = opncodg.~>this;
+  ret(this.~>opncodg) = tt;
+  ret(this.~>this) = opncodg.~>this ∨ this.~>this;
+}

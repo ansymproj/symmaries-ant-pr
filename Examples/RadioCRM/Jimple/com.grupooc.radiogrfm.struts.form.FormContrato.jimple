@@ -1,0 +1,16 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.struts.form.FormContrato this;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContrato;
+
+        specialinvoke this.<org.apache.struts.action.ActionForm: void <init>()>();
+/*5*/
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContrato: java.lang.String crlliqu> = "T";
+/*27*/
+
+        return;
+/*27*/
+    }
+

@@ -1,0 +1,16 @@
+    public void setOpcdesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanOperacao this;
+        java.lang.String opcdesc;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanOperacao;
+
+        opcdesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanOperacao: java.lang.String opcdesc> = opcdesc;
+/*30*/
+
+        return;
+/*31*/
+    }
+

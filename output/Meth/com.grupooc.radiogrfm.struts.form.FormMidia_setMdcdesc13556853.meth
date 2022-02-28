@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormMidia:setMdcdesc(java.lang.String mdcdesc)
+{
+this.mdcdesc=mdcdesc;
+ return;
+ } 
+

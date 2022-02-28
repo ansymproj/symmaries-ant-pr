@@ -1,0 +1,14 @@
+    public java.lang.String getClncgtp()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clncgtp>;
+/*71*/
+
+        return $stack1;
+/*71*/
+    }
+

@@ -1,0 +1,14 @@
+    public java.lang.String getInnvlpg()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanInsercao;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String innvlpg>;
+/*54*/
+
+        return $stack1;
+/*54*/
+    }
+

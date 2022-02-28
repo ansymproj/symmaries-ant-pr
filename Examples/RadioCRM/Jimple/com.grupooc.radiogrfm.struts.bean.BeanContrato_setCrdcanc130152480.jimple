@@ -1,0 +1,16 @@
+    public void setCrdcanc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crdcanc;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crdcanc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crdcanc> = crdcanc;
+/*174*/
+
+        return;
+/*175*/
+    }
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncnome(java.lang.String encnome)
+{
+this.encnome=encnome;
+ return;
+ } 
+

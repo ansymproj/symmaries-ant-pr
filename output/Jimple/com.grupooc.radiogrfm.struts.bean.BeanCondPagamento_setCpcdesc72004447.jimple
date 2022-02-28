@@ -1,0 +1,16 @@
+    public void setCpcdesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCondPagamento this;
+        java.lang.String cpcdesc;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCondPagamento;
+
+        cpcdesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCondPagamento: java.lang.String cpcdesc> = cpcdesc;
+/*22*/
+
+        return;
+/*23*/
+    }
+

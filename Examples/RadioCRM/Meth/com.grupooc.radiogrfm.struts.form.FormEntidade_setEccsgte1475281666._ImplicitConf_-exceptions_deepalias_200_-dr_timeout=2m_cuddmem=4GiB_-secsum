@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEccsgte (java.lang.String
+                                                                  eccsgte) {
+  guard = tt;
+  ret(obj_level(eccsgte)) = if ¬eccsgte.~>this ∨ pc ⊔ level(eccsgte) = ⊥ then obj_level(eccsgte) else if eccsgte.~>this ∧ pc ⊔ level(eccsgte) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(eccsgte) ⊔ obj_level(eccsgte) ⊔ obj_level(this);
+  ret(eccsgte.~>eccsgte) = eccsgte.~>eccsgte ∨ eccsgte.~>this;
+  ret(eccsgte.~>this) = eccsgte.~>this;
+  ret(this.~>eccsgte) = tt;
+  ret(this.~>this) = eccsgte.~>this ∨ this.~>this;
+}

@@ -1,0 +1,13 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.struts.action.ActionMetaMes this;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionMetaMes;
+
+        specialinvoke this.<org.apache.struts.actions.DispatchAction: void <init>()>();
+/*22*/
+
+        return;
+/*22*/
+    }
+

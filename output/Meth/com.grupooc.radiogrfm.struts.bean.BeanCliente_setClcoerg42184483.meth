@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcoerg(java.lang.String clcoerg)
+{
+this.clcoerg=clcoerg;
+ return;
+ } 
+

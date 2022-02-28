@@ -1,0 +1,16 @@
+    public void setCrncoms(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContrato this;
+        java.lang.String crncoms;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContrato;
+
+        crncoms := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContrato: java.lang.String crncoms> = crncoms;
+/*180*/
+
+        return;
+/*181*/
+    }
+

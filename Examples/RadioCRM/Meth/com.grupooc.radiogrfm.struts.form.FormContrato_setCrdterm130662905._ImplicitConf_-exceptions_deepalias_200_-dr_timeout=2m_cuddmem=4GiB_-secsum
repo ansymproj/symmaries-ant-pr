@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrdterm (java.lang.String
+                                                                  crdterm) {
+  guard = tt;
+  ret(obj_level(crdterm)) = if ¬crdterm.~>this ∨ pc ⊔ level(crdterm) = ⊥ then obj_level(crdterm) else if crdterm.~>this ∧ pc ⊔ level(crdterm) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crdterm) ⊔ obj_level(crdterm) ⊔ obj_level(this);
+  ret(crdterm.~>crdterm) = crdterm.~>crdterm ∨ crdterm.~>this;
+  ret(crdterm.~>this) = crdterm.~>this;
+  ret(this.~>crdterm) = tt;
+  ret(this.~>this) = crdterm.~>this ∨ this.~>this;
+}

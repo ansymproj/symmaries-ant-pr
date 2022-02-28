@@ -1,0 +1,14 @@
+    public java.lang.String getLccnome()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanLocutor this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanLocutor;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanLocutor: java.lang.String lccnome>;
+/*19*/
+
+        return $stack1;
+/*19*/
+    }
+

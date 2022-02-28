@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanOperacao:setOpclink(java.lang.String opclink)
+{
+this.opclink=opclink;
+ return;
+ } 
+

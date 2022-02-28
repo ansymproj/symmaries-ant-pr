@@ -1,0 +1,14 @@
+    public java.lang.String getLcncodg()
+    {
+        com.grupooc.radiogrfm.struts.form.FormLocutor this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormLocutor;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormLocutor: java.lang.String lcncodg>;
+/*13*/
+
+        return $stack1;
+/*13*/
+    }
+

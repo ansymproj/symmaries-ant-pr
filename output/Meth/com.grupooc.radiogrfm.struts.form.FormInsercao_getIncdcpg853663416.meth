@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormInsercao:getIncdcpg()
+{
+java.lang.String $stack1;
+  $stack1=this.incdcpg;
+ return  $stack1;
+ } 
+

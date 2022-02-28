@@ -1,0 +1,14 @@
+    public java.lang.String getCpcdesc()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCondPagamento this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCondPagamento;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanCondPagamento: java.lang.String cpcdesc>;
+/*19*/
+
+        return $stack1;
+/*19*/
+    }
+

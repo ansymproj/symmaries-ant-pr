@@ -1,0 +1,16 @@
+    public void setHrcdcpg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormHorario this;
+        java.lang.String hrcdcpg;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormHorario;
+
+        hrcdcpg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormHorario: java.lang.String hrcdcpg> = hrcdcpg;
+/*33*/
+
+        return;
+/*34*/
+    }
+

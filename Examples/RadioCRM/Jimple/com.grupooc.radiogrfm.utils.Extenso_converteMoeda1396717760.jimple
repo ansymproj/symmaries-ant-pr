@@ -1,0 +1,125 @@
+    public static java.lang.String converteMoeda(java.lang.String)
+    {
+        java.lang.String valorFormatado, 'ret';
+        java.lang.String[] valores;
+        int $stack3;
+        java.lang.StringBuilder $stack7;
+        java.math.BigInteger $stack8;
+        java.lang.RuntimeException $stack27;
+
+        valorFormatado := @parameter0: java.lang.String;
+
+        'ret' = "";
+/*141*/
+
+        if valorFormatado != null goto label1;
+/*142*/
+
+        $stack27 = new java.lang.RuntimeException;
+/*143*/
+
+        specialinvoke $stack27.<java.lang.RuntimeException: void <init>(java.lang.String)>("Numero n\u00e3o pode ser negativo nem zero");
+/*143*/
+
+        throw $stack27;
+/*143*/
+
+     label1:
+        $stack3 = virtualinvoke valorFormatado.<java.lang.String: int length()>();
+/*145*/
+
+        if $stack3 < 1 goto label2;
+/*145*/
+
+        valorFormatado = virtualinvoke valorFormatado.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>(".", "");
+/*146*/
+
+        valorFormatado = virtualinvoke valorFormatado.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>(",", ".");
+/*146*/
+
+        valores = virtualinvoke valorFormatado.<java.lang.String: java.lang.String[] split(java.lang.String)>("[.]");
+/*146*/
+/*146*/
+
+        $stack7 = new java.lang.StringBuilder;
+/*148*/
+
+        specialinvoke $stack7.<java.lang.StringBuilder: void <init>()>();
+/*148*/
+
+        $stack8 = new java.math.BigInteger;
+/*148*/
+
+        valorFormatado = valores[0];
+/*148*/
+
+        specialinvoke $stack8.<java.math.BigInteger: void <init>(java.lang.String)>(valorFormatado);
+/*148*/
+
+        valorFormatado = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String converte(java.math.BigInteger)>($stack8);
+/*148*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(valorFormatado);
+/*148*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" reais ");
+/*148*/
+
+        'ret' = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.String toString()>();
+/*148*/
+/*148*/
+
+        $stack3 = lengthof valores;
+/*150*/
+
+        if $stack3 != 2 goto label2;
+/*150*/
+
+        valorFormatado = valores[1];
+/*155*/
+
+        $stack3 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(valorFormatado);
+/*155*/
+
+        if $stack3 <= 0 goto label2;
+/*155*/
+
+        $stack7 = new java.lang.StringBuilder;
+/*151*/
+
+        specialinvoke $stack7.<java.lang.StringBuilder: void <init>()>();
+/*151*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('ret');
+/*151*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("e ");
+/*151*/
+
+        $stack8 = new java.math.BigInteger;
+/*151*/
+
+        valorFormatado = valores[1];
+/*151*/
+
+        specialinvoke $stack8.<java.math.BigInteger: void <init>(java.lang.String)>(valorFormatado);
+/*151*/
+
+        valorFormatado = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String converte(java.math.BigInteger)>($stack8);
+/*151*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(valorFormatado);
+/*151*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" centavos");
+/*151*/
+
+        'ret' = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.String toString()>();
+/*151*/
+/*151*/
+
+     label2:
+        return 'ret';
+/*155*/
+    }
+

@@ -1,0 +1,40 @@
+void com.grupooc.radiogrfm.dao.ModelContato:update(com.grupooc.radiogrfm.struts.bean.BeanContato contato)
+{
+java.sql.PreparedStatement st;
+  java.sql.Connection $stack4;
+  java.lang.String $stack7;
+  java.sql.Date $stack14;
+  int $stack27;
+  java.lang.Exception $stack29;
+  label0:$stack4 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack4.prepareStatement(" UPDATE CONTATO SET CTCNOME = ?,CTCMATR = ?, CTCFUNC = ?, CTDNASC = ?,CTCSEXO = ?,CTCFONE = ?,CTCCELL = ?,CTCMAIL = ? WHERE CTNCODG = ?");
+ $stack7 = contato.getCtcnome();
+ st.setString(1,$stack7);
+ $stack7 = contato.getCtcmatr();
+ st.setString(2,$stack7);
+ $stack7 = contato.getCtcfunc();
+ st.setString(3,$stack7);
+ $stack7 = contato.getCtdnasc();
+ $stack14 = com.grupooc.radiogrfm.utils.Utils.stringToDateSQL($stack7);
+ st.setDate(4,$stack14);
+ $stack7 = contato.getCtcsexo();
+ st.setString(5,$stack7);
+ $stack7 = contato.getCtcfone();
+ $stack7 = com.grupooc.radiogrfm.utils.ValidaObjeto.removeCharOfInteger($stack7);
+ st.setString(6,$stack7);
+ $stack7 = contato.getCtccell();
+ $stack7 = com.grupooc.radiogrfm.utils.ValidaObjeto.removeCharOfInteger($stack7);
+ st.setString(7,$stack7);
+ $stack7 = contato.getCtcmail();
+ st.setString(8,$stack7);
+ $stack7 = contato.getCtncodg();
+ $stack27 = java.lang.Integer.parseInt($stack7);
+ st.setInt(9,$stack27);
+ st.executeUpdate();
+ label1:goto label2;
+ label3:$stack29 = catch;
+ $stack29.printStackTrace();
+ label2:return;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

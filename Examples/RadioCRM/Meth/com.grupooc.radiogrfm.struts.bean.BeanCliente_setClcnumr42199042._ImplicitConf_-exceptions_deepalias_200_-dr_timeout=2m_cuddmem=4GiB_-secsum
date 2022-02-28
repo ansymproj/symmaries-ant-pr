@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcnumr (java.lang.String
+                                                                 clcnumr) {
+  guard = tt;
+  ret(obj_level(clcnumr)) = if ¬clcnumr.~>this ∨ pc ⊔ level(clcnumr) = ⊥ then obj_level(clcnumr) else if clcnumr.~>this ∧ pc ⊔ level(clcnumr) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcnumr) ⊔ obj_level(clcnumr) ⊔ obj_level(this);
+  ret(clcnumr.~>clcnumr) = clcnumr.~>clcnumr ∨ clcnumr.~>this;
+  ret(clcnumr.~>this) = clcnumr.~>this;
+  ret(this.~>clcnumr) = tt;
+  ret(this.~>this) = clcnumr.~>this ∨ this.~>this;
+}

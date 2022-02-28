@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelTipoLogradouro com.grupooc.radiogrfm.dao.ModelTipoLogradouro:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelTipoLogradouro $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelTipoLogradouro;
+ $stack0#com.grupooc.radiogrfm.dao.ModelTipoLogradouro();
+ return  $stack0;
+ } 
+

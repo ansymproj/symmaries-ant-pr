@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContato:setCtcmail (java.lang.String
+                                                                 ctcmail) {
+  guard = tt;
+  ret(obj_level(ctcmail)) = if ¬ctcmail.~>this ∨ pc ⊔ level(ctcmail) = ⊥ then obj_level(ctcmail) else if ctcmail.~>this ∧ pc ⊔ level(ctcmail) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(ctcmail) ⊔ obj_level(ctcmail) ⊔ obj_level(this);
+  ret(ctcmail.~>ctcmail) = ctcmail.~>ctcmail ∨ ctcmail.~>this;
+  ret(ctcmail.~>this) = ctcmail.~>this;
+  ret(this.~>ctcmail) = tt;
+  ret(this.~>this) = ctcmail.~>this ∨ this.~>this;
+}

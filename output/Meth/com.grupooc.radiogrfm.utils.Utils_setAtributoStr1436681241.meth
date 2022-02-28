@@ -1,0 +1,26 @@
+static void com.grupooc.radiogrfm.utils.Utils:setAtributoStr(java.lang.Object object,java.lang.Class class1,java.lang.Class classAtributo,java.sql.ResultSet rs,java.lang.String atributo)
+{
+java.lang.String str;
+  java.lang.Exception $stack15;
+  str="";
+ label0:if (classAtributo==java.util.Date) goto label1;
+ if (classAtributo!=java.sql.Date) goto label2;
+ label1:str = com.grupooc.radiogrfm.utils.Utils.getDateToStrBR(rs,atributo);
+ goto label3;
+ label2:if (classAtributo!=java.sql.Timestamp) goto label4;
+ str = com.grupooc.radiogrfm.utils.Utils.getTimestampToStrBR(rs,atributo);
+ goto label3;
+ label4:if (classAtributo==java.lang.Float) goto label5;
+ if (classAtributo==java.lang.Double) goto label5;
+ if (classAtributo!=java.lang.Long) goto label6;
+ label5:str = com.grupooc.radiogrfm.utils.Utils.getObjectToStrBR(rs,atributo);
+ goto label3;
+ label6:str = rs.getString(atributo);
+ label3:goto label7;
+ label8:$stack15 = catch;
+ $stack15.printStackTrace();
+ label7:com.grupooc.radiogrfm.utils.Utils.setAtributo(object,class1,atributo,java.lang.String,(java.lang.Object)str);
+ return;
+ catch java.lang.Exception: label0 - label3 : label8;
+} 
+

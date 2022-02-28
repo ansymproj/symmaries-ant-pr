@@ -1,0 +1,27 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionAgencia:listaClientes(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  java.lang.String agncodg;
+  com.grupooc.radiogrfm.dao.ModelAgencia $stack11;
+  int $stack12;
+  java.lang.Integer $stack13;
+  java.util.List $stack14;
+  java.lang.Exception $stack20;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ agncodg = request.getParameter("agncodg");
+ label0:if (agncodg==null) goto label1;
+ $stack11 = com.grupooc.radiogrfm.dao.ModelAgencia.getInstance();
+ $stack12 = java.lang.Integer.parseInt(agncodg);
+ $stack13 = java.lang.Integer.valueOf($stack12);
+ $stack14 = $stack11.getClienteDaAgencia($stack13);
+ request.setAttribute("ls_cliente",(java.lang.Object)$stack14);
+ label1:request.setAttribute("agncodg",(java.lang.Object)agncodg);
+ fw.setPath("/pages/clienteAgencia.jsp");
+ label2:goto label3;
+ label4:$stack20 = catch;
+ $stack20.printStackTrace();
+ label3:return  fw;
+ catch java.lang.Exception: label0 - label2 : label4;
+} 
+

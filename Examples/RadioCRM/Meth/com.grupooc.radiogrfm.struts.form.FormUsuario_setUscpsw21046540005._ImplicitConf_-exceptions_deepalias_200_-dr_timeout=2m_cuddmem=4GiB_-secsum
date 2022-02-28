@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormUsuario:setUscpsw2 (java.lang.String
+                                                                 uscpsw2) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(uscpsw2) ⊔ obj_level(this) ⊔ obj_level(uscpsw2);
+  ret(obj_level(uscpsw2)) = if ¬uscpsw2.~>this ∨ pc ⊔ level(uscpsw2) = ⊥ then obj_level(uscpsw2) else if uscpsw2.~>this ∧ pc ⊔ level(uscpsw2) = ⊤ then ⊤ else ⊥;
+  ret(this.~>this) = this.~>this ∨ uscpsw2.~>this;
+  ret(this.~>uscpsw2) = tt;
+  ret(uscpsw2.~>this) = uscpsw2.~>this;
+  ret(uscpsw2.~>uscpsw2) = uscpsw2.~>this ∨ uscpsw2.~>uscpsw2;
+}

@@ -1,0 +1,16 @@
+    public void setLcncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanLocutor this;
+        java.lang.String lcncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanLocutor;
+
+        lcncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanLocutor: java.lang.String lcncodg> = lcncodg;
+/*16*/
+
+        return;
+/*17*/
+    }
+

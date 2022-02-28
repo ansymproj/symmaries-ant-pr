@@ -1,0 +1,10 @@
+static int com.grupooc.radiogrfm.utils.CPF:dvFatorX(java.lang.String s)
+{
+int $stack2;
+  $stack2 = s.length();
+ $stack2=($stack2+1);
+ $stack2 = com.grupooc.radiogrfm.utils.Utils.fator(s,2,$stack2);
+ $stack2 = com.grupooc.radiogrfm.utils.Utils.mod11($stack2);
+ return  $stack2;
+ } 
+

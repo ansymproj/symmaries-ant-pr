@@ -1,0 +1,16 @@
+    public void setAgcbair(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+        java.lang.String agcbair;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        agcbair := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agcbair> = agcbair;
+/*140*/
+
+        return;
+/*141*/
+    }
+

@@ -1,0 +1,16 @@
+    public void setUscnmep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormUsuario this;
+        java.lang.String uscnmep;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormUsuario;
+
+        uscnmep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormUsuario: java.lang.String uscnmep> = uscnmep;
+/*29*/
+
+        return;
+/*30*/
+    }
+

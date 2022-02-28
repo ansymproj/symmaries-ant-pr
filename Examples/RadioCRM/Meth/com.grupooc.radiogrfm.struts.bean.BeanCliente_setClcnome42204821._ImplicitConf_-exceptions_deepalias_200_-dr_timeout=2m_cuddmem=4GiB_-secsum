@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcnome (java.lang.String
+                                                                 clcnome) {
+  guard = tt;
+  ret(obj_level(clcnome)) = if ¬clcnome.~>this ∨ pc ⊔ level(clcnome) = ⊥ then obj_level(clcnome) else if clcnome.~>this ∧ pc ⊔ level(clcnome) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcnome) ⊔ obj_level(clcnome) ⊔ obj_level(this);
+  ret(clcnome.~>clcnome) = clcnome.~>clcnome ∨ clcnome.~>this;
+  ret(clcnome.~>this) = clcnome.~>this;
+  ret(this.~>clcnome) = tt;
+  ret(this.~>this) = clcnome.~>this ∨ this.~>this;
+}

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormUsuario:setUsncgep(java.lang.String usncgep)
+{
+this.usncgep=usncgep;
+ return;
+ } 
+

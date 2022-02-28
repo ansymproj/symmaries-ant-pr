@@ -1,0 +1,22 @@
+java.lang.String com.grupooc.radiogrfm.utils.FormataObj:formataValor(float valor)
+{
+java.lang.String ret;
+  java.text.DecimalFormat $stack4;
+  java.text.DecimalFormatSymbols $stack5;
+  double $stack6;
+  java.lang.Exception $stack9;
+  ret=null;
+ label0:$stack4=new java.text.DecimalFormat;
+ $stack5=this.formatSymbols;
+ $stack4#java.text.DecimalFormat("##,##0.00",$stack5);
+ this.formataNumero=$stack4;
+ $stack4=this.formataNumero;
+ $stack6=(double) valor;
+ ret = $stack4.format($stack6);
+ label1:goto label2;
+ label3:$stack9 = catch;
+ $stack9.printStackTrace();
+ label2:return  ret;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

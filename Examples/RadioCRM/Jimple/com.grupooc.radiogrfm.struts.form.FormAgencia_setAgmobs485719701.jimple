@@ -1,0 +1,16 @@
+    public void setAgmobs(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+        java.lang.String agmobs;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        agmobs := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agmobs> = agmobs;
+/*146*/
+
+        return;
+/*147*/
+    }
+

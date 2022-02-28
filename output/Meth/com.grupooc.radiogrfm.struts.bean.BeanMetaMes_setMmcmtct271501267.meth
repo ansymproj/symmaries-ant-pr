@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanMetaMes:setMmcmtct(java.lang.String mmcmtct)
+{
+this.mmcmtct=mmcmtct;
+ return;
+ } 
+

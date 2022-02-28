@@ -1,0 +1,16 @@
+    public void setCllativ(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormCliente this;
+        java.lang.String cllativ;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormCliente;
+
+        cllativ := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormCliente: java.lang.String cllativ> = cllativ;
+/*50*/
+
+        return;
+/*51*/
+    }
+

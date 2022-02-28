@@ -1,0 +1,17 @@
+    public static java.lang.String toCapitalize(java.lang.String)
+    {
+        java.lang.String str;
+        java.util.Locale $stack1;
+
+        str := @parameter0: java.lang.String;
+
+        $stack1 = staticinvoke <java.util.Locale: java.util.Locale getDefault()>();
+/*358*/
+
+        str = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String toCapitazile(java.lang.String,java.util.Locale)>(str, $stack1);
+/*358*/
+
+        return str;
+/*358*/
+    }
+

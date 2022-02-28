@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormAgencia:setAgccomp(java.lang.String agccomp)
+{
+this.agccomp=agccomp;
+ return;
+ } 
+

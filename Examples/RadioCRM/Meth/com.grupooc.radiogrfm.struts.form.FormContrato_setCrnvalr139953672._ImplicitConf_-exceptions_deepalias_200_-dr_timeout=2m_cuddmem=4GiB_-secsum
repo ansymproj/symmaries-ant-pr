@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrnvalr (java.lang.String
+                                                                  crnvalr) {
+  guard = tt;
+  ret(obj_level(crnvalr)) = if ¬crnvalr.~>this ∨ pc ⊔ level(crnvalr) = ⊥ then obj_level(crnvalr) else if crnvalr.~>this ∧ pc ⊔ level(crnvalr) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crnvalr) ⊔ obj_level(crnvalr) ⊔ obj_level(this);
+  ret(crnvalr.~>crnvalr) = crnvalr.~>crnvalr ∨ crnvalr.~>this;
+  ret(crnvalr.~>this) = crnvalr.~>this;
+  ret(this.~>crnvalr) = tt;
+  ret(this.~>this) = crnvalr.~>this ∨ this.~>this;
+}

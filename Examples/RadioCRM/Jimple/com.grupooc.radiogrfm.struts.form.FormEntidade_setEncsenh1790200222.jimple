@@ -1,0 +1,16 @@
+    public void setEncsenh(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encsenh;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encsenh := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encsenh> = encsenh;
+/*108*/
+
+        return;
+/*109*/
+    }
+

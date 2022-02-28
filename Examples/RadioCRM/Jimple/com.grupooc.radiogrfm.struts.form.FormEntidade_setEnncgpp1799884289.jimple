@@ -1,0 +1,16 @@
+    public void setEnncgpp(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String enncgpp;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        enncgpp := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String enncgpp> = enncgpp;
+/*78*/
+
+        return;
+/*79*/
+    }
+

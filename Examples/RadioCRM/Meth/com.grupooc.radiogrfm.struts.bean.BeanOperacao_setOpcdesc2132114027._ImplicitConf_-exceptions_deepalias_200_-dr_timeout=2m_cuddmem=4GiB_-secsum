@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanOperacao:setOpcdesc (java.lang.String
+                                                                  opcdesc) {
+  guard = tt;
+  ret(obj_level(opcdesc)) = if ¬opcdesc.~>this ∨ pc ⊔ level(opcdesc) = ⊥ then obj_level(opcdesc) else if opcdesc.~>this ∧ pc ⊔ level(opcdesc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(opcdesc) ⊔ obj_level(opcdesc) ⊔ obj_level(this);
+  ret(opcdesc.~>opcdesc) = opcdesc.~>opcdesc ∨ opcdesc.~>this;
+  ret(opcdesc.~>this) = opcdesc.~>this;
+  ret(this.~>opcdesc) = tt;
+  ret(this.~>this) = opcdesc.~>this ∨ this.~>this;
+}

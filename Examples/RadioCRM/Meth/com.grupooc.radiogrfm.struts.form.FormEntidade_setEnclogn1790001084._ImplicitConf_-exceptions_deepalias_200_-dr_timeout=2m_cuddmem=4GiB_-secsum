@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEnclogn (java.lang.String
+                                                                  enclogn) {
+  guard = tt;
+  ret(obj_level(enclogn)) = if ¬enclogn.~>this ∨ pc ⊔ level(enclogn) = ⊥ then obj_level(enclogn) else if enclogn.~>this ∧ pc ⊔ level(enclogn) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(enclogn) ⊔ obj_level(enclogn) ⊔ obj_level(this);
+  ret(enclogn.~>enclogn) = enclogn.~>enclogn ∨ enclogn.~>this;
+  ret(enclogn.~>this) = enclogn.~>this;
+  ret(this.~>enclogn) = tt;
+  ret(this.~>this) = enclogn.~>this ∨ this.~>this;
+}

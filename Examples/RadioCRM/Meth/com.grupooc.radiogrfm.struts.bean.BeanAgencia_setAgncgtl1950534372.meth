@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAgncgtl(java.lang.String agncgtl)
+{
+this.agncgtl=agncgtl;
+ return;
+ } 
+

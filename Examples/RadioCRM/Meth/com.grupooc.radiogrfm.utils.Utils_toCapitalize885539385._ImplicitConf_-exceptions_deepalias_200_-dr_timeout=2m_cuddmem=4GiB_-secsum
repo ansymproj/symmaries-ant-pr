@@ -1,0 +1,11 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:toCapitalize (
+  java.lang.String @str) {
+  guard = pc ⊔ level(@str) ⊔ obj_level(@str) = ⊥;
+  ret(level()) = ⊤;
+  ret(obj_level()) = ⊤;
+  ret(obj_level(@str)) = ⊤;
+  ret(~@str) = tt;
+  ret(.~>@str) = @str.~>@str;
+  ret(@str.~>) = @str.~>@str;
+  ret(@str.~>@str) = tt;
+}

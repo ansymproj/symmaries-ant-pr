@@ -1,0 +1,14 @@
+    public java.lang.String getCdcdesc()
+    {
+        com.grupooc.radiogrfm.dao.Entity.Cidade this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Cidade;
+
+        $stack1 = this.<com.grupooc.radiogrfm.dao.Entity.Cidade: java.lang.String cdcdesc>;
+/*26*/
+
+        return $stack1;
+/*26*/
+    }
+

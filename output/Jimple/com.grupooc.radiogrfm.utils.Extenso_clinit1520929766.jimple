@@ -1,0 +1,297 @@
+    static void <clinit>()
+    {
+        java.lang.String[] $stack0;
+        java.math.BigInteger $stack5;
+
+        <com.grupooc.radiogrfm.utils.Extenso: java.lang.String ZERO> = "zero";
+/*36*/
+
+        $stack0 = newarray (java.lang.String)[20];
+/*38*/
+
+        $stack0[0] = "";
+/*38*/
+
+        $stack0[1] = "um";
+/*38*/
+
+        $stack0[2] = "dois";
+/*38*/
+
+        $stack0[3] = "tr\u00eas";
+/*38*/
+
+        $stack0[4] = "quatro";
+/*38*/
+
+        $stack0[5] = "cinco";
+/*38*/
+
+        $stack0[6] = "seis";
+/*38*/
+
+        $stack0[7] = "sete";
+/*38*/
+
+        $stack0[8] = "oito";
+/*38*/
+
+        $stack0[9] = "nove";
+/*38*/
+
+        $stack0[10] = "dez";
+/*38*/
+
+        $stack0[11] = "onze";
+/*38*/
+
+        $stack0[12] = "doze";
+/*38*/
+
+        $stack0[13] = "treze";
+/*38*/
+
+        $stack0[14] = "quatorze";
+/*38*/
+
+        $stack0[15] = "quinze";
+/*38*/
+
+        $stack0[16] = "dezesseis";
+/*38*/
+
+        $stack0[17] = "dezessete";
+/*38*/
+
+        $stack0[18] = "dezoito";
+/*38*/
+
+        $stack0[19] = "dezenove";
+/*38*/
+
+        <com.grupooc.radiogrfm.utils.Extenso: java.lang.String[] unidades> = $stack0;
+/*38*/
+
+        $stack0 = newarray (java.lang.String)[11];
+/*43*/
+
+        $stack0[0] = "";
+/*43*/
+
+        $stack0[1] = "";
+/*43*/
+
+        $stack0[2] = "vinte";
+/*43*/
+
+        $stack0[3] = "trinta";
+/*43*/
+
+        $stack0[4] = "quarenta";
+/*43*/
+
+        $stack0[5] = "cinq\u00fcenta";
+/*43*/
+
+        $stack0[6] = "sessenta";
+/*43*/
+
+        $stack0[7] = "setenta";
+/*43*/
+
+        $stack0[8] = "oitenta";
+/*43*/
+
+        $stack0[9] = "noventa";
+/*43*/
+
+        $stack0[10] = "cem";
+/*43*/
+
+        <com.grupooc.radiogrfm.utils.Extenso: java.lang.String[] dezenas> = $stack0;
+/*43*/
+
+        $stack0 = newarray (java.lang.String)[10];
+/*47*/
+
+        $stack0[0] = "";
+/*47*/
+
+        $stack0[1] = "cento";
+/*47*/
+
+        $stack0[2] = "duzentos";
+/*47*/
+
+        $stack0[3] = "trezentos";
+/*47*/
+
+        $stack0[4] = "quatrocentos";
+/*47*/
+
+        $stack0[5] = "quinhentos";
+/*47*/
+
+        $stack0[6] = "seiscentos";
+/*47*/
+
+        $stack0[7] = "setecentos";
+/*47*/
+
+        $stack0[8] = "oitocentos";
+/*47*/
+
+        $stack0[9] = "novecentos";
+/*47*/
+
+        <com.grupooc.radiogrfm.utils.Extenso: java.lang.String[] centenas> = $stack0;
+/*47*/
+
+        <com.grupooc.radiogrfm.utils.Extenso: java.lang.String SEPARADOR_MENOR> = " e ";
+/*51*/
+
+        <com.grupooc.radiogrfm.utils.Extenso: java.lang.String SEPARADOR_MAIOR> = " , ";
+/*52*/
+
+        $stack0 = newarray (java.lang.String)[19];
+/*54*/
+
+        $stack0[0] = "";
+/*54*/
+
+        $stack0[1] = "mil";
+/*54*/
+
+        $stack0[2] = "milh\u00e3o";
+/*54*/
+
+        $stack0[3] = "bilh\u00e3o";
+/*54*/
+
+        $stack0[4] = "trilh\u00e3o";
+/*54*/
+
+        $stack0[5] = "quatrilh\u00e3o";
+/*54*/
+
+        $stack0[6] = "quintilh\u00e3o";
+/*54*/
+
+        $stack0[7] = "sextilh\u00e3o";
+/*54*/
+
+        $stack0[8] = "setilh\u00e3o";
+/*54*/
+
+        $stack0[9] = "octilh\u00e3o";
+/*54*/
+
+        $stack0[10] = "nonilh\u00e3o";
+/*54*/
+
+        $stack0[11] = "decilh\u00e3o";
+/*54*/
+
+        $stack0[12] = "undecilh\u00e3o";
+/*54*/
+
+        $stack0[13] = "dodecilh\u00e3o";
+/*54*/
+
+        $stack0[14] = "tredecilh\u00e3o";
+/*54*/
+
+        $stack0[15] = "quatordecilh\u00e3o";
+/*54*/
+
+        $stack0[16] = "quindecilh\u00e3o";
+/*54*/
+
+        $stack0[17] = "sedecilh\u00e3o";
+/*54*/
+
+        $stack0[18] = "septendecilh\u00e3o";
+/*54*/
+
+        <com.grupooc.radiogrfm.utils.Extenso: java.lang.String[] ordensSingular> = $stack0;
+/*54*/
+
+        $stack0 = newarray (java.lang.String)[18];
+/*59*/
+
+        $stack0[0] = "";
+/*59*/
+
+        $stack0[1] = "mil";
+/*59*/
+
+        $stack0[2] = "milh\u00f5es";
+/*59*/
+
+        $stack0[3] = "bilh\u00f5es";
+/*59*/
+
+        $stack0[4] = "trilh\u00f5es";
+/*59*/
+
+        $stack0[5] = "quatrilh\u00f5es";
+/*59*/
+
+        $stack0[6] = "quintilh\u00f5es";
+/*59*/
+
+        $stack0[7] = "sextilh\u00f5es";
+/*59*/
+
+        $stack0[8] = "setilh\u00f5es";
+/*59*/
+
+        $stack0[9] = "octilh\u00f5es";
+/*59*/
+
+        $stack0[10] = "decilh\u00f5es";
+/*59*/
+
+        $stack0[11] = "undecilh\u00f5es";
+/*59*/
+
+        $stack0[12] = "dodecilh\u00f5es";
+/*59*/
+
+        $stack0[13] = "tredecilh\u00f5es";
+/*59*/
+
+        $stack0[14] = "quatordecilh\u00f5es";
+/*59*/
+
+        $stack0[15] = "quindecilh\u00f5es";
+/*59*/
+
+        $stack0[16] = "sedecilh\u00f5es";
+/*59*/
+
+        $stack0[17] = "septendecilh\u00f5es";
+/*59*/
+
+        <com.grupooc.radiogrfm.utils.Extenso: java.lang.String[] ordensPlural> = $stack0;
+/*59*/
+
+        $stack5 = staticinvoke <java.math.BigInteger: java.math.BigInteger valueOf(long)>(1000L);
+/*64*/
+
+        <com.grupooc.radiogrfm.utils.Extenso: java.math.BigInteger CEM> = $stack5;
+/*64*/
+
+        $stack5 = new java.math.BigInteger;
+/*65*/
+
+        specialinvoke $stack5.<java.math.BigInteger: void <init>(java.lang.String)>("999999999999999999999999999999999999999999999999999999");
+/*65*/
+
+        <com.grupooc.radiogrfm.utils.Extenso: java.math.BigInteger NUMERO_MAXIMO> = $stack5;
+/*65*/
+
+        return;
+/*65*/
+    }
+

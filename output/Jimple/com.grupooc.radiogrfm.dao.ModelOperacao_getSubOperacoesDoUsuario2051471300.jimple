@@ -1,0 +1,60 @@
+    public java.util.ArrayList getSubOperacoesDoUsuario(int, int)
+    {
+        com.grupooc.radiogrfm.dao.ModelOperacao this;
+        int usncodg, opnpart;
+        java.util.ArrayList operacoes;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack7;
+        java.util.List $stack9;
+        java.lang.Exception $stack11;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelOperacao;
+
+        usncodg := @parameter0: int;
+
+        opnpart := @parameter1: int;
+
+        operacoes = new java.util.ArrayList;
+/*69*/
+
+        specialinvoke operacoes.<java.util.ArrayList: void <init>()>();
+/*69*/
+
+     label1:
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*72*/
+
+        st = interfaceinvoke $stack7.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("SELECT OPNCODG, OPNPART, OPCDESC, OPCHINT, OPCLINK FROM VW_OPERACAO_USUARIO WHERE OPNPART = ? AND USNCODG = ?");
+/*72*/
+/*72*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, opnpart);
+/*73*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(2, usncodg);
+/*74*/
+
+        $stack9 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.List getObjectsStr(java.sql.PreparedStatement,java.lang.Class)>(st, class "Lcom/grupooc/radiogrfm/struts/bean/BeanOperacao;");
+/*76*/
+
+        virtualinvoke operacoes.<java.util.ArrayList: boolean addAll(java.util.Collection)>($stack9);
+/*76*/
+
+     label2:
+        goto label4;
+/*80*/
+
+     label3:
+        $stack11 := @caughtexception;
+/*81*/
+
+        virtualinvoke $stack11.<java.lang.Exception: void printStackTrace()>();
+/*79*/
+
+     label4:
+        return operacoes;
+/*81*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

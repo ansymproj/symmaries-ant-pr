@@ -1,0 +1,14 @@
+    public java.lang.String getTpcdesc()
+    {
+        com.grupooc.radiogrfm.dao.Entity.TipoPessoa this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.TipoPessoa;
+
+        $stack1 = this.<com.grupooc.radiogrfm.dao.Entity.TipoPessoa: java.lang.String tpcdesc>;
+/*20*/
+
+        return $stack1;
+/*20*/
+    }
+

@@ -1,0 +1,31 @@
+    public static java.lang.String criptografaSenha(java.lang.String, java.lang.String)
+    {
+        java.lang.String login, senha;
+        java.lang.StringBuilder $stack2;
+
+        login := @parameter0: java.lang.String;
+
+        senha := @parameter1: java.lang.String;
+
+        $stack2 = new java.lang.StringBuilder;
+/*99*/
+
+        specialinvoke $stack2.<java.lang.StringBuilder: void <init>()>();
+/*99*/
+
+        $stack2 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(login);
+/*99*/
+
+        $stack2 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(senha);
+/*99*/
+
+        login = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.String toString()>();
+/*99*/
+
+        login = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String toStringCripto(java.lang.String)>(login);
+/*99*/
+
+        return login;
+/*99*/
+    }
+

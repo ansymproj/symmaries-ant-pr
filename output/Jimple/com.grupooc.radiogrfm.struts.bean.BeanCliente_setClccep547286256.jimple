@@ -1,0 +1,16 @@
+    public void setClccep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clccep;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clccep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clccep> = clccep;
+/*182*/
+
+        return;
+/*183*/
+    }
+

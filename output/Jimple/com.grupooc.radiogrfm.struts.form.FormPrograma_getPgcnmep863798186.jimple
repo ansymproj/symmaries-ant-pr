@@ -1,0 +1,14 @@
+    public java.lang.String getPgcnmep()
+    {
+        com.grupooc.radiogrfm.struts.form.FormPrograma this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormPrograma;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormPrograma: java.lang.String pgcnmep>;
+/*24*/
+
+        return $stack1;
+/*24*/
+    }
+

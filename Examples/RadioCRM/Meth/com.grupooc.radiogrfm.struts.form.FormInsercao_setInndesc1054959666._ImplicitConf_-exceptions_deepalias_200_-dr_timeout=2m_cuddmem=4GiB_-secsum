@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormInsercao:setInndesc (java.lang.String
+                                                                  inndesc) {
+  guard = tt;
+  ret(obj_level(inndesc)) = if ¬inndesc.~>this ∨ pc ⊔ level(inndesc) = ⊥ then obj_level(inndesc) else if inndesc.~>this ∧ pc ⊔ level(inndesc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(inndesc) ⊔ obj_level(inndesc) ⊔ obj_level(this);
+  ret(inndesc.~>inndesc) = inndesc.~>inndesc ∨ inndesc.~>this;
+  ret(inndesc.~>this) = inndesc.~>this;
+  ret(this.~>inndesc) = tt;
+  ret(this.~>this) = inndesc.~>this ∨ this.~>this;
+}

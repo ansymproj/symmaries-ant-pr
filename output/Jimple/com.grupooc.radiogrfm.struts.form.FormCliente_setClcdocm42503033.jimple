@@ -1,0 +1,16 @@
+    public void setClcdocm(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormCliente this;
+        java.lang.String clcdocm;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormCliente;
+
+        clcdocm := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormCliente: java.lang.String clcdocm> = clcdocm;
+/*104*/
+
+        return;
+/*105*/
+    }
+

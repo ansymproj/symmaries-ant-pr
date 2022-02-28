@@ -1,0 +1,5 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:getDataHoraAtual () {
+  guard = tt;
+  ret(level()) = pc;
+  ret(obj_level()) = pc;
+}

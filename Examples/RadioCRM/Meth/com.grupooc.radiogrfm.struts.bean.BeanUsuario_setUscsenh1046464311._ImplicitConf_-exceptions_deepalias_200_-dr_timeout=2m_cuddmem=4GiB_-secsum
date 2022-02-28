@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanUsuario:setUscsenh (java.lang.String
+                                                                 uscsenh) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(uscsenh) ⊔ obj_level(this) ⊔ obj_level(uscsenh);
+  ret(obj_level(uscsenh)) = if ¬uscsenh.~>this ∨ pc ⊔ level(uscsenh) = ⊥ then obj_level(uscsenh) else if uscsenh.~>this ∧ pc ⊔ level(uscsenh) = ⊤ then ⊤ else ⊥;
+  ret(this.~>this) = this.~>this ∨ uscsenh.~>this;
+  ret(this.~>uscsenh) = tt;
+  ret(uscsenh.~>this) = uscsenh.~>this;
+  ret(uscsenh.~>uscsenh) = uscsenh.~>this ∨ uscsenh.~>uscsenh;
+}

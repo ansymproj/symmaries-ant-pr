@@ -1,0 +1,16 @@
+    public void setEnncgec(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String enncgec;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        enncgec := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String enncgec> = enncgec;
+/*138*/
+
+        return;
+/*139*/
+    }
+

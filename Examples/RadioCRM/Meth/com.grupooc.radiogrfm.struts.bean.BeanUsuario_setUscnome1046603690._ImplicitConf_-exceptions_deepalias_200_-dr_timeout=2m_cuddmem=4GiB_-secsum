@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanUsuario:setUscnome (java.lang.String
+                                                                 uscnome) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(uscnome) ⊔ obj_level(this) ⊔ obj_level(uscnome);
+  ret(obj_level(uscnome)) = if ¬uscnome.~>this ∨ pc ⊔ level(uscnome) = ⊥ then obj_level(uscnome) else if uscnome.~>this ∧ pc ⊔ level(uscnome) = ⊤ then ⊤ else ⊥;
+  ret(this.~>this) = this.~>this ∨ uscnome.~>this;
+  ret(this.~>uscnome) = tt;
+  ret(uscnome.~>this) = uscnome.~>this;
+  ret(uscnome.~>uscnome) = uscnome.~>this ∨ uscnome.~>uscnome;
+}

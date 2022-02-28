@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcdocm (java.lang.String
+                                                                 clcdocm) {
+  guard = tt;
+  ret(obj_level(clcdocm)) = if ¬clcdocm.~>this ∨ pc ⊔ level(clcdocm) = ⊥ then obj_level(clcdocm) else if clcdocm.~>this ∧ pc ⊔ level(clcdocm) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcdocm) ⊔ obj_level(clcdocm) ⊔ obj_level(this);
+  ret(clcdocm.~>clcdocm) = clcdocm.~>clcdocm ∨ clcdocm.~>this;
+  ret(clcdocm.~>this) = clcdocm.~>this;
+  ret(this.~>clcdocm) = tt;
+  ret(this.~>this) = clcdocm.~>this ∨ this.~>this;
+}

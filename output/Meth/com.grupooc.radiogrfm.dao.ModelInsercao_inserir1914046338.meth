@@ -1,0 +1,35 @@
+void com.grupooc.radiogrfm.dao.ModelInsercao:inserir(com.grupooc.radiogrfm.struts.bean.BeanInsercao insercao)
+{
+java.sql.PreparedStatement st;
+  java.sql.Connection $stack4;
+  java.lang.String $stack7;
+  int $stack8;
+  java.sql.Date $stack14;
+  float $stack18;
+  java.lang.Exception $stack23;
+  label0:$stack4 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack4.prepareStatement(" INSERT INTO INSERCAO(INNCGCR,INNCGPG,INDDATA,INNDESC,INNQTD) VALUES(?,?,?,?,?)");
+ $stack7 = insercao.getInncgcr();
+ $stack8 = java.lang.Integer.parseInt($stack7);
+ st.setInt(1,$stack8);
+ $stack7 = insercao.getInncgpg();
+ $stack8 = java.lang.Integer.parseInt($stack7);
+ st.setInt(2,$stack8);
+ $stack7 = insercao.getInddata();
+ $stack14 = com.grupooc.radiogrfm.utils.Utils.stringToDateSQL($stack7);
+ st.setDate(3,$stack14);
+ $stack7 = insercao.getInndesc();
+ $stack7 = com.grupooc.radiogrfm.utils.Utils.converteFloatBR($stack7);
+ $stack18 = java.lang.Float.parseFloat($stack7);
+ st.setFloat(4,$stack18);
+ $stack7 = insercao.getInnqtd();
+ $stack8 = java.lang.Integer.parseInt($stack7);
+ st.setInt(5,$stack8);
+ st.executeUpdate();
+ label1:goto label2;
+ label3:$stack23 = catch;
+ $stack23.printStackTrace();
+ label2:return;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

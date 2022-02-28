@@ -1,0 +1,27 @@
+    public static int mod11(int)
+    {
+        int valor;
+
+        valor := @parameter0: int;
+
+        valor = valor % 11;
+/*258*/
+
+        if valor <= 1 goto label1;
+/*259*/
+
+        valor = 11 - valor;
+/*259*/
+
+        goto label2;
+/*259*/
+
+     label1:
+        valor = 0;
+/*259*/
+
+     label2:
+        return valor;
+/*259*/
+    }
+

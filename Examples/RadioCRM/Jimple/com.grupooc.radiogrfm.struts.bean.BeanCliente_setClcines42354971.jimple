@@ -1,0 +1,16 @@
+    public void setClcines(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clcines;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clcines := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clcines> = clcines;
+/*254*/
+
+        return;
+/*255*/
+    }
+

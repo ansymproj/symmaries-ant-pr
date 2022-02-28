@@ -1,0 +1,15 @@
+    public static java.lang.Object copyProperties(java.lang.Object, java.lang.Object) throws java.lang.Exception
+    {
+        java.lang.Object dest, orig;
+
+        dest := @parameter0: java.lang.Object;
+
+        orig := @parameter1: java.lang.Object;
+
+        staticinvoke <org.apache.commons.beanutils.BeanUtils: void copyProperties(java.lang.Object,java.lang.Object)>(dest, orig);
+/*136*/
+
+        return dest;
+/*137*/
+    }
+

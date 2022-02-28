@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanHorario:setHrhinic (java.lang.String
+                                                                 hrhinic) {
+  guard = tt;
+  ret(obj_level(hrhinic)) = if ¬hrhinic.~>this ∨ pc ⊔ level(hrhinic) = ⊥ then obj_level(hrhinic) else if hrhinic.~>this ∧ pc ⊔ level(hrhinic) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(hrhinic) ⊔ obj_level(hrhinic) ⊔ obj_level(this);
+  ret(hrhinic.~>hrhinic) = hrhinic.~>hrhinic ∨ hrhinic.~>this;
+  ret(hrhinic.~>this) = hrhinic.~>this;
+  ret(this.~>hrhinic) = tt;
+  ret(this.~>this) = hrhinic.~>this ∨ this.~>this;
+}

@@ -1,0 +1,37 @@
+boolean com.grupooc.radiogrfm.dao.ModelContrato:temCredito(int crncodg,float valor)
+{
+boolean ret;
+  java.sql.PreparedStatement st;
+  java.sql.ResultSet rs;
+  float valorContrato;
+  float valorContratado;
+  java.sql.Connection $stack9;
+  boolean $stack12;
+  byte $stack14;
+  java.lang.Exception $stack21;
+  ret=0;
+ label0:$stack9 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack9.prepareStatement("  SELECT   CRNVALR,   COALESCE(SUM(INNSOMA),0) INNSOMA FROM   CONTRATO LEFT JOIN VW_INSERCAO ON      INNCGCR = CRNCODG WHERE CRNCODG = ? GROUP BY CRNVALR");
+ st.setInt(1,crncodg);
+ rs = st.executeQuery();
+ valorContrato=0.0F;
+ valorContratado=0.0F;
+ $stack12 = rs.next();
+ if ($stack12==0) goto label1;
+ crncodg = rs.getInt("CRNVALR");
+ valorContrato=(float) crncodg;
+ valorContratado = rs.getFloat("INNSOMA");
+ label1:valorContrato=(valorContrato-valorContratado);
+ $stack14=(valorContrato cmpl valor);
+ if ($stack14<0) goto label2;
+ $stack12=1;
+ goto label3;
+ label2:$stack12=0;
+ label3:ret=$stack12;
+ label4:goto label5;
+ label6:$stack21 = catch;
+ $stack21.printStackTrace();
+ label5:return  ret;
+ catch java.lang.Exception: label0 - label4 : label6;
+} 
+

@@ -1,0 +1,91 @@
+    public static void setAtributoStr(java.lang.Object, java.lang.Class, java.lang.Class, java.sql.ResultSet, java.lang.String)
+    {
+        java.lang.Object object;
+        java.lang.Class class1, classAtributo;
+        java.sql.ResultSet rs;
+        java.lang.String atributo, str;
+        java.lang.Exception $stack15;
+
+        object := @parameter0: java.lang.Object;
+
+        class1 := @parameter1: java.lang.Class;
+
+        classAtributo := @parameter2: java.lang.Class;
+
+        rs := @parameter3: java.sql.ResultSet;
+
+        atributo := @parameter4: java.lang.String;
+
+        str = "";
+/*396*/
+
+     label1:
+        if classAtributo == class "Ljava/util/Date;" goto label2;
+/*398*/
+
+        if classAtributo != class "Ljava/sql/Date;" goto label3;
+/*415*/
+
+     label2:
+        str = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String getDateToStrBR(java.sql.ResultSet,java.lang.String)>(rs, atributo);
+/*399*/
+/*399*/
+
+        goto label7;
+/*399*/
+
+     label3:
+        if classAtributo != class "Ljava/sql/Timestamp;" goto label4;
+/*401*/
+
+        str = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String getTimestampToStrBR(java.sql.ResultSet,java.lang.String)>(rs, atributo);
+/*402*/
+/*402*/
+
+        goto label7;
+/*402*/
+
+     label4:
+        if classAtributo == class "Ljava/lang/Float;" goto label5;
+/*404*/
+
+        if classAtributo == class "Ljava/lang/Double;" goto label5;
+/*413*/
+
+        if classAtributo != class "Ljava/lang/Long;" goto label6;
+/*405*/
+
+     label5:
+        str = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String getObjectToStrBR(java.sql.ResultSet,java.lang.String)>(rs, atributo);
+/*405*/
+/*405*/
+
+        goto label7;
+/*405*/
+
+     label6:
+        str = interfaceinvoke rs.<java.sql.ResultSet: java.lang.String getString(java.lang.String)>(atributo);
+/*408*/
+/*408*/
+
+     label7:
+        goto label9;
+/*413*/
+
+     label8:
+        $stack15 := @caughtexception;
+/*399*/
+
+        virtualinvoke $stack15.<java.lang.Exception: void printStackTrace()>();
+/*412*/
+
+     label9:
+        staticinvoke <com.grupooc.radiogrfm.utils.Utils: void setAtributo(java.lang.Object,java.lang.Class,java.lang.String,java.lang.Class,java.lang.Object)>(object, class1, atributo, class "Ljava/lang/String;", str);
+/*414*/
+
+        return;
+/*415*/
+
+        catch java.lang.Exception from label1 to label7 with label8;
+    }
+

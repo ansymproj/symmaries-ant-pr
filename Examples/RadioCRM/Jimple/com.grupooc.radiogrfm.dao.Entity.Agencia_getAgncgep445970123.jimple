@@ -1,0 +1,14 @@
+    public java.lang.String getAgncgep()
+    {
+        com.grupooc.radiogrfm.dao.Entity.Agencia this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Agencia;
+
+        $stack1 = this.<com.grupooc.radiogrfm.dao.Entity.Agencia: java.lang.String agncgep>;
+/*34*/
+
+        return $stack1;
+/*34*/
+    }
+

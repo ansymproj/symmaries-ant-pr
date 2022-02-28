@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormCliente:getClncodg()
+{
+java.lang.String $stack1;
+  $stack1=this.clncodg;
+ return  $stack1;
+ } 
+

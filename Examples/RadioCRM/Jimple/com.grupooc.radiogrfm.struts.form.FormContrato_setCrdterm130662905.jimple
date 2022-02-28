@@ -1,0 +1,16 @@
+    public void setCrdterm(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContrato this;
+        java.lang.String crdterm;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContrato;
+
+        crdterm := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContrato: java.lang.String crdterm> = crdterm;
+/*126*/
+
+        return;
+/*127*/
+    }
+

@@ -1,0 +1,23 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionCliente:mostraDados(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  java.lang.String clncodg;
+  com.grupooc.radiogrfm.dao.ModelCliente $stack10;
+  int $stack11;
+  com.grupooc.radiogrfm.struts.bean.BeanCliente $stack12;
+  java.lang.Exception $stack13;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ label0:clncodg = request.getParameter("clncodg");
+ $stack10 = com.grupooc.radiogrfm.dao.ModelCliente.getInstance();
+ $stack11 = java.lang.Integer.parseInt(clncodg);
+ $stack12 = $stack10.getCliente($stack11);
+ request.setAttribute("cliente",(java.lang.Object)$stack12);
+ fw.setPath("/clienteDados.do");
+ label1:goto label2;
+ label3:$stack13 = catch;
+ $stack13.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

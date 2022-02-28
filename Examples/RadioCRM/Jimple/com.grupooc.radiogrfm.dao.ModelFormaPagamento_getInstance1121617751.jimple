@@ -1,0 +1,14 @@
+    public static com.grupooc.radiogrfm.dao.ModelFormaPagamento getInstance()
+    {
+        com.grupooc.radiogrfm.dao.ModelFormaPagamento $stack0;
+
+        $stack0 = new com.grupooc.radiogrfm.dao.ModelFormaPagamento;
+/*13*/
+
+        specialinvoke $stack0.<com.grupooc.radiogrfm.dao.ModelFormaPagamento: void <init>()>();
+/*13*/
+
+        return $stack0;
+/*13*/
+    }
+

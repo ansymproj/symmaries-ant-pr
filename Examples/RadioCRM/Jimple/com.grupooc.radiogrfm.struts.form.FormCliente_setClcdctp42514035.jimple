@@ -1,0 +1,16 @@
+    public void setClcdctp(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormCliente this;
+        java.lang.String clcdctp;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormCliente;
+
+        clcdctp := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormCliente: java.lang.String clcdctp> = clcdctp;
+/*80*/
+
+        return;
+/*81*/
+    }
+

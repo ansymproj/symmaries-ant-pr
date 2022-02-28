@@ -1,0 +1,14 @@
+    public java.lang.String getCrncoms()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crncoms>;
+/*177*/
+
+        return $stack1;
+/*177*/
+    }
+

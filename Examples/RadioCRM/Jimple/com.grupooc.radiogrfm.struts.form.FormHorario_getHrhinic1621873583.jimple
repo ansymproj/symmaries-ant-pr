@@ -1,0 +1,14 @@
+    public java.lang.String getHrhinic()
+    {
+        com.grupooc.radiogrfm.struts.form.FormHorario this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormHorario;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormHorario: java.lang.String hrhinic>;
+/*48*/
+
+        return $stack1;
+/*48*/
+    }
+

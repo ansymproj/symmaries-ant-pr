@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrycoms (java.lang.String
+                                                                  crycoms) {
+  guard = tt;
+  ret(obj_level(crycoms)) = if ¬crycoms.~>this ∨ pc ⊔ level(crycoms) = ⊥ then obj_level(crycoms) else if crycoms.~>this ∧ pc ⊔ level(crycoms) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crycoms) ⊔ obj_level(crycoms) ⊔ obj_level(this);
+  ret(crycoms.~>crycoms) = crycoms.~>crycoms ∨ crycoms.~>this;
+  ret(crycoms.~>this) = crycoms.~>this;
+  ret(this.~>crycoms) = tt;
+  ret(this.~>this) = crycoms.~>this ∨ this.~>this;
+}

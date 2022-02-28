@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormInsercao:setInncgpg(java.lang.String inncgpg)
+{
+this.inncgpg=inncgpg;
+ return;
+ } 
+

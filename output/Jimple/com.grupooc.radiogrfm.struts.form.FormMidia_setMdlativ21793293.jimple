@@ -1,0 +1,16 @@
+    public void setMdlativ(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormMidia this;
+        java.lang.String mdlativ;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormMidia;
+
+        mdlativ := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormMidia: java.lang.String mdlativ> = mdlativ;
+/*31*/
+
+        return;
+/*32*/
+    }
+

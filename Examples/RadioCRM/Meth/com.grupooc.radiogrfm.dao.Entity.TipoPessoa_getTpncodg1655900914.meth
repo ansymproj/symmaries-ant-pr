@@ -1,0 +1,7 @@
+java.lang.Integer com.grupooc.radiogrfm.dao.Entity.TipoPessoa:getTpncodg()
+{
+java.lang.Integer $stack1;
+  $stack1=this.tpncodg;
+ return  $stack1;
+ } 
+

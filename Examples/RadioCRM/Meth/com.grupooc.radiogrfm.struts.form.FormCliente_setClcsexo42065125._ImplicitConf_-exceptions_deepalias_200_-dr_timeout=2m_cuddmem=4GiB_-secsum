@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClcsexo (java.lang.String
+                                                                 clcsexo) {
+  guard = tt;
+  ret(obj_level(clcsexo)) = if ¬clcsexo.~>this ∨ pc ⊔ level(clcsexo) = ⊥ then obj_level(clcsexo) else if clcsexo.~>this ∧ pc ⊔ level(clcsexo) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcsexo) ⊔ obj_level(clcsexo) ⊔ obj_level(this);
+  ret(clcsexo.~>clcsexo) = clcsexo.~>clcsexo ∨ clcsexo.~>this;
+  ret(clcsexo.~>this) = clcsexo.~>this;
+  ret(this.~>clcsexo) = tt;
+  ret(this.~>this) = clcsexo.~>this ∨ this.~>this;
+}

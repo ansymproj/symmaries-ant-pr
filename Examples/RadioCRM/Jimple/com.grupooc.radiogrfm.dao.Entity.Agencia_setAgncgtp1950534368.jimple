@@ -1,0 +1,16 @@
+    public void setAgncgtp(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.Entity.Agencia this;
+        java.lang.String agncgtp;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Agencia;
+
+        agncgtp := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.Agencia: java.lang.String agncgtp> = agncgtp;
+/*157*/
+
+        return;
+/*158*/
+    }
+

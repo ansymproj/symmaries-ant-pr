@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContato:setCtncgep(java.lang.String ctncgep)
+{
+this.ctncgep=ctncgep;
+ return;
+ } 
+

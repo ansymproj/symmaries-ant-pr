@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.Cidade:setCdcuf(java.lang.String cdcuf)
+{
+this.cdcuf=cdcuf;
+ return;
+ } 
+

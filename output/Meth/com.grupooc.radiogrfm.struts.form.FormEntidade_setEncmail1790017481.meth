@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncmail(java.lang.String encmail)
+{
+this.encmail=encmail;
+ return;
+ } 
+

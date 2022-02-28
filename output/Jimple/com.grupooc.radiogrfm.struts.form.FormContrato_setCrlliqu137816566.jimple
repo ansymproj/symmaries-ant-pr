@@ -1,0 +1,16 @@
+    public void setCrlliqu(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContrato this;
+        java.lang.String crlliqu;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContrato;
+
+        crlliqu := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContrato: java.lang.String crlliqu> = crlliqu;
+/*186*/
+
+        return;
+/*187*/
+    }
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrndesc(java.lang.String crndesc)
+{
+this.crndesc=crndesc;
+ return;
+ } 
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAgccnpj(java.lang.String agccnpj)
+{
+this.agccnpj=agccnpj;
+ return;
+ } 
+

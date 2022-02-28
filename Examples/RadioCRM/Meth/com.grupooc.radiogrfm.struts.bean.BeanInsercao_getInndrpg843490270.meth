@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanInsercao:getInndrpg()
+{
+java.lang.String $stack1;
+  $stack1=this.inndrpg;
+ return  $stack1;
+ } 
+

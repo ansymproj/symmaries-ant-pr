@@ -1,0 +1,13 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.dao.ModelMidia this;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelMidia;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+/*10*/
+
+        return;
+/*10*/
+    }
+

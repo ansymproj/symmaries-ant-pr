@@ -1,0 +1,14 @@
+    public java.lang.String getUscnmep()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanUsuario this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanUsuario;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanUsuario: java.lang.String uscnmep>;
+/*24*/
+
+        return $stack1;
+/*24*/
+    }
+

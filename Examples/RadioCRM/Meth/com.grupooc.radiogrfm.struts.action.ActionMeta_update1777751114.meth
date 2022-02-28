@@ -1,0 +1,50 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionMeta:update(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  com.grupooc.radiogrfm.struts.form.FormMeta formHorario;
+  org.apache.struts.action.ActionMessages erros;
+  com.grupooc.radiogrfm.struts.bean.BeanMeta meta;
+  java.lang.String $stack11;
+  boolean $stack12;
+  com.grupooc.radiogrfm.dao.ModelMeta $stack15;
+  java.lang.StringBuilder $stack16;
+  javax.servlet.http.HttpSession $stack21;
+  org.apache.struts.action.ActionMessage $stack23;
+  java.lang.Exception $stack26;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ formHorario=(com.grupooc.radiogrfm.struts.form.FormMeta) form;
+ erros=new org.apache.struts.action.ActionMessages;
+ erros#org.apache.struts.action.ActionMessages();
+ $stack11 = formHorario.getMtnano();
+ $stack12 = com.grupooc.radiogrfm.utils.ValidaObjeto.validaInteiro($stack11);
+ if ($stack12!=0) goto label0;
+ $stack23=new org.apache.struts.action.ActionMessage;
+ $stack23#org.apache.struts.action.ActionMessage("errors.default",(java.lang.Object)"Ano informado \u00e9 inv\u00e1lido.");
+ erros.add("org.apache.struts.action.GLOBAL_MESSAGE",$stack23);
+ label0:$stack12 = erros.isEmpty();
+ if ($stack12!=0) goto label1;
+ fw.setPath("/metaEditar.do");
+ this.saveErrors(request,erros);
+ goto label2;
+ label1:meta=new com.grupooc.radiogrfm.struts.bean.BeanMeta;
+ meta#com.grupooc.radiogrfm.struts.bean.BeanMeta();
+ org.apache.commons.beanutils.BeanUtils.copyProperties((java.lang.Object)meta,(java.lang.Object)formHorario);
+ $stack15 = com.grupooc.radiogrfm.dao.ModelMeta.getInstance();
+ $stack15.update(meta);
+ $stack16=new java.lang.StringBuilder;
+ $stack16#java.lang.StringBuilder();
+ $stack16 = $stack16.append("/actionMeta.do?m=lista&ctncodg=");
+ $stack11 = meta.getMtncgct();
+ $stack16 = $stack16.append($stack11);
+ $stack11 = $stack16.toString();
+ fw.setPath($stack11);
+ $stack21 = request.getSession();
+ $stack21.removeAttribute("formMeta");
+ label3:goto label2;
+ label4:$stack26 = catch;
+ $stack26.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label1 - label3 : label4;
+} 
+

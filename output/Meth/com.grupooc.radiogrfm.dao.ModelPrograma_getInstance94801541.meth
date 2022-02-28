@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelPrograma com.grupooc.radiogrfm.dao.ModelPrograma:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelPrograma $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelPrograma;
+ $stack0#com.grupooc.radiogrfm.dao.ModelPrograma();
+ return  $stack0;
+ } 
+

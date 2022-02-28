@@ -1,0 +1,16 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.struts.form.FormContato this;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContato;
+
+        specialinvoke this.<org.apache.struts.action.ActionForm: void <init>()>();
+/*5*/
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String ctcsexo> = "M";
+/*14*/
+
+        return;
+/*14*/
+    }
+

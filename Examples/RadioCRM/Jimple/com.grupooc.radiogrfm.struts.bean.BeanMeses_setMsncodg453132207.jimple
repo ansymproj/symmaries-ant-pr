@@ -1,0 +1,16 @@
+    public void setMsncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMeses this;
+        java.lang.String msncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMeses;
+
+        msncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanMeses: java.lang.String msncodg> = msncodg;
+/*16*/
+
+        return;
+/*17*/
+    }
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrmtext(java.lang.String crmtext)
+{
+this.crmtext=crmtext;
+ return;
+ } 
+

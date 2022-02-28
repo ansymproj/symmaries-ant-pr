@@ -1,0 +1,16 @@
+    public void setTpncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanTipoPessoa this;
+        java.lang.String tpncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanTipoPessoa;
+
+        tpncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanTipoPessoa: java.lang.String tpncodg> = tpncodg;
+/*17*/
+
+        return;
+/*18*/
+    }
+

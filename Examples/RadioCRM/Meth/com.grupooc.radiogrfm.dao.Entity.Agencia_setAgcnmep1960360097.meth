@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAgcnmep(java.lang.String agcnmep)
+{
+this.agcnmep=agcnmep;
+ return;
+ } 
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncufcd(java.lang.String encufcd)
+{
+this.encufcd=encufcd;
+ return;
+ } 
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEnccep(java.lang.String enccep)
+{
+this.enccep=enccep;
+ return;
+ } 
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormInsercao:setInndura(java.lang.String inndura)
+{
+this.inndura=inndura;
+ return;
+ } 
+

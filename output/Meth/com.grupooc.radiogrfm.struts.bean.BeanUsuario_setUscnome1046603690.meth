@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanUsuario:setUscnome(java.lang.String uscnome)
+{
+this.uscnome=uscnome;
+ return;
+ } 
+

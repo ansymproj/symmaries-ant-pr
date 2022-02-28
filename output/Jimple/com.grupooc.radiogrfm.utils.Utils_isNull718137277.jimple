@@ -1,0 +1,36 @@
+    public static java.lang.String isNull(java.lang.String, java.lang.String, java.lang.String)
+    {
+        java.lang.String s, s2, s3;
+        boolean $stack3;
+
+        s := @parameter0: java.lang.String;
+
+        s2 := @parameter1: java.lang.String;
+
+        s3 := @parameter2: java.lang.String;
+
+        if s == null goto label1;
+/*443*/
+
+        $stack3 = virtualinvoke s.<java.lang.String: boolean equals(java.lang.Object)>("");
+/*443*/
+
+        if $stack3 == 0 goto label2;
+/*443*/
+
+     label1:
+        s = s2;
+/*443*/
+
+        goto label3;
+/*443*/
+
+     label2:
+        s = s3;
+/*443*/
+
+     label3:
+        return s;
+/*443*/
+    }
+

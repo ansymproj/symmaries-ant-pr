@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContato:setCtcnome (java.lang.String
+                                                                 ctcnome) {
+  guard = tt;
+  ret(obj_level(ctcnome)) = if ¬ctcnome.~>this ∨ pc ⊔ level(ctcnome) = ⊥ then obj_level(ctcnome) else if ctcnome.~>this ∧ pc ⊔ level(ctcnome) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(ctcnome) ⊔ obj_level(ctcnome) ⊔ obj_level(this);
+  ret(ctcnome.~>ctcnome) = ctcnome.~>ctcnome ∨ ctcnome.~>this;
+  ret(ctcnome.~>this) = ctcnome.~>this;
+  ret(this.~>ctcnome) = tt;
+  ret(this.~>this) = ctcnome.~>this ∨ this.~>this;
+}

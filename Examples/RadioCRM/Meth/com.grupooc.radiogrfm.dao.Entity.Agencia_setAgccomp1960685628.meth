@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAgccomp(java.lang.String agccomp)
+{
+this.agccomp=agccomp;
+ return;
+ } 
+

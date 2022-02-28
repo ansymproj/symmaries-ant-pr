@@ -1,0 +1,7 @@
+static boolean com.grupooc.radiogrfm.utils.ValidaObjeto:validaFloat (
+  java.lang.String floatValue) {
+  guard = tt;
+  ret(level()) = pc;
+  ret(obj_level(floatValue)) = obj_level(floatValue);
+  ret(floatValue.~>floatValue) = floatValue.~>floatValue;
+}

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcmail (java.lang.String
+                                                                 clcmail) {
+  guard = tt;
+  ret(obj_level(clcmail)) = if ¬clcmail.~>this ∨ pc ⊔ level(clcmail) = ⊥ then obj_level(clcmail) else if clcmail.~>this ∧ pc ⊔ level(clcmail) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcmail) ⊔ obj_level(clcmail) ⊔ obj_level(this);
+  ret(clcmail.~>clcmail) = clcmail.~>clcmail ∨ clcmail.~>this;
+  ret(clcmail.~>this) = clcmail.~>this;
+  ret(this.~>clcmail) = tt;
+  ret(this.~>this) = clcmail.~>this ∨ this.~>this;
+}

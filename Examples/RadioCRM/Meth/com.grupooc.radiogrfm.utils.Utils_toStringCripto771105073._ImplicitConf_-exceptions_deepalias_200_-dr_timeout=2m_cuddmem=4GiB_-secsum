@@ -1,0 +1,11 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:toStringCripto (
+  java.lang.String arg) {
+  guard = tt;
+  ret(level()) = pc;
+  ret(obj_level()) = pc;
+  ret(obj_level(arg)) = obj_level(arg);
+  ret(~arg) = ff;
+  ret(.~>arg) = ff;
+  ret(arg.~>) = ff;
+  ret(arg.~>arg) = arg.~>arg;
+}

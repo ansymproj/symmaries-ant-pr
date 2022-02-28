@@ -1,0 +1,55 @@
+    public java.util.ArrayList getContatos(int)
+    {
+        com.grupooc.radiogrfm.dao.ModelContato this;
+        int epncodg;
+        java.util.ArrayList contatos;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack6;
+        java.util.List $stack8;
+        java.lang.Exception $stack10;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelContato;
+
+        epncodg := @parameter0: int;
+
+        contatos = new java.util.ArrayList;
+/*18*/
+
+        specialinvoke contatos.<java.util.ArrayList: void <init>()>();
+/*18*/
+
+     label1:
+        $stack6 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*21*/
+
+        st = interfaceinvoke $stack6.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" SELECT * FROM VW_CONTATO WHERE CTNCGEP = ?");
+/*21*/
+/*21*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, epncodg);
+/*22*/
+
+        $stack8 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.List getObjectsStr(java.sql.PreparedStatement,java.lang.Class)>(st, class "Lcom/grupooc/radiogrfm/struts/bean/BeanContato;");
+/*24*/
+
+        virtualinvoke contatos.<java.util.ArrayList: boolean addAll(java.util.Collection)>($stack8);
+/*24*/
+
+     label2:
+        goto label4;
+/*28*/
+
+     label3:
+        $stack10 := @caughtexception;
+/*29*/
+
+        virtualinvoke $stack10.<java.lang.Exception: void printStackTrace()>();
+/*27*/
+
+     label4:
+        return contatos;
+/*29*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

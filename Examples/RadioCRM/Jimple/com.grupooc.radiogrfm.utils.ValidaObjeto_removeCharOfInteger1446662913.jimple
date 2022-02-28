@@ -1,0 +1,39 @@
+    public static java.lang.String removeCharOfInteger(java.lang.String)
+    {
+        java.lang.String str, 'ret';
+
+        str := @parameter0: java.lang.String;
+
+        'ret' = "";
+/*69*/
+
+        if str == null goto label1;
+/*70*/
+
+        str = virtualinvoke str.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("/", "");
+/*71*/
+
+        str = virtualinvoke str.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("-", "");
+/*71*/
+
+        str = virtualinvoke str.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("(", "");
+/*71*/
+
+        str = virtualinvoke str.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>(")", "");
+/*71*/
+
+        str = virtualinvoke str.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("_", "");
+/*71*/
+
+        str = virtualinvoke str.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>(".", "");
+/*71*/
+
+        'ret' = virtualinvoke str.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>(",", "");
+/*71*/
+/*71*/
+
+     label1:
+        return 'ret';
+/*73*/
+    }
+

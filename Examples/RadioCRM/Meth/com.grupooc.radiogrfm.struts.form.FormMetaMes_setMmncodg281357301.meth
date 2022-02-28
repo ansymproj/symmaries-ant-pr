@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormMetaMes:setMmncodg(java.lang.String mmncodg)
+{
+this.mmncodg=mmncodg;
+ return;
+ } 
+

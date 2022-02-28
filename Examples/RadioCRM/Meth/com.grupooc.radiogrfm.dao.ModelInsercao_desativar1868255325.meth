@@ -1,0 +1,16 @@
+void com.grupooc.radiogrfm.dao.ModelInsercao:desativar(int inncodg)
+{
+java.sql.PreparedStatement st;
+  java.sql.Connection $stack4;
+  java.lang.Exception $stack7;
+  label0:$stack4 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack4.prepareStatement(" UPDATE INSERCAO SET INLATIV = \'F\' WHERE INNCODG = ? AND INLATIV = \'T\'");
+ st.setInt(1,inncodg);
+ st.executeUpdate();
+ label1:goto label2;
+ label3:$stack7 = catch;
+ $stack7.printStackTrace();
+ label2:return;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

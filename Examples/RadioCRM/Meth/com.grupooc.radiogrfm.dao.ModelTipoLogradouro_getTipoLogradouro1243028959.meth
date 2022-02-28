@@ -1,0 +1,25 @@
+com.grupooc.radiogrfm.struts.bean.BeanTipoLogradouro com.grupooc.radiogrfm.dao.ModelTipoLogradouro:getTipoLogradouro(int tlncodg)
+{
+com.grupooc.radiogrfm.struts.bean.BeanTipoLogradouro logradouro;
+  java.sql.PreparedStatement st;
+  java.util.List l;
+  java.sql.Connection $stack6;
+  boolean $stack9;
+  java.lang.Object $stack10;
+  java.lang.Exception $stack11;
+  logradouro=null;
+ label0:$stack6 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack6.prepareStatement("SELECT TLNCODG, TLCDESC FROM VW_TIPOLOGRADOURO WHERE TLNCODG = ?");
+ st.setInt(1,tlncodg);
+ l = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanTipoLogradouro);
+ $stack9 = l.isEmpty();
+ if ($stack9!=0) goto label1;
+ $stack10 = l.get(0);
+ logradouro=(com.grupooc.radiogrfm.struts.bean.BeanTipoLogradouro) $stack10;
+ label1:goto label2;
+ label3:$stack11 = catch;
+ $stack11.printStackTrace();
+ label2:return  logradouro;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

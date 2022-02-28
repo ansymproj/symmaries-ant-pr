@@ -1,0 +1,26 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:blobToStr(java.sql.Blob blob)
+{
+java.lang.StringBuilder ret;
+  java.io.InputStream in;
+  byte[] b;
+  int $stack8;
+  java.lang.String $stack9;
+  java.lang.Exception $stack15;
+  ret=new java.lang.StringBuilder;
+ ret#java.lang.StringBuilder();
+ label0:in = blob.getBinaryStream();
+ b=new byte[2048];
+ label1:$stack8 = in.read(b);
+ if ($stack8==-1) goto label2;
+ $stack9=new java.lang.String;
+ $stack9#java.lang.String(b,0,$stack8);
+ ret.append($stack9);
+ goto label1;
+ label2:goto label3;
+ label4:$stack15 = catch;
+ $stack15.printStackTrace();
+ label3:$stack9 = ret.toString();
+ return  $stack9;
+ catch java.lang.Exception: label0 - label2 : label4;
+} 
+

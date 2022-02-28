@@ -1,0 +1,99 @@
+    public static java.util.List getObjectsStr(java.sql.PreparedStatement, java.lang.Class)
+    {
+        java.sql.PreparedStatement st;
+        java.lang.Class class0, $stack20;
+        java.util.ArrayList lista;
+        java.sql.ResultSetMetaData metaData;
+        java.sql.ResultSet rs;
+        int colls, i;
+        java.lang.Object object;
+        java.lang.String className, atributo;
+        boolean $stack14;
+        java.lang.Exception $stack23;
+
+        st := @parameter0: java.sql.PreparedStatement;
+
+        class0 := @parameter1: java.lang.Class;
+
+        lista = new java.util.ArrayList;
+/*418*/
+
+        specialinvoke lista.<java.util.ArrayList: void <init>()>();
+/*418*/
+
+     label1:
+        metaData = interfaceinvoke st.<java.sql.PreparedStatement: java.sql.ResultSetMetaData getMetaData()>();
+/*420*/
+/*420*/
+
+        rs = interfaceinvoke st.<java.sql.PreparedStatement: java.sql.ResultSet executeQuery()>();
+/*421*/
+/*421*/
+
+        colls = interfaceinvoke metaData.<java.sql.ResultSetMetaData: int getColumnCount()>();
+/*422*/
+/*422*/
+
+     label2:
+        $stack14 = interfaceinvoke rs.<java.sql.ResultSet: boolean next()>();
+/*423*/
+
+        if $stack14 == 0 goto label5;
+/*423*/
+
+        object = virtualinvoke class0.<java.lang.Class: java.lang.Object newInstance()>();
+/*424*/
+/*424*/
+
+        i = 1;
+/*425*/
+
+     label3:
+        if i > colls goto label4;
+/*425*/
+
+        className = interfaceinvoke metaData.<java.sql.ResultSetMetaData: java.lang.String getColumnClassName(int)>(i);
+/*426*/
+/*426*/
+
+        atributo = interfaceinvoke metaData.<java.sql.ResultSetMetaData: java.lang.String getColumnName(int)>(i);
+/*427*/
+/*427*/
+
+        $stack20 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(className);
+/*428*/
+
+        staticinvoke <com.grupooc.radiogrfm.utils.Utils: void setAtributoStr(java.lang.Object,java.lang.Class,java.lang.Class,java.sql.ResultSet,java.lang.String)>(object, class0, $stack20, rs, atributo);
+/*428*/
+
+        i = i + 1;
+/*425*/
+
+        goto label3;
+/*425*/
+
+     label4:
+        interfaceinvoke lista.<java.util.List: boolean add(java.lang.Object)>(object);
+/*430*/
+
+        goto label2;
+/*431*/
+
+     label5:
+        goto label7;
+/*434*/
+
+     label6:
+        $stack23 := @caughtexception;
+/*425*/
+
+        virtualinvoke $stack23.<java.lang.Exception: void printStackTrace()>();
+/*433*/
+
+     label7:
+        return lista;
+/*435*/
+
+        catch java.lang.Exception from label1 to label5 with label6;
+    }
+

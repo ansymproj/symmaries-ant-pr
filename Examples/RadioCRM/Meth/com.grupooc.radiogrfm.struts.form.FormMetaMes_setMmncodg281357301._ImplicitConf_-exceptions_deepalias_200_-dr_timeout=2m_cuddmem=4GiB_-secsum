@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormMetaMes:setMmncodg (java.lang.String
+                                                                 mmncodg) {
+  guard = tt;
+  ret(obj_level(mmncodg)) = if ¬mmncodg.~>this ∨ pc ⊔ level(mmncodg) = ⊥ then obj_level(mmncodg) else if mmncodg.~>this ∧ pc ⊔ level(mmncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(mmncodg) ⊔ obj_level(mmncodg) ⊔ obj_level(this);
+  ret(mmncodg.~>mmncodg) = mmncodg.~>mmncodg ∨ mmncodg.~>this;
+  ret(mmncodg.~>this) = mmncodg.~>this;
+  ret(this.~>mmncodg) = tt;
+  ret(this.~>this) = mmncodg.~>this ∨ this.~>this;
+}

@@ -1,0 +1,14 @@
+    public java.lang.String getAccnmag()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato: java.lang.String accnmag>;
+/*40*/
+
+        return $stack1;
+/*40*/
+    }
+

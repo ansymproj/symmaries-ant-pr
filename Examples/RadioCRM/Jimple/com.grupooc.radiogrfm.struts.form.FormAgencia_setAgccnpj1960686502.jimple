@@ -1,0 +1,16 @@
+    public void setAgccnpj(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+        java.lang.String agccnpj;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        agccnpj := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agccnpj> = agccnpj;
+/*62*/
+
+        return;
+/*63*/
+    }
+

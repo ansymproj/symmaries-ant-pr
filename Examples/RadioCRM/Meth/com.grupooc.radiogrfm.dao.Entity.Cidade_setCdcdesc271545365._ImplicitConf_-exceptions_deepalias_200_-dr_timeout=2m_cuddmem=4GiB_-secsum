@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.dao.Entity.Cidade:setCdcdesc (java.lang.String
+                                                           cdcdesc) {
+  guard = tt;
+  ret(obj_level(cdcdesc)) = if ¬cdcdesc.~>this ∨ pc ⊔ level(cdcdesc) = ⊥ then obj_level(cdcdesc) else if cdcdesc.~>this ∧ pc ⊔ level(cdcdesc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(cdcdesc) ⊔ obj_level(cdcdesc) ⊔ obj_level(this);
+  ret(cdcdesc.~>cdcdesc) = cdcdesc.~>cdcdesc ∨ cdcdesc.~>this;
+  ret(cdcdesc.~>this) = cdcdesc.~>this;
+  ret(this.~>cdcdesc) = tt;
+  ret(this.~>this) = cdcdesc.~>this ∨ this.~>this;
+}

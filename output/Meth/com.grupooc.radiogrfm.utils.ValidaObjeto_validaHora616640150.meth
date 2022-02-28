@@ -1,0 +1,17 @@
+static boolean com.grupooc.radiogrfm.utils.ValidaObjeto:validaHora(java.lang.String hora)
+{
+boolean ret;
+  java.lang.Exception e;
+  java.sql.Time $stack3;
+  ret=0;
+ label0:if (hora==null) goto label1;
+ $stack3 = java.sql.Time.valueOf(hora);
+ if ($stack3==null) goto label1;
+ ret=1;
+ label1:goto label2;
+ label3:e = catch;
+ ret=0;
+ label2:return  ret;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

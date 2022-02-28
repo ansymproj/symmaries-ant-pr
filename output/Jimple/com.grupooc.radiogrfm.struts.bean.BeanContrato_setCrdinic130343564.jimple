@@ -1,0 +1,16 @@
+    public void setCrdinic(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crdinic;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crdinic := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crdinic> = crdinic;
+/*120*/
+
+        return;
+/*121*/
+    }
+

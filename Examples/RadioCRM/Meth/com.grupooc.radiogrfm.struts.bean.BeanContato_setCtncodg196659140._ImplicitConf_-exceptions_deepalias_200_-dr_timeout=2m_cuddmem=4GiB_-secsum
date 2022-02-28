@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContato:setCtncodg (java.lang.String
+                                                                 ctncodg) {
+  guard = tt;
+  ret(obj_level(ctncodg)) = if ¬ctncodg.~>this ∨ pc ⊔ level(ctncodg) = ⊥ then obj_level(ctncodg) else if ctncodg.~>this ∧ pc ⊔ level(ctncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(ctncodg) ⊔ obj_level(ctncodg) ⊔ obj_level(this);
+  ret(ctncodg.~>ctncodg) = ctncodg.~>ctncodg ∨ ctncodg.~>this;
+  ret(ctncodg.~>this) = ctncodg.~>this;
+  ret(this.~>ctncodg) = tt;
+  ret(this.~>this) = ctncodg.~>this ∨ this.~>this;
+}

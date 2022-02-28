@@ -1,0 +1,10 @@
+static java.util.Date com.grupooc.radiogrfm.utils.Utils:stringToTimeSQL (
+  java.lang.String datastr) {
+  guard = tt;
+  ret(level()) = pc ⊔ level(datastr) ⊔ obj_level(datastr);
+  ret(obj_level()) = pc ⊔ level(datastr) ⊔ obj_level(datastr);
+  ret(obj_level(datastr)) = obj_level(datastr);
+  ret(.~>datastr) = ff;
+  ret(datastr.~>) = ff;
+  ret(datastr.~>datastr) = datastr.~>datastr;
+}

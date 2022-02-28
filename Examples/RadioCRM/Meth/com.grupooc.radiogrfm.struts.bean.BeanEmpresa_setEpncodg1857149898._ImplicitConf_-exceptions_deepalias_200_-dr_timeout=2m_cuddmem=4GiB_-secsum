@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpncodg (java.lang.String
+                                                                 epncodg) {
+  guard = tt;
+  ret(obj_level(epncodg)) = if ¬epncodg.~>this ∨ pc ⊔ level(epncodg) = ⊥ then obj_level(epncodg) else if epncodg.~>this ∧ pc ⊔ level(epncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(epncodg) ⊔ obj_level(epncodg) ⊔ obj_level(this);
+  ret(epncodg.~>epncodg) = epncodg.~>epncodg ∨ epncodg.~>this;
+  ret(epncodg.~>this) = epncodg.~>this;
+  ret(this.~>epncodg) = tt;
+  ret(this.~>this) = epncodg.~>this ∨ this.~>this;
+}

@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelTipoPessoa com.grupooc.radiogrfm.dao.ModelTipoPessoa:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelTipoPessoa $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelTipoPessoa;
+ $stack0#com.grupooc.radiogrfm.dao.ModelTipoPessoa();
+ return  $stack0;
+ } 
+

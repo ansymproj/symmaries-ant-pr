@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContato:setCtncodg(java.lang.String ctncodg)
+{
+this.ctncodg=ctncodg;
+ return;
+ } 
+

@@ -1,0 +1,16 @@
+    public void setCryperm(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String cryperm;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        cryperm := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String cryperm> = cryperm;
+/*234*/
+
+        return;
+/*235*/
+    }
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncmae (java.lang.String
+                                                                 encmae) {
+  guard = tt;
+  ret(obj_level(encmae)) = if ¬encmae.~>this ∨ pc ⊔ level(encmae) = ⊥ then obj_level(encmae) else if encmae.~>this ∧ pc ⊔ level(encmae) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(encmae) ⊔ obj_level(encmae) ⊔ obj_level(this);
+  ret(encmae.~>encmae) = encmae.~>encmae ∨ encmae.~>this;
+  ret(encmae.~>this) = encmae.~>this;
+  ret(this.~>encmae) = tt;
+  ret(this.~>this) = encmae.~>this ∨ this.~>this;
+}

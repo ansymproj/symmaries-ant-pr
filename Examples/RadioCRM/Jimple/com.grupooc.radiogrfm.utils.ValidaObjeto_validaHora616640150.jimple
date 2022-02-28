@@ -1,0 +1,43 @@
+    public static boolean validaHora(java.lang.String) throws java.lang.IllegalArgumentException
+    {
+        java.lang.String hora;
+        boolean 'ret';
+        java.lang.Exception e;
+        java.sql.Time $stack3;
+
+        hora := @parameter0: java.lang.String;
+
+        'ret' = 0;
+/*47*/
+
+     label1:
+        if hora == null goto label2;
+/*49*/
+
+        $stack3 = staticinvoke <java.sql.Time: java.sql.Time valueOf(java.lang.String)>(hora);
+/*50*/
+
+        if $stack3 == null goto label2;
+/*50*/
+
+        'ret' = 1;
+/*51*/
+
+     label2:
+        goto label4;
+/*56*/
+
+     label3:
+        e := @caughtexception;
+/*56*/
+
+        'ret' = 0;
+/*55*/
+
+     label4:
+        return 'ret';
+/*57*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

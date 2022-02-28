@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrnperm(java.lang.String crnperm)
+{
+this.crnperm=crnperm;
+ return;
+ } 
+

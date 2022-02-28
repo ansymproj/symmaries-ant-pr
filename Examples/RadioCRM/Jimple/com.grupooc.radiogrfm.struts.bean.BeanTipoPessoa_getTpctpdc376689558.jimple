@@ -1,0 +1,14 @@
+    public java.lang.String getTpctpdc()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanTipoPessoa this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanTipoPessoa;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanTipoPessoa: java.lang.String tpctpdc>;
+/*26*/
+
+        return $stack1;
+/*26*/
+    }
+

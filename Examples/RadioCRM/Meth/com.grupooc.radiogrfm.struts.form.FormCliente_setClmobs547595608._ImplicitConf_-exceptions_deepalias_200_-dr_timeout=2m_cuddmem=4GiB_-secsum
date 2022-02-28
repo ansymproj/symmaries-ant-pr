@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClmobs (java.lang.String
+                                                                clmobs) {
+  guard = tt;
+  ret(obj_level(clmobs)) = if ¬clmobs.~>this ∨ pc ⊔ level(clmobs) = ⊥ then obj_level(clmobs) else if clmobs.~>this ∧ pc ⊔ level(clmobs) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clmobs) ⊔ obj_level(clmobs) ⊔ obj_level(this);
+  ret(clmobs.~>clmobs) = clmobs.~>clmobs ∨ clmobs.~>this;
+  ret(clmobs.~>this) = clmobs.~>this;
+  ret(this.~>clmobs) = tt;
+  ret(this.~>this) = clmobs.~>this ∨ this.~>this;
+}

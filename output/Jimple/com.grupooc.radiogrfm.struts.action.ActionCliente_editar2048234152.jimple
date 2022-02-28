@@ -1,0 +1,146 @@
+    public org.apache.struts.action.ActionForward editar(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionCliente this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        com.grupooc.radiogrfm.struts.form.FormCliente formCliente;
+        com.grupooc.radiogrfm.struts.bean.BeanEmpresa beanEmpresa;
+        java.lang.String clncodg;
+        com.grupooc.radiogrfm.struts.bean.BeanCliente cliente;
+        javax.servlet.http.HttpSession $stack11;
+        java.lang.Object $stack12;
+        com.grupooc.radiogrfm.dao.ModelCliente $stack14;
+        int $stack15;
+        com.grupooc.radiogrfm.dao.ModelTipoLogradouro $stack19;
+        java.util.ArrayList $stack20;
+        com.grupooc.radiogrfm.dao.ModelContato $stack23;
+        com.grupooc.radiogrfm.dao.ModelCidade $stack29;
+        java.lang.Exception $stack36;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionCliente;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*155*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*155*/
+
+        formCliente = (com.grupooc.radiogrfm.struts.form.FormCliente) form;
+/*156*/
+
+        $stack11 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*157*/
+
+        $stack12 = interfaceinvoke $stack11.<javax.servlet.http.HttpSession: java.lang.Object getAttribute(java.lang.String)>("empresa");
+/*157*/
+
+        beanEmpresa = (com.grupooc.radiogrfm.struts.bean.BeanEmpresa) $stack12;
+/*157*/
+
+     label1:
+        clncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("clncodg");
+/*160*/
+/*160*/
+
+        $stack14 = staticinvoke <com.grupooc.radiogrfm.dao.ModelCliente: com.grupooc.radiogrfm.dao.ModelCliente getInstance()>();
+/*162*/
+
+        $stack15 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(clncodg);
+/*162*/
+
+        cliente = virtualinvoke $stack14.<com.grupooc.radiogrfm.dao.ModelCliente: com.grupooc.radiogrfm.struts.bean.BeanCliente getCliente(int)>($stack15);
+/*162*/
+/*162*/
+
+        $stack11 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*164*/
+
+        $stack19 = staticinvoke <com.grupooc.radiogrfm.dao.ModelTipoLogradouro: com.grupooc.radiogrfm.dao.ModelTipoLogradouro getInstance()>();
+/*164*/
+
+        $stack20 = virtualinvoke $stack19.<com.grupooc.radiogrfm.dao.ModelTipoLogradouro: java.util.ArrayList getTiposLogradouro()>();
+/*164*/
+
+        interfaceinvoke $stack11.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_tipologradouro", $stack20);
+/*164*/
+
+        $stack11 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*165*/
+
+        $stack23 = staticinvoke <com.grupooc.radiogrfm.dao.ModelContato: com.grupooc.radiogrfm.dao.ModelContato getInstance()>();
+/*165*/
+
+        clncodg = virtualinvoke beanEmpresa.<com.grupooc.radiogrfm.struts.bean.BeanEmpresa: java.lang.String getEpncodg()>();
+/*165*/
+
+        $stack15 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(clncodg);
+/*165*/
+
+        $stack20 = virtualinvoke $stack23.<com.grupooc.radiogrfm.dao.ModelContato: java.util.ArrayList getContatos(int)>($stack15);
+/*165*/
+
+        interfaceinvoke $stack11.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_contato", $stack20);
+/*165*/
+
+        $stack11 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*166*/
+
+        $stack29 = staticinvoke <com.grupooc.radiogrfm.dao.ModelCidade: com.grupooc.radiogrfm.dao.ModelCidade getInstance()>();
+/*166*/
+
+        $stack20 = virtualinvoke $stack29.<com.grupooc.radiogrfm.dao.ModelCidade: java.util.ArrayList getEstados()>();
+/*166*/
+
+        interfaceinvoke $stack11.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_estado", $stack20);
+/*166*/
+
+        $stack11 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*167*/
+
+        $stack29 = staticinvoke <com.grupooc.radiogrfm.dao.ModelCidade: com.grupooc.radiogrfm.dao.ModelCidade getInstance()>();
+/*167*/
+
+        clncodg = virtualinvoke cliente.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String getClcufcd()>();
+/*167*/
+
+        $stack20 = virtualinvoke $stack29.<com.grupooc.radiogrfm.dao.ModelCidade: java.util.ArrayList getCidadesDoEstado(java.lang.String)>(clncodg);
+/*167*/
+
+        interfaceinvoke $stack11.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_cidade", $stack20);
+/*167*/
+
+        staticinvoke <org.apache.commons.beanutils.BeanUtils: void copyProperties(java.lang.Object,java.lang.Object)>(formCliente, cliente);
+/*169*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/clienteEditar.do");
+/*171*/
+
+     label2:
+        goto label4;
+/*175*/
+
+     label3:
+        $stack36 := @caughtexception;
+/*177*/
+
+        virtualinvoke $stack36.<java.lang.Exception: void printStackTrace()>();
+/*174*/
+
+     label4:
+        return fw;
+/*177*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

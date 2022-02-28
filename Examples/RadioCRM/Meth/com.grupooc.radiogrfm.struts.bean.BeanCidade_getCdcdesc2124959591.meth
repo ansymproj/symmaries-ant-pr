@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanCidade:getCdcdesc()
+{
+java.lang.String $stack1;
+  $stack1=this.cdcdesc;
+ return  $stack1;
+ } 
+

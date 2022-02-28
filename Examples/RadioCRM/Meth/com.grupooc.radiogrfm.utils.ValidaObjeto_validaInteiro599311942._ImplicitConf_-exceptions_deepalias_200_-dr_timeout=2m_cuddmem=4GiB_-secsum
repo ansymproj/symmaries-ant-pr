@@ -1,0 +1,7 @@
+static boolean com.grupooc.radiogrfm.utils.ValidaObjeto:validaInteiro (
+  java.lang.String numero) {
+  guard = tt;
+  ret(level()) = pc;
+  ret(obj_level(numero)) = obj_level(numero);
+  ret(numero.~>numero) = numero.~>numero;
+}

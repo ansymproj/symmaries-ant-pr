@@ -1,0 +1,14 @@
+    public java.lang.String getEnccep()
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String enccep>;
+/*213*/
+
+        return $stack1;
+/*213*/
+    }
+

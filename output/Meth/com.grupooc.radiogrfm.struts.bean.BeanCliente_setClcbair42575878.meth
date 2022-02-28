@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcbair(java.lang.String clcbair)
+{
+this.clcbair=clcbair;
+ return;
+ } 
+

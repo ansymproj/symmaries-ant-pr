@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEmpresa:setEpcfone (java.lang.String
+                                                                 epcfone) {
+  guard = tt;
+  ret(obj_level(epcfone)) = if ¬epcfone.~>this ∨ pc ⊔ level(epcfone) = ⊥ then obj_level(epcfone) else if epcfone.~>this ∧ pc ⊔ level(epcfone) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(epcfone) ⊔ obj_level(epcfone) ⊔ obj_level(this);
+  ret(epcfone.~>epcfone) = epcfone.~>epcfone ∨ epcfone.~>this;
+  ret(epcfone.~>this) = epcfone.~>this;
+  ret(this.~>epcfone) = tt;
+  ret(this.~>this) = epcfone.~>this ∨ this.~>this;
+}

@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormLogin:getLogin()
+{
+java.lang.String $stack1;
+  $stack1=this.login;
+ return  $stack1;
+ } 
+

@@ -1,0 +1,29 @@
+static java.lang.String com.grupooc.radiogrfm.utils.CPF:gerar()
+{
+java.lang.String s;
+  int i;
+  java.lang.StringBuilder $stack2;
+  double $stack9;
+  int $stack11;
+  s="";
+ i=0;
+ label0:if (i>=9) goto label1;
+ $stack2=new java.lang.StringBuilder;
+ $stack2#java.lang.StringBuilder();
+ $stack2 = $stack2.append(s);
+ $stack9 = java.lang.Math.random();
+ $stack9=($stack9 * 10.0);
+ $stack11=(int) $stack9;
+ $stack2 = $stack2.append($stack11);
+ s = $stack2.toString();
+ i=(i+1);
+ goto label0;
+ label1:$stack2=new java.lang.StringBuilder;
+ $stack2#java.lang.StringBuilder();
+ $stack2 = $stack2.append(s);
+ s = com.grupooc.radiogrfm.utils.CPF.dv(s);
+ $stack2 = $stack2.append(s);
+ s = $stack2.toString();
+ return  s;
+ } 
+

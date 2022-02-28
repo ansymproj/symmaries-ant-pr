@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrmtext (java.lang.String
+                                                                  crmtext) {
+  guard = tt;
+  ret(obj_level(crmtext)) = if ¬crmtext.~>this ∨ pc ⊔ level(crmtext) = ⊥ then obj_level(crmtext) else if crmtext.~>this ∧ pc ⊔ level(crmtext) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crmtext) ⊔ obj_level(crmtext) ⊔ obj_level(this);
+  ret(crmtext.~>crmtext) = crmtext.~>crmtext ∨ crmtext.~>this;
+  ret(crmtext.~>this) = crmtext.~>this;
+  ret(this.~>crmtext) = tt;
+  ret(this.~>this) = crmtext.~>this ∨ this.~>this;
+}

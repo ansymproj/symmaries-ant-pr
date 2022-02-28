@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato:setAcncgct (
+  java.lang.String acncgct) {
+  guard = tt;
+  ret(obj_level(acncgct)) = if ¬acncgct.~>this ∨ pc ⊔ level(acncgct) = ⊥ then obj_level(acncgct) else if acncgct.~>this ∧ pc ⊔ level(acncgct) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(acncgct) ⊔ obj_level(acncgct) ⊔ obj_level(this);
+  ret(acncgct.~>acncgct) = acncgct.~>acncgct ∨ acncgct.~>this;
+  ret(acncgct.~>this) = acncgct.~>this;
+  ret(this.~>acncgct) = tt;
+  ret(this.~>this) = acncgct.~>this ∨ this.~>this;
+}

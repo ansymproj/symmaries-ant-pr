@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanTipoLogradouro:setTlncodg(java.lang.String tlncodg)
+{
+this.tlncodg=tlncodg;
+ return;
+ } 
+

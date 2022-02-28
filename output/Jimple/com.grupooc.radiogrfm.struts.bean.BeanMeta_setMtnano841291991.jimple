@@ -1,0 +1,16 @@
+    public void setMtnano(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMeta this;
+        java.lang.String mtnano;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMeta;
+
+        mtnano := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanMeta: java.lang.String mtnano> = mtnano;
+/*36*/
+
+        return;
+/*37*/
+    }
+

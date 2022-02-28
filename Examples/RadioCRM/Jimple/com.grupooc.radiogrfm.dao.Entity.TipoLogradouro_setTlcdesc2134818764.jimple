@@ -1,0 +1,16 @@
+    public void setTlcdesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.Entity.TipoLogradouro this;
+        java.lang.String tlcdesc;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.TipoLogradouro;
+
+        tlcdesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.TipoLogradouro: java.lang.String tlcdesc> = tlcdesc;
+/*22*/
+
+        return;
+/*23*/
+    }
+

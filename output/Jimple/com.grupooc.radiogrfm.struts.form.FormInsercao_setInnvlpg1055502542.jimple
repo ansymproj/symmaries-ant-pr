@@ -1,0 +1,16 @@
+    public void setInnvlpg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormInsercao this;
+        java.lang.String innvlpg;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormInsercao;
+
+        innvlpg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormInsercao: java.lang.String innvlpg> = innvlpg;
+/*58*/
+
+        return;
+/*59*/
+    }
+

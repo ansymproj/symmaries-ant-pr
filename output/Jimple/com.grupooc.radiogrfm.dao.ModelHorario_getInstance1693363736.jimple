@@ -1,0 +1,14 @@
+    public static com.grupooc.radiogrfm.dao.ModelHorario getInstance()
+    {
+        com.grupooc.radiogrfm.dao.ModelHorario $stack0;
+
+        $stack0 = new com.grupooc.radiogrfm.dao.ModelHorario;
+/*14*/
+
+        specialinvoke $stack0.<com.grupooc.radiogrfm.dao.ModelHorario: void <init>()>();
+/*14*/
+
+        return $stack0;
+/*14*/
+    }
+

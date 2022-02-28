@@ -1,0 +1,16 @@
+    public void setMdcnmep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMidia this;
+        java.lang.String mdcnmep;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMidia;
+
+        mdcnmep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanMidia: java.lang.String mdcnmep> = mdcnmep;
+/*25*/
+
+        return;
+/*26*/
+    }
+

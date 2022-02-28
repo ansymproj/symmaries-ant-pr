@@ -1,0 +1,14 @@
+    public java.lang.Integer getCdncodg()
+    {
+        com.grupooc.radiogrfm.dao.Entity.Cidade this;
+        java.lang.Integer $stack1;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Cidade;
+
+        $stack1 = this.<com.grupooc.radiogrfm.dao.Entity.Cidade: java.lang.Integer cdncodg>;
+/*14*/
+
+        return $stack1;
+/*14*/
+    }
+

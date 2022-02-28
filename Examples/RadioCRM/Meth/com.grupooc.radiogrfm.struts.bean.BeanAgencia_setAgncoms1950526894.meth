@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAgncoms(java.lang.String agncoms)
+{
+this.agncoms=agncoms;
+ return;
+ } 
+

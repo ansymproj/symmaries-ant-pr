@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.dao.Entity.TipoLogradouro:setTlcdesc (java.lang.String
+                                                                   tlcdesc) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(tlcdesc) ⊔ obj_level(this) ⊔ obj_level(tlcdesc);
+  ret(obj_level(tlcdesc)) = if ¬tlcdesc.~>this ∨ pc ⊔ level(tlcdesc) = ⊥ then obj_level(tlcdesc) else if tlcdesc.~>this ∧ pc ⊔ level(tlcdesc) = ⊤ then ⊤ else ⊥;
+  ret(this.~>this) = this.~>this ∨ tlcdesc.~>this;
+  ret(this.~>tlcdesc) = tt;
+  ret(tlcdesc.~>this) = tlcdesc.~>this;
+  ret(tlcdesc.~>tlcdesc) = tlcdesc.~>this ∨ tlcdesc.~>tlcdesc;
+}

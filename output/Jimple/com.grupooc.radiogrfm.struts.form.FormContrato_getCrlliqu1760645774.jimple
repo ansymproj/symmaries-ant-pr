@@ -1,0 +1,14 @@
+    public java.lang.String getCrlliqu()
+    {
+        com.grupooc.radiogrfm.struts.form.FormContrato this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContrato;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormContrato: java.lang.String crlliqu>;
+/*183*/
+
+        return $stack1;
+/*183*/
+    }
+

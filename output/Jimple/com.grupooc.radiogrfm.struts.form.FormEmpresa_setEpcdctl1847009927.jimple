@@ -1,0 +1,16 @@
+    public void setEpcdctl(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEmpresa this;
+        java.lang.String epcdctl;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEmpresa;
+
+        epcdctl := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEmpresa: java.lang.String epcdctl> = epcdctl;
+/*97*/
+
+        return;
+/*98*/
+    }
+

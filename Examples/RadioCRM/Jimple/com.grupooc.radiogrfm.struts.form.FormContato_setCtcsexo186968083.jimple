@@ -1,0 +1,16 @@
+    public void setCtcsexo(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContato this;
+        java.lang.String ctcsexo;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContato;
+
+        ctcsexo := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String ctcsexo> = ctcsexo;
+/*74*/
+
+        return;
+/*75*/
+    }
+

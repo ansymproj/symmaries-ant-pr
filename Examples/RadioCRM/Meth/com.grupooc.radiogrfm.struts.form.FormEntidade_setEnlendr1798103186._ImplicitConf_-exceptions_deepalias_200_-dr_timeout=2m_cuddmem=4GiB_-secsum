@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEnlendr (java.lang.String
+                                                                  enlendr) {
+  guard = tt;
+  ret(obj_level(enlendr)) = if ¬enlendr.~>this ∨ pc ⊔ level(enlendr) = ⊥ then obj_level(enlendr) else if enlendr.~>this ∧ pc ⊔ level(enlendr) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(enlendr) ⊔ obj_level(enlendr) ⊔ obj_level(this);
+  ret(enlendr.~>enlendr) = enlendr.~>enlendr ∨ enlendr.~>this;
+  ret(enlendr.~>this) = enlendr.~>this;
+  ret(this.~>enlendr) = tt;
+  ret(this.~>this) = enlendr.~>this ∨ this.~>this;
+}

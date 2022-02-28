@@ -1,0 +1,256 @@
+    public static void geracao(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.util.Map, boolean)
+    {
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        java.util.Map map;
+        boolean exporta;
+        java.lang.String path, jasperName, reportName, $stack41;
+        net.sf.jasperreports.engine.JasperReport jasperReport;
+        byte[] pdfRelatorio;
+        javax.servlet.ServletOutputStream servletOutputStream;
+        net.sf.jasperreports.engine.JasperPrint impressao;
+        javax.servlet.http.HttpSession $stack11;
+        javax.servlet.ServletContext $stack12;
+        java.lang.StringBuilder $stack14;
+        java.lang.Object $stack19;
+        java.sql.Connection $stack27;
+        long $stack33;
+        java.lang.Exception $stack64;
+
+        request := @parameter0: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter1: javax.servlet.http.HttpServletResponse;
+
+        map := @parameter2: java.util.Map;
+
+        exporta := @parameter3: boolean;
+
+        $stack11 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*22*/
+
+        $stack12 = interfaceinvoke $stack11.<javax.servlet.http.HttpSession: javax.servlet.ServletContext getServletContext()>();
+/*22*/
+
+        path = interfaceinvoke $stack12.<javax.servlet.ServletContext: java.lang.String getRealPath(java.lang.String)>("/");
+/*22*/
+/*22*/
+
+        $stack14 = new java.lang.StringBuilder;
+/*24*/
+
+        specialinvoke $stack14.<java.lang.StringBuilder: void <init>()>();
+/*24*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(path);
+/*24*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("imagens/");
+/*24*/
+
+        reportName = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.String toString()>();
+/*24*/
+
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("IMAGE_PATH", reportName);
+/*24*/
+
+        $stack14 = new java.lang.StringBuilder;
+/*25*/
+
+        specialinvoke $stack14.<java.lang.StringBuilder: void <init>()>();
+/*25*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(path);
+/*25*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("ireport/jasper/");
+/*25*/
+
+        reportName = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.String toString()>();
+/*25*/
+
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("SUBREPORT_DIR", reportName);
+/*25*/
+
+        $stack27 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*26*/
+
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("REPORT_CONNECTION", $stack27);
+/*26*/
+
+        $stack19 = interfaceinvoke map.<java.util.Map: java.lang.Object get(java.lang.Object)>("REPORT_NAME");
+/*28*/
+
+        jasperName = virtualinvoke $stack19.<java.lang.Object: java.lang.String toString()>();
+/*28*/
+/*28*/
+
+        $stack14 = new java.lang.StringBuilder;
+/*30*/
+
+        specialinvoke $stack14.<java.lang.StringBuilder: void <init>()>();
+/*30*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(jasperName);
+/*30*/
+
+        $stack33 = staticinvoke <java.lang.System: long currentTimeMillis()>();
+/*30*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>($stack33);
+/*30*/
+
+        reportName = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.String toString()>();
+/*30*/
+/*30*/
+
+     label1:
+        $stack14 = new java.lang.StringBuilder;
+/*35*/
+
+        specialinvoke $stack14.<java.lang.StringBuilder: void <init>()>();
+/*35*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(path);
+/*35*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("ireport/jasper/");
+/*35*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(jasperName);
+/*35*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".jasper");
+/*35*/
+
+        $stack41 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.String toString()>();
+/*35*/
+
+        $stack19 = staticinvoke <net.sf.jasperreports.engine.util.JRLoader: java.lang.Object loadObject(java.lang.String)>($stack41);
+/*35*/
+
+        jasperReport = (net.sf.jasperreports.engine.JasperReport) $stack19;
+/*35*/
+
+        pdfRelatorio = staticinvoke <net.sf.jasperreports.engine.JasperRunManager: byte[] runReportToPdf(net.sf.jasperreports.engine.JasperReport,java.util.Map)>(jasperReport, map);
+/*36*/
+/*36*/
+
+        interfaceinvoke response.<javax.servlet.http.HttpServletResponse: void setContentType(java.lang.String)>("application/pdf");
+/*38*/
+
+        interfaceinvoke response.<javax.servlet.http.HttpServletResponse: void setHeader(java.lang.String,java.lang.String)>("Cache-Control", "no-store");
+/*39*/
+
+        interfaceinvoke response.<javax.servlet.http.HttpServletResponse: void setContentType(java.lang.String)>("application/pdf");
+/*40*/
+
+        $stack14 = new java.lang.StringBuilder;
+/*41*/
+
+        specialinvoke $stack14.<java.lang.StringBuilder: void <init>()>();
+/*41*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("attachment; filename=");
+/*41*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(reportName);
+/*41*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".pdf");
+/*41*/
+
+        $stack41 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.String toString()>();
+/*41*/
+
+        interfaceinvoke response.<javax.servlet.http.HttpServletResponse: void setHeader(java.lang.String,java.lang.String)>("Content-Disposition", $stack41);
+/*41*/
+
+        interfaceinvoke response.<javax.servlet.http.HttpServletResponse: void setHeader(java.lang.String,java.lang.String)>("Pragma", "no-cache");
+/*42*/
+
+        interfaceinvoke response.<javax.servlet.http.HttpServletResponse: void setDateHeader(java.lang.String,long)>("Expires", 0L);
+/*43*/
+
+        servletOutputStream = interfaceinvoke response.<javax.servlet.http.HttpServletResponse: javax.servlet.ServletOutputStream getOutputStream()>();
+/*45*/
+/*45*/
+
+        virtualinvoke servletOutputStream.<javax.servlet.ServletOutputStream: void write(byte[])>(pdfRelatorio);
+/*46*/
+
+        virtualinvoke servletOutputStream.<javax.servlet.ServletOutputStream: void flush()>();
+/*47*/
+
+        virtualinvoke servletOutputStream.<javax.servlet.ServletOutputStream: void close()>();
+/*48*/
+
+        if exporta == 0 goto label2;
+/*50*/
+
+        $stack14 = new java.lang.StringBuilder;
+/*51*/
+
+        specialinvoke $stack14.<java.lang.StringBuilder: void <init>()>();
+/*51*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(path);
+/*51*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("ireport/jasper/");
+/*51*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(jasperName);
+/*51*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".jasper");
+/*51*/
+
+        jasperName = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.String toString()>();
+/*51*/
+
+        impressao = staticinvoke <net.sf.jasperreports.engine.JasperFillManager: net.sf.jasperreports.engine.JasperPrint fillReport(java.lang.String,java.util.Map)>(jasperName, map);
+/*51*/
+/*51*/
+
+        $stack14 = new java.lang.StringBuilder;
+/*52*/
+
+        specialinvoke $stack14.<java.lang.StringBuilder: void <init>()>();
+/*52*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(path);
+/*52*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("relatorios/");
+/*52*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(reportName);
+/*52*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".pdf");
+/*52*/
+
+        path = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.String toString()>();
+/*52*/
+
+        staticinvoke <net.sf.jasperreports.engine.JasperExportManager: void exportReportToPdfFile(net.sf.jasperreports.engine.JasperPrint,java.lang.String)>(impressao, path);
+/*52*/
+
+     label2:
+        goto label4;
+/*57*/
+
+     label3:
+        $stack64 := @caughtexception;
+/*57*/
+
+        virtualinvoke $stack64.<java.lang.Exception: void printStackTrace()>();
+/*56*/
+
+     label4:
+        return;
+/*59*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

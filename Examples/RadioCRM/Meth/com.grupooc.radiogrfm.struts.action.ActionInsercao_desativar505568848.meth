@@ -1,0 +1,30 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionInsercao:desativar(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  java.lang.String inncodg;
+  java.lang.String crncodg;
+  java.lang.StringBuilder $stack11;
+  com.grupooc.radiogrfm.dao.ModelInsercao $stack15;
+  int $stack16;
+  java.lang.Exception $stack20;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ label0:inncodg = request.getParameter("inncodg");
+ crncodg = request.getParameter("crncodg");
+ if (inncodg==null) goto label1;
+ $stack15 = com.grupooc.radiogrfm.dao.ModelInsercao.getInstance();
+ $stack16 = java.lang.Integer.parseInt(inncodg);
+ $stack15.desativar($stack16);
+ label1:$stack11=new java.lang.StringBuilder;
+ $stack11#java.lang.StringBuilder();
+ $stack11 = $stack11.append("/actionInsercao.do?m=lista&crncodg=");
+ $stack11 = $stack11.append(crncodg);
+ inncodg = $stack11.toString();
+ fw.setPath(inncodg);
+ label2:goto label3;
+ label4:$stack20 = catch;
+ $stack20.printStackTrace();
+ label3:return  fw;
+ catch java.lang.Exception: label0 - label2 : label4;
+} 
+

@@ -1,0 +1,27 @@
+boolean com.grupooc.radiogrfm.dao.ModelOperacao:usuarioTemAcessoOperacao(int usncodg,int opncodg)
+{
+boolean ret;
+  java.sql.PreparedStatement st;
+  java.sql.Connection $stack6;
+  java.util.List $stack8;
+  boolean $stack9;
+  java.lang.Exception $stack11;
+  ret=0;
+ label0:$stack6 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack6.prepareStatement("SELECT OPNCODG, OPNPART, OPCDESC, OPCHINT, OPCLINK FROM VW_OPERACAO_USUARIO WHERE OPNCODG = ? AND OPNCGEN = ?");
+ st.setInt(1,opncodg);
+ st.setInt(2,usncodg);
+ $stack8 = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanOperacao);
+ $stack9 = $stack8.isEmpty();
+ if ($stack9!=0) goto label1;
+ $stack9=1;
+ goto label2;
+ label1:$stack9=0;
+ label2:ret=$stack9;
+ label3:goto label4;
+ label5:$stack11 = catch;
+ $stack11.printStackTrace();
+ label4:return  ret;
+ catch java.lang.Exception: label0 - label3 : label5;
+} 
+

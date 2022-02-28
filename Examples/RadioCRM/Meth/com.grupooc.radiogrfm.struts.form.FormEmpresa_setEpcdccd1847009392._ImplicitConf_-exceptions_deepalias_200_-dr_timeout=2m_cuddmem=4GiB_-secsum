@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEmpresa:setEpcdccd (java.lang.String
+                                                                 epcdccd) {
+  guard = tt;
+  ret(obj_level(epcdccd)) = if ¬epcdccd.~>this ∨ pc ⊔ level(epcdccd) = ⊥ then obj_level(epcdccd) else if epcdccd.~>this ∧ pc ⊔ level(epcdccd) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(epcdccd) ⊔ obj_level(epcdccd) ⊔ obj_level(this);
+  ret(epcdccd.~>epcdccd) = epcdccd.~>epcdccd ∨ epcdccd.~>this;
+  ret(epcdccd.~>this) = epcdccd.~>this;
+  ret(this.~>epcdccd) = tt;
+  ret(this.~>this) = epcdccd.~>this ∨ this.~>this;
+}

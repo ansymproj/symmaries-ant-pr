@@ -1,0 +1,34 @@
+    public static java.lang.String dateToStrBR(java.lang.String, java.util.Date)
+    {
+        java.lang.String format;
+        java.util.Date date;
+        java.text.SimpleDateFormat $stack2;
+
+        format := @parameter0: java.lang.String;
+
+        date := @parameter1: java.util.Date;
+
+        if date != null goto label1;
+/*306*/
+
+        format = null;
+/*306*/
+
+        goto label2;
+/*306*/
+
+     label1:
+        $stack2 = new java.text.SimpleDateFormat;
+/*306*/
+
+        specialinvoke $stack2.<java.text.SimpleDateFormat: void <init>(java.lang.String)>(format);
+/*306*/
+
+        format = virtualinvoke $stack2.<java.text.SimpleDateFormat: java.lang.String format(java.util.Date)>(date);
+/*306*/
+
+     label2:
+        return format;
+/*306*/
+    }
+

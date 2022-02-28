@@ -1,0 +1,16 @@
+    public void setSenha(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormLogin this;
+        java.lang.String senha;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormLogin;
+
+        senha := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormLogin: java.lang.String senha> = senha;
+/*22*/
+
+        return;
+/*23*/
+    }
+

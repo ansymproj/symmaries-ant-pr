@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelMeta com.grupooc.radiogrfm.dao.ModelMeta:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelMeta $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelMeta;
+ $stack0#com.grupooc.radiogrfm.dao.ModelMeta();
+ return  $stack0;
+ } 
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormUsuario:setUscpsw2(java.lang.String uscpsw2)
+{
+this.uscpsw2=uscpsw2;
+ return;
+ } 
+

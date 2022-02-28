@@ -1,0 +1,27 @@
+static java.sql.Date com.grupooc.radiogrfm.utils.Utils:stringToDateSQL(java.lang.String datastr)
+{
+java.sql.Date data;
+  boolean $stack3;
+  java.sql.Date $stack4;
+  java.text.SimpleDateFormat $stack5;
+  java.util.Date $stack6;
+  long $stack7;
+  java.lang.Exception $stack8;
+  data=null;
+ label0:if (datastr==null) goto label1;
+ $stack3 = datastr.equals((java.lang.Object)"");
+ if ($stack3!=0) goto label1;
+ $stack4=new java.sql.Date;
+ $stack5=new java.text.SimpleDateFormat;
+ $stack5#java.text.SimpleDateFormat("dd/MM/yyyy");
+ $stack6 = $stack5.parse(datastr);
+ $stack7 = $stack6.getTime();
+ $stack4#java.sql.Date($stack7);
+ data=$stack4;
+ label1:goto label2;
+ label3:$stack8 = catch;
+ $stack8.printStackTrace();
+ label2:return  data;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

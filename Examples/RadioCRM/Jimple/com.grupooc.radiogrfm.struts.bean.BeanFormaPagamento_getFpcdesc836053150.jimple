@@ -1,0 +1,14 @@
+    public java.lang.String getFpcdesc()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento: java.lang.String fpcdesc>;
+/*19*/
+
+        return $stack1;
+/*19*/
+    }
+

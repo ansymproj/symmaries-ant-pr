@@ -1,0 +1,16 @@
+    public void setPgncgep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanPrograma this;
+        java.lang.String pgncgep;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanPrograma;
+
+        pgncgep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanPrograma: java.lang.String pgncgep> = pgncgep;
+/*21*/
+
+        return;
+/*22*/
+    }
+

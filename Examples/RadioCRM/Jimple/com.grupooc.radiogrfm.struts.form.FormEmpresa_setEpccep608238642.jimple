@@ -1,0 +1,16 @@
+    public void setEpccep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEmpresa this;
+        java.lang.String epccep;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEmpresa;
+
+        epccep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEmpresa: java.lang.String epccep> = epccep;
+/*127*/
+
+        return;
+/*128*/
+    }
+

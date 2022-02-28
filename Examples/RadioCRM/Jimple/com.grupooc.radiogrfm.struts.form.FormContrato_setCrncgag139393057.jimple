@@ -1,0 +1,16 @@
+    public void setCrncgag(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContrato this;
+        java.lang.String crncgag;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContrato;
+
+        crncgag := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContrato: java.lang.String crncgag> = crncgag;
+/*101*/
+
+        return;
+/*102*/
+    }
+

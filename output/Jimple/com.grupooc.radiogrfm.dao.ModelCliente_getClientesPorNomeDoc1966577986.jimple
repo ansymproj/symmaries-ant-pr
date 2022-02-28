@@ -1,0 +1,85 @@
+    public java.util.List getClientesPorNomeDoc(java.lang.String, int)
+    {
+        com.grupooc.radiogrfm.dao.ModelCliente this;
+        java.lang.String clcnome;
+        int epncodg;
+        java.util.List alunos;
+        java.sql.PreparedStatement st;
+        java.util.ArrayList $stack6;
+        java.lang.StringBuilder $stack7;
+        java.sql.Connection $stack14;
+        java.lang.Exception $stack17;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelCliente;
+
+        clcnome := @parameter0: java.lang.String;
+
+        epncodg := @parameter1: int;
+
+        $stack6 = new java.util.ArrayList;
+/*67*/
+
+        specialinvoke $stack6.<java.util.ArrayList: void <init>()>();
+/*67*/
+
+        alunos = $stack6;
+/*67*/
+
+     label1:
+        $stack7 = new java.lang.StringBuilder;
+/*69*/
+
+        specialinvoke $stack7.<java.lang.StringBuilder: void <init>()>();
+/*69*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SELECT * FROM VW_CLIENTE WHERE (UPPER(CLCNOME) LIKE upper(\'%");
+/*69*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(clcnome);
+/*69*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("%\') OR CLCDOCM = \'");
+/*69*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(clcnome);
+/*69*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\') AND CLNCGEP = ? ORDER BY CLCNOME");
+/*69*/
+
+        clcnome = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.String toString()>();
+/*69*/
+/*69*/
+
+        $stack14 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*71*/
+
+        st = interfaceinvoke $stack14.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(clcnome);
+/*71*/
+/*71*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, epncodg);
+/*72*/
+
+        alunos = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.List getObjectsStr(java.sql.PreparedStatement,java.lang.Class)>(st, class "Lcom/grupooc/radiogrfm/struts/bean/BeanCliente;");
+/*74*/
+/*74*/
+
+     label2:
+        goto label4;
+/*78*/
+
+     label3:
+        $stack17 := @caughtexception;
+/*79*/
+
+        virtualinvoke $stack17.<java.lang.Exception: void printStackTrace()>();
+/*77*/
+
+     label4:
+        return alunos;
+/*79*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

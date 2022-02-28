@@ -1,0 +1,16 @@
+    public void setEncsen2(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encsen2;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encsen2 := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encsen2> = encsen2;
+/*240*/
+
+        return;
+/*241*/
+    }
+

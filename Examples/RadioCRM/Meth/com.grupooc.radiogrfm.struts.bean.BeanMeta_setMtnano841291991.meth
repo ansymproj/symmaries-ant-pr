@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanMeta:setMtnano(java.lang.String mtnano)
+{
+this.mtnano=mtnano;
+ return;
+ } 
+

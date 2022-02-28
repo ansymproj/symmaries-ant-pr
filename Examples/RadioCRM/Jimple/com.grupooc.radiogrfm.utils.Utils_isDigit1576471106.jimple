@@ -1,0 +1,48 @@
+    public static boolean isDigit(java.lang.String)
+    {
+        java.lang.String s;
+        boolean 'ret';
+        char[] d;
+        int i, $stack5;
+        char $stack7;
+
+        s := @parameter0: java.lang.String;
+
+        'ret' = 0;
+/*267*/
+
+        d = virtualinvoke s.<java.lang.String: char[] toCharArray()>();
+/*268*/
+/*268*/
+
+        i = 0;
+/*269*/
+
+     label1:
+        if 'ret' != 0 goto label2;
+/*269*/
+
+        $stack5 = lengthof d;
+/*272*/
+
+        if i >= $stack5 goto label2;
+/*272*/
+
+        $stack7 = d[i];
+/*270*/
+
+        'ret' = staticinvoke <java.lang.Character: boolean isDigit(char)>($stack7);
+/*270*/
+/*270*/
+
+        i = i + 1;
+/*269*/
+
+        goto label1;
+/*269*/
+
+     label2:
+        return 'ret';
+/*272*/
+    }
+

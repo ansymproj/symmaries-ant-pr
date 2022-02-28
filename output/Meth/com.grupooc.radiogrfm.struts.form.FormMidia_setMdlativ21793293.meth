@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormMidia:setMdlativ(java.lang.String mdlativ)
+{
+this.mdlativ=mdlativ;
+ return;
+ } 
+

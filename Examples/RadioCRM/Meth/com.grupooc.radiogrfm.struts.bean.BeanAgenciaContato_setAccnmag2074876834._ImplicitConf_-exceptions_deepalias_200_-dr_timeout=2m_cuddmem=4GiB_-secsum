@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato:setAccnmag (
+  java.lang.String accnmag) {
+  guard = tt;
+  ret(obj_level(accnmag)) = if ¬accnmag.~>this ∨ pc ⊔ level(accnmag) = ⊥ then obj_level(accnmag) else if accnmag.~>this ∧ pc ⊔ level(accnmag) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(accnmag) ⊔ obj_level(accnmag) ⊔ obj_level(this);
+  ret(accnmag.~>accnmag) = accnmag.~>accnmag ∨ accnmag.~>this;
+  ret(accnmag.~>this) = accnmag.~>this;
+  ret(this.~>accnmag) = tt;
+  ret(this.~>this) = accnmag.~>this ∨ this.~>this;
+}

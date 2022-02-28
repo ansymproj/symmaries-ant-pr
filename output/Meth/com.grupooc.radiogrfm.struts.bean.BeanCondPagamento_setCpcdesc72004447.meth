@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCondPagamento:setCpcdesc(java.lang.String cpcdesc)
+{
+this.cpcdesc=cpcdesc;
+ return;
+ } 
+

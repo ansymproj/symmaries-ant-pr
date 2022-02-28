@@ -1,0 +1,16 @@
+    public void setInndrpg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao this;
+        java.lang.String inndrpg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanInsercao;
+
+        inndrpg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String inndrpg> = inndrpg;
+/*63*/
+
+        return;
+/*64*/
+    }
+

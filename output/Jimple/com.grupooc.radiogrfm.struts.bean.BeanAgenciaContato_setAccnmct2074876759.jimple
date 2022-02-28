@@ -1,0 +1,16 @@
+    public void setAccnmct(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato this;
+        java.lang.String accnmct;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato;
+
+        accnmct := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato: java.lang.String accnmct> = accnmct;
+/*31*/
+
+        return;
+/*32*/
+    }
+

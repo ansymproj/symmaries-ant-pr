@@ -1,0 +1,34 @@
+    public static java.lang.String doubleToStrBR(java.lang.String, java.lang.Double)
+    {
+        java.lang.String format;
+        java.lang.Double value;
+        java.text.DecimalFormat $stack2;
+
+        format := @parameter0: java.lang.String;
+
+        value := @parameter1: java.lang.Double;
+
+        if value != null goto label1;
+/*330*/
+
+        format = null;
+/*330*/
+
+        goto label2;
+/*330*/
+
+     label1:
+        $stack2 = new java.text.DecimalFormat;
+/*330*/
+
+        specialinvoke $stack2.<java.text.DecimalFormat: void <init>(java.lang.String)>(format);
+/*330*/
+
+        format = virtualinvoke $stack2.<java.text.DecimalFormat: java.lang.String format(java.lang.Object)>(value);
+/*330*/
+
+     label2:
+        return format;
+/*330*/
+    }
+

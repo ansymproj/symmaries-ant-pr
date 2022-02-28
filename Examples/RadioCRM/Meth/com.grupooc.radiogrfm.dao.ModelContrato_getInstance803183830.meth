@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelContrato com.grupooc.radiogrfm.dao.ModelContrato:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelContrato $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelContrato;
+ $stack0#com.grupooc.radiogrfm.dao.ModelContrato();
+ return  $stack0;
+ } 
+

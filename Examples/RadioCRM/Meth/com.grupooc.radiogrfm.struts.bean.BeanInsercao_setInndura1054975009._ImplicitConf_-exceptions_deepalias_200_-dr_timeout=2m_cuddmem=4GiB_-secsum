@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanInsercao:setInndura (java.lang.String
+                                                                  inndura) {
+  guard = tt;
+  ret(obj_level(inndura)) = if ¬inndura.~>this ∨ pc ⊔ level(inndura) = ⊥ then obj_level(inndura) else if inndura.~>this ∧ pc ⊔ level(inndura) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(inndura) ⊔ obj_level(inndura) ⊔ obj_level(this);
+  ret(inndura.~>inndura) = inndura.~>inndura ∨ inndura.~>this;
+  ret(inndura.~>this) = inndura.~>this;
+  ret(this.~>inndura) = tt;
+  ret(this.~>this) = inndura.~>this ∨ this.~>this;
+}

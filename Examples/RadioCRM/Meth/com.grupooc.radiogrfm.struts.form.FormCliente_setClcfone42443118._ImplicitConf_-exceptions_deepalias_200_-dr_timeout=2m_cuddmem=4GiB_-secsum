@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClcfone (java.lang.String
+                                                                 clcfone) {
+  guard = tt;
+  ret(obj_level(clcfone)) = if ¬clcfone.~>this ∨ pc ⊔ level(clcfone) = ⊥ then obj_level(clcfone) else if clcfone.~>this ∧ pc ⊔ level(clcfone) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcfone) ⊔ obj_level(clcfone) ⊔ obj_level(this);
+  ret(clcfone.~>clcfone) = clcfone.~>clcfone ∨ clcfone.~>this;
+  ret(clcfone.~>this) = clcfone.~>this;
+  ret(this.~>clcfone) = tt;
+  ret(this.~>this) = clcfone.~>this ∨ this.~>this;
+}

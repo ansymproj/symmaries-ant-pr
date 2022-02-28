@@ -1,0 +1,14 @@
+    public java.lang.String getCtcsexo()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContato this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContato;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String ctcsexo>;
+/*71*/
+
+        return $stack1;
+/*71*/
+    }
+

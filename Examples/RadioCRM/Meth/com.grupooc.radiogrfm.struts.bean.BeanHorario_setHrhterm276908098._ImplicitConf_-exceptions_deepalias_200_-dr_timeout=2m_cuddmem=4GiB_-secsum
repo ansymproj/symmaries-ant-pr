@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanHorario:setHrhterm (java.lang.String
+                                                                 hrhterm) {
+  guard = tt;
+  ret(obj_level(hrhterm)) = if ¬hrhterm.~>this ∨ pc ⊔ level(hrhterm) = ⊥ then obj_level(hrhterm) else if hrhterm.~>this ∧ pc ⊔ level(hrhterm) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(hrhterm) ⊔ obj_level(hrhterm) ⊔ obj_level(this);
+  ret(hrhterm.~>hrhterm) = hrhterm.~>hrhterm ∨ hrhterm.~>this;
+  ret(hrhterm.~>this) = hrhterm.~>this;
+  ret(this.~>hrhterm) = tt;
+  ret(this.~>this) = hrhterm.~>this ∨ this.~>this;
+}

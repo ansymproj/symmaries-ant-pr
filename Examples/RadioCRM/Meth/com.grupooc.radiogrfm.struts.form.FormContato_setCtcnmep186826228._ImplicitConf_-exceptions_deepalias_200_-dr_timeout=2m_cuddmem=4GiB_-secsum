@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContato:setCtcnmep (java.lang.String
+                                                                 ctcnmep) {
+  guard = tt;
+  ret(obj_level(ctcnmep)) = if ¬ctcnmep.~>this ∨ pc ⊔ level(ctcnmep) = ⊥ then obj_level(ctcnmep) else if ctcnmep.~>this ∧ pc ⊔ level(ctcnmep) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(ctcnmep) ⊔ obj_level(ctcnmep) ⊔ obj_level(this);
+  ret(ctcnmep.~>ctcnmep) = ctcnmep.~>ctcnmep ∨ ctcnmep.~>this;
+  ret(ctcnmep.~>this) = ctcnmep.~>this;
+  ret(this.~>ctcnmep) = tt;
+  ret(this.~>this) = ctcnmep.~>this ∨ this.~>this;
+}

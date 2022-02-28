@@ -1,0 +1,16 @@
+    public void setClcinmu(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clcinmu;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clcinmu := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clcinmu> = clcinmu;
+/*260*/
+
+        return;
+/*261*/
+    }
+

@@ -1,0 +1,16 @@
+    public void setEncpai(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encpai;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encpai := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encpai> = encpai;
+/*150*/
+
+        return;
+/*151*/
+    }
+

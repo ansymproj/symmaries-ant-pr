@@ -1,0 +1,13 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.dao.ModelCidade this;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelCidade;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+/*10*/
+
+        return;
+/*10*/
+    }
+

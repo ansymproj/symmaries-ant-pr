@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanMeta:setMtncgct(java.lang.String mtncgct)
+{
+this.mtncgct=mtncgct;
+ return;
+ } 
+

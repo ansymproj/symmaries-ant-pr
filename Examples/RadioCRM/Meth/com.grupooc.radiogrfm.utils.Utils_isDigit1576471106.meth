@@ -1,0 +1,20 @@
+static boolean com.grupooc.radiogrfm.utils.Utils:isDigit(java.lang.String s)
+{
+boolean ret;
+  char[] d;
+  int i;
+  int $stack5;
+  char $stack7;
+  ret=0;
+ d = s.toCharArray();
+ i=0;
+ label0:if (ret!=0) goto label1;
+ $stack5=#d;
+ if (i>=$stack5) goto label1;
+ $stack7=d[i];
+ ret = java.lang.Character.isDigit($stack7);
+ i=(i+1);
+ goto label0;
+ label1:return  ret;
+ } 
+

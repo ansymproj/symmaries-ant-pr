@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanTipoLogradouro:setTlncodg (
+  java.lang.String tlncodg) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(tlncodg) ⊔ obj_level(this) ⊔ obj_level(tlncodg);
+  ret(obj_level(tlncodg)) = if ¬tlncodg.~>this ∨ pc ⊔ level(tlncodg) = ⊥ then obj_level(tlncodg) else if tlncodg.~>this ∧ pc ⊔ level(tlncodg) = ⊤ then ⊤ else ⊥;
+  ret(this.~>this) = this.~>this ∨ tlncodg.~>this;
+  ret(this.~>tlncodg) = tt;
+  ret(tlncodg.~>this) = tlncodg.~>this;
+  ret(tlncodg.~>tlncodg) = tlncodg.~>this ∨ tlncodg.~>tlncodg;
+}

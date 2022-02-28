@@ -1,0 +1,16 @@
+    public void setMmcdcms(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormMetaMes this;
+        java.lang.String mmcdcms;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormMetaMes;
+
+        mmcdcms := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormMetaMes: java.lang.String mmcdcms> = mmcdcms;
+/*71*/
+
+        return;
+/*72*/
+    }
+

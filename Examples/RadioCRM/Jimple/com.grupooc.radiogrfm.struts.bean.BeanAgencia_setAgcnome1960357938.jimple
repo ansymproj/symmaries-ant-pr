@@ -1,0 +1,16 @@
+    public void setAgcnome(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanAgencia this;
+        java.lang.String agcnome;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanAgencia;
+
+        agcnome := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String agcnome> = agcnome;
+/*55*/
+
+        return;
+/*56*/
+    }
+

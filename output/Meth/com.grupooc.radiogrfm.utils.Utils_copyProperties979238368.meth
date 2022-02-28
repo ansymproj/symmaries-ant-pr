@@ -1,0 +1,6 @@
+static java.lang.Object com.grupooc.radiogrfm.utils.Utils:copyProperties(java.lang.Object dest,java.lang.Object orig)
+{
+org.apache.commons.beanutils.BeanUtils.copyProperties(dest,orig);
+ return  dest;
+ } 
+

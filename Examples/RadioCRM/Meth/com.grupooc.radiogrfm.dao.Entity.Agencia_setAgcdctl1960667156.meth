@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAgcdctl(java.lang.String agcdctl)
+{
+this.agcdctl=agcdctl;
+ return;
+ } 
+

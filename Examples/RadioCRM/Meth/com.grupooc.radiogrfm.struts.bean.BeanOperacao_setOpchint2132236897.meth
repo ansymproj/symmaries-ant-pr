@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanOperacao:setOpchint(java.lang.String opchint)
+{
+this.opchint=opchint;
+ return;
+ } 
+

@@ -1,0 +1,32 @@
+java.util.List com.grupooc.radiogrfm.dao.ModelCliente:getClientesPorNomeDoc(java.lang.String @clcnome,int epncodg)
+{
+java.util.List alunos;
+  java.sql.PreparedStatement st;
+  java.util.ArrayList $stack6;
+  java.lang.StringBuilder $stack7;
+  java.sql.Connection $stack14;
+  java.lang.Exception $stack17;
+  java.lang.String clcnome;
+clcnome=@clcnome;
+$stack6=new java.util.ArrayList;
+ $stack6#java.util.ArrayList();
+ alunos=$stack6;
+ label0:$stack7=new java.lang.StringBuilder;
+ $stack7#java.lang.StringBuilder();
+ $stack7 = $stack7.append("SELECT * FROM VW_CLIENTE WHERE (UPPER(CLCNOME) LIKE upper(\'%");
+ $stack7 = $stack7.append(clcnome);
+ $stack7 = $stack7.append("%\') OR CLCDOCM = \'");
+ $stack7 = $stack7.append(clcnome);
+ $stack7 = $stack7.append("\') AND CLNCGEP = ? ORDER BY CLCNOME");
+ clcnome = $stack7.toString();
+ $stack14 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack14.prepareStatement(clcnome);
+ st.setInt(1,epncodg);
+ alunos = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanCliente);
+ label1:goto label2;
+ label3:$stack17 = catch;
+ $stack17.printStackTrace();
+ label2:return  alunos;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

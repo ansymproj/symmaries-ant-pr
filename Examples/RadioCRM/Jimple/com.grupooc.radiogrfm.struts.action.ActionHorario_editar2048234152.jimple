@@ -1,0 +1,88 @@
+    public org.apache.struts.action.ActionForward editar(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionHorario this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        com.grupooc.radiogrfm.struts.form.FormHorario formHorario;
+        java.lang.String hrncodg;
+        com.grupooc.radiogrfm.struts.bean.BeanHorario horario;
+        com.grupooc.radiogrfm.dao.ModelHorario $stack11;
+        int $stack12;
+        javax.servlet.http.HttpSession $stack14;
+        com.grupooc.radiogrfm.dao.ModelDiaSemana $stack16;
+        java.util.ArrayList $stack17;
+        java.lang.Exception $stack18;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionHorario;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*46*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*46*/
+
+        formHorario = (com.grupooc.radiogrfm.struts.form.FormHorario) form;
+/*47*/
+
+     label1:
+        hrncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("hrncodg");
+/*51*/
+/*51*/
+
+        $stack11 = staticinvoke <com.grupooc.radiogrfm.dao.ModelHorario: com.grupooc.radiogrfm.dao.ModelHorario getInstance()>();
+/*52*/
+
+        $stack12 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(hrncodg);
+/*52*/
+
+        horario = virtualinvoke $stack11.<com.grupooc.radiogrfm.dao.ModelHorario: com.grupooc.radiogrfm.struts.bean.BeanHorario getHorario(int)>($stack12);
+/*52*/
+/*52*/
+
+        $stack14 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*54*/
+
+        $stack16 = staticinvoke <com.grupooc.radiogrfm.dao.ModelDiaSemana: com.grupooc.radiogrfm.dao.ModelDiaSemana getInstance()>();
+/*54*/
+
+        $stack17 = virtualinvoke $stack16.<com.grupooc.radiogrfm.dao.ModelDiaSemana: java.util.ArrayList getDiasDaSemana()>();
+/*54*/
+
+        interfaceinvoke $stack14.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_diasemana", $stack17);
+/*54*/
+
+        staticinvoke <org.apache.commons.beanutils.BeanUtils: void copyProperties(java.lang.Object,java.lang.Object)>(formHorario, horario);
+/*56*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/horarioEditar.do");
+/*58*/
+
+     label2:
+        goto label4;
+/*62*/
+
+     label3:
+        $stack18 := @caughtexception;
+/*64*/
+
+        virtualinvoke $stack18.<java.lang.Exception: void printStackTrace()>();
+/*61*/
+
+     label4:
+        return fw;
+/*64*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

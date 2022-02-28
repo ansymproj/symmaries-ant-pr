@@ -1,0 +1,17 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionMeta:novo(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  javax.servlet.http.HttpSession $stack8;
+  java.lang.Exception $stack9;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ label0:$stack8 = request.getSession();
+ $stack8.removeAttribute("formMeta");
+ fw.setPath("/metaNovo.do");
+ label1:goto label2;
+ label3:$stack9 = catch;
+ $stack9.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

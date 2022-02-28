@@ -1,0 +1,116 @@
+    public void inserir(com.grupooc.radiogrfm.struts.bean.BeanContato)
+    {
+        com.grupooc.radiogrfm.dao.ModelContato this;
+        com.grupooc.radiogrfm.struts.bean.BeanContato contato;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack4;
+        java.lang.String $stack7;
+        java.sql.Date $stack16;
+        int $stack29;
+        java.lang.Exception $stack31;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelContato;
+
+        contato := @parameter0: com.grupooc.radiogrfm.struts.bean.BeanContato;
+
+     label1:
+        $stack4 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*83*/
+
+        st = interfaceinvoke $stack4.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" INSERT INTO  CONTATO(CTCNOME, CTCMATR, CTCFUNC, CTDNASC,CTCSEXO,CTCFONE,CTCCELL,CTCMAIL, CTNCGEP) VALUES(?,?,?, ?, ?, ?, ?, ?, ?)");
+/*83*/
+/*83*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtcnome()>();
+/*84*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.String: java.lang.String toUpperCase()>();
+/*84*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(1, $stack7);
+/*84*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtcmatr()>();
+/*85*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(2, $stack7);
+/*85*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtcfunc()>();
+/*86*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.String: java.lang.String toUpperCase()>();
+/*86*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(3, $stack7);
+/*86*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtdnasc()>();
+/*87*/
+
+        $stack16 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.sql.Date stringToDateSQL(java.lang.String)>($stack7);
+/*87*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setDate(int,java.sql.Date)>(4, $stack16);
+/*87*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtcsexo()>();
+/*88*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(5, $stack7);
+/*88*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtcfone()>();
+/*89*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: java.lang.String removeCharOfInteger(java.lang.String)>($stack7);
+/*89*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(6, $stack7);
+/*89*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtccell()>();
+/*90*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: java.lang.String removeCharOfInteger(java.lang.String)>($stack7);
+/*90*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(7, $stack7);
+/*90*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtcmail()>();
+/*91*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(8, $stack7);
+/*91*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtncgep()>();
+/*92*/
+
+        $stack29 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*92*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(9, $stack29);
+/*92*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: int executeUpdate()>();
+/*94*/
+
+     label2:
+        goto label4;
+/*98*/
+
+     label3:
+        $stack31 := @caughtexception;
+/*100*/
+
+        virtualinvoke $stack31.<java.lang.Exception: void printStackTrace()>();
+/*97*/
+
+     label4:
+        return;
+/*100*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

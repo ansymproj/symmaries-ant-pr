@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanMeses:setMsncodg(java.lang.String msncodg)
+{
+this.msncodg=msncodg;
+ return;
+ } 
+

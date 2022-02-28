@@ -1,0 +1,16 @@
+    public void setMmncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormMetaMes this;
+        java.lang.String mmncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormMetaMes;
+
+        mmncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormMetaMes: java.lang.String mmncodg> = mmncodg;
+/*23*/
+
+        return;
+/*24*/
+    }
+

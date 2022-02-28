@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrcdccp (java.lang.String
+                                                                  crcdccp) {
+  guard = tt;
+  ret(obj_level(crcdccp)) = if ¬crcdccp.~>this ∨ pc ⊔ level(crcdccp) = ⊥ then obj_level(crcdccp) else if crcdccp.~>this ∧ pc ⊔ level(crcdccp) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crcdccp) ⊔ obj_level(crcdccp) ⊔ obj_level(this);
+  ret(crcdccp.~>crcdccp) = crcdccp.~>crcdccp ∨ crcdccp.~>this;
+  ret(crcdccp.~>this) = crcdccp.~>this;
+  ret(this.~>crcdccp) = tt;
+  ret(this.~>this) = crcdccp.~>this ∨ this.~>this;
+}

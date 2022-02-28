@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAgncodg(java.lang.String agncodg)
+{
+this.agncodg=agncodg;
+ return;
+ } 
+

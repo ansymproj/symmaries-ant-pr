@@ -1,0 +1,88 @@
+    public org.apache.struts.action.ActionForward editar(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionInsercao this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        com.grupooc.radiogrfm.struts.form.FormInsercao formInsercao;
+        java.lang.String inncodg;
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao insercao;
+        com.grupooc.radiogrfm.dao.ModelInsercao $stack11;
+        int $stack12;
+        javax.servlet.http.HttpSession $stack14;
+        com.grupooc.radiogrfm.dao.ModelPrograma $stack16;
+        java.util.ArrayList $stack17;
+        java.lang.Exception $stack18;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionInsercao;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*48*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*48*/
+
+        formInsercao = (com.grupooc.radiogrfm.struts.form.FormInsercao) form;
+/*49*/
+
+     label1:
+        inncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("inncodg");
+/*53*/
+/*53*/
+
+        $stack11 = staticinvoke <com.grupooc.radiogrfm.dao.ModelInsercao: com.grupooc.radiogrfm.dao.ModelInsercao getInstance()>();
+/*54*/
+
+        $stack12 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(inncodg);
+/*54*/
+
+        insercao = virtualinvoke $stack11.<com.grupooc.radiogrfm.dao.ModelInsercao: com.grupooc.radiogrfm.struts.bean.BeanInsercao getInsercao(int)>($stack12);
+/*54*/
+/*54*/
+
+        $stack14 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*56*/
+
+        $stack16 = staticinvoke <com.grupooc.radiogrfm.dao.ModelPrograma: com.grupooc.radiogrfm.dao.ModelPrograma getInstance()>();
+/*56*/
+
+        $stack17 = virtualinvoke $stack16.<com.grupooc.radiogrfm.dao.ModelPrograma: java.util.ArrayList getProgramasComValor()>();
+/*56*/
+
+        interfaceinvoke $stack14.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_programa", $stack17);
+/*56*/
+
+        staticinvoke <org.apache.commons.beanutils.BeanUtils: void copyProperties(java.lang.Object,java.lang.Object)>(formInsercao, insercao);
+/*58*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/insercaoEditar.do");
+/*60*/
+
+     label2:
+        goto label4;
+/*64*/
+
+     label3:
+        $stack18 := @caughtexception;
+/*66*/
+
+        virtualinvoke $stack18.<java.lang.Exception: void printStackTrace()>();
+/*63*/
+
+     label4:
+        return fw;
+/*66*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

@@ -1,0 +1,16 @@
+    public void setClcmtct(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clcmtct;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clcmtct := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clcmtct> = clcmtct;
+/*212*/
+
+        return;
+/*213*/
+    }
+

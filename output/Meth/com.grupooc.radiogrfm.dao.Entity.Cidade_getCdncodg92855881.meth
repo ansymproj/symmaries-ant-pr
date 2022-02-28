@@ -1,0 +1,7 @@
+java.lang.Integer com.grupooc.radiogrfm.dao.Entity.Cidade:getCdncodg()
+{
+java.lang.Integer $stack1;
+  $stack1=this.cdncodg;
+ return  $stack1;
+ } 
+

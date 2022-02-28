@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAglendr (java.lang.String
+                                                                 aglendr) {
+  guard = tt;
+  ret(obj_level(aglendr)) = if ¬aglendr.~>this ∨ pc ⊔ level(aglendr) = ⊥ then obj_level(aglendr) else if aglendr.~>this ∧ pc ⊔ level(aglendr) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(aglendr) ⊔ obj_level(aglendr) ⊔ obj_level(this);
+  ret(aglendr.~>aglendr) = aglendr.~>aglendr ∨ aglendr.~>this;
+  ret(aglendr.~>this) = aglendr.~>this;
+  ret(this.~>aglendr) = tt;
+  ret(this.~>this) = aglendr.~>this ∨ this.~>this;
+}

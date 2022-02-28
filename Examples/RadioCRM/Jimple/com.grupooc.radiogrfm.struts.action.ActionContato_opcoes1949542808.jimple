@@ -1,0 +1,72 @@
+    public org.apache.struts.action.ActionForward opcoes(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionContato this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        java.lang.String ctncodg;
+        javax.servlet.http.HttpSession $stack9;
+        com.grupooc.radiogrfm.dao.ModelContato $stack11;
+        int $stack12;
+        com.grupooc.radiogrfm.struts.bean.BeanContato $stack13;
+        java.lang.Exception $stack14;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionContato;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*204*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*204*/
+
+     label1:
+        ctncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("ctncodg");
+/*207*/
+/*207*/
+
+        $stack9 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*208*/
+
+        $stack11 = staticinvoke <com.grupooc.radiogrfm.dao.ModelContato: com.grupooc.radiogrfm.dao.ModelContato getInstance()>();
+/*208*/
+
+        $stack12 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(ctncodg);
+/*208*/
+
+        $stack13 = virtualinvoke $stack11.<com.grupooc.radiogrfm.dao.ModelContato: com.grupooc.radiogrfm.struts.bean.BeanContato getContato(int)>($stack12);
+/*208*/
+
+        interfaceinvoke $stack9.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("contato", $stack13);
+/*208*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/contatoPage.do");
+/*209*/
+
+     label2:
+        goto label4;
+/*213*/
+
+     label3:
+        $stack14 := @caughtexception;
+/*215*/
+
+        virtualinvoke $stack14.<java.lang.Exception: void printStackTrace()>();
+/*212*/
+
+     label4:
+        return fw;
+/*215*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

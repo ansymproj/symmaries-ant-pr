@@ -1,0 +1,16 @@
+    public void setClcmail(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clcmail;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clcmail := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clcmail> = clcmail;
+/*128*/
+
+        return;
+/*129*/
+    }
+

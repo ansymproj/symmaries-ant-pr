@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncdocm (java.lang.String
+                                                                  encdocm) {
+  guard = tt;
+  ret(obj_level(encdocm)) = if ¬encdocm.~>this ∨ pc ⊔ level(encdocm) = ⊥ then obj_level(encdocm) else if encdocm.~>this ∧ pc ⊔ level(encdocm) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(encdocm) ⊔ obj_level(encdocm) ⊔ obj_level(this);
+  ret(encdocm.~>encdocm) = encdocm.~>encdocm ∨ encdocm.~>this;
+  ret(encdocm.~>this) = encdocm.~>this;
+  ret(this.~>encdocm) = tt;
+  ret(this.~>this) = encdocm.~>this ∨ this.~>this;
+}

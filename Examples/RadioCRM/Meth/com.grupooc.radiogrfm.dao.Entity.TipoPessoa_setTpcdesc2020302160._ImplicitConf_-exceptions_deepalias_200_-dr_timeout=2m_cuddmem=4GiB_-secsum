@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.dao.Entity.TipoPessoa:setTpcdesc (java.lang.String
+                                                               tpcdesc) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(tpcdesc) ⊔ obj_level(this) ⊔ obj_level(tpcdesc);
+  ret(obj_level(tpcdesc)) = if ¬tpcdesc.~>this ∨ pc ⊔ level(tpcdesc) = ⊥ then obj_level(tpcdesc) else if tpcdesc.~>this ∧ pc ⊔ level(tpcdesc) = ⊤ then ⊤ else ⊥;
+  ret(this.~>this) = this.~>this ∨ tpcdesc.~>this;
+  ret(this.~>tpcdesc) = tt;
+  ret(tpcdesc.~>this) = tpcdesc.~>this;
+  ret(tpcdesc.~>tpcdesc) = tpcdesc.~>this ∨ tpcdesc.~>tpcdesc;
+}

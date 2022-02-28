@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEmpresa:setEpcnome (java.lang.String
+                                                                 epcnome) {
+  guard = tt;
+  ret(obj_level(epcnome)) = if ¬epcnome.~>this ∨ pc ⊔ level(epcnome) = ⊥ then obj_level(epcnome) else if epcnome.~>this ∧ pc ⊔ level(epcnome) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(epcnome) ⊔ obj_level(epcnome) ⊔ obj_level(this);
+  ret(epcnome.~>epcnome) = epcnome.~>epcnome ∨ epcnome.~>this;
+  ret(epcnome.~>this) = epcnome.~>this;
+  ret(this.~>epcnome) = tt;
+  ret(this.~>this) = epcnome.~>this ∨ this.~>this;
+}

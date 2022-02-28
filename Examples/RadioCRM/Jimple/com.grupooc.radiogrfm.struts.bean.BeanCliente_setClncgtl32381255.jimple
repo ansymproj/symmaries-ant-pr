@@ -1,0 +1,16 @@
+    public void setClncgtl(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clncgtl;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clncgtl := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clncgtl> = clncgtl;
+/*134*/
+
+        return;
+/*135*/
+    }
+

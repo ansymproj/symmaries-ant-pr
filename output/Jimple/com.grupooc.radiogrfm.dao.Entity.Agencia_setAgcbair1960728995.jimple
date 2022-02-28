@@ -1,0 +1,16 @@
+    public void setAgcbair(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.Entity.Agencia this;
+        java.lang.String agcbair;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Agencia;
+
+        agcbair := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.Agencia: java.lang.String agcbair> = agcbair;
+/*139*/
+
+        return;
+/*140*/
+    }
+

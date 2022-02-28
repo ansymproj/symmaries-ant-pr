@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClddnct (java.lang.String
+                                                                 clddnct) {
+  guard = tt;
+  ret(obj_level(clddnct)) = if ¬clddnct.~>this ∨ pc ⊔ level(clddnct) = ⊥ then obj_level(clddnct) else if clddnct.~>this ∧ pc ⊔ level(clddnct) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clddnct) ⊔ obj_level(clddnct) ⊔ obj_level(this);
+  ret(clddnct.~>clddnct) = clddnct.~>clddnct ∨ clddnct.~>this;
+  ret(clddnct.~>this) = clddnct.~>this;
+  ret(this.~>clddnct) = tt;
+  ret(this.~>this) = clddnct.~>this ∨ this.~>this;
+}

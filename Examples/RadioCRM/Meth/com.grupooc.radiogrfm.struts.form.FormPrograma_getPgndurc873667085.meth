@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormPrograma:getPgndurc()
+{
+java.lang.String $stack1;
+  $stack1=this.pgndurc;
+ return  $stack1;
+ } 
+

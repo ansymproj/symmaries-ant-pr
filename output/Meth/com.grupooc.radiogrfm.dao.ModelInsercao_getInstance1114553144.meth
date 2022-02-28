@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelInsercao com.grupooc.radiogrfm.dao.ModelInsercao:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelInsercao $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelInsercao;
+ $stack0#com.grupooc.radiogrfm.dao.ModelInsercao();
+ return  $stack0;
+ } 
+

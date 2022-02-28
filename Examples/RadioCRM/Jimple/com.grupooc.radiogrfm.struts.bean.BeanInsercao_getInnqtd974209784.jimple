@@ -1,0 +1,14 @@
+    public java.lang.String getInnqtd()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanInsercao;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String innqtd>;
+/*84*/
+
+        return $stack1;
+/*84*/
+    }
+

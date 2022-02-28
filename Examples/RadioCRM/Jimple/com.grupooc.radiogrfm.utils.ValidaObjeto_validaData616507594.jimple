@@ -1,0 +1,57 @@
+    public static boolean validaData(java.lang.String)
+    {
+        java.lang.String data;
+        boolean 'ret';
+        int $stack3;
+        java.text.SimpleDateFormat $stack4;
+        java.util.Date $stack5;
+        java.lang.Exception $stack6;
+
+        data := @parameter0: java.lang.String;
+
+        'ret' = 0;
+/*31*/
+
+     label1:
+        if data == null goto label2;
+/*33*/
+
+        $stack3 = virtualinvoke data.<java.lang.String: int length()>();
+/*34*/
+
+        if $stack3 != 10 goto label2;
+/*34*/
+
+        $stack4 = new java.text.SimpleDateFormat;
+/*35*/
+
+        specialinvoke $stack4.<java.text.SimpleDateFormat: void <init>(java.lang.String)>("dd/MM/yyyy");
+/*35*/
+
+        $stack5 = virtualinvoke $stack4.<java.text.SimpleDateFormat: java.util.Date parse(java.lang.String)>(data);
+/*35*/
+
+        if $stack5 == null goto label2;
+/*35*/
+
+        'ret' = 1;
+/*36*/
+
+     label2:
+        goto label4;
+/*41*/
+
+     label3:
+        $stack6 := @caughtexception;
+/*41*/
+
+        virtualinvoke $stack6.<java.lang.Exception: void printStackTrace()>();
+/*40*/
+
+     label4:
+        return 'ret';
+/*42*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

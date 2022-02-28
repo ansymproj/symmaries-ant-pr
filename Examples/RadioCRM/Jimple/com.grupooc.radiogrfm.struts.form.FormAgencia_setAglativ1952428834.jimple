@@ -1,0 +1,16 @@
+    public void setAglativ(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+        java.lang.String aglativ;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        aglativ := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String aglativ> = aglativ;
+/*152*/
+
+        return;
+/*153*/
+    }
+

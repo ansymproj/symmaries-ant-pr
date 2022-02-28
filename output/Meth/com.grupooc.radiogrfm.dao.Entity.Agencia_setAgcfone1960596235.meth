@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAgcfone(java.lang.String agcfone)
+{
+this.agcfone=agcfone;
+ return;
+ } 
+

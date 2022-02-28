@@ -1,0 +1,100 @@
+    public boolean temCredito(int, float)
+    {
+        com.grupooc.radiogrfm.dao.ModelContrato this;
+        int crncodg;
+        float valor, valorContrato, valorContratado;
+        boolean 'ret', $stack12;
+        java.sql.PreparedStatement st;
+        java.sql.ResultSet rs;
+        java.sql.Connection $stack9;
+        byte $stack14;
+        java.lang.Exception $stack21;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelContrato;
+
+        crncodg := @parameter0: int;
+
+        valor := @parameter1: float;
+
+        'ret' = 0;
+/*54*/
+
+     label1:
+        $stack9 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*65*/
+
+        st = interfaceinvoke $stack9.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("  SELECT   CRNVALR,   COALESCE(SUM(INNSOMA),0) INNSOMA FROM   CONTRATO LEFT JOIN VW_INSERCAO ON      INNCGCR = CRNCODG WHERE CRNCODG = ? GROUP BY CRNVALR");
+/*65*/
+/*65*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, crncodg);
+/*67*/
+
+        rs = interfaceinvoke st.<java.sql.PreparedStatement: java.sql.ResultSet executeQuery()>();
+/*69*/
+/*69*/
+
+        valorContrato = 0.0F;
+/*71*/
+
+        valorContratado = 0.0F;
+/*72*/
+
+        $stack12 = interfaceinvoke rs.<java.sql.ResultSet: boolean next()>();
+/*74*/
+
+        if $stack12 == 0 goto label2;
+/*74*/
+
+        crncodg = interfaceinvoke rs.<java.sql.ResultSet: int getInt(java.lang.String)>("CRNVALR");
+/*75*/
+
+        valorContrato = (float) crncodg;
+/*75*/
+
+        valorContratado = interfaceinvoke rs.<java.sql.ResultSet: float getFloat(java.lang.String)>("INNSOMA");
+/*76*/
+/*76*/
+
+     label2:
+        valorContrato = valorContrato - valorContratado;
+/*79*/
+
+        $stack14 = valorContrato cmpl valor;
+/*79*/
+
+        if $stack14 < 0 goto label3;
+/*79*/
+
+        $stack12 = 1;
+/*84*/
+
+        goto label4;
+/*84*/
+
+     label3:
+        $stack12 = 0;
+/*84*/
+
+     label4:
+        'ret' = $stack12;
+/*79*/
+
+     label5:
+        goto label7;
+/*83*/
+
+     label6:
+        $stack21 := @caughtexception;
+/*79*/
+
+        virtualinvoke $stack21.<java.lang.Exception: void printStackTrace()>();
+/*82*/
+
+     label7:
+        return 'ret';
+/*84*/
+
+        catch java.lang.Exception from label1 to label5 with label6;
+    }
+

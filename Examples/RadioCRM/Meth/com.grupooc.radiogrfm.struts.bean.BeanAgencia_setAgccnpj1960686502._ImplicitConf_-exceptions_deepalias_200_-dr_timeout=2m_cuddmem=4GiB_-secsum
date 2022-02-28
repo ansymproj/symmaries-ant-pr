@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAgccnpj (java.lang.String
+                                                                 agccnpj) {
+  guard = tt;
+  ret(obj_level(agccnpj)) = if ¬agccnpj.~>this ∨ pc ⊔ level(agccnpj) = ⊥ then obj_level(agccnpj) else if agccnpj.~>this ∧ pc ⊔ level(agccnpj) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(agccnpj) ⊔ obj_level(agccnpj) ⊔ obj_level(this);
+  ret(agccnpj.~>agccnpj) = agccnpj.~>agccnpj ∨ agccnpj.~>this;
+  ret(agccnpj.~>this) = agccnpj.~>this;
+  ret(this.~>agccnpj) = tt;
+  ret(this.~>this) = agccnpj.~>this ∨ this.~>this;
+}

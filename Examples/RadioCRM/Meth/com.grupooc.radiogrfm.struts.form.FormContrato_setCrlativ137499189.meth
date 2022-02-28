@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrlativ(java.lang.String crlativ)
+{
+this.crlativ=crlativ;
+ return;
+ } 
+

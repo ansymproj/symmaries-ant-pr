@@ -1,0 +1,16 @@
+    public void setCrcdcmd(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crcdcmd;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crcdcmd := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crcdcmd> = crcdcmd;
+/*222*/
+
+        return;
+/*223*/
+    }
+

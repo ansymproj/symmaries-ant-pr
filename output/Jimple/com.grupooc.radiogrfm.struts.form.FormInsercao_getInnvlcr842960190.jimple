@@ -1,0 +1,14 @@
+    public java.lang.String getInnvlcr()
+    {
+        com.grupooc.radiogrfm.struts.form.FormInsercao this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormInsercao;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormInsercao: java.lang.String innvlcr>;
+/*43*/
+
+        return $stack1;
+/*43*/
+    }
+

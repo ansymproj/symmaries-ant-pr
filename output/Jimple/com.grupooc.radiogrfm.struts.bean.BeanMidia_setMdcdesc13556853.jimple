@@ -1,0 +1,16 @@
+    public void setMdcdesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMidia this;
+        java.lang.String mdcdesc;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMidia;
+
+        mdcdesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanMidia: java.lang.String mdcdesc> = mdcdesc;
+/*43*/
+
+        return;
+/*44*/
+    }
+

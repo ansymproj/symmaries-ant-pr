@@ -1,0 +1,16 @@
+    public void setEncbair(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encbair;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encbair := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encbair> = encbair;
+/*222*/
+
+        return;
+/*223*/
+    }
+

@@ -1,0 +1,16 @@
+    public void setOpnpart(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanOperacao this;
+        java.lang.String opnpart;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanOperacao;
+
+        opnpart := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanOperacao: java.lang.String opnpart> = opnpart;
+/*24*/
+
+        return;
+/*25*/
+    }
+

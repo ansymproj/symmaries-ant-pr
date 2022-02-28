@@ -1,0 +1,16 @@
+    public void setUscpsw3(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormUsuario this;
+        java.lang.String uscpsw3;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormUsuario;
+
+        uscpsw3 := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormUsuario: java.lang.String uscpsw3> = uscpsw3;
+/*71*/
+
+        return;
+/*72*/
+    }
+

@@ -1,0 +1,14 @@
+static boolean com.grupooc.radiogrfm.utils.ValidaObjeto:validaFloat(java.lang.String floatValue)
+{
+boolean ok;
+  java.lang.Exception e;
+  ok=0;
+ label0:java.lang.Float.parseFloat(floatValue);
+ ok=1;
+ label1:goto label2;
+ label3:e = catch;
+ ok=0;
+ label2:return  ok;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

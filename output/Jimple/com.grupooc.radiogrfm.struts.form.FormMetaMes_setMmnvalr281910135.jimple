@@ -1,0 +1,16 @@
+    public void setMmnvalr(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormMetaMes this;
+        java.lang.String mmnvalr;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormMetaMes;
+
+        mmnvalr := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormMetaMes: java.lang.String mmnvalr> = mmnvalr;
+/*65*/
+
+        return;
+/*66*/
+    }
+

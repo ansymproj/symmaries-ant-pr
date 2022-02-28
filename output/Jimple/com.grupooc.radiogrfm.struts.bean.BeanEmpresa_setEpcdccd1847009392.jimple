@@ -1,0 +1,16 @@
+    public void setEpcdccd(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanEmpresa this;
+        java.lang.String epcdccd;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanEmpresa;
+
+        epcdccd := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanEmpresa: java.lang.String epcdccd> = epcdccd;
+/*115*/
+
+        return;
+/*116*/
+    }
+

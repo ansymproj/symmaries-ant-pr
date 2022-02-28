@@ -1,0 +1,16 @@
+    public void setCrncgep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContrato this;
+        java.lang.String crncgep;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContrato;
+
+        crncgep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContrato: java.lang.String crncgep> = crncgep;
+/*53*/
+
+        return;
+/*54*/
+    }
+

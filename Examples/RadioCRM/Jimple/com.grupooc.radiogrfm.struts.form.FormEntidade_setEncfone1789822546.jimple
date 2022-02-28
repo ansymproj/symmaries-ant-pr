@@ -1,0 +1,16 @@
+    public void setEncfone(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encfone;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encfone := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encfone> = encfone;
+/*180*/
+
+        return;
+/*181*/
+    }
+

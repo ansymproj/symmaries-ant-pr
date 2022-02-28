@@ -1,0 +1,16 @@
+    public void setInnvlcr(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormInsercao this;
+        java.lang.String innvlcr;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormInsercao;
+
+        innvlcr := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormInsercao: java.lang.String innvlcr> = innvlcr;
+/*46*/
+
+        return;
+/*47*/
+    }
+

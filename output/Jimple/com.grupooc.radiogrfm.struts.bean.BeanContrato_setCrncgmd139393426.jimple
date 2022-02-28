@@ -1,0 +1,16 @@
+    public void setCrncgmd(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crncgmd;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crncgmd := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crncgmd> = crncgmd;
+/*216*/
+
+        return;
+/*217*/
+    }
+

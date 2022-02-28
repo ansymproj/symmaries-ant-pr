@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanOperacao:setOpnpart (java.lang.String
+                                                                  opnpart) {
+  guard = tt;
+  ret(obj_level(opnpart)) = if ¬opnpart.~>this ∨ pc ⊔ level(opnpart) = ⊥ then obj_level(opnpart) else if opnpart.~>this ∧ pc ⊔ level(opnpart) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(opnpart) ⊔ obj_level(opnpart) ⊔ obj_level(this);
+  ret(opnpart.~>opnpart) = opnpart.~>opnpart ∨ opnpart.~>this;
+  ret(opnpart.~>this) = opnpart.~>this;
+  ret(this.~>opnpart) = tt;
+  ret(this.~>this) = opnpart.~>this ∨ this.~>this;
+}

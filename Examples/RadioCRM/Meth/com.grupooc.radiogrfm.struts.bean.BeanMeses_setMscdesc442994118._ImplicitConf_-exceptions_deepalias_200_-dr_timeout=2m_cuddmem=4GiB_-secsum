@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanMeses:setMscdesc (java.lang.String
+                                                               mscdesc) {
+  guard = tt;
+  ret(obj_level(mscdesc)) = if ¬mscdesc.~>this ∨ pc ⊔ level(mscdesc) = ⊥ then obj_level(mscdesc) else if mscdesc.~>this ∧ pc ⊔ level(mscdesc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(mscdesc) ⊔ obj_level(mscdesc) ⊔ obj_level(this);
+  ret(mscdesc.~>mscdesc) = mscdesc.~>mscdesc ∨ mscdesc.~>this;
+  ret(mscdesc.~>this) = mscdesc.~>this;
+  ret(this.~>mscdesc) = tt;
+  ret(this.~>this) = mscdesc.~>this ∨ this.~>this;
+}

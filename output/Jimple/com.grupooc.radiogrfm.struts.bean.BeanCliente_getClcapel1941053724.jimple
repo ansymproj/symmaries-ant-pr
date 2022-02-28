@@ -1,0 +1,14 @@
+    public java.lang.String getClcapel()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clcapel>;
+/*107*/
+
+        return $stack1;
+/*107*/
+    }
+

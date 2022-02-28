@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanUsuario:getUscnmep()
+{
+java.lang.String $stack1;
+  $stack1=this.uscnmep;
+ return  $stack1;
+ } 
+

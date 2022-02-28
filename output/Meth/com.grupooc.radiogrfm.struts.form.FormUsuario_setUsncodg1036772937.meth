@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormUsuario:setUsncodg(java.lang.String usncodg)
+{
+this.usncodg=usncodg;
+ return;
+ } 
+

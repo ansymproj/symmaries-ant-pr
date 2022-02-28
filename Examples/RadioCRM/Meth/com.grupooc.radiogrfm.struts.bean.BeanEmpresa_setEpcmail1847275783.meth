@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpcmail(java.lang.String epcmail)
+{
+this.epcmail=epcmail;
+ return;
+ } 
+

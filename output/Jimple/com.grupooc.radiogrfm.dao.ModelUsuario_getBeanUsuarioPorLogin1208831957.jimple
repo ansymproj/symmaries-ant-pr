@@ -1,0 +1,64 @@
+    public com.grupooc.radiogrfm.struts.bean.BeanUsuario getBeanUsuarioPorLogin(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.ModelUsuario this;
+        java.lang.String usclogn;
+        com.grupooc.radiogrfm.struts.bean.BeanUsuario usuario;
+        java.sql.PreparedStatement st;
+        java.util.List l;
+        java.sql.Connection $stack6;
+        boolean $stack9;
+        java.lang.Object $stack10;
+        java.lang.Exception $stack11;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelUsuario;
+
+        usclogn := @parameter0: java.lang.String;
+
+        usuario = null;
+/*46*/
+
+     label1:
+        $stack6 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*49*/
+
+        st = interfaceinvoke $stack6.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("SELECT * FROM VW_USUARIO WHERE USCLOGN = UPPER(?)");
+/*49*/
+/*49*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(1, usclogn);
+/*50*/
+
+        l = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.List getObjectsStr(java.sql.PreparedStatement,java.lang.Class)>(st, class "Lcom/grupooc/radiogrfm/struts/bean/BeanUsuario;");
+/*51*/
+/*51*/
+
+        $stack9 = interfaceinvoke l.<java.util.List: boolean isEmpty()>();
+/*52*/
+
+        if $stack9 != 0 goto label2;
+/*52*/
+
+        $stack10 = interfaceinvoke l.<java.util.List: java.lang.Object get(int)>(0);
+/*53*/
+
+        usuario = (com.grupooc.radiogrfm.struts.bean.BeanUsuario) $stack10;
+/*53*/
+
+     label2:
+        goto label4;
+/*57*/
+
+     label3:
+        $stack11 := @caughtexception;
+/*57*/
+
+        virtualinvoke $stack11.<java.lang.Exception: void printStackTrace()>();
+/*56*/
+
+     label4:
+        return usuario;
+/*58*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

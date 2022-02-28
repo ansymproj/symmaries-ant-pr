@@ -1,0 +1,83 @@
+    public org.apache.struts.action.ActionForward aberto(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionContrato this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        com.grupooc.radiogrfm.struts.bean.BeanEmpresa beanEmpresa;
+        javax.servlet.http.HttpSession $stack9;
+        java.lang.Object $stack10;
+        com.grupooc.radiogrfm.dao.ModelContrato $stack12;
+        java.lang.String $stack13;
+        int $stack14;
+        java.util.ArrayList $stack15;
+        java.lang.Exception $stack18;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionContrato;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*36*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*36*/
+
+        $stack9 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*37*/
+
+        $stack10 = interfaceinvoke $stack9.<javax.servlet.http.HttpSession: java.lang.Object getAttribute(java.lang.String)>("empresa");
+/*37*/
+
+        beanEmpresa = (com.grupooc.radiogrfm.struts.bean.BeanEmpresa) $stack10;
+/*37*/
+
+     label1:
+        if beanEmpresa == null goto label2;
+/*40*/
+
+        $stack12 = staticinvoke <com.grupooc.radiogrfm.dao.ModelContrato: com.grupooc.radiogrfm.dao.ModelContrato getInstance()>();
+/*41*/
+
+        $stack13 = virtualinvoke beanEmpresa.<com.grupooc.radiogrfm.struts.bean.BeanEmpresa: java.lang.String getEpncodg()>();
+/*41*/
+
+        $stack14 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack13);
+/*41*/
+
+        $stack15 = virtualinvoke $stack12.<com.grupooc.radiogrfm.dao.ModelContrato: java.util.ArrayList getContratosAberto(int)>($stack14);
+/*41*/
+
+        interfaceinvoke request.<javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("ls_contrato", $stack15);
+/*41*/
+
+     label2:
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/contratoLista.do");
+/*43*/
+
+     label3:
+        goto label5;
+/*47*/
+
+     label4:
+        $stack18 := @caughtexception;
+/*47*/
+
+        virtualinvoke $stack18.<java.lang.Exception: void printStackTrace()>();
+/*46*/
+
+     label5:
+        return fw;
+/*49*/
+
+        catch java.lang.Exception from label1 to label3 with label4;
+    }
+

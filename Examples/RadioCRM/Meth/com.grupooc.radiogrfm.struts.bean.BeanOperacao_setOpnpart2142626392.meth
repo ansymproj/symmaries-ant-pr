@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanOperacao:setOpnpart(java.lang.String opnpart)
+{
+this.opnpart=opnpart;
+ return;
+ } 
+

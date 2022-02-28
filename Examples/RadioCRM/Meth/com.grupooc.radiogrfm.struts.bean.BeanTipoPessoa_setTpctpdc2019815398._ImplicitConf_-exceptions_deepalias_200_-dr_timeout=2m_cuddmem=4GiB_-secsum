@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanTipoPessoa:setTpctpdc (java.lang.String
+                                                                    tpctpdc) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(tpctpdc) ⊔ obj_level(this) ⊔ obj_level(tpctpdc);
+  ret(obj_level(tpctpdc)) = if ¬tpctpdc.~>this ∨ pc ⊔ level(tpctpdc) = ⊥ then obj_level(tpctpdc) else if tpctpdc.~>this ∧ pc ⊔ level(tpctpdc) = ⊤ then ⊤ else ⊥;
+  ret(this.~>this) = this.~>this ∨ tpctpdc.~>this;
+  ret(this.~>tpctpdc) = tt;
+  ret(tpctpdc.~>this) = tpctpdc.~>this;
+  ret(tpctpdc.~>tpctpdc) = tpctpdc.~>this ∨ tpctpdc.~>tpctpdc;
+}

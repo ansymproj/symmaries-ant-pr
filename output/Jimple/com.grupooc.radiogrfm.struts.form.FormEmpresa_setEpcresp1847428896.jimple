@@ -1,0 +1,16 @@
+    public void setEpcresp(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEmpresa this;
+        java.lang.String epcresp;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEmpresa;
+
+        epcresp := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEmpresa: java.lang.String epcresp> = epcresp;
+/*67*/
+
+        return;
+/*68*/
+    }
+

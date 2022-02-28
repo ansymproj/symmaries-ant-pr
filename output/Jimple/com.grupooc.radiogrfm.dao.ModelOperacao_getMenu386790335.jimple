@@ -1,0 +1,177 @@
+    public java.lang.String getMenu(int)
+    {
+        com.grupooc.radiogrfm.dao.ModelOperacao this;
+        int usncodg, $stack25;
+        java.lang.StringBuffer buffer;
+        java.util.Iterator opp, opf;
+        com.grupooc.radiogrfm.struts.bean.BeanOperacao operacaop;
+        java.util.ArrayList $stack8;
+        boolean $stack10;
+        java.lang.String $stack11;
+        java.lang.Object $stack13;
+        java.lang.StringBuilder $stack14;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelOperacao;
+
+        usncodg := @parameter0: int;
+
+        buffer = new java.lang.StringBuffer;
+/*86*/
+
+        specialinvoke buffer.<java.lang.StringBuffer: void <init>()>();
+/*86*/
+
+        $stack8 = virtualinvoke this.<com.grupooc.radiogrfm.dao.ModelOperacao: java.util.ArrayList getOperacoesPaiDoUsuario(int)>(usncodg);
+/*87*/
+
+        opp = virtualinvoke $stack8.<java.util.ArrayList: java.util.Iterator iterator()>();
+/*87*/
+/*87*/
+
+     label1:
+        $stack10 = interfaceinvoke opp.<java.util.Iterator: boolean hasNext()>();
+/*88*/
+
+        if $stack10 == 0 goto label4;
+/*88*/
+
+        virtualinvoke buffer.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("<li>\n");
+/*89*/
+
+        $stack13 = interfaceinvoke opp.<java.util.Iterator: java.lang.Object next()>();
+/*90*/
+
+        operacaop = (com.grupooc.radiogrfm.struts.bean.BeanOperacao) $stack13;
+/*90*/
+
+        $stack14 = new java.lang.StringBuilder;
+/*91*/
+
+        specialinvoke $stack14.<java.lang.StringBuilder: void <init>()>();
+/*91*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\t<a href=\"#\" title=\"");
+/*91*/
+
+        $stack11 = virtualinvoke operacaop.<com.grupooc.radiogrfm.struts.bean.BeanOperacao: java.lang.String getOpchint()>();
+/*91*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack11);
+/*91*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\">");
+/*91*/
+
+        $stack11 = virtualinvoke operacaop.<com.grupooc.radiogrfm.struts.bean.BeanOperacao: java.lang.String getOpcdesc()>();
+/*91*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack11);
+/*91*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("</a>\n");
+/*91*/
+
+        $stack11 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.String toString()>();
+/*91*/
+
+        virtualinvoke buffer.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($stack11);
+/*91*/
+
+        $stack11 = virtualinvoke operacaop.<com.grupooc.radiogrfm.struts.bean.BeanOperacao: java.lang.String getOpncodg()>();
+/*92*/
+
+        $stack25 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack11);
+/*92*/
+
+        $stack8 = virtualinvoke this.<com.grupooc.radiogrfm.dao.ModelOperacao: java.util.ArrayList getSubOperacoesDoUsuario(int,int)>(usncodg, $stack25);
+/*92*/
+
+        opf = virtualinvoke $stack8.<java.util.ArrayList: java.util.Iterator iterator()>();
+/*92*/
+/*92*/
+
+        virtualinvoke buffer.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("\t<ul>\n");
+/*93*/
+
+     label2:
+        $stack10 = interfaceinvoke opf.<java.util.Iterator: boolean hasNext()>();
+/*94*/
+
+        if $stack10 == 0 goto label3;
+/*94*/
+
+        $stack13 = interfaceinvoke opf.<java.util.Iterator: java.lang.Object next()>();
+/*95*/
+
+        operacaop = (com.grupooc.radiogrfm.struts.bean.BeanOperacao) $stack13;
+/*95*/
+
+        virtualinvoke buffer.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("\t\t<li>\n");
+/*96*/
+
+        $stack14 = new java.lang.StringBuilder;
+/*97*/
+
+        specialinvoke $stack14.<java.lang.StringBuilder: void <init>()>();
+/*97*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\t\t\t<a href=\"");
+/*97*/
+
+        $stack11 = virtualinvoke operacaop.<com.grupooc.radiogrfm.struts.bean.BeanOperacao: java.lang.String getOpclink()>();
+/*97*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack11);
+/*97*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\" title=\"");
+/*97*/
+
+        $stack11 = virtualinvoke operacaop.<com.grupooc.radiogrfm.struts.bean.BeanOperacao: java.lang.String getOpchint()>();
+/*97*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack11);
+/*97*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\">");
+/*97*/
+
+        $stack11 = virtualinvoke operacaop.<com.grupooc.radiogrfm.struts.bean.BeanOperacao: java.lang.String getOpcdesc()>();
+/*97*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack11);
+/*97*/
+
+        $stack14 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("</a>\n");
+/*97*/
+
+        $stack11 = virtualinvoke $stack14.<java.lang.StringBuilder: java.lang.String toString()>();
+/*97*/
+
+        virtualinvoke buffer.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($stack11);
+/*97*/
+
+        virtualinvoke buffer.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("\t\t</li>\n");
+/*98*/
+
+        goto label2;
+/*99*/
+
+     label3:
+        virtualinvoke buffer.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("\t</ul>\n");
+/*100*/
+
+        virtualinvoke buffer.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("</li>\n");
+/*101*/
+
+        goto label1;
+/*103*/
+
+     label4:
+        $stack11 = virtualinvoke buffer.<java.lang.StringBuffer: java.lang.String toString()>();
+/*106*/
+
+        return $stack11;
+/*106*/
+    }
+

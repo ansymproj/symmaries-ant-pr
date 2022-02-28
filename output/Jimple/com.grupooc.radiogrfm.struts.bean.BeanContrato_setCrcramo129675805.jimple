@@ -1,0 +1,16 @@
+    public void setCrcramo(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crcramo;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crcramo := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crcramo> = crcramo;
+/*228*/
+
+        return;
+/*229*/
+    }
+

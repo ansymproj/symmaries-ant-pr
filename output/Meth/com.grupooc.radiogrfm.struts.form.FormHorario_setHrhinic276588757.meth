@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormHorario:setHrhinic(java.lang.String hrhinic)
+{
+this.hrhinic=hrhinic;
+ return;
+ } 
+

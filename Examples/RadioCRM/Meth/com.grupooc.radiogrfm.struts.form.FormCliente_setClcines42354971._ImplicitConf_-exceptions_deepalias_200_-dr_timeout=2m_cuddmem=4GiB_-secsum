@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClcines (java.lang.String
+                                                                 clcines) {
+  guard = tt;
+  ret(obj_level(clcines)) = if ¬clcines.~>this ∨ pc ⊔ level(clcines) = ⊥ then obj_level(clcines) else if clcines.~>this ∧ pc ⊔ level(clcines) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcines) ⊔ obj_level(clcines) ⊔ obj_level(this);
+  ret(clcines.~>clcines) = clcines.~>clcines ∨ clcines.~>this;
+  ret(clcines.~>this) = clcines.~>this;
+  ret(this.~>clcines) = tt;
+  ret(this.~>this) = clcines.~>this ∨ this.~>this;
+}

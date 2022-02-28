@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanHorario:setHrhinic(java.lang.String hrhinic)
+{
+this.hrhinic=hrhinic;
+ return;
+ } 
+

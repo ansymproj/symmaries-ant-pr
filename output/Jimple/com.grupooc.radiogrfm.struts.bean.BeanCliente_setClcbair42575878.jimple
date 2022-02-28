@@ -1,0 +1,16 @@
+    public void setClcbair(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clcbair;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clcbair := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clcbair> = clcbair;
+/*188*/
+
+        return;
+/*189*/
+    }
+

@@ -1,0 +1,12 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:getObjectToStrBR(java.sql.ResultSet rs,java.lang.String @value)
+{
+float $stack2;
+  java.lang.Float $stack3;
+  java.lang.String value;
+value=@value;
+$stack2 = rs.getFloat(value);
+ $stack3 = java.lang.Float.valueOf($stack2);
+ value = com.grupooc.radiogrfm.utils.Utils.objectToStrBR($stack3);
+ return  value;
+ } 
+

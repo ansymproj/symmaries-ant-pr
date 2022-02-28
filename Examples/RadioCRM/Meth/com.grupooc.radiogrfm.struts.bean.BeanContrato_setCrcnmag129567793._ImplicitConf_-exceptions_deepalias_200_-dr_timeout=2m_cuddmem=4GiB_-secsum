@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContrato:setCrcnmag (java.lang.String
+                                                                  crcnmag) {
+  guard = tt;
+  ret(obj_level(crcnmag)) = if ¬crcnmag.~>this ∨ pc ⊔ level(crcnmag) = ⊥ then obj_level(crcnmag) else if crcnmag.~>this ∧ pc ⊔ level(crcnmag) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crcnmag) ⊔ obj_level(crcnmag) ⊔ obj_level(this);
+  ret(crcnmag.~>crcnmag) = crcnmag.~>crcnmag ∨ crcnmag.~>this;
+  ret(crcnmag.~>this) = crcnmag.~>this;
+  ret(this.~>crcnmag) = tt;
+  ret(this.~>this) = crcnmag.~>this ∨ this.~>this;
+}

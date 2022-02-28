@@ -1,0 +1,16 @@
+    public void setClcapel(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clcapel;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clcapel := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clcapel> = clcapel;
+/*110*/
+
+        return;
+/*111*/
+    }
+

@@ -1,0 +1,16 @@
+    public void setInncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao this;
+        java.lang.String inncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanInsercao;
+
+        inncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String inncodg> = inncodg;
+/*33*/
+
+        return;
+/*34*/
+    }
+

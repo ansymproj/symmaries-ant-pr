@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormHorario:setHrcdcds(java.lang.String hrcdcds)
+{
+this.hrcdcds=hrcdcds;
+ return;
+ } 
+

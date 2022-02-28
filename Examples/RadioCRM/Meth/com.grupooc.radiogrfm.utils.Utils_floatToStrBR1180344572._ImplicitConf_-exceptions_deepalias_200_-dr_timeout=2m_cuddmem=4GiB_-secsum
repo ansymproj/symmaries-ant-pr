@@ -1,0 +1,14 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:floatToStrBR (
+  java.lang.String @format, java.lang.Float value) {
+  guard = tt;
+  ret(level()) = pc ⊔ level(@format) ⊔ level(value) ⊔ obj_level(@format);
+  ret(obj_level()) = pc ⊔ level(@format) ⊔ level(value) ⊔ obj_level(@format) ⊔ obj_level(value);
+  ret(obj_level(@format)) = obj_level(@format);
+  ret(obj_level(value)) = obj_level(value);
+  ret(~@format) = ff;
+  ret(.~>@format) = ff;
+  ret(@format.~>) = ff;
+  ret(@format.~>@format) = @format.~>@format;
+  ret(@format.~>value) = @format.~>value;
+  ret(value.~>) = ff;
+}

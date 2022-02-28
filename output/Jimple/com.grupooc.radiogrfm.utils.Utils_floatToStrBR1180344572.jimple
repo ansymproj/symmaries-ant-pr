@@ -1,0 +1,34 @@
+    public static java.lang.String floatToStrBR(java.lang.String, java.lang.Float)
+    {
+        java.lang.String format;
+        java.lang.Float value;
+        java.text.DecimalFormat $stack2;
+
+        format := @parameter0: java.lang.String;
+
+        value := @parameter1: java.lang.Float;
+
+        if value != null goto label1;
+/*326*/
+
+        format = null;
+/*326*/
+
+        goto label2;
+/*326*/
+
+     label1:
+        $stack2 = new java.text.DecimalFormat;
+/*326*/
+
+        specialinvoke $stack2.<java.text.DecimalFormat: void <init>(java.lang.String)>(format);
+/*326*/
+
+        format = virtualinvoke $stack2.<java.text.DecimalFormat: java.lang.String format(java.lang.Object)>(value);
+/*326*/
+
+     label2:
+        return format;
+/*326*/
+    }
+

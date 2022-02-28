@@ -1,0 +1,16 @@
+    public void setOpncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanOperacao this;
+        java.lang.String opncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanOperacao;
+
+        opncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanOperacao: java.lang.String opncodg> = opncodg;
+/*18*/
+
+        return;
+/*19*/
+    }
+

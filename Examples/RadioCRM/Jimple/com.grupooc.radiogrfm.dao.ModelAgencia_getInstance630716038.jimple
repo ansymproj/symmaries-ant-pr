@@ -1,0 +1,14 @@
+    public static com.grupooc.radiogrfm.dao.ModelAgencia getInstance()
+    {
+        com.grupooc.radiogrfm.dao.ModelAgencia $stack0;
+
+        $stack0 = new com.grupooc.radiogrfm.dao.ModelAgencia;
+/*15*/
+
+        specialinvoke $stack0.<com.grupooc.radiogrfm.dao.ModelAgencia: void <init>()>();
+/*15*/
+
+        return $stack0;
+/*15*/
+    }
+

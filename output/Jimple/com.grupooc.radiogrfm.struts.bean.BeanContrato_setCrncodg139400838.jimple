@@ -1,0 +1,16 @@
+    public void setCrncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crncodg> = crncodg;
+/*77*/
+
+        return;
+/*78*/
+    }
+

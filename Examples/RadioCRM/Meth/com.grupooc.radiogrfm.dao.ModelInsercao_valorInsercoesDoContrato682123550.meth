@@ -1,0 +1,24 @@
+java.lang.String com.grupooc.radiogrfm.dao.ModelInsercao:valorInsercoesDoContrato(int crncodg)
+{
+java.lang.String ret;
+  java.sql.PreparedStatement st;
+  java.sql.Connection $stack5;
+  java.util.List $stack7;
+  java.lang.Object $stack8;
+  com.grupooc.radiogrfm.struts.bean.BeanInsercao $stack9;
+  java.lang.Exception $stack11;
+  ret=null;
+ label0:$stack5 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack5.prepareStatement("SELECT SUM(INNSOMA)INNSOMA FROM VW_INSERCAO WHERE INNCGCR = ?");
+ st.setInt(1,crncodg);
+ $stack7 = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanInsercao);
+ $stack8 = $stack7.get(0);
+ $stack9=(com.grupooc.radiogrfm.struts.bean.BeanInsercao) $stack8;
+ ret = $stack9.getInnsoma();
+ label1:goto label2;
+ label3:$stack11 = catch;
+ $stack11.printStackTrace();
+ label2:return  ret;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

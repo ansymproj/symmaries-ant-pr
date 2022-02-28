@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpcfone(java.lang.String epcfone)
+{
+this.epcfone=epcfone;
+ return;
+ } 
+

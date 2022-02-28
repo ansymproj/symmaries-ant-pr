@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanMeses:setMsncodg (java.lang.String
+                                                               msncodg) {
+  guard = tt;
+  ret(obj_level(msncodg)) = if ¬msncodg.~>this ∨ pc ⊔ level(msncodg) = ⊥ then obj_level(msncodg) else if msncodg.~>this ∧ pc ⊔ level(msncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(msncodg) ⊔ obj_level(msncodg) ⊔ obj_level(this);
+  ret(msncodg.~>msncodg) = msncodg.~>msncodg ∨ msncodg.~>this;
+  ret(msncodg.~>this) = msncodg.~>this;
+  ret(this.~>msncodg) = tt;
+  ret(this.~>this) = msncodg.~>this ∨ this.~>this;
+}

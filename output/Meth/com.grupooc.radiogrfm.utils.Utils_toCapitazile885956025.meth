@@ -1,0 +1,27 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:toCapitazile(java.lang.String @str,java.util.Locale locale)
+{
+int $stack2;
+  java.lang.StringBuilder $stack3;
+  java.lang.String $stack4;
+  java.lang.String str;
+str=@str;
+if (str==null) goto label0;
+ $stack2 = str.length();
+ if ($stack2!=0) goto label1;
+ label0:goto label2;
+ label1:$stack3=new java.lang.StringBuilder;
+ $stack3#java.lang.StringBuilder();
+ $stack4 = str.substring(0,1);
+ $stack4 = $stack4.toUpperCase(locale);
+ $stack3 = $stack3.append($stack4);
+ $stack2 = str.length();
+ if ($stack2!=1) goto label3;
+ str="";
+ goto label4;
+ label3:str = str.substring(1);
+ str = str.toLowerCase(locale);
+ label4:$stack3 = $stack3.append(str);
+ str = $stack3.toString();
+ label2:return  str;
+ } 
+

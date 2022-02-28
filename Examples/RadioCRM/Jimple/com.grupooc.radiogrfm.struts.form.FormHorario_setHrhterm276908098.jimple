@@ -1,0 +1,16 @@
+    public void setHrhterm(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormHorario this;
+        java.lang.String hrhterm;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormHorario;
+
+        hrhterm := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormHorario: java.lang.String hrhterm> = hrhterm;
+/*57*/
+
+        return;
+/*58*/
+    }
+

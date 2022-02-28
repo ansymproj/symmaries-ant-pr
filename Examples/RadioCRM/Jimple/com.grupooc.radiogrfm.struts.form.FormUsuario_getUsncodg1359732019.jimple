@@ -1,0 +1,14 @@
+    public java.lang.String getUsncodg()
+    {
+        com.grupooc.radiogrfm.struts.form.FormUsuario this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormUsuario;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormUsuario: java.lang.String usncodg>;
+/*32*/
+
+        return $stack1;
+/*32*/
+    }
+

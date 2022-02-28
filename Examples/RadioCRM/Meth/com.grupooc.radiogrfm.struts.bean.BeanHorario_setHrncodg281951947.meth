@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanHorario:setHrncodg(java.lang.String hrncodg)
+{
+this.hrncodg=hrncodg;
+ return;
+ } 
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncpai (java.lang.String
+                                                                 encpai) {
+  guard = tt;
+  ret(obj_level(encpai)) = if ¬encpai.~>this ∨ pc ⊔ level(encpai) = ⊥ then obj_level(encpai) else if encpai.~>this ∧ pc ⊔ level(encpai) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(encpai) ⊔ obj_level(encpai) ⊔ obj_level(this);
+  ret(encpai.~>encpai) = encpai.~>encpai ∨ encpai.~>this;
+  ret(encpai.~>this) = encpai.~>this;
+  ret(this.~>encpai) = tt;
+  ret(this.~>this) = encpai.~>this ∨ this.~>this;
+}

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContato:setCtcfone(java.lang.String ctcfone)
+{
+this.ctcfone=ctcfone;
+ return;
+ } 
+

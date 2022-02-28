@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanMeta:setMtyacum(java.lang.String mtyacum)
+{
+this.mtyacum=mtyacum;
+ return;
+ } 
+

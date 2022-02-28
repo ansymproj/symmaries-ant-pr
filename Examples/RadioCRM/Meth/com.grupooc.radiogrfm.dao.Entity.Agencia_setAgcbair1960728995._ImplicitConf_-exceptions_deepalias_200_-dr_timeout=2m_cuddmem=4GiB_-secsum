@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAgcbair (java.lang.String
+                                                            agcbair) {
+  guard = tt;
+  ret(obj_level(agcbair)) = if ¬agcbair.~>this ∨ pc ⊔ level(agcbair) = ⊥ then obj_level(agcbair) else if agcbair.~>this ∧ pc ⊔ level(agcbair) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(agcbair) ⊔ obj_level(agcbair) ⊔ obj_level(this);
+  ret(agcbair.~>agcbair) = agcbair.~>agcbair ∨ agcbair.~>this;
+  ret(agcbair.~>this) = agcbair.~>this;
+  ret(this.~>agcbair) = tt;
+  ret(this.~>this) = agcbair.~>this ∨ this.~>this;
+}

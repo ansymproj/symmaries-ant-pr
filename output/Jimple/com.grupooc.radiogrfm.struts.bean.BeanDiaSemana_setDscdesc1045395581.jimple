@@ -1,0 +1,16 @@
+    public void setDscdesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanDiaSemana this;
+        java.lang.String dscdesc;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanDiaSemana;
+
+        dscdesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanDiaSemana: java.lang.String dscdesc> = dscdesc;
+/*22*/
+
+        return;
+/*23*/
+    }
+

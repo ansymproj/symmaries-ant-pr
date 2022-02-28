@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanMetaMes:getMmncgms()
+{
+java.lang.String $stack1;
+  $stack1=this.mmncgms;
+ return  $stack1;
+ } 
+

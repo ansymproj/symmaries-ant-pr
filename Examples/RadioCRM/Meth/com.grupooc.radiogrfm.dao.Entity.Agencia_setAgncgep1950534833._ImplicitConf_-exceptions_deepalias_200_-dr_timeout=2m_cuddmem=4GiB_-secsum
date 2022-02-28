@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAgncgep (java.lang.String
+                                                            agncgep) {
+  guard = tt;
+  ret(obj_level(agncgep)) = if ¬agncgep.~>this ∨ pc ⊔ level(agncgep) = ⊥ then obj_level(agncgep) else if agncgep.~>this ∧ pc ⊔ level(agncgep) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(agncgep) ⊔ obj_level(agncgep) ⊔ obj_level(this);
+  ret(agncgep.~>agncgep) = agncgep.~>agncgep ∨ agncgep.~>this;
+  ret(agncgep.~>this) = agncgep.~>this;
+  ret(this.~>agncgep) = tt;
+  ret(this.~>this) = agncgep.~>this ∨ this.~>this;
+}

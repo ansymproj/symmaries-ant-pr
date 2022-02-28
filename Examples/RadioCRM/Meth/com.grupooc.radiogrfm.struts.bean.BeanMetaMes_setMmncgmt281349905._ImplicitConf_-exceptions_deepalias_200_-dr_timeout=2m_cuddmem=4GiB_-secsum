@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanMetaMes:setMmncgmt (java.lang.String
+                                                                 mmncgmt) {
+  guard = tt;
+  ret(obj_level(mmncgmt)) = if ¬mmncgmt.~>this ∨ pc ⊔ level(mmncgmt) = ⊥ then obj_level(mmncgmt) else if mmncgmt.~>this ∧ pc ⊔ level(mmncgmt) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(mmncgmt) ⊔ obj_level(mmncgmt) ⊔ obj_level(this);
+  ret(mmncgmt.~>mmncgmt) = mmncgmt.~>mmncgmt ∨ mmncgmt.~>this;
+  ret(mmncgmt.~>this) = mmncgmt.~>this;
+  ret(this.~>mmncgmt) = tt;
+  ret(this.~>this) = mmncgmt.~>this ∨ this.~>this;
+}

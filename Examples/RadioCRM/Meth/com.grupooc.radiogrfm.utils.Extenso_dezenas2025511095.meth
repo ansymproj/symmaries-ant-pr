@@ -1,0 +1,26 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Extenso:dezenas(int numero)
+{
+java.lang.StringBuilder $stack1;
+  java.lang.String $stack2;
+  int $stack4;
+  java.lang.String[] $stack5;
+  if (numero!=0) goto label0;
+ return  "";
+ label0:if (numero>=20) goto label1;
+ $stack2 = com.grupooc.radiogrfm.utils.Extenso.unidades(numero);
+ return  $stack2;
+ label1:$stack1=new java.lang.StringBuilder;
+ $stack1#java.lang.StringBuilder();
+ $stack2=com.grupooc.radiogrfm.utils.Extenso.SEPARADOR_MENOR;
+ $stack1 = $stack1.append($stack2);
+ $stack5=com.grupooc.radiogrfm.utils.Extenso.dezenas;
+ $stack4=(numero/10);
+ $stack2=$stack5[$stack4];
+ $stack1 = $stack1.append($stack2);
+ numero=(numero%10);
+ $stack2 = com.grupooc.radiogrfm.utils.Extenso.unidades(numero);
+ $stack1 = $stack1.append($stack2);
+ $stack2 = $stack1.toString();
+ return  $stack2;
+ } 
+

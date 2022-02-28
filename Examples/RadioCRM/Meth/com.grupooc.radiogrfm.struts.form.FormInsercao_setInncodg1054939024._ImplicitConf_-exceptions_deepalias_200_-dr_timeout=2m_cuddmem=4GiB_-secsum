@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormInsercao:setInncodg (java.lang.String
+                                                                  inncodg) {
+  guard = tt;
+  ret(obj_level(inncodg)) = if ¬inncodg.~>this ∨ pc ⊔ level(inncodg) = ⊥ then obj_level(inncodg) else if inncodg.~>this ∧ pc ⊔ level(inncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(inncodg) ⊔ obj_level(inncodg) ⊔ obj_level(this);
+  ret(inncodg.~>inncodg) = inncodg.~>inncodg ∨ inncodg.~>this;
+  ret(inncodg.~>this) = inncodg.~>this;
+  ret(this.~>inncodg) = tt;
+  ret(this.~>this) = inncodg.~>this ∨ this.~>this;
+}

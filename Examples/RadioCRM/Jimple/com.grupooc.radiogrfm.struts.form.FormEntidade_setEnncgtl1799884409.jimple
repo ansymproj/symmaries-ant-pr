@@ -1,0 +1,16 @@
+    public void setEnncgtl(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String enncgtl;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        enncgtl := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String enncgtl> = enncgtl;
+/*162*/
+
+        return;
+/*163*/
+    }
+

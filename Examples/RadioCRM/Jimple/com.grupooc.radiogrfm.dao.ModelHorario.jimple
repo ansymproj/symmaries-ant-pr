@@ -1,0 +1,13 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.dao.ModelHorario this;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelHorario;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+/*11*/
+
+        return;
+/*11*/
+    }
+

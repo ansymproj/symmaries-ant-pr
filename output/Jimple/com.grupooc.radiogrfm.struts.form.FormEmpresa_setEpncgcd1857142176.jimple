@@ -1,0 +1,16 @@
+    public void setEpncgcd(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEmpresa this;
+        java.lang.String epncgcd;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEmpresa;
+
+        epncgcd := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEmpresa: java.lang.String epncgcd> = epncgcd;
+/*103*/
+
+        return;
+/*104*/
+    }
+

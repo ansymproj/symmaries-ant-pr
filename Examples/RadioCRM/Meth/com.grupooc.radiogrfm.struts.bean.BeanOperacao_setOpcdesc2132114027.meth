@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanOperacao:setOpcdesc(java.lang.String opcdesc)
+{
+this.opcdesc=opcdesc;
+ return;
+ } 
+

@@ -1,0 +1,16 @@
+    public void setPgncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormPrograma this;
+        java.lang.String pgncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormPrograma;
+
+        pgncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormPrograma: java.lang.String pgncodg> = pgncodg;
+/*39*/
+
+        return;
+/*40*/
+    }
+

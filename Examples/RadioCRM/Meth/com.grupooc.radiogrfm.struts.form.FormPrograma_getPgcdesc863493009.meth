@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormPrograma:getPgcdesc()
+{
+java.lang.String $stack1;
+  $stack1=this.pgcdesc;
+ return  $stack1;
+ } 
+

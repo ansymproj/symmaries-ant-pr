@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelMidia com.grupooc.radiogrfm.dao.ModelMidia:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelMidia $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelMidia;
+ $stack0#com.grupooc.radiogrfm.dao.ModelMidia();
+ return  $stack0;
+ } 
+

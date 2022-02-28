@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanContrato:getCrlativ()
+{
+java.lang.String $stack1;
+  $stack1=this.crlativ;
+ return  $stack1;
+ } 
+

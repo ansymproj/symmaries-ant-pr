@@ -1,0 +1,16 @@
+    public void setMdlativ(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMidia this;
+        java.lang.String mdlativ;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMidia;
+
+        mdlativ := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanMidia: java.lang.String mdlativ> = mdlativ;
+/*31*/
+
+        return;
+/*32*/
+    }
+

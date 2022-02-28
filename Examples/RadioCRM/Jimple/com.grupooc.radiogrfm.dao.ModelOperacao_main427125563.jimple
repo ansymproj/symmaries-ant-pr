@@ -1,0 +1,28 @@
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        com.grupooc.radiogrfm.dao.ModelOperacao $stack1;
+        java.io.PrintStream $stack2;
+        java.lang.String $stack3;
+
+        args := @parameter0: java.lang.String[];
+
+        $stack2 = <java.lang.System: java.io.PrintStream out>;
+/*110*/
+
+        $stack1 = new com.grupooc.radiogrfm.dao.ModelOperacao;
+/*110*/
+
+        specialinvoke $stack1.<com.grupooc.radiogrfm.dao.ModelOperacao: void <init>()>();
+/*110*/
+
+        $stack3 = virtualinvoke $stack1.<com.grupooc.radiogrfm.dao.ModelOperacao: java.lang.String getMenu(int)>(1000);
+/*110*/
+
+        virtualinvoke $stack2.<java.io.PrintStream: void println(java.lang.String)>($stack3);
+/*110*/
+
+        return;
+/*111*/
+    }
+

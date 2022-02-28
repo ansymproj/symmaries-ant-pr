@@ -1,0 +1,16 @@
+    public void setAgcrzsc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanAgencia this;
+        java.lang.String agcrzsc;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanAgencia;
+
+        agcrzsc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String agcrzsc> = agcrzsc;
+/*67*/
+
+        return;
+/*68*/
+    }
+

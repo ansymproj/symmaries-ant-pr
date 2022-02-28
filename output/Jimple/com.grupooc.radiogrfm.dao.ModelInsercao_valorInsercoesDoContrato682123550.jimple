@@ -1,0 +1,61 @@
+    public java.lang.String valorInsercoesDoContrato(int)
+    {
+        com.grupooc.radiogrfm.dao.ModelInsercao this;
+        int crncodg;
+        java.lang.String 'ret';
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack5;
+        java.util.List $stack7;
+        java.lang.Object $stack8;
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao $stack9;
+        java.lang.Exception $stack11;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelInsercao;
+
+        crncodg := @parameter0: int;
+
+        'ret' = null;
+/*33*/
+
+     label1:
+        $stack5 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*36*/
+
+        st = interfaceinvoke $stack5.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("SELECT SUM(INNSOMA)INNSOMA FROM VW_INSERCAO WHERE INNCGCR = ?");
+/*36*/
+/*36*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, crncodg);
+/*37*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.List getObjectsStr(java.sql.PreparedStatement,java.lang.Class)>(st, class "Lcom/grupooc/radiogrfm/struts/bean/BeanInsercao;");
+/*39*/
+
+        $stack8 = interfaceinvoke $stack7.<java.util.List: java.lang.Object get(int)>(0);
+/*39*/
+
+        $stack9 = (com.grupooc.radiogrfm.struts.bean.BeanInsercao) $stack8;
+/*39*/
+
+        'ret' = virtualinvoke $stack9.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String getInnsoma()>();
+/*39*/
+/*39*/
+
+     label2:
+        goto label4;
+/*43*/
+
+     label3:
+        $stack11 := @caughtexception;
+/*44*/
+
+        virtualinvoke $stack11.<java.lang.Exception: void printStackTrace()>();
+/*42*/
+
+     label4:
+        return 'ret';
+/*44*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

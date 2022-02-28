@@ -1,0 +1,42 @@
+    public java.lang.String getMesPorExtenso(java.util.Date)
+    {
+        com.grupooc.radiogrfm.utils.FormataObj this;
+        java.util.Date data;
+        java.lang.String 'ret';
+        java.text.SimpleDateFormat $stack3;
+        java.util.Locale $stack4;
+
+        this := @this: com.grupooc.radiogrfm.utils.FormataObj;
+
+        data := @parameter0: java.util.Date;
+
+        'ret' = null;
+/*60*/
+
+        if data == null goto label1;
+/*61*/
+
+        $stack3 = new java.text.SimpleDateFormat;
+/*62*/
+
+        $stack4 = this.<com.grupooc.radiogrfm.utils.FormataObj: java.util.Locale local>;
+/*62*/
+
+        specialinvoke $stack3.<java.text.SimpleDateFormat: void <init>(java.lang.String,java.util.Locale)>("MMMMM", $stack4);
+/*62*/
+
+        this.<com.grupooc.radiogrfm.utils.FormataObj: java.text.SimpleDateFormat formataData> = $stack3;
+/*62*/
+
+        $stack3 = this.<com.grupooc.radiogrfm.utils.FormataObj: java.text.SimpleDateFormat formataData>;
+/*63*/
+
+        'ret' = virtualinvoke $stack3.<java.text.SimpleDateFormat: java.lang.String format(java.util.Date)>(data);
+/*63*/
+/*63*/
+
+     label1:
+        return 'ret';
+/*65*/
+    }
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContato:setCtncgep (java.lang.String
+                                                                 ctncgep) {
+  guard = tt;
+  ret(obj_level(ctncgep)) = if ¬ctncgep.~>this ∨ pc ⊔ level(ctncgep) = ⊥ then obj_level(ctncgep) else if ctncgep.~>this ∧ pc ⊔ level(ctncgep) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(ctncgep) ⊔ obj_level(ctncgep) ⊔ obj_level(this);
+  ret(ctncgep.~>ctncgep) = ctncgep.~>ctncgep ∨ ctncgep.~>this;
+  ret(ctncgep.~>this) = ctncgep.~>this;
+  ret(this.~>ctncgep) = tt;
+  ret(this.~>this) = ctncgep.~>this ∨ this.~>this;
+}

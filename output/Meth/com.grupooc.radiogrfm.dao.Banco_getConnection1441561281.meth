@@ -1,0 +1,17 @@
+static java.sql.Connection com.grupooc.radiogrfm.dao.Banco:getConnection()
+{
+java.sql.Connection $stack1;
+  java.lang.Exception $stack5;
+  $stack1=com.grupooc.radiogrfm.dao.Banco.con;
+ if ($stack1!=null) goto label0;
+ label1:java.lang.Class.forName("org.firebirdsql.jdbc.FBDriver");
+ $stack1 = java.sql.DriverManager.getConnection("jdbc:firebirdsql:localhost:D:\\workspaces\\workspaceAltair\\radio\\banco\\sicom.gdb?defaultResultSetHoldable=True","SYSDBA","masterkey");
+ com.grupooc.radiogrfm.dao.Banco.con=$stack1;
+ label2:goto label0;
+ label3:$stack5 = catch;
+ $stack5.printStackTrace();
+ label0:$stack1=com.grupooc.radiogrfm.dao.Banco.con;
+ return  $stack1;
+ catch java.lang.Exception: label1 - label2 : label3;
+} 
+

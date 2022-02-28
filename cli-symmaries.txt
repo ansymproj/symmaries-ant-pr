@@ -1,0 +1,7 @@
+java -jar JisymCompiler.jar Examples/RadioCRM/2114204_RadioCRM.war symmaries/sampleXML.xml -tf Examples/RadioCRM/Meth/all.secstubs -o output
+
+syrs.opt -of secsum+scfg --methskip-cond 150 --log-level i -tf -exceptions Examples/RadioCRM/types.classes Examples/RadioCRM/Meth/all.meth_files Examples/RadioCRM/Meth/all.secstubs --full-walk --output results/results.secsums --output results/results.meth_stats
+
+
+ansymproj
+pass4tempacc0unt

@@ -1,0 +1,17 @@
+    public static int dvMod11(java.lang.String)
+    {
+        java.lang.String s;
+        int $stack1;
+
+        s := @parameter0: java.lang.String;
+
+        $stack1 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: int fator(java.lang.String)>(s);
+/*263*/
+
+        $stack1 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: int mod11(int)>($stack1);
+/*263*/
+
+        return $stack1;
+/*263*/
+    }
+

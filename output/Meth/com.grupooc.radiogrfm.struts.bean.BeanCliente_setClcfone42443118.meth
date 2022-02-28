@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcfone(java.lang.String clcfone)
+{
+this.clcfone=clcfone;
+ return;
+ } 
+

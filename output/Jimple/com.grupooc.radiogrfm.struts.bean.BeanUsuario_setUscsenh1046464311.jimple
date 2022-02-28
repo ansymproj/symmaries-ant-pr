@@ -1,0 +1,16 @@
+    public void setUscsenh(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanUsuario this;
+        java.lang.String uscsenh;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanUsuario;
+
+        uscsenh := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanUsuario: java.lang.String uscsenh> = uscsenh;
+/*52*/
+
+        return;
+/*53*/
+    }
+

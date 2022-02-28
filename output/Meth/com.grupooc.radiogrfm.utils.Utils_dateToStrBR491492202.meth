@@ -1,0 +1,14 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:dateToStrBR(java.lang.String @format,java.util.Date date)
+{
+java.text.SimpleDateFormat $stack2;
+  java.lang.String format;
+format=@format;
+if (date!=null) goto label0;
+ format=null;
+ goto label1;
+ label0:$stack2=new java.text.SimpleDateFormat;
+ $stack2#java.text.SimpleDateFormat(format);
+ format = $stack2.format(date);
+ label1:return  format;
+ } 
+

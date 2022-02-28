@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormAgencia:setAgcnome (java.lang.String
+                                                                 agcnome) {
+  guard = tt;
+  ret(obj_level(agcnome)) = if ¬agcnome.~>this ∨ pc ⊔ level(agcnome) = ⊥ then obj_level(agcnome) else if agcnome.~>this ∧ pc ⊔ level(agcnome) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(agcnome) ⊔ obj_level(agcnome) ⊔ obj_level(this);
+  ret(agcnome.~>agcnome) = agcnome.~>agcnome ∨ agcnome.~>this;
+  ret(agcnome.~>this) = agcnome.~>this;
+  ret(this.~>agcnome) = tt;
+  ret(this.~>this) = agcnome.~>this ∨ this.~>this;
+}

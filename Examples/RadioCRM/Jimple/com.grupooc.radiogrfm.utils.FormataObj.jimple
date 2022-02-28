@@ -1,0 +1,36 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.utils.FormataObj this;
+        java.util.Locale $stack1;
+        java.text.DecimalFormatSymbols $stack2;
+
+        this := @this: com.grupooc.radiogrfm.utils.FormataObj;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+/*9*/
+
+        $stack1 = new java.util.Locale;
+/*18*/
+
+        specialinvoke $stack1.<java.util.Locale: void <init>(java.lang.String,java.lang.String)>("pt", "BR");
+/*18*/
+
+        this.<com.grupooc.radiogrfm.utils.FormataObj: java.util.Locale local> = $stack1;
+/*18*/
+
+        $stack2 = new java.text.DecimalFormatSymbols;
+/*21*/
+
+        $stack1 = this.<com.grupooc.radiogrfm.utils.FormataObj: java.util.Locale local>;
+/*21*/
+
+        specialinvoke $stack2.<java.text.DecimalFormatSymbols: void <init>(java.util.Locale)>($stack1);
+/*21*/
+
+        this.<com.grupooc.radiogrfm.utils.FormataObj: java.text.DecimalFormatSymbols formatSymbols> = $stack2;
+/*21*/
+
+        return;
+/*21*/
+    }
+

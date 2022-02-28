@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCidade:setCdncodg(java.lang.String cdncodg)
+{
+this.cdncodg=cdncodg;
+ return;
+ } 
+

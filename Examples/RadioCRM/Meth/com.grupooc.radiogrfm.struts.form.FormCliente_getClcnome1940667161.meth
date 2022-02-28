@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormCliente:getClcnome()
+{
+java.lang.String $stack1;
+  $stack1=this.clcnome;
+ return  $stack1;
+ } 
+

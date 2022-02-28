@@ -1,0 +1,17 @@
+static java.lang.String com.grupooc.radiogrfm.utils.ValidaObjeto:removeCharOfInteger(java.lang.String @str)
+{
+java.lang.String ret;
+  java.lang.String str;
+str=@str;
+ret="";
+ if (str==null) goto label0;
+ str = str.replace((java.lang.CharSequence)"/",(java.lang.CharSequence)"");
+ str = str.replace((java.lang.CharSequence)"-",(java.lang.CharSequence)"");
+ str = str.replace((java.lang.CharSequence)"(",(java.lang.CharSequence)"");
+ str = str.replace((java.lang.CharSequence)")",(java.lang.CharSequence)"");
+ str = str.replace((java.lang.CharSequence)"_",(java.lang.CharSequence)"");
+ str = str.replace((java.lang.CharSequence)".",(java.lang.CharSequence)"");
+ ret = str.replace((java.lang.CharSequence)",",(java.lang.CharSequence)"");
+ label0:return  ret;
+ } 
+

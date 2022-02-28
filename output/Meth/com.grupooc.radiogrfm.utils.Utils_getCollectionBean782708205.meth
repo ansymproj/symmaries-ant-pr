@@ -1,0 +1,32 @@
+static java.util.Collection com.grupooc.radiogrfm.utils.Utils:getCollectionBean(java.util.Collection collection,java.lang.Object obj0,int max)
+{
+java.util.Iterator iter;
+  java.util.ArrayList collection2;
+  int i;
+  boolean $stack9;
+  java.lang.Object $stack13;
+  java.util.ArrayList $stack14;
+  if (collection==null) goto label0;
+ $stack9 = collection.isEmpty();
+ if ($stack9!=0) goto label0;
+ iter = collection.iterator();
+ goto label1;
+ label0:collection2=new java.util.ArrayList;
+ collection2#java.util.ArrayList();
+ iter = collection2.iterator();
+ label1:collection2=new java.util.ArrayList;
+ collection2#java.util.ArrayList();
+ i=0;
+ label2:if (i>=max) goto label3;
+ $stack14=collection2;
+ $stack9 = iter.hasNext();
+ if ($stack9==0) goto label4;
+ $stack13 = iter.next();
+ goto label5;
+ label4:$stack13=obj0;
+ label5:$stack14.add($stack13);
+ i=(i+1);
+ goto label2;
+ label3:return  collection2;
+ } 
+

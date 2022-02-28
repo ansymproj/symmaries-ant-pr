@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormContato:getCtncgep()
+{
+java.lang.String $stack1;
+  $stack1=this.ctncgep;
+ return  $stack1;
+ } 
+

@@ -1,0 +1,23 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionHorario:novo(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  javax.servlet.http.HttpSession $stack8;
+  com.grupooc.radiogrfm.dao.ModelDiaSemana $stack11;
+  java.util.ArrayList $stack12;
+  java.lang.Exception $stack13;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ label0:$stack8 = request.getSession();
+ $stack8.removeAttribute("formHorario");
+ $stack8 = request.getSession();
+ $stack11 = com.grupooc.radiogrfm.dao.ModelDiaSemana.getInstance();
+ $stack12 = $stack11.getDiasDaSemana();
+ $stack8.setAttribute("ls_diasemana",(java.lang.Object)$stack12);
+ fw.setPath("/horarioNovo.do");
+ label1:goto label2;
+ label3:$stack13 = catch;
+ $stack13.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

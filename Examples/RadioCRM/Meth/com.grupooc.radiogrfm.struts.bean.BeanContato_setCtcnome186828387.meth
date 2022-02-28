@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContato:setCtcnome(java.lang.String ctcnome)
+{
+this.ctcnome=ctcnome;
+ return;
+ } 
+

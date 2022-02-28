@@ -1,0 +1,16 @@
+    public void setCrdcadt(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crdcadt;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crdcadt := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crdcadt> = crdcadt;
+/*71*/
+
+        return;
+/*72*/
+    }
+

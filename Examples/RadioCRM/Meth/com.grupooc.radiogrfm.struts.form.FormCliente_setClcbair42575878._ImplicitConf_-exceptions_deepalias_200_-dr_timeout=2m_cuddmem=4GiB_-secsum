@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClcbair (java.lang.String
+                                                                 clcbair) {
+  guard = tt;
+  ret(obj_level(clcbair)) = if ¬clcbair.~>this ∨ pc ⊔ level(clcbair) = ⊥ then obj_level(clcbair) else if clcbair.~>this ∧ pc ⊔ level(clcbair) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcbair) ⊔ obj_level(clcbair) ⊔ obj_level(this);
+  ret(clcbair.~>clcbair) = clcbair.~>clcbair ∨ clcbair.~>this;
+  ret(clcbair.~>this) = clcbair.~>this;
+  ret(this.~>clcbair) = tt;
+  ret(this.~>this) = clcbair.~>this ∨ this.~>this;
+}

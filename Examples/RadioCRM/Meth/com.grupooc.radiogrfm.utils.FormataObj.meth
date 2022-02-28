@@ -1,0 +1,15 @@
+com.grupooc.radiogrfm.utils.FormataObj()
+{
+java.util.Locale $stack1;
+  java.text.DecimalFormatSymbols $stack2;
+  this#java.lang.Object();
+ $stack1=new java.util.Locale;
+ $stack1#java.util.Locale("pt","BR");
+ this.local=$stack1;
+ $stack2=new java.text.DecimalFormatSymbols;
+ $stack1=this.local;
+ $stack2#java.text.DecimalFormatSymbols($stack1);
+ this.formatSymbols=$stack2;
+ return;
+ } 
+

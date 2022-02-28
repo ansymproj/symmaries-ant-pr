@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanOperacao:setOpclink (java.lang.String
+                                                                  opclink) {
+  guard = tt;
+  ret(obj_level(opclink)) = if ¬opclink.~>this ∨ pc ⊔ level(opclink) = ⊥ then obj_level(opclink) else if opclink.~>this ∧ pc ⊔ level(opclink) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(opclink) ⊔ obj_level(opclink) ⊔ obj_level(this);
+  ret(opclink.~>opclink) = opclink.~>opclink ∨ opclink.~>this;
+  ret(opclink.~>this) = opclink.~>this;
+  ret(this.~>opclink) = tt;
+  ret(this.~>this) = opclink.~>this ∨ this.~>this;
+}

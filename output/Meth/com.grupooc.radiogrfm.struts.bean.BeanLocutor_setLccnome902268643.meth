@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanLocutor:setLccnome(java.lang.String lccnome)
+{
+this.lccnome=lccnome;
+ return;
+ } 
+

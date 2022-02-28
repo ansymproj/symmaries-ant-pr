@@ -1,0 +1,14 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:criptografaSenha(java.lang.String @login,java.lang.String senha)
+{
+java.lang.StringBuilder $stack2;
+  java.lang.String login;
+login=@login;
+$stack2=new java.lang.StringBuilder;
+ $stack2#java.lang.StringBuilder();
+ $stack2 = $stack2.append(login);
+ $stack2 = $stack2.append(senha);
+ login = $stack2.toString();
+ login = com.grupooc.radiogrfm.utils.Utils.toStringCripto(login);
+ return  login;
+ } 
+

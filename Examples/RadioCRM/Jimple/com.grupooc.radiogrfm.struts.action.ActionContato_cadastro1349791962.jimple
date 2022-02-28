@@ -1,0 +1,218 @@
+    public org.apache.struts.action.ActionForward cadastro(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionContato this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        com.grupooc.radiogrfm.struts.form.FormContato formContato;
+        org.apache.struts.action.ActionMessages erros;
+        com.grupooc.radiogrfm.struts.bean.BeanEmpresa beanEmpresa;
+        com.grupooc.radiogrfm.struts.bean.BeanContato contato;
+        javax.servlet.http.HttpSession $stack12;
+        java.lang.Object $stack13;
+        java.lang.String $stack14;
+        boolean $stack15;
+        com.grupooc.radiogrfm.dao.ModelContato $stack27;
+        org.apache.struts.action.ActionMessage $stack36;
+        java.lang.Exception $stack51;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionContato;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*147*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*147*/
+
+        formContato = (com.grupooc.radiogrfm.struts.form.FormContato) form;
+/*148*/
+
+        erros = new org.apache.struts.action.ActionMessages;
+/*149*/
+
+        specialinvoke erros.<org.apache.struts.action.ActionMessages: void <init>()>();
+/*149*/
+
+        $stack12 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*150*/
+
+        $stack13 = interfaceinvoke $stack12.<javax.servlet.http.HttpSession: java.lang.Object getAttribute(java.lang.String)>("empresa");
+/*150*/
+
+        beanEmpresa = (com.grupooc.radiogrfm.struts.bean.BeanEmpresa) $stack13;
+/*150*/
+
+        $stack14 = virtualinvoke formContato.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String getCtcnome()>();
+/*152*/
+
+        $stack15 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: boolean validaString(java.lang.String)>($stack14);
+/*152*/
+
+        if $stack15 != 0 goto label01;
+/*152*/
+
+        $stack36 = new org.apache.struts.action.ActionMessage;
+/*153*/
+
+        specialinvoke $stack36.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Nome do Contato \u00ef\u00bf\u00bd obrigat\u00ef\u00bf\u00bdrio.");
+/*153*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack36);
+/*153*/
+
+     label01:
+        $stack14 = virtualinvoke formContato.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String getCtcmatr()>();
+/*156*/
+
+        $stack15 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: boolean validaString(java.lang.String)>($stack14);
+/*156*/
+
+        if $stack15 != 0 goto label02;
+/*156*/
+
+        $stack36 = new org.apache.struts.action.ActionMessage;
+/*157*/
+
+        specialinvoke $stack36.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Matr\u00ef\u00bf\u00bdcula \u00ef\u00bf\u00bd obrigat\u00ef\u00bf\u00bdria.");
+/*157*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack36);
+/*157*/
+
+     label02:
+        $stack14 = virtualinvoke formContato.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String getCtcfunc()>();
+/*160*/
+
+        $stack15 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: boolean validaString(java.lang.String)>($stack14);
+/*160*/
+
+        if $stack15 != 0 goto label03;
+/*160*/
+
+        $stack36 = new org.apache.struts.action.ActionMessage;
+/*161*/
+
+        specialinvoke $stack36.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Fun\u00ef\u00bf\u00bd\u00ef\u00bf\u00bdo \u00ef\u00bf\u00bd obrigat\u00ef\u00bf\u00bdria.");
+/*161*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack36);
+/*161*/
+
+     label03:
+        $stack14 = virtualinvoke formContato.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String getCtdnasc()>();
+/*164*/
+
+        $stack15 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: boolean validaData(java.lang.String)>($stack14);
+/*164*/
+
+        if $stack15 != 0 goto label04;
+/*164*/
+
+        $stack36 = new org.apache.struts.action.ActionMessage;
+/*165*/
+
+        specialinvoke $stack36.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Data de Nascimento \u00ef\u00bf\u00bd inv\u00ef\u00bf\u00bdlida.");
+/*165*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack36);
+/*165*/
+
+     label04:
+        $stack14 = virtualinvoke formContato.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String getCtcfone()>();
+/*168*/
+
+        $stack15 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: boolean validaString(java.lang.String)>($stack14);
+/*168*/
+
+        if $stack15 != 0 goto label05;
+/*168*/
+
+        $stack36 = new org.apache.struts.action.ActionMessage;
+/*169*/
+
+        specialinvoke $stack36.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Fone fixo \u00ef\u00bf\u00bd obrigat\u00ef\u00bf\u00bdrio.");
+/*169*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack36);
+/*169*/
+
+     label05:
+        $stack15 = virtualinvoke erros.<org.apache.struts.action.ActionMessages: boolean isEmpty()>();
+/*172*/
+
+        if $stack15 == 0 goto label06;
+/*172*/
+
+        if beanEmpresa != null goto label07;
+/*197*/
+
+     label06:
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/contatoNovo.do");
+/*173*/
+
+        virtualinvoke this.<com.grupooc.radiogrfm.struts.action.ActionContato: void saveErrors(javax.servlet.http.HttpServletRequest,org.apache.struts.action.ActionMessages)>(request, erros);
+/*174*/
+
+        goto label10;
+/*174*/
+
+     label07:
+        contato = new com.grupooc.radiogrfm.struts.bean.BeanContato;
+/*178*/
+
+        specialinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: void <init>()>();
+/*178*/
+
+        staticinvoke <org.apache.commons.beanutils.BeanUtils: void copyProperties(java.lang.Object,java.lang.Object)>(contato, formContato);
+/*180*/
+
+        $stack14 = virtualinvoke beanEmpresa.<com.grupooc.radiogrfm.struts.bean.BeanEmpresa: java.lang.String getEpncodg()>();
+/*182*/
+
+        virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: void setCtncgep(java.lang.String)>($stack14);
+/*182*/
+
+        $stack27 = staticinvoke <com.grupooc.radiogrfm.dao.ModelContato: com.grupooc.radiogrfm.dao.ModelContato getInstance()>();
+/*184*/
+
+        virtualinvoke $stack27.<com.grupooc.radiogrfm.dao.ModelContato: void inserir(com.grupooc.radiogrfm.struts.bean.BeanContato)>(contato);
+/*184*/
+
+        fw = virtualinvoke this.<com.grupooc.radiogrfm.struts.action.ActionContato: org.apache.struts.action.ActionForward lista(org.apache.struts.action.ActionMapping,org.apache.struts.action.ActionForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>(mapping, form, request, response);
+/*186*/
+/*186*/
+
+        $stack12 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*188*/
+
+        interfaceinvoke $stack12.<javax.servlet.http.HttpSession: void removeAttribute(java.lang.String)>("formContato");
+/*188*/
+
+     label08:
+        goto label10;
+/*192*/
+
+     label09:
+        $stack51 := @caughtexception;
+/*156*/
+
+        virtualinvoke $stack51.<java.lang.Exception: void printStackTrace()>();
+/*191*/
+
+     label10:
+        return fw;
+/*197*/
+
+        catch java.lang.Exception from label07 to label08 with label09;
+    }
+

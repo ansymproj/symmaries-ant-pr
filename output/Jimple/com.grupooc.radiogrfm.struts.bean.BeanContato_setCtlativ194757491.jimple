@@ -1,0 +1,16 @@
+    public void setCtlativ(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContato this;
+        java.lang.String ctlativ;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContato;
+
+        ctlativ := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String ctlativ> = ctlativ;
+/*38*/
+
+        return;
+/*39*/
+    }
+

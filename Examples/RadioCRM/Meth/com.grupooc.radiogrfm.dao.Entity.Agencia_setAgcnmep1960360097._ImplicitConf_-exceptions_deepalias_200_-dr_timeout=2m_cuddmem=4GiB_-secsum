@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAgcnmep (java.lang.String
+                                                            agcnmep) {
+  guard = tt;
+  ret(obj_level(agcnmep)) = if ¬agcnmep.~>this ∨ pc ⊔ level(agcnmep) = ⊥ then obj_level(agcnmep) else if agcnmep.~>this ∧ pc ⊔ level(agcnmep) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(agcnmep) ⊔ obj_level(agcnmep) ⊔ obj_level(this);
+  ret(agcnmep.~>agcnmep) = agcnmep.~>agcnmep ∨ agcnmep.~>this;
+  ret(agcnmep.~>this) = agcnmep.~>this;
+  ret(this.~>agcnmep) = tt;
+  ret(this.~>this) = agcnmep.~>this ∨ this.~>this;
+}

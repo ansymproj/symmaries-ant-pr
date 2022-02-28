@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormInsercao:setInnvalr (java.lang.String
+                                                                  innvalr) {
+  guard = tt;
+  ret(obj_level(innvalr)) = if ¬innvalr.~>this ∨ pc ⊔ level(innvalr) = ⊥ then obj_level(innvalr) else if innvalr.~>this ∧ pc ⊔ level(innvalr) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(innvalr) ⊔ obj_level(innvalr) ⊔ obj_level(this);
+  ret(innvalr.~>innvalr) = innvalr.~>innvalr ∨ innvalr.~>this;
+  ret(innvalr.~>this) = innvalr.~>this;
+  ret(this.~>innvalr) = tt;
+  ret(this.~>this) = innvalr.~>this ∨ this.~>this;
+}

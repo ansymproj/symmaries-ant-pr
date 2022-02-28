@@ -1,0 +1,143 @@
+static void net.sf.jasperreports.engine.JasperExportManager:exportReportToPdfFile(net.sf.jasperreports.engine.JasperPrint ,java.lang.String ){-<~;}
+static net.sf.jasperreports.engine.JasperPrint net.sf.jasperreports.engine.JasperFillManager:fillReport(java.lang.String ,java.util.Map ){-<~;return *;}
+static byte[] net.sf.jasperreports.engine.JasperRunManager:runReportToPdf(net.sf.jasperreports.engine.JasperReport ,java.util.Map ){-<~;return *;}
+static java.lang.Object net.sf.jasperreports.engine.util.JRLoader:loadObject(java.lang.String ){-<~;return *;}
+static void org.apache.commons.beanutils.BeanUtils:copyProperties(java.lang.Object ,java.lang.Object ){-<~;}
+org.apache.struts.action.ActionForm(){-<~;.*<~@;}
+org.apache.struts.action.ActionForward(){-<~;.*<~@;}
+void org.apache.struts.action.ActionForward:setPath(java.lang.String ){.*<~@;}
+org.apache.struts.action.ActionMessage(java.lang.String ,java.lang.Object ){-<~;.*<~@;}
+org.apache.struts.action.ActionMessages(){-<~;.*<~@;}
+void org.apache.struts.action.ActionMessages:add(java.lang.String ,org.apache.struts.action.ActionMessage ){-<~;}
+boolean org.apache.struts.action.ActionMessages:isEmpty(){-<~;return *;}
+org.apache.struts.actions.DispatchAction(){-<~;.*<~@;}
+void org.apache.struts.actions.DispatchAction:saveErrors(javax.servlet.http.HttpServletRequest ,org.apache.struts.action.ActionMessages ){-<~;}
+int java.io.InputStream:read(byte[] ){-<~;return .*;}
+void java.io.PrintStream:println(java.lang.String ){-<~;output_L;}
+static boolean java.lang.Character:isDigit(char ){-<~;return *;}
+java.lang.Object java.lang.Class:cast(java.lang.Object ){-<~;return .*;}
+static java.lang.Class java.lang.Class:forName(java.lang.String ){-<~;return *;}
+java.lang.reflect.Method java.lang.Class:getMethod(java.lang.String ,java.lang.Class[] ){-<~;return .*;}
+java.lang.Object java.lang.Class:newInstance(){-<~;return .*;}
+static float java.lang.Float:parseFloat(java.lang.String ){-<~;return *;}
+static java.lang.Float java.lang.Float:valueOf(float ){-<~;return *;}
+java.lang.Integer(java.lang.String ){-<~;.*<~@;}
+int java.lang.Integer:intValue(){-<~;return .*;}
+static int java.lang.Integer:parseInt(java.lang.String ){-<~;return *;}
+static java.lang.Integer java.lang.Integer:valueOf(int ){-<~;return *;}
+static double java.lang.Math:random(){-<~;return *;}
+java.lang.Object(){-<~;.*<~@;}
+java.lang.Class java.lang.Object:getClass(){-<~;return .*;}
+java.lang.String java.lang.Object:toString(){-<~;return @;}
+java.lang.RuntimeException(java.lang.String ){-<~;.*<~@;}
+java.lang.String(byte[] ,int ,int ){-<~;.*<~@;}
+java.lang.StringBuffer(){-<~;.*<~@;}
+java.lang.StringBuffer java.lang.StringBuffer:append(java.lang.String ){-<~;return .*;}
+java.lang.String java.lang.StringBuffer:toString(){-<~;return @;}
+java.lang.StringBuilder(){-<~;.*<~@;}
+java.lang.StringBuilder java.lang.StringBuilder:append(java.lang.String ){-<~;return .*;}
+java.lang.StringBuilder java.lang.StringBuilder:append(long ){-<~;return .*;}
+java.lang.StringBuilder java.lang.StringBuilder:append(char ){-<~;return .*;}
+java.lang.StringBuilder java.lang.StringBuilder:append(int ){-<~;return .*;}
+java.lang.String java.lang.StringBuilder:toString(){-<~;return @;}
+char java.lang.String:charAt(int ){-<~;return .*;}
+boolean java.lang.String:equals(java.lang.Object ){-<~;return .*;}
+byte[] java.lang.String:getBytes(){-<~;return .*;}
+int java.lang.String:indexOf(java.lang.String ){-<~;return .*;}
+int java.lang.String:length(){-<~;return .*;}
+java.lang.String java.lang.String:replace(java.lang.CharSequence ,java.lang.CharSequence ){-<~;return .*;}
+java.lang.String java.lang.String:replaceAll(java.lang.String ,java.lang.String ){-<~;return .*;}
+java.lang.String[] java.lang.String:split(java.lang.String ){-<~;return .*;}
+java.lang.String java.lang.String:substring(int ){-<~;return .*;}
+java.lang.String java.lang.String:substring(int ,int ){-<~;return .*;}
+char[] java.lang.String:toCharArray(){-<~;return @;}
+java.lang.String java.lang.String:toLowerCase(){-<~;return @;}
+java.lang.String java.lang.String:toLowerCase(java.util.Locale ){-<~;return @;}
+java.lang.String java.lang.String:toUpperCase(){-<~;return @;}
+java.lang.String java.lang.String:toUpperCase(java.util.Locale ){-<~;return @;}
+static long java.lang.System:currentTimeMillis(){-<~;return *;}
+void java.lang.Throwable:printStackTrace(){-<~;output_L;}
+java.lang.Object java.lang.reflect.Method:invoke(java.lang.Object ,java.lang.Object[] ){-<~;return .*;}
+java.math.BigInteger(java.lang.String ){-<~;.*<~@;}
+java.math.BigInteger(int ,byte[] ){-<~;.*<~@;}
+int java.math.BigInteger:compareTo(java.math.BigInteger ){-<~;return .*;}
+java.math.BigInteger[] java.math.BigInteger:divideAndRemainder(java.math.BigInteger ){-<~;return .*;}
+boolean java.math.BigInteger:equals(java.lang.Object ){-<~;return .*;}
+long java.math.BigInteger:longValue(){-<~;return .*;}
+java.math.BigInteger java.math.BigInteger:remainder(java.math.BigInteger ){-<~;return .*;}
+java.lang.String java.math.BigInteger:toString(int ){-<~;return @;}
+static java.math.BigInteger java.math.BigInteger:valueOf(long ){-<~;return *;}
+byte[] java.security.MessageDigest:digest(){-<~;return .*;}
+static java.security.MessageDigest java.security.MessageDigest:getInstance(java.lang.String ){-<~;return *;}
+void java.security.MessageDigest:update(byte[] ){-<~;}
+java.io.InputStream java.sql.Blob:getBinaryStream(){-<~;return .*;}
+java.sql.PreparedStatement java.sql.Connection:prepareStatement(java.lang.String ){-<~;return .*;}
+java.sql.Date(long ){-<~;.*<~@;}
+static java.sql.Connection java.sql.DriverManager:getConnection(java.lang.String ,java.lang.String ,java.lang.String ){-<~;return *;}
+java.sql.ResultSet java.sql.PreparedStatement:executeQuery(){-<~;return .*;}
+int java.sql.PreparedStatement:executeUpdate(){-<~;return .*;}
+java.sql.ResultSetMetaData java.sql.PreparedStatement:getMetaData(){-<~;return .*;}
+void java.sql.PreparedStatement:setDate(int ,java.sql.Date ){.*<~@;}
+void java.sql.PreparedStatement:setFloat(int ,float ){.*<~@;}
+void java.sql.PreparedStatement:setInt(int ,int ){.*<~@;}
+void java.sql.PreparedStatement:setNull(int ,int ){.*<~@;}
+void java.sql.PreparedStatement:setString(int ,java.lang.String ){.*<~@;}
+void java.sql.PreparedStatement:setTime(int ,java.sql.Time ){.*<~@;}
+java.lang.String java.sql.ResultSetMetaData:getColumnClassName(int ){-<~;return .*;}
+int java.sql.ResultSetMetaData:getColumnCount(){-<~;return .*;}
+java.lang.String java.sql.ResultSetMetaData:getColumnName(int ){-<~;return .*;}
+java.sql.Date java.sql.ResultSet:getDate(java.lang.String ){-<~;return .*;}
+float java.sql.ResultSet:getFloat(java.lang.String ){-<~;return .*;}
+int java.sql.ResultSet:getInt(java.lang.String ){-<~;return .*;}
+java.lang.String java.sql.ResultSet:getString(java.lang.String ){-<~;return .*;}
+java.sql.Timestamp java.sql.ResultSet:getTimestamp(java.lang.String ){-<~;return .*;}
+boolean java.sql.ResultSet:next(){-<~;return .*;}
+static java.sql.Time java.sql.Time:valueOf(java.lang.String ){-<~;return *;}
+java.lang.String java.text.DateFormat:format(java.util.Date ){-<~;return .*;}
+java.util.Date java.text.DateFormat:parse(java.lang.String ){-<~;return .*;}
+java.text.DecimalFormat(java.lang.String ,java.text.DecimalFormatSymbols ){-<~;.*<~@;}
+java.text.DecimalFormat(java.lang.String ){-<~;.*<~@;}
+java.text.DecimalFormatSymbols(java.util.Locale ){-<~;.*<~@;}
+java.lang.String java.text.Format:format(java.lang.Object ){-<~;return .*;}
+java.lang.String java.text.NumberFormat:format(double ){-<~;return .*;}
+java.text.SimpleDateFormat(java.lang.String ){-<~;.*<~@;}
+java.text.SimpleDateFormat(java.lang.String ,java.util.Locale ){-<~;.*<~@;}
+java.util.ArrayList(){-<~;.*<~@;}
+boolean java.util.ArrayList:addAll(java.util.Collection ){-<~;return .*;}
+java.util.Iterator java.util.ArrayList:iterator(){-<~;return .*;}
+boolean java.util.Collection:add(java.lang.Object ){-<~;return .*;}
+boolean java.util.Collection:isEmpty(){-<~;return *;}
+java.util.Iterator java.util.Collection:iterator(){-<~;return .*;}
+java.util.Date(){-<~;.*<~@;}
+boolean java.util.Date:after(java.util.Date ){-<~;return .*;}
+long java.util.Date:getTime(){-<~;return .*;}
+java.util.HashMap(){-<~;.*<~@;}
+boolean java.util.Iterator:hasNext(){-<~;return *;}
+java.lang.Object java.util.Iterator:next(){-<~;return .*;}
+void java.util.Iterator:remove(){-<~;}
+boolean java.util.List:add(java.lang.Object ){-<~;return .*;}
+boolean java.util.List:addAll(java.util.Collection ){-<~;return .*;}
+java.lang.Object java.util.List:get(int ){-<~;return .*;}
+boolean java.util.List:isEmpty(){-<~;return *;}
+java.util.Iterator java.util.List:iterator(){-<~;return .*;}
+java.util.Locale(java.lang.String ,java.lang.String ){-<~;.*<~@;}
+static java.util.Locale java.util.Locale:getDefault(){-<~;return *;}
+java.lang.Object java.util.Map:get(java.lang.Object ){-<~;return .*;}
+java.lang.Object java.util.Map:put(java.lang.Object ,java.lang.Object ){-<~;return .*;}
+java.lang.String javax.servlet.ServletContext:getRealPath(java.lang.String ){-<~;return .*;}
+void javax.servlet.ServletOutputStream:close(){-<~;}
+void javax.servlet.ServletOutputStream:flush(){-<~;}
+void javax.servlet.ServletOutputStream:write(byte[] ){-<~;output_L;}
+java.lang.String javax.servlet.http.HttpServletRequest:getParameter(java.lang.String ){-<~;return .*;}
+javax.servlet.http.HttpSession javax.servlet.http.HttpServletRequest:getSession(){-<~;return .*;}
+void javax.servlet.http.HttpServletRequest:setAttribute(java.lang.String ,java.lang.Object ){.*<~@;}
+javax.servlet.ServletOutputStream javax.servlet.http.HttpServletResponse:getOutputStream(){-<~;return .*;}
+void javax.servlet.http.HttpServletResponse:setContentType(java.lang.String ){.*<~@;}
+void javax.servlet.http.HttpServletResponse:setDateHeader(java.lang.String ,long ){.*<~@;}
+void javax.servlet.http.HttpServletResponse:setHeader(java.lang.String ,java.lang.String ){.*<~@;}
+java.lang.Object javax.servlet.http.HttpSession:getAttribute(java.lang.String ){-<~;return .*;}
+javax.servlet.ServletContext javax.servlet.http.HttpSession:getServletContext(){-<~;return .*;}
+void javax.servlet.http.HttpSession:invalidate(){-<~;}
+void javax.servlet.http.HttpSession:removeAttribute(java.lang.String ){-<~;}
+void javax.servlet.http.HttpSession:setAttribute(java.lang.String ,java.lang.Object ){.*<~@;}
+

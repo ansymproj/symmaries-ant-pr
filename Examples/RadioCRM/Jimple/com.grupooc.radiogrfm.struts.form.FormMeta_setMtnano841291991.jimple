@@ -1,0 +1,16 @@
+    public void setMtnano(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormMeta this;
+        java.lang.String mtnano;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormMeta;
+
+        mtnano := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormMeta: java.lang.String mtnano> = mtnano;
+/*36*/
+
+        return;
+/*37*/
+    }
+

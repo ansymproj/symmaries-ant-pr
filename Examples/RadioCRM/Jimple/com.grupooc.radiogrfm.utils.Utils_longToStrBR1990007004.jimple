@@ -1,0 +1,34 @@
+    public static java.lang.String longToStrBR(java.lang.String, java.lang.Long)
+    {
+        java.lang.String format;
+        java.lang.Long value;
+        java.text.DecimalFormat $stack2;
+
+        format := @parameter0: java.lang.String;
+
+        value := @parameter1: java.lang.Long;
+
+        if value != null goto label1;
+/*334*/
+
+        format = null;
+/*334*/
+
+        goto label2;
+/*334*/
+
+     label1:
+        $stack2 = new java.text.DecimalFormat;
+/*334*/
+
+        specialinvoke $stack2.<java.text.DecimalFormat: void <init>(java.lang.String)>(format);
+/*334*/
+
+        format = virtualinvoke $stack2.<java.text.DecimalFormat: java.lang.String format(java.lang.Object)>(value);
+/*334*/
+
+     label2:
+        return format;
+/*334*/
+    }
+

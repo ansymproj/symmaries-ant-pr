@@ -1,0 +1,110 @@
+    public void update(com.grupooc.radiogrfm.struts.bean.BeanContato)
+    {
+        com.grupooc.radiogrfm.dao.ModelContato this;
+        com.grupooc.radiogrfm.struts.bean.BeanContato contato;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack4;
+        java.lang.String $stack7;
+        java.sql.Date $stack14;
+        int $stack27;
+        java.lang.Exception $stack29;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelContato;
+
+        contato := @parameter0: com.grupooc.radiogrfm.struts.bean.BeanContato;
+
+     label1:
+        $stack4 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*59*/
+
+        st = interfaceinvoke $stack4.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" UPDATE CONTATO SET CTCNOME = ?,CTCMATR = ?, CTCFUNC = ?, CTDNASC = ?,CTCSEXO = ?,CTCFONE = ?,CTCCELL = ?,CTCMAIL = ? WHERE CTNCODG = ?");
+/*59*/
+/*59*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtcnome()>();
+/*60*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(1, $stack7);
+/*60*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtcmatr()>();
+/*61*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(2, $stack7);
+/*61*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtcfunc()>();
+/*62*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(3, $stack7);
+/*62*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtdnasc()>();
+/*63*/
+
+        $stack14 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.sql.Date stringToDateSQL(java.lang.String)>($stack7);
+/*63*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setDate(int,java.sql.Date)>(4, $stack14);
+/*63*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtcsexo()>();
+/*64*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(5, $stack7);
+/*64*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtcfone()>();
+/*65*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: java.lang.String removeCharOfInteger(java.lang.String)>($stack7);
+/*65*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(6, $stack7);
+/*65*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtccell()>();
+/*66*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: java.lang.String removeCharOfInteger(java.lang.String)>($stack7);
+/*66*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(7, $stack7);
+/*66*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtcmail()>();
+/*67*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(8, $stack7);
+/*67*/
+
+        $stack7 = virtualinvoke contato.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String getCtncodg()>();
+/*68*/
+
+        $stack27 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*68*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(9, $stack27);
+/*68*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: int executeUpdate()>();
+/*70*/
+
+     label2:
+        goto label4;
+/*75*/
+
+     label3:
+        $stack29 := @caughtexception;
+/*76*/
+
+        virtualinvoke $stack29.<java.lang.Exception: void printStackTrace()>();
+/*74*/
+
+     label4:
+        return;
+/*76*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

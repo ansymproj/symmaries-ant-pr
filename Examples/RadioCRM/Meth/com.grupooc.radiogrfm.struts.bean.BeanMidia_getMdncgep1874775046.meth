@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanMidia:getMdncgep()
+{
+java.lang.String $stack1;
+  $stack1=this.mdncgep;
+ return  $stack1;
+ } 
+

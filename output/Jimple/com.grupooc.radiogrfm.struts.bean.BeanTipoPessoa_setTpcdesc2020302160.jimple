@@ -1,0 +1,16 @@
+    public void setTpcdesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanTipoPessoa this;
+        java.lang.String tpcdesc;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanTipoPessoa;
+
+        tpcdesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanTipoPessoa: java.lang.String tpcdesc> = tpcdesc;
+/*23*/
+
+        return;
+/*24*/
+    }
+

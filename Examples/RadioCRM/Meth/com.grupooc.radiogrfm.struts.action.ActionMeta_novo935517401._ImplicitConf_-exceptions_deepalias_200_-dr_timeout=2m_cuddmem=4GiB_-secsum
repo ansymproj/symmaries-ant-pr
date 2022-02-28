@@ -1,0 +1,20 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionMeta:novo (
+  org.apache.struts.action.ActionMapping mapping,
+  org.apache.struts.action.ActionForm form,
+  javax.servlet.http.HttpServletRequest request,
+  javax.servlet.http.HttpServletResponse response) {
+  guard = tt;
+  ret(level()) = pc;
+  ret(obj_level()) = pc;
+  ret(obj_level(form)) = obj_level(form);
+  ret(obj_level(mapping)) = obj_level(mapping);
+  ret(obj_level(request)) = obj_level(request);
+  ret(obj_level(response)) = obj_level(response);
+  ret(obj_level(this)) = obj_level(this);
+  ret(.~>form) = ff;
+  ret(form.~>form) = form.~>form;
+  ret(form.~>mapping) = form.~>mapping;
+  ret(form.~>request) = form.~>request;
+  ret(form.~>response) = form.~>response;
+  ret(form.~>this) = form.~>this;
+}

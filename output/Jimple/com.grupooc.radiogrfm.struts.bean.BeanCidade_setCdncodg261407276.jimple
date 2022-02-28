@@ -1,0 +1,16 @@
+    public void setCdncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCidade this;
+        java.lang.String cdncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCidade;
+
+        cdncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCidade: java.lang.String cdncodg> = cdncodg;
+/*17*/
+
+        return;
+/*18*/
+    }
+

@@ -1,0 +1,59 @@
+    public static java.lang.String preencherEsquerda(char, int, java.lang.String)
+    {
+        char valor;
+        int tam, i, $stack5;
+        java.lang.String str, 'ret';
+        java.lang.StringBuilder $stack7;
+
+        valor := @parameter0: char;
+
+        tam := @parameter1: int;
+
+        str := @parameter2: java.lang.String;
+
+        'ret' = str;
+/*40*/
+
+        i = 0;
+/*41*/
+
+     label1:
+        $stack5 = virtualinvoke str.<java.lang.String: int length()>();
+/*41*/
+
+        $stack5 = tam - $stack5;
+/*41*/
+
+        if i >= $stack5 goto label2;
+/*41*/
+
+        $stack7 = new java.lang.StringBuilder;
+/*42*/
+
+        specialinvoke $stack7.<java.lang.StringBuilder: void <init>()>();
+/*42*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("");
+/*42*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(valor);
+/*42*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>('ret');
+/*42*/
+
+        'ret' = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.String toString()>();
+/*42*/
+/*42*/
+
+        i = i + 1;
+/*41*/
+
+        goto label1;
+/*41*/
+
+     label2:
+        return 'ret';
+/*44*/
+    }
+

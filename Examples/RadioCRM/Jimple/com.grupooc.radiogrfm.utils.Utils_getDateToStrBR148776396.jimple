@@ -1,0 +1,20 @@
+    public static java.lang.String getDateToStrBR(java.sql.ResultSet, java.lang.String) throws java.sql.SQLException
+    {
+        java.sql.ResultSet rs;
+        java.lang.String value;
+        java.sql.Date $stack2;
+
+        rs := @parameter0: java.sql.ResultSet;
+
+        value := @parameter1: java.lang.String;
+
+        $stack2 = interfaceinvoke rs.<java.sql.ResultSet: java.sql.Date getDate(java.lang.String)>(value);
+/*318*/
+
+        value = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String dateToStrBR(java.util.Date)>($stack2);
+/*318*/
+
+        return value;
+/*318*/
+    }
+

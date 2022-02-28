@@ -1,0 +1,16 @@
+    public void setCtncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContato this;
+        java.lang.String ctncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContato;
+
+        ctncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String ctncodg> = ctncodg;
+/*44*/
+
+        return;
+/*45*/
+    }
+

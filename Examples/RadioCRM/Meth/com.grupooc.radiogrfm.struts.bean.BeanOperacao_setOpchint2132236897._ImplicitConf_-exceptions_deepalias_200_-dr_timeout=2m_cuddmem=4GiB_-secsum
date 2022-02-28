@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanOperacao:setOpchint (java.lang.String
+                                                                  opchint) {
+  guard = tt;
+  ret(obj_level(opchint)) = if ¬opchint.~>this ∨ pc ⊔ level(opchint) = ⊥ then obj_level(opchint) else if opchint.~>this ∧ pc ⊔ level(opchint) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(opchint) ⊔ obj_level(opchint) ⊔ obj_level(this);
+  ret(opchint.~>opchint) = opchint.~>opchint ∨ opchint.~>this;
+  ret(opchint.~>this) = opchint.~>this;
+  ret(this.~>opchint) = tt;
+  ret(this.~>this) = opchint.~>this ∨ this.~>this;
+}

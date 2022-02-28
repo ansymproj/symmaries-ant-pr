@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEnlativ (java.lang.String
+                                                                  enlativ) {
+  guard = tt;
+  ret(obj_level(enlativ)) = if ¬enlativ.~>this ∨ pc ⊔ level(enlativ) = ⊥ then obj_level(enlativ) else if enlativ.~>this ∧ pc ⊔ level(enlativ) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(enlativ) ⊔ obj_level(enlativ) ⊔ obj_level(this);
+  ret(enlativ.~>enlativ) = enlativ.~>enlativ ∨ enlativ.~>this;
+  ret(enlativ.~>this) = enlativ.~>this;
+  ret(this.~>enlativ) = tt;
+  ret(this.~>this) = enlativ.~>this ∨ this.~>this;
+}

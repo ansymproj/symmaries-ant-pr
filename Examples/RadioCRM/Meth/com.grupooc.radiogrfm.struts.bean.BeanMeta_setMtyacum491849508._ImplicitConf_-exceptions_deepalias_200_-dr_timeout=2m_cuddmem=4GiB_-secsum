@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanMeta:setMtyacum (java.lang.String
+                                                              mtyacum) {
+  guard = tt;
+  ret(obj_level(mtyacum)) = if ¬mtyacum.~>this ∨ pc ⊔ level(mtyacum) = ⊥ then obj_level(mtyacum) else if mtyacum.~>this ∧ pc ⊔ level(mtyacum) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(mtyacum) ⊔ obj_level(mtyacum) ⊔ obj_level(this);
+  ret(mtyacum.~>mtyacum) = mtyacum.~>mtyacum ∨ mtyacum.~>this;
+  ret(mtyacum.~>this) = mtyacum.~>this;
+  ret(this.~>mtyacum) = tt;
+  ret(this.~>this) = mtyacum.~>this ∨ this.~>this;
+}

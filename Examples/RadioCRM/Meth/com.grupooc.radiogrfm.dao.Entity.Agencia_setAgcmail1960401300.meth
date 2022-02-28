@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAgcmail(java.lang.String agcmail)
+{
+this.agcmail=agcmail;
+ return;
+ } 
+

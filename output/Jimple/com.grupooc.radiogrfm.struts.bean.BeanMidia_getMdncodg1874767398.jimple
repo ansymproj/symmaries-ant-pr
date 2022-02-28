@@ -1,0 +1,14 @@
+    public java.lang.String getMdncodg()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMidia this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMidia;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanMidia: java.lang.String mdncodg>;
+/*34*/
+
+        return $stack1;
+/*34*/
+    }
+

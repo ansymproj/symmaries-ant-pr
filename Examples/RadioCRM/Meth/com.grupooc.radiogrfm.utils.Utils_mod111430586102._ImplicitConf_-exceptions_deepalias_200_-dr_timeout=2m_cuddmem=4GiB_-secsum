@@ -1,0 +1,4 @@
+static int com.grupooc.radiogrfm.utils.Utils:mod11 (int valor) {
+  guard = tt;
+  ret(level()) = pc ⊔ level(valor);
+}

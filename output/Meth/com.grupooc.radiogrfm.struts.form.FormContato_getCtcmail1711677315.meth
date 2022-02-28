@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormContato:getCtcmail()
+{
+java.lang.String $stack1;
+  $stack1=this.ctcmail;
+ return  $stack1;
+ } 
+

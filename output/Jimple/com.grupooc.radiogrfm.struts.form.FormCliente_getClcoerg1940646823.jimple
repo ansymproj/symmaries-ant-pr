@@ -1,0 +1,14 @@
+    public java.lang.String getClcoerg()
+    {
+        com.grupooc.radiogrfm.struts.form.FormCliente this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormCliente;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormCliente: java.lang.String clcoerg>;
+/*239*/
+
+        return $stack1;
+/*239*/
+    }
+

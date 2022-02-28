@@ -1,0 +1,16 @@
+    public void setMmnanmt(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMetaMes this;
+        java.lang.String mmnanmt;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMetaMes;
+
+        mmnanmt := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanMetaMes: java.lang.String mmnanmt> = mmnanmt;
+/*53*/
+
+        return;
+/*54*/
+    }
+

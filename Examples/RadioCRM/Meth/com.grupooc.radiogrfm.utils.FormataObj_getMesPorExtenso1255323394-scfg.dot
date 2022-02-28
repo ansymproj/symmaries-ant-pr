@@ -1,0 +1,287 @@
+digraph G {
+  node [shape=box, ];
+  "pc-1_js1" [label="〈java.lang.String com.grupooc.radiogrfm.utils.FormataObj:getMesPorExtenso (java.util.Date data)〉\n\
+tt",
+              ];
+  "pc0_js1" [label="〈ret = null, js1〉", ];
+  "pc1_js1" [label="〈if (data == null) goto label0, js1〉", ];
+  "pc2_js1" [label="〈$stack3 = new java.text.SimpleDateFormat, js1〉", ];
+  "pc3_js1" [label="〈$stack4 = this.local, js1〉", ];
+  "pc4_js1" [label="〈$stack3#java.text.SimpleDateFormat (\"MMMMM\", $stack4), js1〉\n\
+tt",
+             ];
+  "pc5_js1" [label="〈this.formataData = $stack3, js1〉", ];
+  "pc6_js1" [label="〈$stack3 = this.formataData, js1〉", ];
+  "pc7_js1" [label="〈ret = $stack3.format (data), js1〉\n\
+tt", ];
+  "pc8_js1" [label="〈label0: return ret, js1〉", ];
+  "pc8_js2" [label="〈label0: return ret, js2〉", ];
+  "pc9_js1" [label="〈sink, js1〉\n\
+obj_level(data) ⊑ ret(obj_level(data))' ∧ obj_level(this) ⊑ ret(obj_level(this))' ∧ (ret(data.~>data)' ∨ ¬data.~>data) ∧ (ret(data.~>this)' ∨ ¬data.~>this) ∧ (ret(this.~>data)' ∨ ¬this.~>data) ∧ (ret(this.~>this)' ∨ ¬this.~>this) ∧ (ϕ ≠ S8 ∨ obj_level(ret) ⊑ ret(obj_level())' ∧ pc ⊔ level(ret) ⊑ ret(level())' ∧ (ret(.~>data)' ∨ ¬data.~>ret) ∧ (ret(.~>this)' ∨ ¬this.~>ret) ∧ (ret(data.~>)' ∨ ¬ret.~>data) ∧ (ret(this.~>)' ∨ ¬ret.~>this))",
+             ];
+  
+  
+  "pc-1_js1" -> "pc0_js1" [label="ok(com.grupooc.radiogrfm.utils.FormataObj:getMesPorExtenso),\n\
+{ret(.~>data)' := ret(.~>data),\n\
+ ret(.~>this)' := ret(.~>this),\n\
+ ret(data.~>)' := ret(data.~>),\n\
+ ret(data.~>data)' := ret(data.~>data),\n\
+ ret(data.~>this)' := ret(data.~>this),\n\
+ ret(this.~>)' := ret(this.~>),\n\
+ ret(this.~>data)' := ret(this.~>data),\n\
+ ret(this.~>this)' := ret(this.~>this),\n\
+ ret(level())' := ret(level()),\n\
+ ret(obj_level())' := ret(obj_level()),\n\
+ ret(obj_level(data))' := ret(obj_level(data)),\n\
+ ret(obj_level(this))' := ret(obj_level(this))}",
+                           ];
+  "pc0_js1" -> "pc1_js1" [label="tt,\n\
+{$stack3.~>ret := ff,\n\
+ $stack4.~>ret := ff,\n\
+ data.~>ret := ff,\n\
+ ret.~>$stack3 := ff,\n\
+ ret.~>$stack4 := ff,\n\
+ ret.~>data := ff,\n\
+ ret.~>ret := ff,\n\
+ ret.~>this := ff,\n\
+ this.~>ret := ff,\n\
+ level(ret) := pc,\n\
+ obj_level(ret) := ⊥}",
+                          ];
+  "pc1_js1" -> "pc2_js1" [label="υ ∧ ¬ω ∨ ¬τ ∧ ¬υ ∧ level(data) ⊐ pc ∨ ¬τ ∧ ¬υ ∧ level(data) ⊑ pc,\n\
+{$stack3.~>$stack3' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then $stack3.~>$stack3' else $stack3.~>$stack3,\n\
+ $stack3.~>$stack4' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then $stack3.~>$stack4' else $stack3.~>$stack4,\n\
+ $stack3.~>data' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then $stack3.~>data' else $stack3.~>data,\n\
+ $stack3.~>ret' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then $stack3.~>ret' else $stack3.~>ret,\n\
+ $stack3.~>this' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then $stack3.~>this' else $stack3.~>this,\n\
+ $stack4.~>$stack3' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then $stack4.~>$stack3' else $stack4.~>$stack3,\n\
+ $stack4.~>$stack4' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then $stack4.~>$stack4' else $stack4.~>$stack4,\n\
+ $stack4.~>data' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then $stack4.~>data' else $stack4.~>data,\n\
+ $stack4.~>ret' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then $stack4.~>ret' else $stack4.~>ret,\n\
+ $stack4.~>this' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then $stack4.~>this' else $stack4.~>this,\n\
+ data.~>$stack3' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then data.~>$stack3' else data.~>$stack3,\n\
+ data.~>$stack4' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then data.~>$stack4' else data.~>$stack4,\n\
+ data.~>data' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then data.~>data' else data.~>data,\n\
+ data.~>ret' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then data.~>ret' else data.~>ret,\n\
+ data.~>this' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then data.~>this' else data.~>this,\n\
+ ret.~>$stack3' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then ret.~>$stack3' else ret.~>$stack3,\n\
+ ret.~>$stack4' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then ret.~>$stack4' else ret.~>$stack4,\n\
+ ret.~>data' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then ret.~>data' else ret.~>data,\n\
+ ret.~>ret' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then ret.~>ret' else ret.~>ret,\n\
+ ret.~>this' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then ret.~>this' else ret.~>this,\n\
+ this.~>$stack3' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then this.~>$stack3' else this.~>$stack3,\n\
+ this.~>$stack4' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then this.~>$stack4' else this.~>$stack4,\n\
+ this.~>data' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then this.~>data' else this.~>data,\n\
+ this.~>ret' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then this.~>ret' else this.~>ret,\n\
+ this.~>this' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then this.~>this' else this.~>this,\n\
+ pc := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then pc else pc ⊔ level(data),\n\
+ obj_level($stack3)' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then obj_level($stack3)' else obj_level($stack3),\n\
+ obj_level($stack4)' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then obj_level($stack4)' else obj_level($stack4),\n\
+ obj_level(data)' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then obj_level(data)' else obj_level(data),\n\
+ obj_level(ret)' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then obj_level(ret)' else obj_level(ret),\n\
+ obj_level(this)' := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then obj_level(this)' else obj_level(this),\n\
+ hr := if ¬(¬τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ¬ω then hr else P1}",
+                          ];
+  "pc1_js1" -> "pc8_js1" [label="υ ∧ ω ∨ τ ∧ ¬υ ∧ level(data) ⊐ pc ∨ τ ∧ ¬υ ∧ level(data) ⊑ pc,\n\
+{$stack3.~>$stack3' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then $stack3.~>$stack3' else $stack3.~>$stack3,\n\
+ $stack3.~>$stack4' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then $stack3.~>$stack4' else $stack3.~>$stack4,\n\
+ $stack3.~>data' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then $stack3.~>data' else $stack3.~>data,\n\
+ $stack3.~>ret' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then $stack3.~>ret' else $stack3.~>ret,\n\
+ $stack3.~>this' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then $stack3.~>this' else $stack3.~>this,\n\
+ $stack4.~>$stack3' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then $stack4.~>$stack3' else $stack4.~>$stack3,\n\
+ $stack4.~>$stack4' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then $stack4.~>$stack4' else $stack4.~>$stack4,\n\
+ $stack4.~>data' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then $stack4.~>data' else $stack4.~>data,\n\
+ $stack4.~>ret' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then $stack4.~>ret' else $stack4.~>ret,\n\
+ $stack4.~>this' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then $stack4.~>this' else $stack4.~>this,\n\
+ data.~>$stack3' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then data.~>$stack3' else data.~>$stack3,\n\
+ data.~>$stack4' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then data.~>$stack4' else data.~>$stack4,\n\
+ data.~>data' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then data.~>data' else data.~>data,\n\
+ data.~>ret' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then data.~>ret' else data.~>ret,\n\
+ data.~>this' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then data.~>this' else data.~>this,\n\
+ ret.~>$stack3' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then ret.~>$stack3' else ret.~>$stack3,\n\
+ ret.~>$stack4' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then ret.~>$stack4' else ret.~>$stack4,\n\
+ ret.~>data' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then ret.~>data' else ret.~>data,\n\
+ ret.~>ret' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then ret.~>ret' else ret.~>ret,\n\
+ ret.~>this' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then ret.~>this' else ret.~>this,\n\
+ this.~>$stack3' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then this.~>$stack3' else this.~>$stack3,\n\
+ this.~>$stack4' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then this.~>$stack4' else this.~>$stack4,\n\
+ this.~>data' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then this.~>data' else this.~>data,\n\
+ this.~>ret' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then this.~>ret' else this.~>ret,\n\
+ this.~>this' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then this.~>this' else this.~>this,\n\
+ pc := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then pc else pc ⊔ level(data),\n\
+ obj_level($stack3)' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then obj_level($stack3)' else obj_level($stack3),\n\
+ obj_level($stack4)' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then obj_level($stack4)' else obj_level($stack4),\n\
+ obj_level(data)' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then obj_level(data)' else obj_level(data),\n\
+ obj_level(ret)' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then obj_level(ret)' else obj_level(ret),\n\
+ obj_level(this)' := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then obj_level(this)' else obj_level(this),\n\
+ hr := if ¬(τ ∧ ¬υ ∧ level(data) ⊐ pc) ∨ υ ∧ ω then hr else P1}",
+                          ];
+  "pc2_js1" -> "pc3_js1" [label="tt,\n\
+{$stack3.~>$stack3 := ff,\n\
+ $stack3.~>$stack4 := ff,\n\
+ $stack3.~>data := ff,\n\
+ $stack3.~>ret := ff,\n\
+ $stack3.~>this := ff,\n\
+ $stack4.~>$stack3 := ff,\n\
+ data.~>$stack3 := ff,\n\
+ ret.~>$stack3 := ff,\n\
+ this.~>$stack3 := ff,\n\
+ level($stack3) := pc ⊔ (if υ then level($stack3) else ⊥),\n\
+ obj_level($stack3) := pc}",
+                          ];
+  "pc3_js1" -> "pc4_js1" [label="tt,\n\
+{$stack3.~>$stack4 := ff,\n\
+ $stack4.~>$stack3 := ff,\n\
+ $stack4.~>$stack4 := $stack4.~>this ∨ this.~>$stack4,\n\
+ $stack4.~>data := this.~>data,\n\
+ $stack4.~>ret := this.~>ret,\n\
+ $stack4.~>this := this.~>this,\n\
+ data.~>$stack4 := data.~>this,\n\
+ ret.~>$stack4 := ret.~>this,\n\
+ this.~>$stack4 := tt,\n\
+ level($stack4) := pc ⊔ (if υ then level($stack4) else level(this) ⊔ obj_level(this)),\n\
+ obj_level($stack4) := obj_level(this)}",
+                          ];
+  "pc4_js1" -> "pc5_js1" [label="tt,\n\
+{$stack3.~>$stack3 := ff,\n\
+ $stack3.~>data := ff,\n\
+ $stack3.~>ret := ff,\n\
+ $stack3.~>this := ff,\n\
+ data.~>$stack3 := ff,\n\
+ data.~>data := data.~>data ∨ (if $stack4.~>$stack4 then data.~>data ∨ $stack4.~>data ∧ data.~>$stack4 else data.~>data),\n\
+ data.~>ret := data.~>ret ∨ (if $stack4.~>$stack4 then data.~>ret ∨ $stack4.~>ret ∧ data.~>$stack4 else data.~>ret),\n\
+ data.~>this := data.~>this ∨ (if $stack4.~>$stack4 then data.~>this ∨ $stack4.~>this ∧ data.~>$stack4 else data.~>this),\n\
+ ret.~>$stack3 := ff,\n\
+ ret.~>data := ret.~>data ∨ (if $stack4.~>$stack4 then ret.~>data ∨ $stack4.~>data ∧ ret.~>$stack4 else ret.~>data),\n\
+ ret.~>ret := ret.~>ret ∨ (if $stack4.~>$stack4 then ret.~>ret ∨ $stack4.~>ret ∧ ret.~>$stack4 else ret.~>ret),\n\
+ ret.~>this := ret.~>this ∨ (if $stack4.~>$stack4 then ret.~>this ∨ $stack4.~>this ∧ ret.~>$stack4 else ret.~>this),\n\
+ this.~>$stack3 := ff,\n\
+ this.~>$stack4 := tt,\n\
+ this.~>data := this.~>data ∨ (if $stack4.~>$stack4 then $stack4.~>data ∨ this.~>data else this.~>data),\n\
+ this.~>ret := this.~>ret ∨ (if $stack4.~>$stack4 then $stack4.~>ret ∨ this.~>ret else this.~>ret),\n\
+ this.~>this := this.~>this ∨ (if $stack4.~>$stack4 then $stack4.~>this ∨ this.~>this else this.~>this),\n\
+ obj_level($stack3) := obj_level($stack3) ⊔ (if pc ⊔ level($stack3) ⊔ level($stack4) ⊔ obj_level($stack3) ⊔ obj_level($stack4) ⊑ if υ then pc else ⊤ then pc ⊔ level($stack3) ⊔ level($stack4) ⊔ obj_level($stack3) ⊔ obj_level($stack4) else if υ then pc else ⊤)}",
+                          ];
+  "pc5_js1" -> "pc6_js1" [label="tt,\n\
+{$stack3.~>$stack3 := ff,\n\
+ $stack3.~>$stack4 := ff,\n\
+ $stack3.~>data := ff,\n\
+ $stack3.~>ret := ff,\n\
+ $stack4.~>$stack3 := $stack4.~>this,\n\
+ data.~>$stack3 := data.~>this,\n\
+ ret.~>$stack3 := ret.~>this,\n\
+ this.~>$stack3 := tt,\n\
+ this.~>$stack4 := tt,\n\
+ obj_level($stack4) := obj_level($stack4) ⊔ (if $stack4.~>this then pc ⊔ (if υ then ⊥ else level($stack3) ⊔ obj_level($stack3)) else ⊥),\n\
+ obj_level(data) := obj_level(data) ⊔ (if data.~>this then pc ⊔ (if υ then ⊥ else level($stack3) ⊔ obj_level($stack3)) else ⊥),\n\
+ obj_level(ret) := obj_level(ret) ⊔ (if ret.~>this then pc ⊔ (if υ then ⊥ else level($stack3) ⊔ obj_level($stack3)) else ⊥),\n\
+ obj_level(this) := pc ⊔ obj_level(this) ⊔ (if υ then ⊥ else level($stack3) ⊔ obj_level($stack3))}",
+                          ];
+  "pc6_js1" -> "pc7_js1" [label="tt,\n\
+{$stack3.~>$stack3 := tt,\n\
+ $stack3.~>$stack4 := tt,\n\
+ $stack3.~>data := this.~>data,\n\
+ $stack3.~>ret := this.~>ret,\n\
+ $stack3.~>this := this.~>this,\n\
+ $stack4.~>$stack3 := $stack4.~>this,\n\
+ data.~>$stack3 := data.~>this,\n\
+ ret.~>$stack3 := ret.~>this,\n\
+ this.~>$stack3 := tt,\n\
+ level($stack3) := pc ⊔ (if υ then level($stack3) else level(this) ⊔ obj_level(this)),\n\
+ obj_level($stack3) := obj_level(this)}",
+                          ];
+  "pc7_js1" -> "pc8_js1" [label="tt,\n\
+{$stack3.~>$stack3 := tt,\n\
+ $stack3.~>$stack4 := tt,\n\
+ $stack3.~>this := (if $stack3.~>data then $stack3.~>this ∨ data.~>this else $stack3.~>this) ∨ (if data.~>$stack3 then $stack3.~>this ∨ $stack3.~>data ∧ $stack3.~>this else $stack3.~>this) ∨ (if data.~>data then $stack3.~>this ∨ $stack3.~>data ∧ data.~>this else $stack3.~>this),\n\
+ $stack4.~>$stack3 := (if $stack3.~>data then $stack4.~>$stack3 ∨ $stack4.~>$stack3 ∧ data.~>$stack3 else $stack4.~>$stack3) ∨ (if data.~>$stack3 then $stack4.~>$stack3 ∨ $stack4.~>data else $stack4.~>$stack3) ∨ (if data.~>data then $stack4.~>$stack3 ∨ $stack4.~>data ∧ data.~>$stack3 else $stack4.~>$stack3),\n\
+ $stack4.~>$stack4 := $stack4.~>$stack3 ∨ $stack4.~>$stack4 ∨ (if $stack3.~>data then $stack4.~>$stack4 ∨ $stack4.~>$stack3 ∧ data.~>$stack4 else $stack4.~>$stack4) ∨ (if data.~>$stack3 then $stack4.~>$stack4 ∨ $stack4.~>data else $stack4.~>$stack4) ∨ (if data.~>data then $stack4.~>$stack4 ∨ $stack4.~>data ∧ data.~>$stack4 else $stack4.~>$stack4),\n\
+ $stack4.~>data := $stack4.~>data ∨ $stack3.~>data ∧ $stack4.~>$stack3 ∨ (if $stack3.~>data then $stack4.~>$stack3 ∨ $stack4.~>data else $stack4.~>data) ∨ (if data.~>$stack3 then $stack4.~>data ∨ $stack3.~>data ∧ $stack4.~>data else $stack4.~>data),\n\
+ $stack4.~>this := $stack4.~>this ∨ $stack3.~>this ∧ $stack4.~>$stack3 ∨ (if $stack3.~>data then $stack4.~>this ∨ $stack4.~>$stack3 ∧ data.~>this else $stack4.~>this) ∨ (if data.~>$stack3 then $stack4.~>this ∨ $stack3.~>this ∧ $stack4.~>data else $stack4.~>this) ∨ (if data.~>data then $stack4.~>this ∨ $stack4.~>data ∧ data.~>this else $stack4.~>this),\n\
+ data.~>$stack4 := data.~>$stack3 ∨ data.~>$stack4 ∨ (if $stack3.~>data then data.~>$stack4 ∨ data.~>$stack3 ∧ data.~>$stack4 else data.~>$stack4),\n\
+ data.~>data := data.~>data ∨ $stack3.~>data ∧ data.~>$stack3 ∨ (if $stack3.~>data then data.~>$stack3 ∨ data.~>data else data.~>data) ∨ (if data.~>$stack3 then $stack3.~>data ∨ data.~>data else data.~>data),\n\
+ data.~>this := data.~>this ∨ $stack3.~>this ∧ data.~>$stack3 ∨ (if $stack3.~>data then data.~>this ∨ data.~>$stack3 ∧ data.~>this else data.~>this) ∨ (if data.~>$stack3 then $stack3.~>this ∨ data.~>this else data.~>this),\n\
+ this.~>$stack3 := tt,\n\
+ this.~>$stack4 := tt,\n\
+ this.~>data := $stack3.~>data ∨ this.~>data ∨ (if data.~>$stack3 then this.~>data ∨ $stack3.~>data ∧ this.~>data else this.~>data),\n\
+ this.~>this := $stack3.~>this ∨ this.~>this ∨ (if $stack3.~>data then data.~>this ∨ this.~>this else this.~>this) ∨ (if data.~>$stack3 then this.~>this ∨ $stack3.~>this ∧ this.~>data else this.~>this) ∨ (if data.~>data then this.~>this ∨ data.~>this ∧ this.~>data else this.~>this),\n\
+ level(ret) := pc ⊔ (if υ then level(ret) else pc ⊔ obj_level($stack3)),\n\
+ obj_level(ret) := if pc ⊔ obj_level($stack3) ⊔ obj_level(data) ⊑ if υ then pc else ⊤ then pc ⊔ obj_level($stack3) ⊔ obj_level(data) else if υ then pc else ⊤}",
+                          ];
+  "pc8_js1" -> "pc1_js1" [label="¬υ ∧ hr = P1,\n\
+{υ := tt,\n\
+ $stack3.~>$stack3 := $stack3.~>$stack3',\n\
+ $stack3.~>$stack4 := $stack3.~>$stack4',\n\
+ $stack3.~>data := $stack3.~>data',\n\
+ $stack3.~>ret := $stack3.~>ret',\n\
+ $stack3.~>this := $stack3.~>this',\n\
+ $stack4.~>$stack3 := $stack4.~>$stack3',\n\
+ $stack4.~>$stack4 := $stack4.~>$stack4',\n\
+ $stack4.~>data := $stack4.~>data',\n\
+ $stack4.~>ret := $stack4.~>ret',\n\
+ $stack4.~>this := $stack4.~>this',\n\
+ data.~>$stack3 := data.~>$stack3',\n\
+ data.~>$stack4 := data.~>$stack4',\n\
+ data.~>data := data.~>data',\n\
+ data.~>ret := data.~>ret',\n\
+ data.~>this := data.~>this',\n\
+ ret.~>$stack3 := ret.~>$stack3',\n\
+ ret.~>$stack4 := ret.~>$stack4',\n\
+ ret.~>data := ret.~>data',\n\
+ ret.~>ret := ret.~>ret',\n\
+ ret.~>this := ret.~>this',\n\
+ this.~>$stack3 := this.~>$stack3',\n\
+ this.~>$stack4 := this.~>$stack4',\n\
+ this.~>data := this.~>data',\n\
+ this.~>ret := this.~>ret',\n\
+ this.~>this := this.~>this',\n\
+ $stack3.~>$stack3' := $stack3.~>$stack3,\n\
+ $stack3.~>$stack4' := $stack3.~>$stack4,\n\
+ $stack3.~>data' := $stack3.~>data,\n\
+ $stack3.~>ret' := $stack3.~>ret,\n\
+ $stack3.~>this' := $stack3.~>this,\n\
+ $stack4.~>$stack3' := $stack4.~>$stack3,\n\
+ $stack4.~>$stack4' := $stack4.~>$stack4,\n\
+ $stack4.~>data' := $stack4.~>data,\n\
+ $stack4.~>ret' := $stack4.~>ret,\n\
+ $stack4.~>this' := $stack4.~>this,\n\
+ data.~>$stack3' := data.~>$stack3,\n\
+ data.~>$stack4' := data.~>$stack4,\n\
+ data.~>data' := data.~>data,\n\
+ data.~>ret' := data.~>ret,\n\
+ data.~>this' := data.~>this,\n\
+ ret.~>$stack3' := ret.~>$stack3,\n\
+ ret.~>$stack4' := ret.~>$stack4,\n\
+ ret.~>data' := ret.~>data,\n\
+ ret.~>ret' := ret.~>ret,\n\
+ ret.~>this' := ret.~>this,\n\
+ this.~>$stack3' := this.~>$stack3,\n\
+ this.~>$stack4' := this.~>$stack4,\n\
+ this.~>data' := this.~>data,\n\
+ this.~>ret' := this.~>ret,\n\
+ this.~>this' := this.~>this,\n\
+ obj_level($stack3) := obj_level($stack3)',\n\
+ obj_level($stack4) := obj_level($stack4)',\n\
+ obj_level(data) := obj_level(data)',\n\
+ obj_level(ret) := obj_level(ret)',\n\
+ obj_level(this) := obj_level(this)',\n\
+ obj_level($stack3)' := obj_level($stack3),\n\
+ obj_level($stack4)' := obj_level($stack4),\n\
+ obj_level(data)' := obj_level(data),\n\
+ obj_level(ret)' := obj_level(ret),\n\
+ obj_level(this)' := obj_level(this)}",
+                          ];
+  "pc8_js1" -> "pc8_js2" [label="hr ≠ P1 ∨ υ ∧ hr = P1,\n\
+{υ := ¬(υ ∧ hr = P1) ∧ (if hr = P1 then υ ∧ ¬(υ ∧ hr = P1) else υ),\n\
+ pc := if ¬(hr ≠ P1 ∨ ¬(υ ∧ hr = P1)) ∨ υ ∧ hr = P1 then ⊥ else pc,\n\
+ obj_level($stack3) := if ¬(hr ≠ P1 ∨ ¬(υ ∧ hr = P1)) ∨ υ ∧ hr = P1 then obj_level($stack3) ⊔ (if $stack3.~>$stack4 then obj_level($stack4) else ⊥) ⊔ (if $stack3.~>data then obj_level(data) else ⊥) ⊔ (if $stack3.~>ret then obj_level(ret) else ⊥) ⊔ (if $stack3.~>this then obj_level(this) else ⊥) else obj_level($stack3),\n\
+ obj_level($stack4) := if ¬(hr ≠ P1 ∨ ¬(υ ∧ hr = P1)) ∨ υ ∧ hr = P1 then obj_level($stack4) ⊔ (if $stack4.~>$stack3 then obj_level($stack3) else ⊥) ⊔ (if $stack4.~>data then obj_level(data) else ⊥) ⊔ (if $stack4.~>ret then obj_level(ret) else ⊥) ⊔ (if $stack4.~>this then obj_level(this) else ⊥) else obj_level($stack4),\n\
+ obj_level(data) := if ¬(hr ≠ P1 ∨ ¬(υ ∧ hr = P1)) ∨ υ ∧ hr = P1 then obj_level(data) ⊔ (if data.~>$stack3 then obj_level($stack3) else ⊥) ⊔ (if data.~>$stack4 then obj_level($stack4) else ⊥) ⊔ (if data.~>ret then obj_level(ret) else ⊥) ⊔ (if data.~>this then obj_level(this) else ⊥) else obj_level(data),\n\
+ obj_level(ret) := if ¬(hr ≠ P1 ∨ ¬(υ ∧ hr = P1)) ∨ υ ∧ hr = P1 then obj_level(ret) ⊔ (if ret.~>$stack3 then obj_level($stack3) else ⊥) ⊔ (if ret.~>$stack4 then obj_level($stack4) else ⊥) ⊔ (if ret.~>data then obj_level(data) else ⊥) ⊔ (if ret.~>this then obj_level(this) else ⊥) else obj_level(ret),\n\
+ obj_level(this) := if ¬(hr ≠ P1 ∨ ¬(υ ∧ hr = P1)) ∨ υ ∧ hr = P1 then obj_level(this) ⊔ (if this.~>$stack3 then obj_level($stack3) else ⊥) ⊔ (if this.~>$stack4 then obj_level($stack4) else ⊥) ⊔ (if this.~>data then obj_level(data) else ⊥) ⊔ (if this.~>ret then obj_level(ret) else ⊥) else obj_level(this),\n\
+ hr := if ¬(hr ≠ P1 ∨ ¬(υ ∧ hr = P1)) ∨ υ ∧ hr = P1 then P. else hr}",
+                          ];
+  "pc8_js2" -> "pc9_js1" [label="tt,\n\
+{ϕ := S8}", ];
+  
+  }

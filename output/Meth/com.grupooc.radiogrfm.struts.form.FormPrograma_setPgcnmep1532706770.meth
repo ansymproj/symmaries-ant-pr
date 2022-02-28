@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormPrograma:setPgcnmep(java.lang.String pgcnmep)
+{
+this.pgcnmep=pgcnmep;
+ return;
+ } 
+

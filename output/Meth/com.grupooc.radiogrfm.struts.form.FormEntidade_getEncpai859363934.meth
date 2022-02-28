@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormEntidade:getEncpai()
+{
+java.lang.String $stack1;
+  $stack1=this.encpai;
+ return  $stack1;
+ } 
+

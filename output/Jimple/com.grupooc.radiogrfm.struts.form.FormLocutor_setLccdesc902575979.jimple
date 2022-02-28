@@ -1,0 +1,16 @@
+    public void setLccdesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormLocutor this;
+        java.lang.String lccdesc;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormLocutor;
+
+        lccdesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormLocutor: java.lang.String lccdesc> = lccdesc;
+/*22*/
+
+        return;
+/*23*/
+    }
+

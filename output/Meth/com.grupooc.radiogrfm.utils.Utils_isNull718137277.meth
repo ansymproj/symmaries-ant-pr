@@ -1,0 +1,14 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:isNull(java.lang.String @s,java.lang.String s2,java.lang.String s3)
+{
+boolean $stack3;
+  java.lang.String s;
+s=@s;
+if (s==null) goto label0;
+ $stack3 = s.equals((java.lang.Object)"");
+ if ($stack3==0) goto label1;
+ label0:s=s2;
+ goto label2;
+ label1:s=s3;
+ label2:return  s;
+ } 
+

@@ -1,0 +1,14 @@
+    public java.lang.String getCtcmail()
+    {
+        com.grupooc.radiogrfm.struts.form.FormContato this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContato;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String ctcmail>;
+/*89*/
+
+        return $stack1;
+/*89*/
+    }
+

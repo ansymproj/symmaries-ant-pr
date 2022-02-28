@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormContrato:getCrdterm()
+{
+java.lang.String $stack1;
+  $stack1=this.crdterm;
+ return  $stack1;
+ } 
+

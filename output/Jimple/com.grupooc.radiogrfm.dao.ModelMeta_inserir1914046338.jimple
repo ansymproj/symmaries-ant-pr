@@ -1,0 +1,61 @@
+    public void inserir(com.grupooc.radiogrfm.struts.bean.BeanMeta)
+    {
+        com.grupooc.radiogrfm.dao.ModelMeta this;
+        com.grupooc.radiogrfm.struts.bean.BeanMeta meta;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack4;
+        java.lang.String $stack7;
+        int $stack8;
+        java.lang.Exception $stack13;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelMeta;
+
+        meta := @parameter0: com.grupooc.radiogrfm.struts.bean.BeanMeta;
+
+     label1:
+        $stack4 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*53*/
+
+        st = interfaceinvoke $stack4.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("INSERT INTO META (MTNCGCT, MTNANO) VALUES (?,?)");
+/*53*/
+/*53*/
+
+        $stack7 = virtualinvoke meta.<com.grupooc.radiogrfm.struts.bean.BeanMeta: java.lang.String getMtncgct()>();
+/*54*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*54*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, $stack8);
+/*54*/
+
+        $stack7 = virtualinvoke meta.<com.grupooc.radiogrfm.struts.bean.BeanMeta: java.lang.String getMtnano()>();
+/*55*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*55*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(2, $stack8);
+/*55*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: int executeUpdate()>();
+/*57*/
+
+     label2:
+        goto label4;
+/*61*/
+
+     label3:
+        $stack13 := @caughtexception;
+/*63*/
+
+        virtualinvoke $stack13.<java.lang.Exception: void printStackTrace()>();
+/*60*/
+
+     label4:
+        return;
+/*63*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

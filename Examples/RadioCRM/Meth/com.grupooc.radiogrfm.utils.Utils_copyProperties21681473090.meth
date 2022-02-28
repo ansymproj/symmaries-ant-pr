@@ -1,0 +1,16 @@
+static java.lang.Object com.grupooc.radiogrfm.utils.Utils:copyProperties2(java.lang.Object @dest,java.lang.Object orig)
+{
+java.lang.Class $stack2;
+  java.lang.Object $stack3;
+  java.lang.Object dest;
+dest=@dest;
+if (dest==null) goto label0;
+ $stack2 = dest.getClass();
+ $stack3 = $stack2.newInstance();
+ dest = com.grupooc.radiogrfm.utils.Utils.copyProperties($stack3,dest);
+ dest = com.grupooc.radiogrfm.utils.Utils.copyProperties(dest,orig);
+ goto label1;
+ label0:dest=null;
+ label1:return  dest;
+ } 
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncsenh (java.lang.String
+                                                                  encsenh) {
+  guard = tt;
+  ret(obj_level(encsenh)) = if ¬encsenh.~>this ∨ pc ⊔ level(encsenh) = ⊥ then obj_level(encsenh) else if encsenh.~>this ∧ pc ⊔ level(encsenh) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(encsenh) ⊔ obj_level(encsenh) ⊔ obj_level(this);
+  ret(encsenh.~>encsenh) = encsenh.~>encsenh ∨ encsenh.~>this;
+  ret(encsenh.~>this) = encsenh.~>this;
+  ret(this.~>encsenh) = tt;
+  ret(this.~>this) = encsenh.~>this ∨ this.~>this;
+}

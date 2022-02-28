@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormUsuario:setUsclogn (java.lang.String
+                                                                 usclogn) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(usclogn) ⊔ obj_level(this) ⊔ obj_level(usclogn);
+  ret(obj_level(usclogn)) = if ¬usclogn.~>this ∨ pc ⊔ level(usclogn) = ⊥ then obj_level(usclogn) else if usclogn.~>this ∧ pc ⊔ level(usclogn) = ⊤ then ⊤ else ⊥;
+  ret(this.~>this) = this.~>this ∨ usclogn.~>this;
+  ret(this.~>usclogn) = tt;
+  ret(usclogn.~>this) = usclogn.~>this;
+  ret(usclogn.~>usclogn) = usclogn.~>this ∨ usclogn.~>usclogn;
+}

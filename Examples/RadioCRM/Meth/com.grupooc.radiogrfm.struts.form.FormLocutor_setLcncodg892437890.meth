@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormLocutor:setLcncodg(java.lang.String lcncodg)
+{
+this.lcncodg=lcncodg;
+ return;
+ } 
+

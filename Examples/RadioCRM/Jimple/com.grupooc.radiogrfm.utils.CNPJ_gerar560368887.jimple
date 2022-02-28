@@ -1,0 +1,71 @@
+    public static java.lang.String gerar()
+    {
+        java.lang.String s;
+        int i, $stack11;
+        java.lang.StringBuilder $stack2;
+        double $stack9;
+
+        s = "";
+/*13*/
+
+        i = 0;
+/*14*/
+
+     label1:
+        if i >= 12 goto label2;
+/*14*/
+
+        $stack2 = new java.lang.StringBuilder;
+/*15*/
+
+        specialinvoke $stack2.<java.lang.StringBuilder: void <init>()>();
+/*15*/
+
+        $stack2 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(s);
+/*15*/
+
+        $stack9 = staticinvoke <java.lang.Math: double random()>();
+/*15*/
+
+        $stack9 = $stack9 * 10.0;
+/*15*/
+
+        $stack11 = (int) $stack9;
+/*15*/
+
+        $stack2 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($stack11);
+/*15*/
+
+        s = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.String toString()>();
+/*15*/
+/*15*/
+
+        i = i + 1;
+/*14*/
+
+        goto label1;
+/*14*/
+
+     label2:
+        $stack2 = new java.lang.StringBuilder;
+/*17*/
+
+        specialinvoke $stack2.<java.lang.StringBuilder: void <init>()>();
+/*17*/
+
+        $stack2 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(s);
+/*17*/
+
+        s = staticinvoke <com.grupooc.radiogrfm.utils.CNPJ: java.lang.String dv(java.lang.String)>(s);
+/*17*/
+
+        $stack2 = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(s);
+/*17*/
+
+        s = virtualinvoke $stack2.<java.lang.StringBuilder: java.lang.String toString()>();
+/*17*/
+
+        return s;
+/*17*/
+    }
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncconj (java.lang.String
+                                                                  encconj) {
+  guard = tt;
+  ret(obj_level(encconj)) = if ¬encconj.~>this ∨ pc ⊔ level(encconj) = ⊥ then obj_level(encconj) else if encconj.~>this ∧ pc ⊔ level(encconj) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(encconj) ⊔ obj_level(encconj) ⊔ obj_level(this);
+  ret(encconj.~>encconj) = encconj.~>encconj ∨ encconj.~>this;
+  ret(encconj.~>this) = encconj.~>this;
+  ret(this.~>encconj) = tt;
+  ret(this.~>this) = encconj.~>this ∨ this.~>this;
+}

@@ -1,0 +1,16 @@
+    public void setPglativ(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanPrograma this;
+        java.lang.String pglativ;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanPrograma;
+
+        pglativ := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanPrograma: java.lang.String pglativ> = pglativ;
+/*33*/
+
+        return;
+/*34*/
+    }
+

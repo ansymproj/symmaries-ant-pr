@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClncgct(java.lang.String clncgct)
+{
+this.clncgct=clncgct;
+ return;
+ } 
+

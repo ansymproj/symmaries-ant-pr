@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrcnmct (java.lang.String
+                                                                  crcnmct) {
+  guard = tt;
+  ret(obj_level(crcnmct)) = if ¬crcnmct.~>this ∨ pc ⊔ level(crcnmct) = ⊥ then obj_level(crcnmct) else if crcnmct.~>this ∧ pc ⊔ level(crcnmct) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crcnmct) ⊔ obj_level(crcnmct) ⊔ obj_level(this);
+  ret(crcnmct.~>crcnmct) = crcnmct.~>crcnmct ∨ crcnmct.~>this;
+  ret(crcnmct.~>this) = crcnmct.~>this;
+  ret(this.~>crcnmct) = tt;
+  ret(this.~>this) = crcnmct.~>this ∨ this.~>this;
+}

@@ -1,0 +1,6 @@
+static int com.grupooc.radiogrfm.utils.Utils:dvMod11 (java.lang.String s) {
+  guard = pc ⊔ level(s) ⊔ obj_level(s) = ⊥;
+  ret(level()) = ⊤;
+  ret(obj_level(s)) = ⊤;
+  ret(s.~>s) = tt;
+}

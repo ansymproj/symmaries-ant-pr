@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormInsercao:setInddata (java.lang.String
+                                                                  inddata) {
+  guard = tt;
+  ret(obj_level(inddata)) = if ¬inddata.~>this ∨ pc ⊔ level(inddata) = ⊥ then obj_level(inddata) else if inddata.~>this ∧ pc ⊔ level(inddata) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(inddata) ⊔ obj_level(inddata) ⊔ obj_level(this);
+  ret(inddata.~>inddata) = inddata.~>inddata ∨ inddata.~>this;
+  ret(inddata.~>this) = inddata.~>this;
+  ret(this.~>inddata) = tt;
+  ret(this.~>this) = inddata.~>this ∨ this.~>this;
+}

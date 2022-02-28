@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormAgencia:setAglativ(java.lang.String aglativ)
+{
+this.aglativ=aglativ;
+ return;
+ } 
+

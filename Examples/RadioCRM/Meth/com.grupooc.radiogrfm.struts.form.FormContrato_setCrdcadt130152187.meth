@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrdcadt(java.lang.String crdcadt)
+{
+this.crdcadt=crdcadt;
+ return;
+ } 
+

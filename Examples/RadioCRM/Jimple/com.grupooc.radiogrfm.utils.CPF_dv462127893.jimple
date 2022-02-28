@@ -1,0 +1,55 @@
+    private static java.lang.String dv(java.lang.String)
+    {
+        java.lang.String s;
+        int dv1;
+        java.lang.StringBuilder $stack3, $stack7;
+
+        s := @parameter0: java.lang.String;
+
+        dv1 = staticinvoke <com.grupooc.radiogrfm.utils.CPF: int dvFatorX(java.lang.String)>(s);
+/*8*/
+/*8*/
+
+        $stack3 = new java.lang.StringBuilder;
+/*9*/
+
+        specialinvoke $stack3.<java.lang.StringBuilder: void <init>()>();
+/*9*/
+
+        $stack3 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("");
+/*9*/
+
+        $stack3 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(dv1);
+/*9*/
+
+        $stack3 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("");
+/*9*/
+
+        $stack7 = new java.lang.StringBuilder;
+/*9*/
+
+        specialinvoke $stack7.<java.lang.StringBuilder: void <init>()>();
+/*9*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(s);
+/*9*/
+
+        $stack7 = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(dv1);
+/*9*/
+
+        s = virtualinvoke $stack7.<java.lang.StringBuilder: java.lang.String toString()>();
+/*9*/
+
+        dv1 = staticinvoke <com.grupooc.radiogrfm.utils.CPF: int dvFatorX(java.lang.String)>(s);
+/*9*/
+
+        $stack3 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(dv1);
+/*9*/
+
+        s = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.String toString()>();
+/*9*/
+
+        return s;
+/*9*/
+    }
+

@@ -1,0 +1,139 @@
+    public org.apache.struts.action.ActionForward cadastro(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionMeta this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        com.grupooc.radiogrfm.struts.form.FormMeta formHorario;
+        org.apache.struts.action.ActionMessages erros;
+        com.grupooc.radiogrfm.struts.bean.BeanMeta meta;
+        java.lang.String $stack11;
+        boolean $stack12;
+        com.grupooc.radiogrfm.dao.ModelMeta $stack15;
+        java.lang.StringBuilder $stack16;
+        javax.servlet.http.HttpSession $stack21;
+        org.apache.struts.action.ActionMessage $stack23;
+        java.lang.Exception $stack26;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionMeta;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*85*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*85*/
+
+        formHorario = (com.grupooc.radiogrfm.struts.form.FormMeta) form;
+/*86*/
+
+        erros = new org.apache.struts.action.ActionMessages;
+/*87*/
+
+        specialinvoke erros.<org.apache.struts.action.ActionMessages: void <init>()>();
+/*87*/
+
+        $stack11 = virtualinvoke formHorario.<com.grupooc.radiogrfm.struts.form.FormMeta: java.lang.String getMtnano()>();
+/*91*/
+
+        $stack12 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: boolean validaInteiro(java.lang.String)>($stack11);
+/*91*/
+
+        if $stack12 != 0 goto label1;
+/*91*/
+
+        $stack23 = new org.apache.struts.action.ActionMessage;
+/*92*/
+
+        specialinvoke $stack23.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Ano informado \u00e9 inv\u00e1lido.");
+/*92*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack23);
+/*92*/
+
+     label1:
+        $stack12 = virtualinvoke erros.<org.apache.struts.action.ActionMessages: boolean isEmpty()>();
+/*96*/
+
+        if $stack12 != 0 goto label2;
+/*96*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/metaNovo.do");
+/*97*/
+
+        virtualinvoke this.<com.grupooc.radiogrfm.struts.action.ActionMeta: void saveErrors(javax.servlet.http.HttpServletRequest,org.apache.struts.action.ActionMessages)>(request, erros);
+/*98*/
+
+        goto label5;
+/*98*/
+
+     label2:
+        meta = new com.grupooc.radiogrfm.struts.bean.BeanMeta;
+/*102*/
+
+        specialinvoke meta.<com.grupooc.radiogrfm.struts.bean.BeanMeta: void <init>()>();
+/*102*/
+
+        staticinvoke <org.apache.commons.beanutils.BeanUtils: void copyProperties(java.lang.Object,java.lang.Object)>(meta, formHorario);
+/*104*/
+
+        $stack15 = staticinvoke <com.grupooc.radiogrfm.dao.ModelMeta: com.grupooc.radiogrfm.dao.ModelMeta getInstance()>();
+/*106*/
+
+        virtualinvoke $stack15.<com.grupooc.radiogrfm.dao.ModelMeta: void inserir(com.grupooc.radiogrfm.struts.bean.BeanMeta)>(meta);
+/*106*/
+
+        $stack16 = new java.lang.StringBuilder;
+/*108*/
+
+        specialinvoke $stack16.<java.lang.StringBuilder: void <init>()>();
+/*108*/
+
+        $stack16 = virtualinvoke $stack16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("/actionMeta.do?m=lista&ctncodg=");
+/*108*/
+
+        $stack11 = virtualinvoke meta.<com.grupooc.radiogrfm.struts.bean.BeanMeta: java.lang.String getMtncgct()>();
+/*108*/
+
+        $stack16 = virtualinvoke $stack16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack11);
+/*108*/
+
+        $stack11 = virtualinvoke $stack16.<java.lang.StringBuilder: java.lang.String toString()>();
+/*108*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>($stack11);
+/*108*/
+
+        $stack21 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*110*/
+
+        interfaceinvoke $stack21.<javax.servlet.http.HttpSession: void removeAttribute(java.lang.String)>("formMeta");
+/*110*/
+
+     label3:
+        goto label5;
+/*114*/
+
+     label4:
+        $stack26 := @caughtexception;
+/*96*/
+
+        virtualinvoke $stack26.<java.lang.Exception: void printStackTrace()>();
+/*113*/
+
+     label5:
+        return fw;
+/*117*/
+
+        catch java.lang.Exception from label2 to label3 with label4;
+    }
+

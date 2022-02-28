@@ -1,0 +1,12 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionLogin:logout(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  javax.servlet.http.HttpSession $stack7;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ fw.setPath("/login.do");
+ $stack7 = request.getSession();
+ $stack7.invalidate();
+ return  fw;
+ } 
+

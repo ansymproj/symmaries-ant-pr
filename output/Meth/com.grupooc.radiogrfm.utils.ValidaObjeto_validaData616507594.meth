@@ -1,0 +1,23 @@
+static boolean com.grupooc.radiogrfm.utils.ValidaObjeto:validaData(java.lang.String data)
+{
+boolean ret;
+  int $stack3;
+  java.text.SimpleDateFormat $stack4;
+  java.util.Date $stack5;
+  java.lang.Exception $stack6;
+  ret=0;
+ label0:if (data==null) goto label1;
+ $stack3 = data.length();
+ if ($stack3!=10) goto label1;
+ $stack4=new java.text.SimpleDateFormat;
+ $stack4#java.text.SimpleDateFormat("dd/MM/yyyy");
+ $stack5 = $stack4.parse(data);
+ if ($stack5==null) goto label1;
+ ret=1;
+ label1:goto label2;
+ label3:$stack6 = catch;
+ $stack6.printStackTrace();
+ label2:return  ret;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setCllendr(java.lang.String cllendr)
+{
+this.cllendr=cllendr;
+ return;
+ } 
+

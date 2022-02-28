@@ -1,0 +1,16 @@
+    public void setAgcnmep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+        java.lang.String agcnmep;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        agcnmep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agcnmep> = agcnmep;
+/*44*/
+
+        return;
+/*45*/
+    }
+

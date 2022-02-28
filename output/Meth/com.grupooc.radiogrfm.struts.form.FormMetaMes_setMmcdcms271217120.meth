@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormMetaMes:setMmcdcms(java.lang.String mmcdcms)
+{
+this.mmcdcms=mmcdcms;
+ return;
+ } 
+

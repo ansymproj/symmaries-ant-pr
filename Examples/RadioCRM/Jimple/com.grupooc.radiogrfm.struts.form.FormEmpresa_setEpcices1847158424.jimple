@@ -1,0 +1,16 @@
+    public void setEpcices(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEmpresa this;
+        java.lang.String epcices;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEmpresa;
+
+        epcices := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEmpresa: java.lang.String epcices> = epcices;
+/*61*/
+
+        return;
+/*62*/
+    }
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCryperm (java.lang.String
+                                                                  cryperm) {
+  guard = tt;
+  ret(obj_level(cryperm)) = if ¬cryperm.~>this ∨ pc ⊔ level(cryperm) = ⊥ then obj_level(cryperm) else if cryperm.~>this ∧ pc ⊔ level(cryperm) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(cryperm) ⊔ obj_level(cryperm) ⊔ obj_level(this);
+  ret(cryperm.~>cryperm) = cryperm.~>cryperm ∨ cryperm.~>this;
+  ret(cryperm.~>this) = cryperm.~>this;
+  ret(this.~>cryperm) = tt;
+  ret(this.~>this) = cryperm.~>this ∨ this.~>this;
+}

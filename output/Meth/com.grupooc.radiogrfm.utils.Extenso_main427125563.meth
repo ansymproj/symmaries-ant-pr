@@ -1,0 +1,10 @@
+static void com.grupooc.radiogrfm.utils.Extenso:main(java.lang.String[] args)
+{
+java.io.PrintStream $stack1;
+  java.lang.String $stack2;
+  $stack1=java.lang.System.out;
+ $stack2 = com.grupooc.radiogrfm.utils.Extenso.converteMoeda("1.987.876,45");
+ $stack1.println($stack2);
+ return;
+ } 
+

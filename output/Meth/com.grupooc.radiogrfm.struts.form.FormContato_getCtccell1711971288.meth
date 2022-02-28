@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormContato:getCtccell()
+{
+java.lang.String $stack1;
+  $stack1=this.ctccell;
+ return  $stack1;
+ } 
+

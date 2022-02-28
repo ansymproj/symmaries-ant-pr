@@ -1,0 +1,14 @@
+    public java.lang.String getMtyacum()
+    {
+        com.grupooc.radiogrfm.struts.form.FormMeta this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormMeta;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormMeta: java.lang.String mtyacum>;
+/*15*/
+
+        return $stack1;
+/*15*/
+    }
+

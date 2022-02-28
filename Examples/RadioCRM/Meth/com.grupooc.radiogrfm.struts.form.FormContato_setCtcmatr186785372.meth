@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContato:setCtcmatr(java.lang.String ctcmatr)
+{
+this.ctcmatr=ctcmatr;
+ return;
+ } 
+

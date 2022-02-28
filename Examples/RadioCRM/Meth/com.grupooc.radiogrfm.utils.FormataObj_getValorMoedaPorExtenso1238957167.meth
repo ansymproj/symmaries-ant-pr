@@ -1,0 +1,8 @@
+java.lang.String com.grupooc.radiogrfm.utils.FormataObj:getValorMoedaPorExtenso(float numero)
+{
+java.lang.String $stack2;
+  $stack2 = this.formataValor(numero);
+ $stack2 = com.grupooc.radiogrfm.utils.Extenso.converteMoeda($stack2);
+ return  $stack2;
+ } 
+

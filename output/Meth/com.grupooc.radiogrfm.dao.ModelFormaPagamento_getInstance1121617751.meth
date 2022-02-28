@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelFormaPagamento com.grupooc.radiogrfm.dao.ModelFormaPagamento:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelFormaPagamento $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelFormaPagamento;
+ $stack0#com.grupooc.radiogrfm.dao.ModelFormaPagamento();
+ return  $stack0;
+ } 
+

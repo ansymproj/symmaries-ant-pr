@@ -1,0 +1,16 @@
+    public void setInncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormInsercao this;
+        java.lang.String inncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormInsercao;
+
+        inncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormInsercao: java.lang.String inncodg> = inncodg;
+/*34*/
+
+        return;
+/*35*/
+    }
+

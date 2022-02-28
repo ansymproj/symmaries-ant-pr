@@ -1,0 +1,16 @@
+    public void setMscdesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMeses this;
+        java.lang.String mscdesc;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMeses;
+
+        mscdesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanMeses: java.lang.String mscdesc> = mscdesc;
+/*22*/
+
+        return;
+/*23*/
+    }
+

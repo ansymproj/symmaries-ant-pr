@@ -1,0 +1,14 @@
+    public java.lang.String getInnqtd()
+    {
+        com.grupooc.radiogrfm.struts.form.FormInsercao this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormInsercao;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormInsercao: java.lang.String innqtd>;
+/*85*/
+
+        return $stack1;
+/*85*/
+    }
+

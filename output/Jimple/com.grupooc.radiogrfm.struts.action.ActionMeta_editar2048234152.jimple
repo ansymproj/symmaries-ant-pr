@@ -1,0 +1,73 @@
+    public org.apache.struts.action.ActionForward editar(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionMeta this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        com.grupooc.radiogrfm.struts.form.FormMeta formHorario;
+        java.lang.String mtncodg;
+        com.grupooc.radiogrfm.struts.bean.BeanMeta horario;
+        com.grupooc.radiogrfm.dao.ModelMeta $stack11;
+        int $stack12;
+        java.lang.Exception $stack14;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionMeta;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*43*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*43*/
+
+        formHorario = (com.grupooc.radiogrfm.struts.form.FormMeta) form;
+/*44*/
+
+     label1:
+        mtncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("mtncodg");
+/*48*/
+/*48*/
+
+        $stack11 = staticinvoke <com.grupooc.radiogrfm.dao.ModelMeta: com.grupooc.radiogrfm.dao.ModelMeta getInstance()>();
+/*49*/
+
+        $stack12 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(mtncodg);
+/*49*/
+
+        horario = virtualinvoke $stack11.<com.grupooc.radiogrfm.dao.ModelMeta: com.grupooc.radiogrfm.struts.bean.BeanMeta getMeta(int)>($stack12);
+/*49*/
+/*49*/
+
+        staticinvoke <org.apache.commons.beanutils.BeanUtils: void copyProperties(java.lang.Object,java.lang.Object)>(formHorario, horario);
+/*51*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/metaEditar.do");
+/*53*/
+
+     label2:
+        goto label4;
+/*57*/
+
+     label3:
+        $stack14 := @caughtexception;
+/*59*/
+
+        virtualinvoke $stack14.<java.lang.Exception: void printStackTrace()>();
+/*56*/
+
+     label4:
+        return fw;
+/*59*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

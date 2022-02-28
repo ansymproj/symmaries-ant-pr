@@ -1,0 +1,16 @@
+    public void setEndnasc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String endnasc;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        endnasc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String endnasc> = endnasc;
+/*120*/
+
+        return;
+/*121*/
+    }
+

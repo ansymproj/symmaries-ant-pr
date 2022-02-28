@@ -1,0 +1,16 @@
+    public void setAglendr(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+        java.lang.String aglendr;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        aglendr := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String aglendr> = aglendr;
+/*98*/
+
+        return;
+/*99*/
+    }
+

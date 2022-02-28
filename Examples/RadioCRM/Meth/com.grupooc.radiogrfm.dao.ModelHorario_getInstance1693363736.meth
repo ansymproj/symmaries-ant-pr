@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelHorario com.grupooc.radiogrfm.dao.ModelHorario:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelHorario $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelHorario;
+ $stack0#com.grupooc.radiogrfm.dao.ModelHorario();
+ return  $stack0;
+ } 
+

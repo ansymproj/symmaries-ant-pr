@@ -1,0 +1,20 @@
+static java.lang.Object com.grupooc.radiogrfm.utils.Utils:nullRet (java.lang.Object
+                                                                    @object,
+                                                                   java.lang.Object
+                                                                    ret) {
+  guard = tt;
+  ret(level()) = pc ⊔ level(@object) ⊔ level(ret);
+  ret(obj_level()) = obj_level(ret);
+  ret(obj_level(@object)) = obj_level(@object);
+  ret(obj_level(ret)) = obj_level(ret);
+  ret(~@object) = @object~ret;
+  ret(~ret) = tt;
+  ret(.~>@object) = @object.~>ret;
+  ret(.~>ret) = ret.~>ret;
+  ret(@object.~>) = ret.~>@object;
+  ret(@object.~>@object) = @object.~>@object;
+  ret(@object.~>ret) = @object.~>ret;
+  ret(ret.~>) = ret.~>ret;
+  ret(ret.~>@object) = ret.~>@object;
+  ret(ret.~>ret) = ret.~>ret;
+}

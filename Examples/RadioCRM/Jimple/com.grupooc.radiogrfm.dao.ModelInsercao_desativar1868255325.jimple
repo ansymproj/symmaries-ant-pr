@@ -1,0 +1,44 @@
+    public void desativar(int)
+    {
+        com.grupooc.radiogrfm.dao.ModelInsercao this;
+        int inncodg;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack4;
+        java.lang.Exception $stack7;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelInsercao;
+
+        inncodg := @parameter0: int;
+
+     label1:
+        $stack4 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*114*/
+
+        st = interfaceinvoke $stack4.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" UPDATE INSERCAO SET INLATIV = \'F\' WHERE INNCODG = ? AND INLATIV = \'T\'");
+/*114*/
+/*114*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, inncodg);
+/*116*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: int executeUpdate()>();
+/*118*/
+
+     label2:
+        goto label4;
+/*122*/
+
+     label3:
+        $stack7 := @caughtexception;
+/*123*/
+
+        virtualinvoke $stack7.<java.lang.Exception: void printStackTrace()>();
+/*121*/
+
+     label4:
+        return;
+/*123*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

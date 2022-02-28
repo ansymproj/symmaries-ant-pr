@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanPrograma:getPgncodg()
+{
+java.lang.String $stack1;
+  $stack1=this.pgncodg;
+ return  $stack1;
+ } 
+

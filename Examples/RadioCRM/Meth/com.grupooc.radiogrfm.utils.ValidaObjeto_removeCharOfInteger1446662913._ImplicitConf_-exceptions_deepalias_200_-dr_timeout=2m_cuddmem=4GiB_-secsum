@@ -1,0 +1,11 @@
+static java.lang.String com.grupooc.radiogrfm.utils.ValidaObjeto:removeCharOfInteger (
+  java.lang.String @str) {
+  guard = tt;
+  ret(level()) = pc ⊔ level(@str) ⊔ obj_level(@str);
+  ret(obj_level()) = pc ⊔ level(@str) ⊔ obj_level(@str);
+  ret(obj_level(@str)) = obj_level(@str);
+  ret(~@str) = ff;
+  ret(.~>@str) = ff;
+  ret(@str.~>) = ff;
+  ret(@str.~>@str) = @str.~>@str;
+}

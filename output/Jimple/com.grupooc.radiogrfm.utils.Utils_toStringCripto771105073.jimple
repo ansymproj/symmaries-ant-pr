@@ -1,0 +1,55 @@
+    public static java.lang.String toStringCripto(java.lang.String)
+    {
+        java.lang.String arg, 'ret';
+        java.security.MessageDigest md;
+        byte[] $stack5;
+        java.math.BigInteger $stack6;
+        java.security.NoSuchAlgorithmException $stack10;
+
+        arg := @parameter0: java.lang.String;
+
+        'ret' = "";
+/*84*/
+
+     label1:
+        md = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>("MD5");
+/*86*/
+/*86*/
+
+        $stack5 = virtualinvoke arg.<java.lang.String: byte[] getBytes()>();
+/*88*/
+
+        virtualinvoke md.<java.security.MessageDigest: void update(byte[])>($stack5);
+/*88*/
+
+        $stack6 = new java.math.BigInteger;
+/*89*/
+
+        $stack5 = virtualinvoke md.<java.security.MessageDigest: byte[] digest()>();
+/*89*/
+
+        specialinvoke $stack6.<java.math.BigInteger: void <init>(int,byte[])>(1, $stack5);
+/*89*/
+
+        'ret' = virtualinvoke $stack6.<java.math.BigInteger: java.lang.String toString(int)>(16);
+/*90*/
+/*90*/
+
+     label2:
+        goto label4;
+/*94*/
+
+     label3:
+        $stack10 := @caughtexception;
+/*95*/
+
+        virtualinvoke $stack10.<java.security.NoSuchAlgorithmException: void printStackTrace()>();
+/*93*/
+
+     label4:
+        return 'ret';
+/*95*/
+
+        catch java.security.NoSuchAlgorithmException from label1 to label2 with label3;
+    }
+

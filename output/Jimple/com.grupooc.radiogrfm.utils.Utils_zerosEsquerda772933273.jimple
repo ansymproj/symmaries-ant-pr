@@ -1,0 +1,16 @@
+    public static java.lang.String zerosEsquerda(int, java.lang.String)
+    {
+        int tam;
+        java.lang.String str;
+
+        tam := @parameter0: int;
+
+        str := @parameter1: java.lang.String;
+
+        str = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String preencherEsquerda(char,int,java.lang.String)>(48, tam, str);
+/*78*/
+
+        return str;
+/*78*/
+    }
+

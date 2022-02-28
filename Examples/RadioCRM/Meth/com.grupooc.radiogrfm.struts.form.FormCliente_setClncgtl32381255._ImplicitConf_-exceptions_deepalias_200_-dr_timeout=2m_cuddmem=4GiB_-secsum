@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClncgtl (java.lang.String
+                                                                 clncgtl) {
+  guard = tt;
+  ret(obj_level(clncgtl)) = if ¬clncgtl.~>this ∨ pc ⊔ level(clncgtl) = ⊥ then obj_level(clncgtl) else if clncgtl.~>this ∧ pc ⊔ level(clncgtl) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clncgtl) ⊔ obj_level(clncgtl) ⊔ obj_level(this);
+  ret(clncgtl.~>clncgtl) = clncgtl.~>clncgtl ∨ clncgtl.~>this;
+  ret(clncgtl.~>this) = clncgtl.~>this;
+  ret(this.~>clncgtl) = tt;
+  ret(this.~>this) = clncgtl.~>this ∨ this.~>this;
+}

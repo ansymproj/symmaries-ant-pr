@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormMidia:setMdlativ (java.lang.String
+                                                               mdlativ) {
+  guard = tt;
+  ret(obj_level(mdlativ)) = if ¬mdlativ.~>this ∨ pc ⊔ level(mdlativ) = ⊥ then obj_level(mdlativ) else if mdlativ.~>this ∧ pc ⊔ level(mdlativ) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(mdlativ) ⊔ obj_level(mdlativ) ⊔ obj_level(this);
+  ret(mdlativ.~>mdlativ) = mdlativ.~>mdlativ ∨ mdlativ.~>this;
+  ret(mdlativ.~>this) = mdlativ.~>this;
+  ret(this.~>mdlativ) = tt;
+  ret(this.~>this) = mdlativ.~>this ∨ this.~>this;
+}

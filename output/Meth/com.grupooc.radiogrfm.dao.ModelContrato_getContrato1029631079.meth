@@ -1,0 +1,25 @@
+com.grupooc.radiogrfm.struts.bean.BeanContrato com.grupooc.radiogrfm.dao.ModelContrato:getContrato(int crncodg)
+{
+com.grupooc.radiogrfm.struts.bean.BeanContrato contato;
+  java.sql.PreparedStatement st;
+  java.util.List l;
+  java.sql.Connection $stack6;
+  boolean $stack9;
+  java.lang.Object $stack10;
+  java.lang.Exception $stack11;
+  contato=null;
+ label0:$stack6 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack6.prepareStatement("SELECT * FROM VW_CONTRATO WHERE CRNCODG = ?");
+ st.setInt(1,crncodg);
+ l = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanContrato);
+ $stack9 = l.isEmpty();
+ if ($stack9!=0) goto label1;
+ $stack10 = l.get(0);
+ contato=(com.grupooc.radiogrfm.struts.bean.BeanContrato) $stack10;
+ label1:goto label2;
+ label3:$stack11 = catch;
+ $stack11.printStackTrace();
+ label2:return  contato;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

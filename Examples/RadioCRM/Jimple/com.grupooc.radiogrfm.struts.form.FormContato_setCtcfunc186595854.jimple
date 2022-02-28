@@ -1,0 +1,16 @@
+    public void setCtcfunc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContato this;
+        java.lang.String ctcfunc;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContato;
+
+        ctcfunc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String ctcfunc> = ctcfunc;
+/*62*/
+
+        return;
+/*63*/
+    }
+

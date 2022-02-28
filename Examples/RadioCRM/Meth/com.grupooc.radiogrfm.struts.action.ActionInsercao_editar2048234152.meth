@@ -1,0 +1,32 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionInsercao:editar(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  com.grupooc.radiogrfm.struts.form.FormInsercao formInsercao;
+  java.lang.String inncodg;
+  com.grupooc.radiogrfm.struts.bean.BeanInsercao insercao;
+  com.grupooc.radiogrfm.dao.ModelInsercao $stack11;
+  int $stack12;
+  javax.servlet.http.HttpSession $stack14;
+  com.grupooc.radiogrfm.dao.ModelPrograma $stack16;
+  java.util.ArrayList $stack17;
+  java.lang.Exception $stack18;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ formInsercao=(com.grupooc.radiogrfm.struts.form.FormInsercao) form;
+ label0:inncodg = request.getParameter("inncodg");
+ $stack11 = com.grupooc.radiogrfm.dao.ModelInsercao.getInstance();
+ $stack12 = java.lang.Integer.parseInt(inncodg);
+ insercao = $stack11.getInsercao($stack12);
+ $stack14 = request.getSession();
+ $stack16 = com.grupooc.radiogrfm.dao.ModelPrograma.getInstance();
+ $stack17 = $stack16.getProgramasComValor();
+ $stack14.setAttribute("ls_programa",(java.lang.Object)$stack17);
+ org.apache.commons.beanutils.BeanUtils.copyProperties((java.lang.Object)formInsercao,(java.lang.Object)insercao);
+ fw.setPath("/insercaoEditar.do");
+ label1:goto label2;
+ label3:$stack18 = catch;
+ $stack18.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

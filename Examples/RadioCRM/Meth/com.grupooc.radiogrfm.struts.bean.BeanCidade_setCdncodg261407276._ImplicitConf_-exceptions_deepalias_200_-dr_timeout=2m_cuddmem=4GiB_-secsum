@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCidade:setCdncodg (java.lang.String
+                                                                cdncodg) {
+  guard = tt;
+  ret(obj_level(cdncodg)) = if ¬cdncodg.~>this ∨ pc ⊔ level(cdncodg) = ⊥ then obj_level(cdncodg) else if cdncodg.~>this ∧ pc ⊔ level(cdncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(cdncodg) ⊔ obj_level(cdncodg) ⊔ obj_level(this);
+  ret(cdncodg.~>cdncodg) = cdncodg.~>cdncodg ∨ cdncodg.~>this;
+  ret(cdncodg.~>this) = cdncodg.~>this;
+  ret(this.~>cdncodg) = tt;
+  ret(this.~>this) = cdncodg.~>this ∨ this.~>this;
+}

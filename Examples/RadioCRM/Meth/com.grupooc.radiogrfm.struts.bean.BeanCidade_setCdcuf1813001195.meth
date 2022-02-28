@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCidade:setCdcuf(java.lang.String cdcuf)
+{
+this.cdcuf=cdcuf;
+ return;
+ } 
+

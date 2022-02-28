@@ -1,0 +1,16 @@
+    public void setEnlativ(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String enlativ;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        enlativ := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String enlativ> = enlativ;
+/*234*/
+
+        return;
+/*235*/
+    }
+

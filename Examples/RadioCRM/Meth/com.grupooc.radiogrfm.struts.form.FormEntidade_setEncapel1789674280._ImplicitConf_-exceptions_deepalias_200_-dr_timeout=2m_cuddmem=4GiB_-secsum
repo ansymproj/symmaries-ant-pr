@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncapel (java.lang.String
+                                                                  encapel) {
+  guard = tt;
+  ret(obj_level(encapel)) = if ¬encapel.~>this ∨ pc ⊔ level(encapel) = ⊥ then obj_level(encapel) else if encapel.~>this ∧ pc ⊔ level(encapel) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(encapel) ⊔ obj_level(encapel) ⊔ obj_level(this);
+  ret(encapel.~>encapel) = encapel.~>encapel ∨ encapel.~>this;
+  ret(encapel.~>this) = encapel.~>this;
+  ret(this.~>encapel) = tt;
+  ret(this.~>this) = encapel.~>this ∨ this.~>this;
+}

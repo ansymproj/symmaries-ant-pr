@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormInsercao:setInnsoma(java.lang.String innsoma)
+{
+this.innsoma=innsoma;
+ return;
+ } 
+

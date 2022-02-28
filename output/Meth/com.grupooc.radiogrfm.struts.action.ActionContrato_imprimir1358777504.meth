@@ -1,0 +1,25 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionContrato:imprimir(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+java.util.HashMap map;
+  java.lang.Integer $stack7;
+  java.lang.String $stack9;
+  java.lang.Exception $stack16;
+  label0:map=new java.util.HashMap;
+ map#java.util.HashMap();
+ $stack7=new java.lang.Integer;
+ $stack9 = request.getParameter("epncodg");
+ $stack7#java.lang.Integer($stack9);
+ map.put((java.lang.Object)"EMPRESA",(java.lang.Object)$stack7);
+ $stack7=new java.lang.Integer;
+ $stack9 = request.getParameter("crncodg");
+ $stack7#java.lang.Integer($stack9);
+ map.put((java.lang.Object)"CRNCODG",(java.lang.Object)$stack7);
+ map.put((java.lang.Object)"REPORT_NAME",(java.lang.Object)"contrato");
+ com.grupooc.radiogrfm.utils.GeraRelatorio.geracao(request,response,(java.util.Map)map,(boolean)0);
+ label1:goto label2;
+ label3:$stack16 = catch;
+ $stack16.printStackTrace();
+ label2:return  null;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

@@ -1,0 +1,22 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:toStringCripto(java.lang.String arg)
+{
+java.lang.String ret;
+  java.security.MessageDigest md;
+  byte[] $stack5;
+  java.math.BigInteger $stack6;
+  java.security.NoSuchAlgorithmException $stack10;
+  ret="";
+ label0:md = java.security.MessageDigest.getInstance("MD5");
+ $stack5 = arg.getBytes();
+ md.update($stack5);
+ $stack6=new java.math.BigInteger;
+ $stack5 = md.digest();
+ $stack6#java.math.BigInteger(1,$stack5);
+ ret = $stack6.toString(16);
+ label1:goto label2;
+ label3:$stack10 = catch;
+ $stack10.printStackTrace();
+ label2:return  ret;
+ catch java.security.NoSuchAlgorithmException: label0 - label1 : label3;
+} 
+

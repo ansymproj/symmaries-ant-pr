@@ -1,0 +1,116 @@
+    public org.apache.struts.action.ActionForward editar(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionAgencia this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        com.grupooc.radiogrfm.struts.form.FormAgencia formAgencia;
+        java.lang.String agncodg;
+        com.grupooc.radiogrfm.struts.bean.BeanAgencia agencia;
+        com.grupooc.radiogrfm.dao.ModelAgencia $stack11;
+        int $stack12;
+        javax.servlet.http.HttpSession $stack14;
+        com.grupooc.radiogrfm.dao.ModelTipoLogradouro $stack16;
+        java.util.ArrayList $stack17;
+        com.grupooc.radiogrfm.dao.ModelCidade $stack20;
+        java.lang.Exception $stack27;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionAgencia;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*69*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*69*/
+
+        formAgencia = (com.grupooc.radiogrfm.struts.form.FormAgencia) form;
+/*70*/
+
+     label1:
+        agncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("agncodg");
+/*74*/
+/*74*/
+
+        $stack11 = staticinvoke <com.grupooc.radiogrfm.dao.ModelAgencia: com.grupooc.radiogrfm.dao.ModelAgencia getInstance()>();
+/*75*/
+
+        $stack12 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(agncodg);
+/*75*/
+
+        agencia = virtualinvoke $stack11.<com.grupooc.radiogrfm.dao.ModelAgencia: com.grupooc.radiogrfm.struts.bean.BeanAgencia getAgencia(int)>($stack12);
+/*75*/
+/*75*/
+
+        $stack14 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*76*/
+
+        $stack16 = staticinvoke <com.grupooc.radiogrfm.dao.ModelTipoLogradouro: com.grupooc.radiogrfm.dao.ModelTipoLogradouro getInstance()>();
+/*76*/
+
+        $stack17 = virtualinvoke $stack16.<com.grupooc.radiogrfm.dao.ModelTipoLogradouro: java.util.ArrayList getTiposLogradouro()>();
+/*76*/
+
+        interfaceinvoke $stack14.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_tipologradouro", $stack17);
+/*76*/
+
+        $stack14 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*77*/
+
+        $stack20 = staticinvoke <com.grupooc.radiogrfm.dao.ModelCidade: com.grupooc.radiogrfm.dao.ModelCidade getInstance()>();
+/*77*/
+
+        $stack17 = virtualinvoke $stack20.<com.grupooc.radiogrfm.dao.ModelCidade: java.util.ArrayList getEstados()>();
+/*77*/
+
+        interfaceinvoke $stack14.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_estado", $stack17);
+/*77*/
+
+        $stack14 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*78*/
+
+        $stack20 = staticinvoke <com.grupooc.radiogrfm.dao.ModelCidade: com.grupooc.radiogrfm.dao.ModelCidade getInstance()>();
+/*78*/
+
+        agncodg = virtualinvoke agencia.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String getAgcufcd()>();
+/*78*/
+
+        $stack17 = virtualinvoke $stack20.<com.grupooc.radiogrfm.dao.ModelCidade: java.util.ArrayList getCidadesDoEstado(java.lang.String)>(agncodg);
+/*78*/
+
+        interfaceinvoke $stack14.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_cidade", $stack17);
+/*78*/
+
+        staticinvoke <org.apache.commons.beanutils.BeanUtils: void copyProperties(java.lang.Object,java.lang.Object)>(formAgencia, agencia);
+/*80*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/agenciaEditar.do");
+/*82*/
+
+     label2:
+        goto label4;
+/*86*/
+
+     label3:
+        $stack27 := @caughtexception;
+/*88*/
+
+        virtualinvoke $stack27.<java.lang.Exception: void printStackTrace()>();
+/*85*/
+
+     label4:
+        return fw;
+/*88*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

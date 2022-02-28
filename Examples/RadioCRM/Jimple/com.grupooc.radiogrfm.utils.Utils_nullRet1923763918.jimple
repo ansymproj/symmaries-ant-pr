@@ -1,0 +1,26 @@
+    public static java.lang.Object nullRet(java.lang.Object, java.lang.Object)
+    {
+        java.lang.Object object, 'ret';
+
+        object := @parameter0: java.lang.Object;
+
+        'ret' := @parameter1: java.lang.Object;
+
+        if object != null goto label1;
+/*439*/
+
+        object = null;
+/*439*/
+
+        goto label2;
+/*439*/
+
+     label1:
+        object = 'ret';
+/*439*/
+
+     label2:
+        return object;
+/*439*/
+    }
+

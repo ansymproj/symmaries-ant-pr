@@ -1,0 +1,13 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.struts.action.ActionUsuario this;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionUsuario;
+
+        specialinvoke this.<org.apache.struts.actions.DispatchAction: void <init>()>();
+/*18*/
+
+        return;
+/*18*/
+    }
+

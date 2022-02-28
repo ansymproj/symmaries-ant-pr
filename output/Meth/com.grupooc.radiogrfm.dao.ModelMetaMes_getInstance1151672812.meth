@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelMetaMes com.grupooc.radiogrfm.dao.ModelMetaMes:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelMetaMes $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelMetaMes;
+ $stack0#com.grupooc.radiogrfm.dao.ModelMetaMes();
+ return  $stack0;
+ } 
+

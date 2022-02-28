@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormMidia:setMdcnmep (java.lang.String
+                                                               mdcnmep) {
+  guard = tt;
+  ret(obj_level(mdcnmep)) = if ¬mdcnmep.~>this ∨ pc ⊔ level(mdcnmep) = ⊥ then obj_level(mdcnmep) else if mdcnmep.~>this ∧ pc ⊔ level(mdcnmep) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(mdcnmep) ⊔ obj_level(mdcnmep) ⊔ obj_level(this);
+  ret(mdcnmep.~>mdcnmep) = mdcnmep.~>mdcnmep ∨ mdcnmep.~>this;
+  ret(mdcnmep.~>this) = mdcnmep.~>this;
+  ret(this.~>mdcnmep) = tt;
+  ret(this.~>this) = mdcnmep.~>this ∨ this.~>this;
+}

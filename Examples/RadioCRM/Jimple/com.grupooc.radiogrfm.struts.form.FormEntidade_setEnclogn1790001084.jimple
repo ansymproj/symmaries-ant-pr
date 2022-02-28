@@ -1,0 +1,16 @@
+    public void setEnclogn(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String enclogn;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        enclogn := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String enclogn> = enclogn;
+/*102*/
+
+        return;
+/*103*/
+    }
+

@@ -1,0 +1,50 @@
+    public void alteraSenha(int, java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.ModelUsuario this;
+        int usncodg;
+        java.lang.String novaSenha;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack5;
+        java.lang.Exception $stack8;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelUsuario;
+
+        usncodg := @parameter0: int;
+
+        novaSenha := @parameter1: java.lang.String;
+
+     label1:
+        $stack5 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*34*/
+
+        st = interfaceinvoke $stack5.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" UPDATE USUARIO SET USCSENH = ? WHERE USNCODG = ?");
+/*34*/
+/*34*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(1, novaSenha);
+/*35*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(2, usncodg);
+/*36*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: int executeUpdate()>();
+/*38*/
+
+     label2:
+        goto label4;
+/*42*/
+
+     label3:
+        $stack8 := @caughtexception;
+/*43*/
+
+        virtualinvoke $stack8.<java.lang.Exception: void printStackTrace()>();
+/*41*/
+
+     label4:
+        return;
+/*43*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

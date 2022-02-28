@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEndnasc (java.lang.String
+                                                                  endnasc) {
+  guard = tt;
+  ret(obj_level(endnasc)) = if ¬endnasc.~>this ∨ pc ⊔ level(endnasc) = ⊥ then obj_level(endnasc) else if endnasc.~>this ∧ pc ⊔ level(endnasc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(endnasc) ⊔ obj_level(endnasc) ⊔ obj_level(this);
+  ret(endnasc.~>endnasc) = endnasc.~>endnasc ∨ endnasc.~>this;
+  ret(endnasc.~>this) = endnasc.~>this;
+  ret(this.~>endnasc) = tt;
+  ret(this.~>this) = endnasc.~>this ∨ this.~>this;
+}

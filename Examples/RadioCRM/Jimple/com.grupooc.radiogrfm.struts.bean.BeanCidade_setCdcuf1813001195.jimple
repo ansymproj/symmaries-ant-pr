@@ -1,0 +1,16 @@
+    public void setCdcuf(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCidade this;
+        java.lang.String cdcuf;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCidade;
+
+        cdcuf := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCidade: java.lang.String cdcuf> = cdcuf;
+/*23*/
+
+        return;
+/*24*/
+    }
+

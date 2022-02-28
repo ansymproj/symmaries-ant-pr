@@ -1,0 +1,22 @@
+java.util.List com.grupooc.radiogrfm.dao.ModelAgencia:getClienteDaAgencia(java.lang.Integer agncodg)
+{
+java.util.ArrayList programas;
+  java.lang.Exception sql;
+  java.sql.PreparedStatement st;
+  java.sql.Connection $stack6;
+  int $stack9;
+  java.util.List $stack10;
+  programas=new java.util.ArrayList;
+ programas#java.util.ArrayList();
+ label0:$stack6 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack6.prepareStatement(" SELECT DISTINCT * FROM VW_CLIENTE WHERE EXISTS(SELECT * FROM CONTRATO WHERE CRNCGCL = VW_CLIENTE.CLNCODG AND CRNCGAG = ?) ");
+ $stack9 = agncodg.intValue();
+ st.setInt(1,$stack9);
+ $stack10 = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanCliente);
+ programas.addAll((java.util.Collection)$stack10);
+ label1:goto label2;
+ label3:sql = catch;
+ label2:return  programas;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

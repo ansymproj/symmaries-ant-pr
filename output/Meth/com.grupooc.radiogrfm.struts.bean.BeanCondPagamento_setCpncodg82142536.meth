@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCondPagamento:setCpncodg(java.lang.String cpncodg)
+{
+this.cpncodg=cpncodg;
+ return;
+ } 
+

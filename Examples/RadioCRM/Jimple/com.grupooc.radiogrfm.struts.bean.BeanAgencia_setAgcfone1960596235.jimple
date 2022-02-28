@@ -1,0 +1,16 @@
+    public void setAgcfone(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanAgencia this;
+        java.lang.String agcfone;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanAgencia;
+
+        agcfone := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String agcfone> = agcfone;
+/*73*/
+
+        return;
+/*74*/
+    }
+

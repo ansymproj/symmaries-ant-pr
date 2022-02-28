@@ -1,0 +1,16 @@
+    public void setInndura(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao this;
+        java.lang.String inndura;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanInsercao;
+
+        inndura := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String inndura> = inndura;
+/*81*/
+
+        return;
+/*82*/
+    }
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAgcdctl (java.lang.String
+                                                                 agcdctl) {
+  guard = tt;
+  ret(obj_level(agcdctl)) = if ¬agcdctl.~>this ∨ pc ⊔ level(agcdctl) = ⊥ then obj_level(agcdctl) else if agcdctl.~>this ∧ pc ⊔ level(agcdctl) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(agcdctl) ⊔ obj_level(agcdctl) ⊔ obj_level(this);
+  ret(agcdctl.~>agcdctl) = agcdctl.~>agcdctl ∨ agcdctl.~>this;
+  ret(agcdctl.~>this) = agcdctl.~>this;
+  ret(this.~>agcdctl) = tt;
+  ret(this.~>this) = agcdctl.~>this ∨ this.~>this;
+}

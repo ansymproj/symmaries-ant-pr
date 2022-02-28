@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormAgencia:setAgncgtp(java.lang.String agncgtp)
+{
+this.agncgtp=agncgtp;
+ return;
+ } 
+

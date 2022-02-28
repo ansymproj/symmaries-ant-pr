@@ -1,0 +1,14 @@
+    public java.lang.String getAgcdccd()
+    {
+        com.grupooc.radiogrfm.dao.Entity.Agencia this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Agencia;
+
+        $stack1 = this.<com.grupooc.radiogrfm.dao.Entity.Agencia: java.lang.String agcdccd>;
+/*124*/
+
+        return $stack1;
+/*124*/
+    }
+

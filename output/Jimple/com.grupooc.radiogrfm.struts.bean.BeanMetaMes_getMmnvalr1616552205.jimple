@@ -1,0 +1,14 @@
+    public java.lang.String getMmnvalr()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMetaMes this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMetaMes;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanMetaMes: java.lang.String mmnvalr>;
+/*62*/
+
+        return $stack1;
+/*62*/
+    }
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCidade:setCdcdesc(java.lang.String cdcdesc)
+{
+this.cdcdesc=cdcdesc;
+ return;
+ } 
+

@@ -1,0 +1,16 @@
+    public void setAgncoms(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.Entity.Agencia this;
+        java.lang.String agncoms;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Agencia;
+
+        agncoms := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.Agencia: java.lang.String agncoms> = agncoms;
+/*175*/
+
+        return;
+/*176*/
+    }
+

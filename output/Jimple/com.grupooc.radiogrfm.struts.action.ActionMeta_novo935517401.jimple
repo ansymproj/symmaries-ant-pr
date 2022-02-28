@@ -1,0 +1,55 @@
+    public org.apache.struts.action.ActionForward novo(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionMeta this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        javax.servlet.http.HttpSession $stack8;
+        java.lang.Exception $stack9;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionMeta;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*66*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*66*/
+
+     label1:
+        $stack8 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*70*/
+
+        interfaceinvoke $stack8.<javax.servlet.http.HttpSession: void removeAttribute(java.lang.String)>("formMeta");
+/*70*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/metaNovo.do");
+/*72*/
+
+     label2:
+        goto label4;
+/*76*/
+
+     label3:
+        $stack9 := @caughtexception;
+/*78*/
+
+        virtualinvoke $stack9.<java.lang.Exception: void printStackTrace()>();
+/*75*/
+
+     label4:
+        return fw;
+/*78*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

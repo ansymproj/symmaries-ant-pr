@@ -1,0 +1,58 @@
+    public java.lang.String formataValor(float)
+    {
+        com.grupooc.radiogrfm.utils.FormataObj this;
+        float valor;
+        java.lang.String 'ret';
+        java.text.DecimalFormat $stack4;
+        java.text.DecimalFormatSymbols $stack5;
+        double $stack6;
+        java.lang.Exception $stack9;
+
+        this := @this: com.grupooc.radiogrfm.utils.FormataObj;
+
+        valor := @parameter0: float;
+
+        'ret' = null;
+/*49*/
+
+     label1:
+        $stack4 = new java.text.DecimalFormat;
+/*51*/
+
+        $stack5 = this.<com.grupooc.radiogrfm.utils.FormataObj: java.text.DecimalFormatSymbols formatSymbols>;
+/*51*/
+
+        specialinvoke $stack4.<java.text.DecimalFormat: void <init>(java.lang.String,java.text.DecimalFormatSymbols)>("##,##0.00", $stack5);
+/*51*/
+
+        this.<com.grupooc.radiogrfm.utils.FormataObj: java.text.DecimalFormat formataNumero> = $stack4;
+/*51*/
+
+        $stack4 = this.<com.grupooc.radiogrfm.utils.FormataObj: java.text.DecimalFormat formataNumero>;
+/*52*/
+
+        $stack6 = (double) valor;
+/*52*/
+
+        'ret' = virtualinvoke $stack4.<java.text.DecimalFormat: java.lang.String format(double)>($stack6);
+/*52*/
+/*52*/
+
+     label2:
+        goto label4;
+/*55*/
+
+     label3:
+        $stack9 := @caughtexception;
+/*56*/
+
+        virtualinvoke $stack9.<java.lang.Exception: void printStackTrace()>();
+/*54*/
+
+     label4:
+        return 'ret';
+/*56*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

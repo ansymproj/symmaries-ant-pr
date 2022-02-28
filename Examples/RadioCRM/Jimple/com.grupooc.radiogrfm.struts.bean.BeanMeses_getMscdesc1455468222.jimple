@@ -1,0 +1,14 @@
+    public java.lang.String getMscdesc()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMeses this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMeses;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanMeses: java.lang.String mscdesc>;
+/*19*/
+
+        return $stack1;
+/*19*/
+    }
+

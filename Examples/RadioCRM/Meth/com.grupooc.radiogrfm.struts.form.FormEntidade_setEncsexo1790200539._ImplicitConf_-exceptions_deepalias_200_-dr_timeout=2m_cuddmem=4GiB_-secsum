@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncsexo (java.lang.String
+                                                                  encsexo) {
+  guard = tt;
+  ret(obj_level(encsexo)) = if ¬encsexo.~>this ∨ pc ⊔ level(encsexo) = ⊥ then obj_level(encsexo) else if encsexo.~>this ∧ pc ⊔ level(encsexo) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(encsexo) ⊔ obj_level(encsexo) ⊔ obj_level(this);
+  ret(encsexo.~>encsexo) = encsexo.~>encsexo ∨ encsexo.~>this;
+  ret(encsexo.~>this) = encsexo.~>this;
+  ret(this.~>encsexo) = tt;
+  ret(this.~>this) = encsexo.~>this ∨ this.~>this;
+}

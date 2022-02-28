@@ -1,0 +1,16 @@
+    public void setCtncgep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContato this;
+        java.lang.String ctncgep;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContato;
+
+        ctncgep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String ctncgep> = ctncgep;
+/*26*/
+
+        return;
+/*27*/
+    }
+

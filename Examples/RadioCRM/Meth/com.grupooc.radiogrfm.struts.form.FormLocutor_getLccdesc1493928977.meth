@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormLocutor:getLccdesc()
+{
+java.lang.String $stack1;
+  $stack1=this.lccdesc;
+ return  $stack1;
+ } 
+

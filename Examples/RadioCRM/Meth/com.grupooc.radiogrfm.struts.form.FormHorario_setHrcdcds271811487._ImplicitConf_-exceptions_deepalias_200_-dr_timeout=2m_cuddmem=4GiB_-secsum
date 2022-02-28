@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormHorario:setHrcdcds (java.lang.String
+                                                                 hrcdcds) {
+  guard = tt;
+  ret(obj_level(hrcdcds)) = if ¬hrcdcds.~>this ∨ pc ⊔ level(hrcdcds) = ⊥ then obj_level(hrcdcds) else if hrcdcds.~>this ∧ pc ⊔ level(hrcdcds) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(hrcdcds) ⊔ obj_level(hrcdcds) ⊔ obj_level(this);
+  ret(hrcdcds.~>hrcdcds) = hrcdcds.~>hrcdcds ∨ hrcdcds.~>this;
+  ret(hrcdcds.~>this) = hrcdcds.~>this;
+  ret(this.~>hrcdcds) = tt;
+  ret(this.~>this) = hrcdcds.~>this ∨ this.~>this;
+}

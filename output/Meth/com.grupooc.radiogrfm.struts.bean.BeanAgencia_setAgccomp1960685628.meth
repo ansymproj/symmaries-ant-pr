@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAgccomp(java.lang.String agccomp)
+{
+this.agccomp=agccomp;
+ return;
+ } 
+

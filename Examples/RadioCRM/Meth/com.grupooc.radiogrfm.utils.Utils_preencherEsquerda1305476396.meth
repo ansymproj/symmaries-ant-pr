@@ -1,0 +1,22 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:preencherEsquerda(char valor,int tam,java.lang.String str)
+{
+java.lang.String ret;
+  int i;
+  int $stack5;
+  java.lang.StringBuilder $stack7;
+  ret=str;
+ i=0;
+ label0:$stack5 = str.length();
+ $stack5=(tam-$stack5);
+ if (i>=$stack5) goto label1;
+ $stack7=new java.lang.StringBuilder;
+ $stack7#java.lang.StringBuilder();
+ $stack7 = $stack7.append("");
+ $stack7 = $stack7.append(valor);
+ $stack7 = $stack7.append(ret);
+ ret = $stack7.toString();
+ i=(i+1);
+ goto label0;
+ label1:return  ret;
+ } 
+

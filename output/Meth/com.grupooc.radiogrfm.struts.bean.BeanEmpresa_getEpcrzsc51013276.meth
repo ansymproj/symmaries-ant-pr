@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanEmpresa:getEpcrzsc()
+{
+java.lang.String $stack1;
+  $stack1=this.epcrzsc;
+ return  $stack1;
+ } 
+

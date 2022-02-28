@@ -1,0 +1,16 @@
+    public void setAgcdctl(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+        java.lang.String agcdctl;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        agcdctl := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agcdctl> = agcdctl;
+/*92*/
+
+        return;
+/*93*/
+    }
+

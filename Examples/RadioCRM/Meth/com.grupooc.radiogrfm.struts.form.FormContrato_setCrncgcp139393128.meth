@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrncgcp(java.lang.String crncgcp)
+{
+this.crncgcp=crncgcp;
+ return;
+ } 
+

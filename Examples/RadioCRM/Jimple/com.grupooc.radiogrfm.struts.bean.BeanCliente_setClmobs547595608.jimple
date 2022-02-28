@@ -1,0 +1,16 @@
+    public void setClmobs(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clmobs;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clmobs := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clmobs> = clmobs;
+/*194*/
+
+        return;
+/*195*/
+    }
+

@@ -1,0 +1,73 @@
+    public org.apache.struts.action.ActionForward editar(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionPrograma this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        com.grupooc.radiogrfm.struts.form.FormPrograma formPrograma;
+        java.lang.String pgncodg;
+        com.grupooc.radiogrfm.struts.bean.BeanPrograma programa;
+        com.grupooc.radiogrfm.dao.ModelPrograma $stack11;
+        int $stack12;
+        java.lang.Exception $stack14;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionPrograma;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*65*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*65*/
+
+        formPrograma = (com.grupooc.radiogrfm.struts.form.FormPrograma) form;
+/*66*/
+
+     label1:
+        pgncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("pgncodg");
+/*70*/
+/*70*/
+
+        $stack11 = staticinvoke <com.grupooc.radiogrfm.dao.ModelPrograma: com.grupooc.radiogrfm.dao.ModelPrograma getInstance()>();
+/*71*/
+
+        $stack12 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(pgncodg);
+/*71*/
+
+        programa = virtualinvoke $stack11.<com.grupooc.radiogrfm.dao.ModelPrograma: com.grupooc.radiogrfm.struts.bean.BeanPrograma getPrograma(int)>($stack12);
+/*71*/
+/*71*/
+
+        staticinvoke <org.apache.commons.beanutils.BeanUtils: void copyProperties(java.lang.Object,java.lang.Object)>(formPrograma, programa);
+/*74*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/programaEditar.do");
+/*76*/
+
+     label2:
+        goto label4;
+/*80*/
+
+     label3:
+        $stack14 := @caughtexception;
+/*82*/
+
+        virtualinvoke $stack14.<java.lang.Exception: void printStackTrace()>();
+/*79*/
+
+     label4:
+        return fw;
+/*82*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

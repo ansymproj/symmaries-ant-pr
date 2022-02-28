@@ -1,0 +1,16 @@
+    public void setCrcnmag(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crcnmag;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crcnmag := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crcnmag> = crcnmag;
+/*107*/
+
+        return;
+/*108*/
+    }
+

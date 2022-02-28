@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpcmail (java.lang.String
+                                                                 epcmail) {
+  guard = tt;
+  ret(obj_level(epcmail)) = if ¬epcmail.~>this ∨ pc ⊔ level(epcmail) = ⊥ then obj_level(epcmail) else if epcmail.~>this ∧ pc ⊔ level(epcmail) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(epcmail) ⊔ obj_level(epcmail) ⊔ obj_level(this);
+  ret(epcmail.~>epcmail) = epcmail.~>epcmail ∨ epcmail.~>this;
+  ret(epcmail.~>this) = epcmail.~>this;
+  ret(this.~>epcmail) = tt;
+  ret(this.~>this) = epcmail.~>this ∨ this.~>this;
+}

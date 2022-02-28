@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContato:setCtlativ (java.lang.String
+                                                                 ctlativ) {
+  guard = tt;
+  ret(obj_level(ctlativ)) = if ¬ctlativ.~>this ∨ pc ⊔ level(ctlativ) = ⊥ then obj_level(ctlativ) else if ctlativ.~>this ∧ pc ⊔ level(ctlativ) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(ctlativ) ⊔ obj_level(ctlativ) ⊔ obj_level(this);
+  ret(ctlativ.~>ctlativ) = ctlativ.~>ctlativ ∨ ctlativ.~>this;
+  ret(ctlativ.~>this) = ctlativ.~>this;
+  ret(this.~>ctlativ) = tt;
+  ret(this.~>this) = ctlativ.~>this ∨ this.~>this;
+}

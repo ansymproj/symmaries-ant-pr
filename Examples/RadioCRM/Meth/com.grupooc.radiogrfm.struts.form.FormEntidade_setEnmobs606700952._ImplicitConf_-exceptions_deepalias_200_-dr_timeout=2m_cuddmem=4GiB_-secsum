@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEnmobs (java.lang.String
+                                                                 enmobs) {
+  guard = tt;
+  ret(obj_level(enmobs)) = if ¬enmobs.~>this ∨ pc ⊔ level(enmobs) = ⊥ then obj_level(enmobs) else if enmobs.~>this ∧ pc ⊔ level(enmobs) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(enmobs) ⊔ obj_level(enmobs) ⊔ obj_level(this);
+  ret(enmobs.~>enmobs) = enmobs.~>enmobs ∨ enmobs.~>this;
+  ret(enmobs.~>this) = enmobs.~>this;
+  ret(this.~>enmobs) = tt;
+  ret(this.~>this) = enmobs.~>this ∨ this.~>this;
+}

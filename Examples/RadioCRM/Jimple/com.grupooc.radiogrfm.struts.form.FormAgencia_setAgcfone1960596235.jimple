@@ -1,0 +1,16 @@
+    public void setAgcfone(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+        java.lang.String agcfone;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        agcfone := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agcfone> = agcfone;
+/*74*/
+
+        return;
+/*75*/
+    }
+

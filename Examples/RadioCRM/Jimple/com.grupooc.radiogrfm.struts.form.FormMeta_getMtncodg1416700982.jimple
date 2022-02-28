@@ -1,0 +1,14 @@
+    public java.lang.String getMtncodg()
+    {
+        com.grupooc.radiogrfm.struts.form.FormMeta this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormMeta;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormMeta: java.lang.String mtncodg>;
+/*21*/
+
+        return $stack1;
+/*21*/
+    }
+

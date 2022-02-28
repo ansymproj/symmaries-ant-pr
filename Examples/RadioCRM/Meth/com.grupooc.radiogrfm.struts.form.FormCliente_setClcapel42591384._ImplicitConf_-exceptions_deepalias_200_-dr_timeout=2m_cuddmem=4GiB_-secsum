@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClcapel (java.lang.String
+                                                                 clcapel) {
+  guard = tt;
+  ret(obj_level(clcapel)) = if ¬clcapel.~>this ∨ pc ⊔ level(clcapel) = ⊥ then obj_level(clcapel) else if clcapel.~>this ∧ pc ⊔ level(clcapel) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcapel) ⊔ obj_level(clcapel) ⊔ obj_level(this);
+  ret(clcapel.~>clcapel) = clcapel.~>clcapel ∨ clcapel.~>this;
+  ret(clcapel.~>this) = clcapel.~>this;
+  ret(this.~>clcapel) = tt;
+  ret(this.~>this) = clcapel.~>this ∨ this.~>this;
+}

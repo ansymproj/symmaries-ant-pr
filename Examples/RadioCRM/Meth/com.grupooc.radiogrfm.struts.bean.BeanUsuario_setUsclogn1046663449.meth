@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanUsuario:setUsclogn(java.lang.String usclogn)
+{
+this.usclogn=usclogn;
+ return;
+ } 
+

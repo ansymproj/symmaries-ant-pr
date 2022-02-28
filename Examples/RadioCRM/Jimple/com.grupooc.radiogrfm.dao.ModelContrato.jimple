@@ -1,0 +1,13 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.dao.ModelContrato this;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelContrato;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+/*12*/
+
+        return;
+/*12*/
+    }
+

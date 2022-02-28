@@ -1,0 +1,183 @@
+    public org.apache.struts.action.ActionForward autenticaUsuario(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionLogin this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        org.apache.struts.action.ActionMessages erros;
+        com.grupooc.radiogrfm.struts.form.FormLogin formLogin;
+        java.lang.String senha, login;
+        com.grupooc.radiogrfm.struts.bean.BeanUsuario usuario;
+        boolean $stack15;
+        com.grupooc.radiogrfm.dao.ModelUsuario $stack17;
+        org.apache.struts.action.ActionMessage $stack19;
+        javax.servlet.http.HttpSession $stack24;
+        com.grupooc.radiogrfm.dao.ModelOperacao $stack27;
+        int $stack29;
+        com.grupooc.radiogrfm.dao.ModelEmpresa $stack33;
+        com.grupooc.radiogrfm.struts.bean.BeanEmpresa $stack36;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionLogin;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*27*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*27*/
+
+        erros = new org.apache.struts.action.ActionMessages;
+/*28*/
+
+        specialinvoke erros.<org.apache.struts.action.ActionMessages: void <init>()>();
+/*28*/
+
+        formLogin = (com.grupooc.radiogrfm.struts.form.FormLogin) form;
+/*29*/
+
+        senha = virtualinvoke formLogin.<com.grupooc.radiogrfm.struts.form.FormLogin: java.lang.String getSenha()>();
+/*31*/
+/*31*/
+
+        login = virtualinvoke formLogin.<com.grupooc.radiogrfm.struts.form.FormLogin: java.lang.String getLogin()>();
+/*32*/
+/*32*/
+
+        $stack15 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: boolean validaString(java.lang.String)>(senha);
+/*34*/
+
+        if $stack15 != 0 goto label1;
+/*34*/
+
+        $stack15 = staticinvoke <com.grupooc.radiogrfm.utils.ValidaObjeto: boolean validaString(java.lang.String)>(login);
+/*61*/
+
+        if $stack15 != 0 goto label1;
+/*61*/
+
+        $stack19 = new org.apache.struts.action.ActionMessage;
+/*35*/
+
+        specialinvoke $stack19.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Login ou senha Invalidos ou usu\u00ef\u00bf\u00bdrio inabilitado.");
+/*35*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack19);
+/*35*/
+
+     label1:
+        $stack15 = virtualinvoke erros.<org.apache.struts.action.ActionMessages: boolean isEmpty()>();
+/*38*/
+
+        if $stack15 == 0 goto label3;
+/*38*/
+
+        $stack17 = staticinvoke <com.grupooc.radiogrfm.dao.ModelUsuario: com.grupooc.radiogrfm.dao.ModelUsuario getInstance()>();
+/*39*/
+
+        $stack15 = virtualinvoke $stack17.<com.grupooc.radiogrfm.dao.ModelUsuario: boolean autenticaUsuario(java.lang.String,java.lang.String)>(login, senha);
+/*39*/
+
+        if $stack15 == 0 goto label2;
+/*39*/
+
+        $stack17 = staticinvoke <com.grupooc.radiogrfm.dao.ModelUsuario: com.grupooc.radiogrfm.dao.ModelUsuario getInstance()>();
+/*41*/
+
+        usuario = virtualinvoke $stack17.<com.grupooc.radiogrfm.dao.ModelUsuario: com.grupooc.radiogrfm.struts.bean.BeanUsuario getBeanUsuarioPorLogin(java.lang.String)>(login);
+/*41*/
+/*41*/
+
+        $stack24 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*43*/
+
+        interfaceinvoke $stack24.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("usuario", usuario);
+/*43*/
+
+        $stack24 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*44*/
+
+        $stack27 = staticinvoke <com.grupooc.radiogrfm.dao.ModelOperacao: com.grupooc.radiogrfm.dao.ModelOperacao getInstance()>();
+/*44*/
+
+        senha = virtualinvoke usuario.<com.grupooc.radiogrfm.struts.bean.BeanUsuario: java.lang.String getUsncodg()>();
+/*44*/
+
+        $stack29 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(senha);
+/*44*/
+
+        senha = virtualinvoke $stack27.<com.grupooc.radiogrfm.dao.ModelOperacao: java.lang.String getMenu(int)>($stack29);
+/*44*/
+
+        interfaceinvoke $stack24.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("menu", senha);
+/*44*/
+
+        $stack24 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*45*/
+
+        $stack33 = staticinvoke <com.grupooc.radiogrfm.dao.ModelEmpresa: com.grupooc.radiogrfm.dao.ModelEmpresa getInstance()>();
+/*45*/
+
+        senha = virtualinvoke usuario.<com.grupooc.radiogrfm.struts.bean.BeanUsuario: java.lang.String getUsncgep()>();
+/*45*/
+
+        $stack29 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(senha);
+/*45*/
+
+        $stack36 = virtualinvoke $stack33.<com.grupooc.radiogrfm.dao.ModelEmpresa: com.grupooc.radiogrfm.struts.bean.BeanEmpresa getEmpresa(int)>($stack29);
+/*45*/
+
+        interfaceinvoke $stack24.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("empresa", $stack36);
+/*45*/
+
+        $stack24 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*48*/
+
+        interfaceinvoke $stack24.<javax.servlet.http.HttpSession: void removeAttribute(java.lang.String)>("formLogin");
+/*48*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/home.do");
+/*50*/
+
+        goto label4;
+/*51*/
+
+     label2:
+        $stack19 = new org.apache.struts.action.ActionMessage;
+/*52*/
+
+        specialinvoke $stack19.<org.apache.struts.action.ActionMessage: void <init>(java.lang.String,java.lang.Object)>("errors.default", "Login ou senha Invalidos ou usu\u00ef\u00bf\u00bdrio inabilitado.");
+/*52*/
+
+        virtualinvoke erros.<org.apache.struts.action.ActionMessages: void add(java.lang.String,org.apache.struts.action.ActionMessage)>("org.apache.struts.action.GLOBAL_MESSAGE", $stack19);
+/*52*/
+
+        virtualinvoke this.<com.grupooc.radiogrfm.struts.action.ActionLogin: void saveErrors(javax.servlet.http.HttpServletRequest,org.apache.struts.action.ActionMessages)>(request, erros);
+/*53*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/login.do");
+/*54*/
+
+        goto label4;
+/*54*/
+
+     label3:
+        virtualinvoke this.<com.grupooc.radiogrfm.struts.action.ActionLogin: void saveErrors(javax.servlet.http.HttpServletRequest,org.apache.struts.action.ActionMessages)>(request, erros);
+/*57*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/login.do");
+/*58*/
+
+     label4:
+        return fw;
+/*61*/
+    }
+

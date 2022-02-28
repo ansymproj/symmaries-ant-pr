@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanDiaSemana:setDsncodg (java.lang.String
+                                                                   dsncodg) {
+  guard = tt;
+  ret(obj_level(dsncodg)) = if ¬dsncodg.~>this ∨ pc ⊔ level(dsncodg) = ⊥ then obj_level(dsncodg) else if dsncodg.~>this ∧ pc ⊔ level(dsncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(dsncodg) ⊔ obj_level(dsncodg) ⊔ obj_level(this);
+  ret(dsncodg.~>dsncodg) = dsncodg.~>dsncodg ∨ dsncodg.~>this;
+  ret(dsncodg.~>this) = dsncodg.~>this;
+  ret(this.~>dsncodg) = tt;
+  ret(this.~>this) = dsncodg.~>this ∨ this.~>this;
+}

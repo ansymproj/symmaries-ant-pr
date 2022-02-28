@@ -1,0 +1,42 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionAgencia:editar(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  com.grupooc.radiogrfm.struts.form.FormAgencia formAgencia;
+  java.lang.String agncodg;
+  com.grupooc.radiogrfm.struts.bean.BeanAgencia agencia;
+  com.grupooc.radiogrfm.dao.ModelAgencia $stack11;
+  int $stack12;
+  javax.servlet.http.HttpSession $stack14;
+  com.grupooc.radiogrfm.dao.ModelTipoLogradouro $stack16;
+  java.util.ArrayList $stack17;
+  com.grupooc.radiogrfm.dao.ModelCidade $stack20;
+  java.lang.Exception $stack27;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ formAgencia=(com.grupooc.radiogrfm.struts.form.FormAgencia) form;
+ label0:agncodg = request.getParameter("agncodg");
+ $stack11 = com.grupooc.radiogrfm.dao.ModelAgencia.getInstance();
+ $stack12 = java.lang.Integer.parseInt(agncodg);
+ agencia = $stack11.getAgencia($stack12);
+ $stack14 = request.getSession();
+ $stack16 = com.grupooc.radiogrfm.dao.ModelTipoLogradouro.getInstance();
+ $stack17 = $stack16.getTiposLogradouro();
+ $stack14.setAttribute("ls_tipologradouro",(java.lang.Object)$stack17);
+ $stack14 = request.getSession();
+ $stack20 = com.grupooc.radiogrfm.dao.ModelCidade.getInstance();
+ $stack17 = $stack20.getEstados();
+ $stack14.setAttribute("ls_estado",(java.lang.Object)$stack17);
+ $stack14 = request.getSession();
+ $stack20 = com.grupooc.radiogrfm.dao.ModelCidade.getInstance();
+ agncodg = agencia.getAgcufcd();
+ $stack17 = $stack20.getCidadesDoEstado(agncodg);
+ $stack14.setAttribute("ls_cidade",(java.lang.Object)$stack17);
+ org.apache.commons.beanutils.BeanUtils.copyProperties((java.lang.Object)formAgencia,(java.lang.Object)agencia);
+ fw.setPath("/agenciaEditar.do");
+ label1:goto label2;
+ label3:$stack27 = catch;
+ $stack27.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

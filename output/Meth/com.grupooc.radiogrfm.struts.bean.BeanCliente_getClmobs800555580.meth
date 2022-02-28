@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanCliente:getClmobs()
+{
+java.lang.String $stack1;
+  $stack1=this.clmobs;
+ return  $stack1;
+ } 
+

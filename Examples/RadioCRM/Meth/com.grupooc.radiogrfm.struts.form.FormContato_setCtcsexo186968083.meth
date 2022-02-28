@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContato:setCtcsexo(java.lang.String ctcsexo)
+{
+this.ctcsexo=ctcsexo;
+ return;
+ } 
+

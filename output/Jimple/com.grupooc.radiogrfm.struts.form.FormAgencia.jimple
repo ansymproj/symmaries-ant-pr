@@ -1,0 +1,22 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        specialinvoke this.<org.apache.struts.action.ActionForm: void <init>()>();
+/*5*/
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agncgtp> = "1";
+/*9*/
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agncgtl> = "33";
+/*18*/
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agcufcd> = "PE";
+/*24*/
+
+        return;
+/*24*/
+    }
+

@@ -1,0 +1,1104 @@
+java.net.URL(java.lang.String ){-<~; *<~@;}
+static java.lang.Long java.lang.Long:valueOf (long) { -<~; return @ }
+
+static void java.lang.System:arraycopy(java.lang.Object ,int ,java.lang.Object ,int ,int ){@<~@;}
+java.lang.String java.lang.StringBuffer:toString(){return new;}
+java.lang.ProcessBuilder java.lang.ProcessBuilder:command(java.lang.String[] ){.*<~@}
+java.lang.Object android.os.Bundle:get(java.lang.String) { -<~; return *; }
+int android.os.Bundle:getInt(java.lang.String) { -<~; return *; }
+int android.os.Bundle:getInt(java.lang.String,int) { -<~; return *; }
+java.lang.String android.os.Bundle:getString(java.lang.String) { -<~; return *; }
+java.lang.String android.os.Bundle:getString(java.lang.String,java.lang.String) { -<~; return *; }
+java.util.Set android.os.Bundle:keySet() { -<~; return .*; }
+void android.os.Bundle:putInt(java.lang.String,int) { -<~; .*<~@; }
+void android.os.Bundle:putInt(java.lang.String,int[]) { -<~; .*<~@; }
+void android.os.Bundle:putString(java.lang.String,java.lang.String) { -<~; .*<~@; }
+
+byte[] android.os.Parcel:marshall() { -<~; return .*; }
+android.os.Parcel android.os.Parcel:obtain() { -<~; *<~@; return new_h; }
+java.lang.Object android.os.Parcel:readValue(java.lang.ClassLoader) { -<~; return *; }
+void android.os.Parcel:recycle() { -<~; .*<~@; }
+void android.os.Parcel:setDataPosition(int) { -<~; .*<~@; }
+void android.os.Parcel:unmarshall(byte[],int,int) { -<~; .*<~@; }
+void android.os.Parcel:writeValue(java.lang.Object) { -<~; .*<~@; }
+
+android.content.Context android.content.ContentProvider:getContext() { -<~; return .*; }
+
+android.content.pm.PackageManager android.content.Context:getPackageManager() { -<~; return .*; }
+java.lang.Object android.content.Context:getSystemService(java.lang.String) { -<~; return *; }
+java.lang.Object android.content.Context:getSystemService(java.lang.Class) { -<~; return *; }
+
+java.lang.Object android.app.Service:getSystemService(java.lang.String) { -<~; return *; }
+
+void android.view.ContextThemeWrapper:attachBaseContext(android.content.Context) { -<~; .*<~@; }
+android.content.Context android.view.ContextThemeWrapper:getApplicationContext() { -<~; return .*; }
+java.lang.String android.view.ContextThemeWrapper:getPackageName() { -<~; return .*; }
+android.content.SharedPreferences android.view.ContextThemeWrapper:getSharedPreferences(java.lang.String,int) { -<~; return *; }
+java.io.FileInputStream android.view.ContextThemeWrapper:openFileInput(java.lang.String) { -<~; return *; }
+java.io.FileOutputStream android.view.ContextThemeWrapper:openFileOutput(java.lang.String,int) { -<~; return *; }
+android.content.Intent android.view.ContextThemeWrapper:registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter) { -<~; .*<~@; return *; }
+android.content.Intent android.view.ContextThemeWrapper:registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter,int) { -<~; .*<~@; return *; }
+android.content.Intent android.view.ContextThemeWrapper:registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter,java.lang.String,android.os.Handler,int) { -<~; .*<~@; return *; }
+android.content.Intent android.view.ContextThemeWrapper:registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter,java.lang.String,android.os.Handler) { -<~; .*<~@; return *; }
+void android.view.ContextThemeWrapper:sendBroadcast(android.content.Intent) { -<~; }
+void android.view.ContextThemeWrapper:sendBroadcast(android.content.Intent,java.lang.String) { -<~; }
+android.content.ComponentName android.view.ContextThemeWrapper:startService(android.content.Intent) { -<~; return *; }
+void android.view.ContextThemeWrapper:unbindService(android.content.ServiceConnection) { -<~; *<~@; }
+boolean android.view.ContextThemeWrapper:bindService(android.content.Intent,int,java.util.concurrent.Executor,android.content.ServiceConnection) { -<~; *<~@; return *; }
+boolean android.view.ContextThemeWrapper:bindService(android.content.Intent,android.content.ServiceConnection,int) { -<~; *<~@; return *; }
+
+android.content.Intent android.content.Intent:addCategory(java.lang.String) { -<~; .*<~@; return @; }
+java.lang.String android.content.Intent:getAction() { -<~; return .*; }
+android.net.Uri android.content.Intent:getData() { -<~; return .*; }
+android.os.Bundle android.content.Intent:getExtras() { -<~; return .*; }
+java.lang.String android.content.Intent:getStringExtra(java.lang.String) { -<~; return *; }
+boolean android.content.Intent:hasExtra(java.lang.String) { -<~; return *; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,android.os.Parcelable) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,long[]) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,byte) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,double[]) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,boolean[]) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,java.lang.CharSequence) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,int) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,char[]) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,byte[]) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,android.os.Parcelable[]) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,android.os.Bundle) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,java.lang.CharSequence[]) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,float[]) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,double) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,int[]) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,java.lang.String[]) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,short[]) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,boolean) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,java.lang.String) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,long) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,char) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,java.io.Serializable) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,float) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:putExtra(java.lang.String,short) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:setAction(java.lang.String) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:setClassName(java.lang.String,java.lang.String) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:setComponent(android.content.ComponentName) { -<~; .*<~@; return @; }
+android.content.Intent android.content.Intent:setType(java.lang.String) { -<~; .*<~@; return @; }
+void android.content.IntentFilter:addAction(java.lang.String) { -<~; .*<~@; }
+
+android.text.Editable android.widget.EditText:getText() { -<~; return .*; }
+java.lang.String android.widget.EditText:toString() { -<~; return .*; }
+
+void android.widget.ListView:setChoiceMode(int) { -<~; .*<~@; }
+
+void android.widget.TextView:setText(int) { -<~; .*<~@; }
+void android.widget.TextView:setText(java.lang.CharSequence) { -<~; .*<~@; }
+void android.widget.TextView:setText(java.lang.CharSequence,android.widget.TextView.BufferType) { -<~; .*<~@; }
+void android.widget.TextView:setText(int,android.widget.TextView.BufferType) { -<~; .*<~@; }
+void android.widget.TextView:setText(char[],int,int) { -<~; .*<~@; }
+
+int android.util.Log:d(java.lang.String,java.lang.String) { -<~; return *; output_⊥ }
+int android.util.Log:d(java.lang.String,java.lang.String,java.lang.Throwable) { -<~; return *; output_⊥ }
+int android.util.Log:e(java.lang.String,java.lang.String) { -<~; return *; output_⊥ }
+int android.util.Log:e(java.lang.String,java.lang.String,java.lang.Throwable) { -<~; return *; output_⊥ }
+int android.util.Log:i(java.lang.String,java.lang.String) { -<~; return *; output_⊥ }
+int android.util.Log:i(java.lang.String,java.lang.String,java.lang.Throwable) { -<~; return *; output_⊥ }
+int android.util.Log:v(java.lang.String,java.lang.String) { -<~; return *; output_⊥ }
+int android.util.Log:v(java.lang.String,java.lang.String,java.lang.Throwable) { -<~; return *; output_⊥ }
+
+android.widget.Toast android.widget.Toast:makeText(android.content.Context,int,int) { -<~; return *; }
+android.widget.Toast android.widget.Toast:makeText(android.content.Context,java.lang.CharSequence,int) { -<~; return *; }
+void android.widget.Toast:show() { -<~; output_⊥;}
+
+java.lang.String android.net.Uri:toString() { -<~; return .*; }
+
+void android.os.RemoteException:printStackTrace() { -<~; output_⊥; }
+
+java.lang.String android.text.Editable:toString() { -<~; return .*; }
+
+int android.view.MenuItem:getItemId() { -<~; return .*; }
+
+void android.location.Criteria:setAccuracy(int) { -<~; .*<~@; }
+
+double android.location.Location:getLatitude() { -<~; return .*; }
+double android.location.Location:getLongitude() { -<~; return .*; }
+java.lang.String android.location.LocationManager:getBestProvider(android.location.Criteria,boolean) { -<~; return *; }
+android.location.Location android.location.LocationManager:getLastKnownLocation(java.lang.String) { -<~; return *; }
+void android.location.LocationManager:requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener) { -<~; *<~@; }
+void android.location.LocationManager:requestLocationUpdates(long,float,android.location.Criteria,android.location.LocationListener,android.os.Looper) { -<~; *<~@; }
+void android.location.LocationManager:requestLocationUpdates(long,float,android.location.Criteria,android.app.PendingIntent) { -<~; *<~@; }
+void android.location.LocationManager:requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener,android.os.Looper) { -<~; *<~@; }
+void android.location.LocationManager:requestLocationUpdates(java.lang.String,long,float,android.app.PendingIntent) { -<~; *<~@; }
+
+android.telephony.SmsManager android.telephony.SmsManager:getDefault() { -<~; return .*; }
+void android.telephony.SmsManager:sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent) { -<~; }
+
+java.lang.String android.telephony.TelephonyManager:getDeviceId() { -<~; return *; }
+java.lang.String android.telephony.TelephonyManager:getDeviceId(int) { -<~; return *; }
+java.lang.String android.telephony.TelephonyManager:getSimSerialNumber() { -<~; return .*; }
+java.lang.String android.telephony.TelephonyManager:getSubscriberId() { -<~; return .*; }
+
+android.content.SharedPreferences.Editor android.content.SharedPreferences.Editor:putString(java.lang.String,java.lang.String) { -<~; .*<~@; return @; }
+boolean android.content.SharedPreferences.Editor:commit() { -<~; *<~@; return *; }
+
+android.content.SharedPreferences.Editor android.content.SharedPreferences:edit() { -<~; return .*; }
+java.lang.String android.content.SharedPreferences:getString(java.lang.String,java.lang.String) { -<~; return *; }
+void android.content.SharedPreferences:registerOnSharedPreferenceChangeListener(android.content.SharedPreferences.OnSharePreferenceChangeListener) { -<~; .*<~@; }
+
+android.app.Activity() { -<~; .*<~@; }
+java.lang.Object android.app.Activity:findViewById(int) { -<~; return *; }
+void android.app.Activity:finish() { -<~; .*<~@; }
+android.view.MenuInflater android.app.Activity:getMenuInflater() { -<~; return .*; }  
+void android.app.Activity:onCreate(android.os.Bundle,android.os.PersistableBundle) { -<~; .*<~@; }
+void android.app.Activity:onCreate(android.os.Bundle) { -<~; .*<~@; }
+void android.app.Activity:onDestroy() { -<~; .*<~@; }
+void android.app.Activity:onPause() { -<~; .*<~@; }
+void android.app.Activity:onPostCreate(android.os.Bundle) { -<~; .*<~@; }
+void android.app.Activity:onRestart() { -<~; .*<~@; }
+void android.app.Activity:onRestoreInstanceState(android.os.Bundle) { -<~; .*<~@; }
+void android.app.Activity:onResume() { -<~; .*<~@; }
+void android.app.Activity:onSaveInstanceState(android.os.Bundle) { -<~; @<~@; }
+void android.app.Activity:onStart() { -<~; .*<~@; }
+void android.app.Activity:onStop() { -<~; .*<~@; }
+void android.app.Activity:setContentView(android.view.View,android.view.ViewGroup.LayoutParams) { -<~; .*<~@; }
+void android.app.Activity:setContentView(android.view.View) { -<~; .*<~@; }
+void android.app.Activity:setContentView(int) { -<~; .*<~@; }
+void android.app.Activity:startActivity(android.content.Intent) { -<~; .*<~@; }
+void android.app.Activity:startActivity(android.content.Intent,android.os.Bundle) { -<~; .*<~@; } 
+void android.app.Activity:startActivityForResult(android.content.Intent,int) { -<~; .*<~@; }
+void android.app.Activity:startActivityForResult(android.content.Intent,int,android.os.Bundle) { -<~; .*<~@; }
+java.lang.Object android.app.Activity:getSystemService(java.lang.String) { -<~; return *; }
+
+android.app.Application() { -<~; .*<~@; }
+void android.app.Application:onCreate() { -<~; .*<~@; }
+void android.app.Application:onTerminate() { -<~; .*<~@; }
+void android.app.Application:registerActivityLifecycleCallbacks(android.app.Application.ActivityLifecycleCallbacks) { -<~; .*<~@; }
+void android.app.Application:registerComponentCallbacks(android.content.ComponentCallbacks) { -<~; .*<~@; }
+void android.app.Application:unregisterActivityLifecycleCallbacks(android.app.Application.ActivityLifecycleCallbacks) { -<~; .*<~@; }
+void android.app.Application:unregisterComponentCallbacks(android.content.ComponentCallbacks) { -<~; .*<~@; }
+
+android.app.Fragment() { -<~; .*<~@; }
+android.app.Activity android.app.Fragment:getActivity() { -<~; return .*; }
+android.os.Bundle android.app.Fragment:getArguments() { -<~; return .*; }
+void android.app.Fragment:onActivityCreated(android.os.Bundle) { -<~; .*<~@; }
+void android.app.Fragment:onAttach(android.app.Activity) { -<~; .*<~@; }
+void android.app.Fragment:onAttach(android.content.Context) { -<~; .*<~@; }
+void android.app.Fragment:onSaveInstanceState(android.os.Bundle) { -<~; @<~@; }
+void android.app.Fragment:onStart() { -<~; .*<~@; }
+
+android.app.FragmentManager() { -<~; .*<~@; }
+android.app.Fragment android.app.FragmentManager:findFragmentById(int) { -<~; return *; }
+android.app.FragmentTransaction android.app.FragmentManager:beginTransaction() { -<~; return .*; }
+android.app.FragmentTransaction android.support.v4.app.FragmentManager:beginTransaction() { -<~; return .*; }
+
+android.app.FragmentTransaction() { -<~; .*<~@; };
+android.app.FragmentTransaction android.app.FragmentTransaction:add(android.app.Fragment,java.lang.String) { -<~; *<~@; return @; }
+android.app.FragmentTransaction android.app.FragmentTransaction:add(int,android.app.Fragment,java.lang.String) { -<~; *<~@; return @; }
+int android.app.FragmentTransaction:commit() { -<~; *<~@; return .*; }
+android.app.FragmentTransaction android.support.v4.app.FragmentTransaction:add(android.app.Fragment,java.lang.String) { -<~; *<~@; return @; }
+android.app.FragmentTransaction android.support.v4.app.FragmentTransaction:add(int,android.app.Fragment,java.lang.String) { -<~; *<~@; return @; }
+int android.support.v4.app.FragmentTransaction:commit() { -<~; *<~@; return .*; }
+
+android.app.ListFragment() { -<~; .*<~@; };
+android.app.Activity android.app.ListFragment:getActivity() { -<~; return .*; }
+android.app.FragmentManager android.app.ListFragment:getFragmentManager() { -<~; return .*; }
+android.widget.ListView android.app.ListFragment:getListView()  { -<~; return .*; }
+void android.app.ListFragment:onAttach(android.app.Activity) { -<~; .*<~@; }
+void android.app.ListFragment:onAttach(android.content.Context) { -<~; .*<~@; }
+void android.app.ListFragment:onCreate(android.os.Bundle) { -<~; .*<~@; }
+void android.app.ListFragment:onStart() { -<~; .*<~@; }
+void android.app.ListFragment:setArguments(android.os.Bundle) { -<~; .*<~@; }
+void android.app.ListFragment:setListAdapter(android.widget.ListAdapter) { -<~; .*<~@; }
+
+java.util.List android.content.pm.PackageManager:queryIntentActivities(android.content.Intent,int) { -<~; return *; }
+
+android.os.AsyncTask android.os.AsyncTask:execute(java.lang.Object[]) { -<~; return @; }
+void android.os.AsyncTask:execute(java.lang.Runnable) { -<~; }
+
+void android.os.Handler:handleMessage(android.os.Message) { -<~; }
+
+void android.os.Messenger:send(android.os.Message) { -<~; }
+
+android.app.FragmentManager android.support.v4.app.FragmentActivity:getFragmentManager() { -<~; return .*; }
+android.view.MenuInflater android.support.v4.app.FragmentActivity:getMenuInflater() { -<~; return .*; }  
+java.lang.Object android.support.v4.app.FragmentActivity:getSystemService(java.lang.String) { -<~; return *; }
+void android.support.v4.app.FragmentActivity:onCreate(android.os.Bundle) { -<~; .*<~@; }
+void android.support.v4.app.FragmentActivity:setContentView(android.view.View,android.view.ViewGroup.LayoutParams) { -<~; .*<~@; }
+void android.support.v4.app.FragmentActivity:setContentView(android.view.View) { -<~; .*<~@; }
+void android.support.v4.app.FragmentActivity:setContentView(int) { -<~; .*<~@; }
+
+android.content.Context android.support.v7.app.ActionBarActivity:getApplicationContext() { -<~; return .*; }
+android.view.MenuInflater android.support.v7.app.ActionBarActivity:getMenuInflater() { -<~; return .*; }  
+android.app.FragmentManager android.support.v7.app.ActionBarActivity:getSupportFragmentManager() { -<~; return .*; }
+java.lang.Object android.support.v7.app.ActionBarActivity:getSystemService(java.lang.String) { -<~; return *; }
+void android.support.v7.app.ActionBarActivity:onCreate(android.os.Bundle) { -<~; .*<~@; }
+boolean android.support.v7.app.ActionBarActivity:onOptionsItemSelected(android.view.MenuItem) { -<~; return new; }
+void android.support.v7.app.ActionBarActivity:setContentView(android.view.View,android.view.ViewGroup.LayoutParams) { -<~; .*<~@; }
+void android.support.v7.app.ActionBarActivity:setContentView(android.view.View) { -<~; .*<~@; }
+void android.support.v7.app.ActionBarActivity:setContentView(int) { -<~; .*<~@; }
+
+android.view.View android.view.LayoutInflater:inflate(int,android.view.ViewGroup) { -<~; return *; }
+android.view.View android.view.LayoutInflater:inflate(org.xmlpull.v1.XmlPullParser,android.view.ViewGroup) { -<~; return *; }
+android.view.View android.view.LayoutInflater:inflate(int,android.view.ViewGroup,boolean) { -<~; return *; }
+android.view.View android.view.LayoutInflater:inflate(org.xmlpull.v1.XmlPullParser,android.view.ViewGroup,boolean) { -<~; return *; }
+
+void android.view.MenuInflater:inflate(int,android.view.Menu) { -<~; @<~@; }
+
+java.lang.CharSequence android.widget.Button:getHint() { -<~; return .*; }
+void android.widget.Button:setHint(java.lang.CharSequence) { -<~; .*<~@; }
+void android.widget.Button:setHint(int) { -<~; .*<~@; }
+void android.widget.Button:setOnClickListener(android.view.View.OnClickListener) { -<~; .*<~@; }
+
+char java.lang.String:charAt(int) { -<~; return *; }
+java.lang.String java.lang.String:concat(java.lang.String) { -<~; return *; }
+boolean java.lang.String:contains(java.lang.CharSequence) { -<~; return *; }
+boolean java.lang.String:equals(java.lang.Object) { -<~; return *; }
+byte[] java.lang.String:getBytes() { -<~; return .*; }
+void java.lang.String:getChars(int,int,char[],int) { -<~;  @<~@; }
+int java.lang.String:length() { -<~; return .*; }
+boolean java.lang.String:startsWith(java.lang.String) { -<~; return *; }
+boolean java.lang.String:startsWith(java.lang.String,int) { -<~; return *; }
+java.lang.String java.lang.String:substring(int) { -<~; return *; }
+java.lang.String java.lang.String:substring(int,int) { -<~; return *; }
+char[] java.lang.String:toCharArray() { -<~; return .*; }
+java.lang.String java.lang.String:trim() { -<~; return .*; }
+static java.lang.String java.lang.String:valueOf(boolean) { -<~; return new(@); }
+static java.lang.String java.lang.String:valueOf(char) { -<~; return new(@); }
+static java.lang.String java.lang.String:valueOf(char[]) { -<~; return new(@); }
+static java.lang.String java.lang.String:valueOf(char[],int,int) { -<~; return new(@); }
+static java.lang.String java.lang.String:valueOf(double) { -<~; return new(@); }
+static java.lang.String java.lang.String:valueOf(float) { -<~; return new(@); }
+static java.lang.String java.lang.String:valueOf(int) { -<~; return new(@); }
+static java.lang.String java.lang.String:valueOf(long) { -<~; return new(@); }
+static java.lang.String java.lang.String:valueOf(java.lang.Object) { -<~; return new(@); }
+
+java.lang.String java.lang.StringBuffer:toString() { -<~; return .*; }
+
+java.lang.StringBuilder java.lang.StringBuilder:append(boolean) { -<~; .*<~@; return @; }
+java.lang.StringBuilder java.lang.StringBuilder:append(char) { -<~; .*<~@; return @; }
+java.lang.StringBuilder java.lang.StringBuilder:append(char[]) { -<~; .*<~@; return @; }
+java.lang.StringBuilder java.lang.StringBuilder:append(char[],int,int) { -<~; .*<~@; return @; }
+java.lang.StringBuilder java.lang.StringBuilder:append(double) { -<~; .*<~@; return @; }
+java.lang.StringBuilder java.lang.StringBuilder:append(int) { -<~; .*<~@; return @; }
+java.lang.StringBuilder java.lang.StringBuilder:append(java.lang.Object) { -<~; .*<~@; return @; }
+java.lang.StringBuilder java.lang.StringBuilder:append(java.lang.String) { -<~; .*<~@; return @; }
+java.lang.StringBuilder java.lang.StringBuilder:append(java.lang.StringBuffer) { -<~; .*<~@; return @; }
+java.lang.String java.lang.StringBuilder:toString() { -<~; return .*; }
+
+void java.lang.System:arraycopy(java.lang.Object,int,java.lang.Object,int,int) { -<~; @<~@; }
+
+// boolean java.util.LinkedList:add(java.lang.Object) { -<~; .*<~@; return new_L; }
+// void java.util.LinkedList:add(int,java.lang.Object) { -<~; .*<~@; }
+// java.lang.Object java.util.LinkedList:clone() { -<~; return .*; }
+// java.lang.Object java.util.LinkedList:get(int) { -<~; return *; }
+
+void java.io.PrintStream:println() { -<~; output_l; }
+void java.io.PrintStream:println(boolean) { -<~; output_l; }
+void java.io.PrintStream:println(char) { -<~; output_l; }
+void java.io.PrintStream:println(char[]) { -<~; output_l; }
+void java.io.PrintStream:println(double) { -<~; output_l; }
+void java.io.PrintStream:println(int) { -<~; output_l; }
+void java.io.PrintStream:println(java.lang.Object) { -<~; output_l; }
+void java.io.PrintStream:println(java.lang.String) { -<~; output_l; }
+
+void java.io.FileInputStream:close() { -<~; .*<~@; }
+int java.io.FileInputStream:read() { -<~; .*<~@; return .*; }
+int java.io.FileInputStream:read(byte[]) { -<~; *<~@; return *; }
+int java.io.FileInputStream:read(byte[],int,int) { -<~; *<~@; return *; }
+
+void java.io.FileOutputStream:close() { -<~; .*<~@; }
+void java.io.FileOutputStream:write(byte[]) { -<~; .*<~@; }
+void java.io.FileOutputStream:write(byte[],int,int) { -<~; .*<~@; }
+void java.io.FileOutputStream:write(int) { -<~; .*<~@; }
+
+byte[] java.io.ByteArrayOutputStream:toByteArray() { -<~; return .*; }
+java.lang.String java.io.ByteArrayOutputStream:toString() { -<~; return .*; }
+java.lang.String java.io.ByteArrayOutputStream:toString(java.lang.String) { -<~; return *; }
+void java.io.ByteArrayOutputStream:write(byte[],int,int) { -<~; .*<~@; }
+void java.io.ByteArrayOutputStream:write(int) { -<~; .*<~@; }
+
+void java.io.ObjectOutputStream:close() { -<~; .*<~@; }
+void java.io.ObjectOutputStream:writeObject(java.lang.Object) { -<~; .*<~@; }
+
+void java.io.ObjectInputStream:close() { -<~; .*<~@; }
+java.lang.Object java.io.ObjectInputStream:readObject() { -<~; .*<~@; return .*; }
+
+java.lang.Class java.lang.Object:getClass() { -<~; return .*; }
+java.lang.String java.lang.Object:toString() { -<~; return .*; }
+
+java.lang.String java.lang.Double:toString() { -<~; return .*; }
+
+java.lang.String java.lang.CharSequence:toString() { -<~; return .*; }
+
+java.lang.Class java.lang.Class:forName(java.lang.String) { -<~; return *; }
+java.lang.Class java.lang.Class:forName(java.lang.String,boolean,java.lang.ClassLoader) { -<~; return *; }
+java.lang.ClassLoader java.lang.Class:getClassLoader() { -<~; return .*; }
+java.lang.reflect.Method java.lang.Class:getMethod(java.lang.String,java.lang.Class[]) { -<~; return *; }
+java.lang.String java.lang.Class:getName() { -<~; return .*; }
+
+double java.lang.Math:min(double,double) { -<~; return @; }
+float java.lang.Math:min(float,float) { -<~; return @; }
+int java.lang.Math:min(int,int) { -<~; return @; }
+long java.lang.Math:min(long,long) { -<~; return @; }
+double java.lang.Math:random() { -<~; return new; }
+double java.lang.Math:sqrt(double) { -<~; return *; }
+
+int java.lang.Integer:intValue() { -<~; return .*; }
+static int java.lang.Integer:parseInt(java.lang.String) { -<~; return @; }
+static int java.lang.Integer:parseInt(java.lang.String,int) { -<~; return @; }
+static java.lang.Integer java.lang.Integer:valueOf(int) { -<~; return new(@); }
+static java.lang.Integer java.lang.Integer:valueOf(java.lang.String) { -<~; return new(@); }
+static java.lang.Integer java.lang.Integer:valueOf(java.lang.String,int) { -<~; return new(@); }
+
+float java.lang.Float:floatValue() { -<~; return .*; }
+static java.lang.Float java.lang.Float:valueOf(float) { -<~; return new(@); }
+static java.lang.Float java.lang.Float:valueOf(java.lang.String) { -<~; return new(@); }
+
+java.lang.String java.util.Arrays:toString(boolean[]) { -<~; return *; }
+java.lang.String java.util.Arrays:toString(byte[]) { -<~; return *; }
+java.lang.String java.util.Arrays:toString(char[]) { -<~; return *; }
+java.lang.String java.util.Arrays:toString(double[]) { -<~; return *; }
+java.lang.String java.util.Arrays:toString(float[]) { -<~; return *; }
+java.lang.String java.util.Arrays:toString(int[]) { -<~; return *; }
+java.lang.String java.util.Arrays:toString(long[]) { -<~; return *; }
+java.lang.String java.util.Arrays:toString(java.lang.Object[]) { -<~; return *; }
+java.lang.String java.util.Arrays:toString(short[]) { -<~; return *; }
+
+// java.util.Iterator java.util.LinkedList:iterator() { -<~; return .*; }
+// java.util.Iterator java.util.HashSet:iterator() { -<~; return .*; }
+
+
+// boolean java.util.Set:add(java.lang.Object) { -<~; .*<~@; return *; }
+// boolean java.util.ArrayList:add(java.lang.Object) { -<~; .*<~@; return new; }
+// void java.util.ArrayList:add(java.lang.Object) { -<~; .*<~@; }
+// boolean java.util.List:add(java.lang.Object) { -<~; .*<~@; return new_L; }
+// void java.util.List:add(int,java.lang.Object) { -<~; .*<~@; }
+// java.lang.Object java.util.List:get(int) { -<~; return *; }
+// java.lang.Object java.util.Map:get(java.lang.Object) { -<~; return *; }
+// java.lang.Object java.util.Map:put(java.lang.Object,java.lang.Object) { -<~; .*<~@; return *; }
+
+java.util.regex.Pattern java.util.regex.Pattern:compile(java.lang.String) { -<~; return *; }
+java.util.regex.Pattern java.util.regex.Pattern:compile(java.lang.String,int) { -<~; return *; }
+java.util.regex.Matcher java.util.regex.Pattern:matcher(java.lang.CharSequence) { -<~; return *; }
+
+java.lang.String java.util.regex.Matcher:group() { -<~; return .*; } 
+java.lang.String java.util.regex.Matcher:group(int) { -<~; return *; } 
+java.lang.String java.util.regex.Matcher:group(java.lang.String) { -<~; return *; } 
+boolean java.util.regex.Matcher:matches() { -<~; return .*; } 
+
+void java.util.Formatter:close() { -<~; .*<~@; }
+java.util.Formatter java.util.Formatter:format(java.lang.String,java.lang.Object) { -<~; *<~@; return @; }
+java.util.Formatter java.util.Formatter:format(java.util.Locale,java.lang.String,java.lang.Object) { -<~; *<~@; return @; }
+
+boolean java.util.Random:nextBoolean() { -<~; return new; }
+
+void java.util.concurrent.ExecutorService:execute(java.lang.Runnable) { -<~; }
+
+java.util.concurrent.ExecutorService java.util.concurrent.Executors:newCachedThreadPool() { -<~; return .*; }
+java.util.concurrent.ExecutorService java.util.concurrent.Executors:newCachedThreadPool(java.util.concurrent.ThreadFactory) { -<~; return *; }
+
+void java.lang.Thread:sleep(long) { -<~; }
+void java.lang.Thread:sleep(long,int) { -<~; }
+void java.lang.Thread:start() { -<~; }
+
+java.lang.Object java.lang.reflect.Array:newInstance(java.lang.Class,int[]) { -<~; return *; }
+java.lang.Object java.lang.reflect.Array:newInstance(java.lang.Class,int) { -<~; return *; }
+java.lang.Object java.lang.reflect.Method:invoke(java.lang.Object,java.lang.Object[]) { -<~; @<~@; return *; }
+
+java.lang.String java.lang.Throwable:getMessage() { -<~; return .*; }
+void java.lang.Throwable:printStackTrace() { -<~; output_⊥; }
+void java.lang.Throwable:printStackTrace(java.io.PrintStream) { -<~; output_⊥; }
+void java.lang.Throwable:printStackTrace(java.io.PrintWriter) { -<~; output_⊥; }
+
+void java.lang.InvocationTargetException:printStackTrace() { -<~; output_⊥; }
+void java.lang.InvocationTargetException:printStackTrace(java.io.PrintStream) { -<~; output_⊥; }
+void java.lang.InvocationTargetException:printStackTrace(java.io.PrintWriter) { -<~; output_⊥; }
+void java.lang.IllegalAccessException:printStackTrace() { -<~; output_⊥; }
+void java.lang.IllegalAccessException:printStackTrace(java.io.PrintStream) { -<~; output_⊥; }
+void java.lang.IllegalAccessException:printStackTrace(java.io.PrintWriter) { -<~; output_⊥; }
+void java.lang.IllegalArgumentException:printStackTrace() { -<~; output_⊥; }
+void java.lang.IllegalArgumentException:printStackTrace(java.io.PrintStream) { -<~; output_⊥; }
+void java.lang.IllegalArgumentException:printStackTrace(java.io.PrintWriter) { -<~; output_⊥; }
+void java.lang.InstantiationException:printStackTrace() { -<~; output_⊥; }
+void java.lang.InstantiationException:printStackTrace(java.io.PrintStream) { -<~; output_⊥; }
+void java.lang.InstantiationException:printStackTrace(java.io.PrintWriter) { -<~; output_⊥; }
+void java.lang.InterruptedException:printStackTrace() { -<~; output_⊥; }
+void java.lang.InterruptedException:printStackTrace(java.io.PrintStream) { -<~; output_⊥; }
+void java.lang.InterruptedException:printStackTrace(java.io.PrintWriter) { -<~; output_⊥; }
+void java.lang.NoSuchMethodException:printStackTrace() { -<~; output_⊥; }
+void java.lang.NoSuchMethodException:printStackTrace(java.io.PrintStream) { -<~; output_⊥; }
+void java.lang.NoSuchMethodException:printStackTrace(java.io.PrintWriter) { -<~; output_⊥; }
+void java.lang.ReflectiveOperationException:printStackTrace() { -<~; output_⊥; }
+void java.lang.ReflectiveOperationException:printStackTrace(java.io.PrintStream) { -<~; output_⊥; }
+void java.lang.ReflectiveOperationException:printStackTrace(java.io.PrintWriter) { -<~; output_⊥; }
+
+java.lang.ProcessBuilder java.lang.ProcessBuilder:command(java.lang.String[]) { -<~; .*<~@; return @; }
+java.lang.Process java.lang.ProcessBuilder:start() { -<~; return .*; }
+
+void java.net.HttpURLConnection:connect() { -<~; .*<~@; }
+void java.net.HttpURLConnection:setDoInput(boolean) { -<~; .*<~@; }
+void java.net.HttpURLConnection:setRequestMethod(java.lang.String) { -<~; .*<~@; }
+
+java.net.URLConnection java.net.URL:openConnection() { -<~; return .*; }
+java.net.URLConnection java.net.URL:openConnection(java.net.Proxy) { -<~; return *; }
+
+
+// java.lang.Number
+
+// java.lang.Number:byteValue ()
+byte java.lang.Number:byteValue () { -<~; return new(.*) }
+byte java.math.BigDecimal:byteValue () { -<~; return new(.*) }
+byte java.math.BigInteger:byteValue () { -<~; return new(.*) }
+byte java.lang.Byte:byteValue () { -<~; return new(.*) }
+byte java.lang.Double:byteValue () { -<~; return new(.*) }
+byte java.lang.Float:byteValue () { -<~; return new(.*) }
+byte java.lang.Integer:byteValue () { -<~; return new(.*) }
+byte java.lang.Long:byteValue () { -<~; return new(.*) }
+byte java.lang.Short:byteValue () { -<~; return new(.*) }
+byte java.util.concurrent.atomic.AtomicInteger:byteValue () { -<~; return new(.*) }
+byte java.util.concurrent.atomic.AtomicLong:byteValue () { -<~; return new(.*) }
+
+// java.lang.Number:doubleValue ()
+double java.math.BigDecimal:doubleValue () { -<~; return new(.*) }
+double java.math.BigInteger:doubleValue () { -<~; return new(.*) }
+double java.lang.Byte:doubleValue () { -<~; return new(.*) }
+double java.lang.Double:doubleValue () { -<~; return new(.*) }
+double java.lang.Float:doubleValue () { -<~; return new(.*) }
+double java.lang.Integer:doubleValue () { -<~; return new(.*) }
+double java.lang.Long:doubleValue () { -<~; return new(.*) }
+double java.lang.Short:doubleValue () { -<~; return new(.*) }
+double java.util.concurrent.atomic.AtomicInteger:doubleValue () { -<~; return new(.*) }
+double java.util.concurrent.atomic.AtomicLong:doubleValue () { -<~; return new(.*) }
+
+// java.lang.Number:floatValue ()
+float java.math.BigDecimal:floatValue () { -<~; return new(.*) }
+float java.math.BigInteger:floatValue () { -<~; return new(.*) }
+float java.lang.Byte:floatValue () { -<~; return new(.*) }
+float java.lang.Double:floatValue () { -<~; return new(.*) }
+float java.lang.Float:floatValue () { -<~; return new(.*) }
+float java.lang.Integer:floatValue () { -<~; return new(.*) }
+float java.lang.Long:floatValue () { -<~; return new(.*) }
+float java.lang.Short:floatValue () { -<~; return new(.*) }
+float java.util.concurrent.atomic.AtomicInteger:floatValue () { -<~; return new(.*) }
+float java.util.concurrent.atomic.AtomicLong:floatValue () { -<~; return new(.*) }
+
+// java.lang.Number:intValue ()
+int java.math.BigDecimal:intValue () { -<~; return new(.*) }
+int java.math.BigInteger:intValue () { -<~; return new(.*) }
+int java.lang.Byte:intValue () { -<~; return new(.*) }
+int java.lang.Double:intValue () { -<~; return new(.*) }
+int java.lang.Float:intValue () { -<~; return new(.*) }
+int java.lang.Integer:intValue () { -<~; return new(.*) }
+int java.lang.Long:intValue () { -<~; return new(.*) }
+int java.lang.Short:intValue () { -<~; return new(.*) }
+int java.util.concurrent.atomic.AtomicInteger:intValue () { -<~; return new(.*) }
+int java.util.concurrent.atomic.AtomicLong:intValue () { -<~; return new(.*) }
+
+// java.lang.Number:longValue ()
+long java.math.BigDecimal:longValue () { -<~; return new(.*) }
+long java.math.BigInteger:longValue () { -<~; return new(.*) }
+long java.lang.Byte:longValue () { -<~; return new(.*) }
+long java.lang.Double:longValue () { -<~; return new(.*) }
+long java.lang.Float:longValue () { -<~; return new(.*) }
+long java.lang.Integer:longValue () { -<~; return new(.*) }
+long java.lang.Long:longValue () { -<~; return new(.*) }
+long java.lang.Short:longValue () { -<~; return new(.*) }
+long java.util.concurrent.atomic.AtomicInteger:longValue () { -<~; return new(.*) }
+long java.util.concurrent.atomic.AtomicLong:longValue () { -<~; return new(.*) }
+
+// java.lang.Number:shortValue ()
+short java.lang.Number:shortValue () { -<~; return new(.*) }
+short java.math.BigDecimal:shortValue () { -<~; return new(.*) }
+short java.math.BigInteger:shortValue () { -<~; return new(.*) }
+short java.lang.Byte:shortValue () { -<~; return new(.*) }
+short java.lang.Double:shortValue () { -<~; return new(.*) }
+short java.lang.Float:shortValue () { -<~; return new(.*) }
+short java.lang.Integer:shortValue () { -<~; return new(.*) }
+short java.lang.Long:shortValue () { -<~; return new(.*) }
+short java.lang.Short:shortValue () { -<~; return new(.*) }
+short java.util.concurrent.atomic.AtomicInteger:shortValue () { -<~; return new(.*) }
+short java.util.concurrent.atomic.AtomicLong:shortValue () { -<~; return new(.*) }
+
+
+// java.util.List
+
+// java.util.List:clear ()
+void java.util.AbstractList:clear () { .*<~L; }
+void java.util.ArrayList:clear () { .*<~L; }
+void java.util.LinkedList:clear () { .*<~L; }
+void java.util.Stack:clear () { .*<~L; }
+void java.util.concurrent.CopyOnWriteArrayList:clear () { .*<~L; }
+
+// void java.util.List:add (int, java.lang.Object) { -<~; .*<~@ }
+void java.util.AbstractList:add (int, java.lang.Object) { -<~; .*<~@ }
+void java.util.ArrayList:add (int, java.lang.Object) { -<~; .*<~@ }
+void java.util.LinkedList:add (int, java.lang.Object) { -<~; .*<~@ }
+void java.util.Stack:add (int, java.lang.Object) { -<~; .*<~@ }
+void java.util.concurrent.CopyOnWriteArrayList:add (int, java.lang.Object) { -<~; .*<~@ }
+
+// boolean java.util.List:addAll (int, java.util.Collection) { -<~; .*<~@; return new(*); }
+boolean java.util.AbstractList:addAll (int, java.util.Collection) { -<~; .*<~@; return new(*); }
+boolean java.util.ArrayList:addAll (int, java.util.Collection) { -<~; .*<~@; return new(*); }
+boolean java.util.LinkedList:addAll (int, java.util.Collection) { -<~; .*<~@; return new(*); }
+boolean java.util.Stack:addAll (int, java.util.Collection) { -<~; .*<~@; return new(*); }
+boolean java.util.concurrent.CopyOnWriteArrayList:addAll (int, java.util.Collection) { -<~; .*<~@; return new(*); }
+
+// void java.util.List:remove (int) { -<~; .*<~@ }
+void java.util.AbstractList:remove (int) { -<~; .*<~@ }
+void java.util.ArrayList:remove (int) { -<~; .*<~@ }
+void java.util.LinkedList:remove (int) { -<~; .*<~@ }
+void java.util.Stack:remove (int) { -<~; .*<~@ }
+void java.util.concurrent.CopyOnWriteArrayList:remove (int) { -<~; .*<~@ }
+
+// java.lang.Object java.util.List:get (int) { -<~; return .* }
+java.lang.Object java.util.AbstractList:get (int) { -<~; return .* }
+java.lang.Object java.util.ArrayList:get (int) { -<~; return .* }
+java.lang.Object java.util.LinkedList:get (int) { -<~; return .* }
+java.lang.Object java.util.Stack:get (int) { -<~; return .* }
+java.lang.Object java.util.concurrent.CopyOnWriteArrayList:get (int) { -<~; return .* }
+
+// java.lang.Object java.util.List:set (int, java.lang.Object) { -<~; .*<~@; return .* }
+java.lang.Object java.util.AbstractList:set (int, java.lang.Object) { -<~; .*<~@; return .* }
+java.lang.Object java.util.ArrayList:set (int, java.lang.Object) { -<~; .*<~@; return .* }
+java.lang.Object java.util.LinkedList:set (int, java.lang.Object) { -<~; .*<~@; return .* }
+java.lang.Object java.util.Stack:set (int, java.lang.Object) { -<~; .*<~@; return .* }
+java.lang.Object java.util.concurrent.CopyOnWriteArrayList:set (int, java.lang.Object) { -<~; .*<~@; return .* }
+
+// int java.util.List:indexOf (java.lang.Object) { -<~; return new(*) }
+int java.util.AbstractList:indexOf (java.lang.Object) { -<~; return new(*) }
+int java.util.ArrayList:indexOf (java.lang.Object) { -<~; return new(*) }
+int java.util.LinkedList:indexOf (java.lang.Object) { -<~; return new(*) }
+int java.util.Stack:indexOf (java.lang.Object) { -<~; return new(*) }
+int java.util.concurrent.CopyOnWriteArrayList:indexOf (java.lang.Object) { -<~; return new(*) }
+
+// java.util.List java.util.List:subList (int, int)
+java.util.List java.util.AbstractList:subList (int, int) { -<~; return new(*) }
+java.util.List java.util.ArrayList:subList (int, int) { -<~; return new(*) }
+java.util.List java.util.LinkedList:subList (int, int) { -<~; return new(*) }
+java.util.List java.util.Stack:subList (int, int) { -<~; return new(*) }
+java.util.List java.util.concurrent.CopyOnWriteArrayList:subList (int, int) { -<~; return new(*) }
+
+
+// java.util.Collection
+
+void java.util.AbstractCollection:clear () { .*<~L; }
+boolean java.util.AbstractCollection:equals (java.lang.Object) { -<~; return new(*); }
+
+// java.util.Collection:isEmpty ()
+boolean java.util.AbstractCollection:isEmpty () { -<~; return new(.*); }
+// boolean java.util.AbstractList:isEmpty () { -<~; return new(.*); }
+// boolean java.util.ArrayList:isEmpty () { -<~; return new(.*); }
+// boolean java.util.HashSet:isEmpty () { -<~; return new(.*); }
+// boolean java.util.LinkedHashSet:isEmpty () { -<~; return new(.*); }
+// boolean java.util.LinkedList:isEmpty () { -<~; return new(.*); }
+// boolean java.util.PriorityQueue:isEmpty () { -<~; return new(.*); }
+// boolean java.util.Stack:isEmpty () { -<~; return new(.*); }
+// boolean java.util.TreeSet:isEmpty () { -<~; return new(.*); }
+// boolean java.util.Vector:isEmpty () { -<~; return new(.*); }
+// boolean java.util.concurrent.ConcurrentHashMap$EntrySetView:isEmpty () { -<~; return new(.*); }
+// boolean java.util.concurrent.ConcurrentHashMap$KeySetView:isEmpty () { -<~; return new(.*); }
+// boolean java.util.concurrent.ConcurrentHashMap$ValuesView:isEmpty () { -<~; return new(.*); }
+// boolean java.util.concurrent.ConcurrentHashMap:isEmpty () { -<~; return new(.*); }
+// boolean java.util.concurrent.CopyOnWriteArrayList:isEmpty () { -<~; return new(.*); }
+
+// java.util.Collection:size ()
+int java.util.AbstractCollection:size () { -<~; return new(.*); }
+// int java.util.AbstractList:size () { -<~; return new(.*); }
+// int java.util.ArrayList:size () { -<~; return new(.*); }
+// int java.util.HashSet:size () { -<~; return new(.*); }
+// int java.util.LinkedHashSet:size () { -<~; return new(.*); }
+// int java.util.LinkedList:size () { -<~; return new(.*); }
+// int java.util.PriorityQueue:size () { -<~; return new(.*); }
+// int java.util.Stack:size () { -<~; return new(.*); }
+// int java.util.TreeSet:size () { -<~; return new(.*); }
+// int java.util.Vector:size () { -<~; return new(.*); }
+// int java.util.concurrent.ConcurrentHashMap$EntrySetView:size () { -<~; return new(.*); }
+// int java.util.concurrent.ConcurrentHashMap$KeySetView:size () { -<~; return new(.*); }
+// int java.util.concurrent.ConcurrentHashMap$ValuesView:size () { -<~; return new(.*); }
+// int java.util.concurrent.ConcurrentHashMap:size () { -<~; return new(.*); }
+// int java.util.concurrent.CopyOnWriteArrayList:size () { -<~; return new(.*); }
+
+// java.util.Collection:hashCode ()
+int java.util.AbstractCollection:hashCode () { -<~; return new(.*); }
+// int java.util.AbstractList:hashCode () { -<~; return new(.*); }
+// int java.util.ArrayList:hashCode () { -<~; return new(.*); }
+// int java.util.HashSet:hashCode () { -<~; return new(.*); }
+// int java.util.LinkedHashSet:hashCode () { -<~; return new(.*); }
+// int java.util.LinkedList:hashCode () { -<~; return new(.*); }
+// int java.util.PriorityQueue:hashCode () { -<~; return new(.*); }
+// int java.util.Stack:hashCode () { -<~; return new(.*); }
+// int java.util.TreeSet:hashCode () { -<~; return new(.*); }
+// int java.util.Vector:hashCode () { -<~; return new(.*); }
+// int java.util.concurrent.ConcurrentHashMap$EntrySetView:hashCode () { -<~; return new(.*); }
+// int java.util.concurrent.ConcurrentHashMap$KeySetView:hashCode () { -<~; return new(.*); }
+// int java.util.concurrent.ConcurrentHashMap$ValuesView:hashCode () { -<~; return new(.*); }
+// int java.util.concurrent.ConcurrentHashMap:hashCode () { -<~; return new(.*); }
+// int java.util.concurrent.CopyOnWriteArrayList:hashCode () { -<~; return new(.*); }
+
+// java.util.Collection:contains (java.lang.Object)
+boolean java.util.AbstractCollection:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.AbstractList:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.ArrayList:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.HashSet:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.LinkedHashSet:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.LinkedList:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.PriorityQueue:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.Stack:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.TreeSet:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.Vector:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$EntrySetView:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$KeySetView:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$ValuesView:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap:contains (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.concurrent.CopyOnWriteArrayList:contains (java.lang.Object) { -<~; return new(*); }
+boolean java.util.TreeMap$EntrySet:contains (java.lang.Object) { -<~; return new(*); }
+boolean java.util.TreeMap$KeySet:contains (java.lang.Object) { -<~; return new(*); }
+
+// java.util.Collection:containsAll (java.util.Collection)
+boolean java.util.AbstractCollection:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.AbstractList:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.ArrayList:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.HashSet:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.LinkedHashSet:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.LinkedList:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.PriorityQueue:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.Stack:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.TreeSet:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.Vector:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$EntrySetView:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$KeySetView:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$ValuesView:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap:containsAll (java.util.Collection) { -<~; return new(*); }
+// boolean java.util.concurrent.CopyOnWriteArrayList:containsAll (java.util.Collection) { -<~; return new(*); }
+boolean java.util.TreeMap$EntrySet:containsAll (java.util.Collection) { -<~; return new(*); }
+boolean java.util.TreeMap$KeySet:containsAll (java.util.Collection) { -<~; return new(*); }
+
+// java.util.Collection:add (java.lang.Object)
+boolean java.util.AbstractCollection:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.AbstractList:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.ArrayList:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.HashSet:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.LinkedHashSet:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.LinkedList:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.PriorityQueue:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.Stack:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.TreeSet:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.Vector:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$EntrySetView:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$KeySetView:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$ValuesView:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+// boolean java.util.concurrent.CopyOnWriteArrayList:add (java.lang.Object) { -<~; .*<~@; return new(*); }
+
+// java.util.Collection:addAll (java.util.Collection)
+boolean java.util.AbstractCollection:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.AbstractList:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.ArrayList:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.HashSet:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.LinkedHashSet:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.LinkedList:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.PriorityQueue:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.Stack:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.TreeSet:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.Vector:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$EntrySetView:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$KeySetView:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$ValuesView:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+// boolean java.util.concurrent.CopyOnWriteArrayList:addAll (java.util.Collection) { -<~; .*<~@; return new(*); }
+
+// java.util.Collection:retainAll (java.util.Collection)
+boolean java.util.AbstractCollection:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.AbstractList:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.ArrayList:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.HashSet:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.LinkedHashSet:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.LinkedList:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.PriorityQueue:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.Stack:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.TreeSet:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.Vector:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$EntrySetView:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$KeySetView:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$ValuesView:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.CopyOnWriteArrayList:retainAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+
+// java.util.Collection:remove (java.lang.Object)
+boolean java.util.AbstractCollection:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.AbstractList:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.ArrayList:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.HashSet:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.LinkedHashSet:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.LinkedList:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.PriorityQueue:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.Stack:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.TreeSet:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.Vector:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$EntrySetView:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$KeySetView:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$ValuesView:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.CopyOnWriteArrayList:remove (java.lang.Object) { -<~; .*<~L; return new(*); }
+
+// java.util.Collection:removeAll (java.util.Collection)
+boolean java.util.AbstractCollection:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.AbstractList:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.ArrayList:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.HashSet:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.LinkedHashSet:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.LinkedList:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.PriorityQueue:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.Stack:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.TreeSet:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.Vector:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$EntrySetView:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$KeySetView:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap$ValuesView:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+// boolean java.util.concurrent.CopyOnWriteArrayList:removeAll (java.util.Collection) { -<~; .*<~L; return new(*); }
+
+// java.util.Iterator java.util.Collection:iterator () { -<~; return new(.*) }
+java.util.Iterator java.util.AbstractCollection:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.AbstractList:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.ArrayList:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.HashSet:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.LinkedHashSet:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.LinkedList:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.PriorityQueue:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.Stack:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.TreeSet:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.Vector:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.concurrent.ConcurrentHashMap$EntrySetView:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.concurrent.ConcurrentHashMap$KeySetView:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.concurrent.ConcurrentHashMap$ValuesView:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.concurrent.ConcurrentHashMap:iterator () { -<~; return new(.*) }
+// java.util.Iterator java.util.concurrent.CopyOnWriteArrayList:iterator () { -<~; return new(.*) }
+java.util.Iterator java.util.TreeMap$EntrySet:iterator () { -<~; return new(.*) }
+java.util.Iterator java.util.TreeMap$KeySet:iterator () { -<~; return new(.*) }
+
+// java.lang.Object[] java.util.Collection:toArray () { -<~; return new(.*); }
+java.lang.Object[] java.util.AbstractCollection:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.AbstractList:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.ArrayList:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.HashSet:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.LinkedHashSet:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.LinkedList:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.PriorityQueue:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.Stack:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.TreeSet:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.Vector:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.concurrent.ConcurrentHashMap$EntrySetView:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.concurrent.ConcurrentHashMap$KeySetView:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.concurrent.ConcurrentHashMap$ValuesView:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.concurrent.ConcurrentHashMap:toArray () { -<~; return new(.*); }
+// java.lang.Object[] java.util.concurrent.CopyOnWriteArrayList:toArray () { -<~; return new(.*); }
+java.lang.Object[] java.util.TreeMap$EntrySet:toArray () { -<~; return new(.*); }
+java.lang.Object[] java.util.TreeMap$KeySet:toArray () { -<~; return new(.*); }
+
+// java.lang.Object[] java.util.Collection:toArray (java.lang.Object[]) { -<~; return *; }
+java.lang.Object[] java.util.AbstractCollection:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.AbstractList:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.ArrayList:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.HashSet:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.LinkedHashSet:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.LinkedList:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.PriorityQueue:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.Stack:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.TreeSet:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.Vector:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.concurrent.ConcurrentHashMap$EntrySetView:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.concurrent.ConcurrentHashMap$KeySetView:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.concurrent.ConcurrentHashMap$ValuesView:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.concurrent.ConcurrentHashMap:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.concurrent.CopyOnWriteArrayList:toArray (java.lang.Object[]) { -<~; return *; }
+java.lang.Object[] java.util.TreeMap$EntrySet:toArray (java.lang.Object[]) { -<~; return *; }
+java.lang.Object[] java.util.TreeMap$KeySet:toArray (java.lang.Object[]) { -<~; return *; }
+// java.lang.Object[] java.util.concurrent.CopyOnWriteArrayList:toArray (java.lang.Object[]) { -<~; return *; }
+
+
+// concurrency/callbacks: consider unsafe for now? (output_L for now, but a means for re-using another method's summary is to be investigated.)
+
+java.util.concurrent.Future java.util.concurrent.ExecutorService:submit (java.lang.Runnable) { output_L; return new(*) }
+
+
+// java.util.Map
+
+java.util.Properties (java.io.InputStream) { -<~; .*<~@ }
+
+// void java.util.Map:clear () { .*<~L; }
+void java.util.AbstractMap:clear () { .*<~L; }
+void java.util.Attributes:clear () { .*<~L; }
+// void java.util.EnumMap:clear () { .*<~L; }
+// void java.util.HashMap:clear () { .*<~L; }
+void java.util.Hashtable:clear () { .*<~L; }
+// void java.util.LinkedHashMap:clear () { .*<~L; }
+// void java.util.Properties:clear () { .*<~L; }
+// void java.util.TreeMap:clear () { .*<~L; }
+// void java.util.WeakHashMap:clear () { .*<~L; }
+// void java.util.concurrent.ConcurrentHashMap:clear () { .*<~L; }
+// void java.util.IdentityHashMap:clear () { .*<~L; }
+void java.util.jar.Attributes:clear () { .*<~L; }
+
+// boolean java.util.Map:containsKey (java.lang.Object) { -<~; return new(.*); }
+boolean java.util.AbstractMap:containsKey (java.lang.Object) { -<~; return new(.*); }
+boolean java.util.Attributes:containsKey (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.EnumMap:containsKey (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.HashMap:containsKey (java.lang.Object) { -<~; return new(.*); }
+boolean java.util.Hashtable:containsKey (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.LinkedHashMap:containsKey (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.Properties:containsKey (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.TreeMap:containsKey (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.WeakHashMap:containsKey (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.concurrent.ConcurrentHashMap:containsKey (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.IdentityHashMap:containsKey (java.lang.Object) { -<~; return new(.*); }
+boolean java.util.jar.Attributes:containsKey (java.lang.Object) { -<~; return new(.*); }
+
+// boolean java.util.Map:containsValue (java.lang.Object) { -<~; return new(.*); }
+boolean java.util.AbstractMap:containsValue (java.lang.Object) { -<~; return new(.*); }
+boolean java.util.Attributes:containsValue (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.EnumMap:containsValue (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.HashMap:containsValue (java.lang.Object) { -<~; return new(.*); }
+boolean java.util.Hashtable:containsValue (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.LinkedHashMap:containsValue (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.Properties:containsValue (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.TreeMap:containsValue (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.WeakHashMap:containsValue (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.concurrent.ConcurrentHashMap:containsValue (java.lang.Object) { -<~; return new(.*); }
+// boolean java.util.IdentityHashMap:containsValue (java.lang.Object) { -<~; return new(.*); }
+boolean java.util.jar.Attributes:containsValue (java.lang.Object) { -<~; return new(.*); }
+
+// java.util.Set java.util.Map:entrySet () { -<~; return new(.*); }
+java.util.Set java.util.AbstractMap:entrySet () { -<~; return new(.*); }
+java.util.Set java.util.Attributes:entrySet () { -<~; return new(.*); }
+// java.util.Set java.util.EnumMap:entrySet () { -<~; return new(.*); }
+// java.util.Set java.util.HashMap:entrySet () { -<~; return new(.*); }
+java.util.Set java.util.Hashtable:entrySet () { -<~; return new(.*); }
+// java.util.Set java.util.LinkedHashMap:entrySet () { -<~; return new(.*); }
+// java.util.Set java.util.Properties:entrySet () { -<~; return new(.*); }
+// java.util.Set java.util.TreeMap:entrySet () { -<~; return new(.*); }
+// java.util.Set java.util.WeakHashMap:entrySet () { -<~; return new(.*); }
+// java.util.Set java.util.concurrent.ConcurrentHashMap:entrySet () { -<~; return new(.*); }
+// java.util.Set java.util.IdentityHashMap:entrySet () { -<~; return new(.*); }
+java.util.Set java.util.jar.Attributes:entrySet () { -<~; return new(.*); }
+
+// boolean java.util.Map:equals (java.lang.Object) { -<~; return new(*); }
+boolean java.util.AbstractMap:equals (java.lang.Object) { -<~; return new(*); }
+boolean java.util.Attributes:equals (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.EnumMap:equals (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.HashMap:equals (java.lang.Object) { -<~; return new(*); }
+boolean java.util.Hashtable:equals (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.LinkedHashMap:equals (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.Properties:equals (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.TreeMap:equals (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.WeakHashMap:equals (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.concurrent.ConcurrentHashMap:equals (java.lang.Object) { -<~; return new(*); }
+// boolean java.util.IdentityHashMap:equals (java.lang.Object) { -<~; return new(*); }
+boolean java.util.jar.Attributes:equals (java.lang.Object) { -<~; return new(*); }
+
+// java.lang.Object java.util.Map:get (java.lang.Object) { -<~; return new(.*); }
+java.lang.Object java.util.AbstractMap:get (java.lang.Object) { -<~; return new(.*); }
+java.lang.Object java.util.Attributes:get (java.lang.Object) { -<~; return new(.*); }
+// java.lang.Object java.util.EnumMap:get (java.lang.Object) { -<~; return new(.*); }
+// java.lang.Object java.util.HashMap:get (java.lang.Object) { -<~; return new(.*); }
+java.lang.Object java.util.Hashtable:get (java.lang.Object) { -<~; return new(.*); }
+// java.lang.Object java.util.LinkedHashMap:get (java.lang.Object) { -<~; return new(.*); }
+// java.lang.Object java.util.Properties:get (java.lang.Object) { -<~; return new(.*); }
+// java.lang.Object java.util.TreeMap:get (java.lang.Object) { -<~; return new(.*); }
+// java.lang.Object java.util.WeakHashMap:get (java.lang.Object) { -<~; return new(.*); }
+// java.lang.Object java.util.concurrent.ConcurrentHashMap:get (java.lang.Object) { -<~; return new(.*); }
+// java.lang.Object java.util.IdentityHashMap:get (java.lang.Object) { -<~; return new(.*); }
+java.lang.Object java.util.jar.Attributes:get (java.lang.Object) { -<~; return new(.*); }
+
+// int java.util.Map:hashCode () { -<~; return new(.*); }
+int java.util.AbstractMap:hashCode () { -<~; return new(.*); }
+int java.util.Attributes:hashCode () { -<~; return new(.*); }
+// int java.util.EnumMap:hashCode () { -<~; return new(.*); }
+// int java.util.HashMap:hashCode () { -<~; return new(.*); }
+int java.util.Hashtable:hashCode () { -<~; return new(.*); }
+// int java.util.LinkedHashMap:hashCode () { -<~; return new(.*); }
+// int java.util.Properties:hashCode () { -<~; return new(.*); }
+// int java.util.TreeMap:hashCode () { -<~; return new(.*); }
+// int java.util.WeakHashMap:hashCode () { -<~; return new(.*); }
+// int java.util.concurrent.ConcurrentHashMap:hashCode () { -<~; return new(.*); }
+// int java.util.IdentityHashMap:hashCode () { -<~; return new(.*); }
+int java.util.jar.Attributes:hashCode () { -<~; return new(.*); }
+
+// boolean java.util.Map:isEmpty () { -<~; return new(.*); }
+boolean java.util.AbstractMap:isEmpty () { -<~; return new(.*); }
+boolean java.util.Attributes:isEmpty () { -<~; return new(.*); }
+// boolean java.util.EnumMap:isEmpty () { -<~; return new(.*); }
+// boolean java.util.HashMap:isEmpty () { -<~; return new(.*); }
+boolean java.util.Hashtable:isEmpty () { -<~; return new(.*); }
+// boolean java.util.LinkedHashMap:isEmpty () { -<~; return new(.*); }
+// boolean java.util.Properties:isEmpty () { -<~; return new(.*); }
+// boolean java.util.TreeMap:isEmpty () { -<~; return new(.*); }
+// boolean java.util.WeakHashMap:isEmpty () { -<~; return new(.*); }
+// boolean java.util.concurrent.ConcurrentHashMap:isEmpty () { -<~; return new(.*); }
+// boolean java.util.IdentityHashMap:isEmpty () { -<~; return new(.*); }
+boolean java.util.jar.Attributes:isEmpty () { -<~; return new(.*); }
+
+// java.util.Set java.util.Map:keySet () { -<~; return new(.*); }
+java.util.Set java.util.AbstractMap:keySet () { -<~; return new(.*); }
+java.util.Set java.util.Attributes:keySet () { -<~; return new(.*); }
+// java.util.Set java.util.EnumMap:keySet () { -<~; return new(.*); }
+// java.util.Set java.util.HashMap:keySet () { -<~; return new(.*); }
+java.util.Set java.util.Hashtable:keySet () { -<~; return new(.*); }
+// java.util.Set java.util.LinkedHashMap:keySet () { -<~; return new(.*); }
+// java.util.Set java.util.Properties:keySet () { -<~; return new(.*); }
+// java.util.Set java.util.TreeMap:keySet () { -<~; return new(.*); }
+// java.util.Set java.util.WeakHashMap:keySet () { -<~; return new(.*); }
+// java.util.Set java.util.concurrent.ConcurrentHashMap:keySet () { -<~; return new(.*); }
+// java.util.Set java.util.IdentityHashMap:keySet () { -<~; return new(.*); }
+java.util.Set java.util.jar.Attributes:keySet () { -<~; return new(.*); }
+
+// java.lang.Object java.util.Map:put (java.lang.Object, java.lang.Object) { -<~; .*<~@; return .*; }
+java.lang.Object java.util.AbstractMap:put (java.lang.Object, java.lang.Object) { -<~; .*<~@; return .*; }
+java.lang.Object java.util.Attributes:put (java.lang.Object, java.lang.Object) { -<~; .*<~@; return .*; }
+// java.lang.Object java.util.EnumMap:put (java.lang.Object, java.lang.Object) { -<~; .*<~@; return .*; }
+// java.lang.Object java.util.HashMap:put (java.lang.Object, java.lang.Object) { -<~; .*<~@; return .*; }
+java.lang.Object java.util.Hashtable:put (java.lang.Object, java.lang.Object) { -<~; .*<~@; return .*; }
+// java.lang.Object java.util.LinkedHashMap:put (java.lang.Object, java.lang.Object) { -<~; .*<~@; return .*; }
+// java.lang.Object java.util.Properties:put (java.lang.Object, java.lang.Object) { -<~; .*<~@; return .*; }
+// java.lang.Object java.util.TreeMap:put (java.lang.Object, java.lang.Object) { -<~; .*<~@; return .*; }
+// java.lang.Object java.util.WeakHashMap:put (java.lang.Object, java.lang.Object) { -<~; .*<~@; return .*; }
+// java.lang.Object java.util.concurrent.ConcurrentHashMap:put (java.lang.Object, java.lang.Object) { -<~; .*<~@; return .*; }
+// java.lang.Object java.util.IdentityHashMap:put (java.lang.Object, java.lang.Object) { -<~; .*<~@; return .*; }
+java.lang.Object java.util.jar.Attributes:put (java.lang.Object, java.lang.Object) { -<~; .*<~@; return .*; }
+
+// void java.util.Map:putAll (java.util.Map) { -<~; .*<~@ }
+void java.util.AbstractMap:putAll (java.util.Map) { -<~; .*<~@ }
+void java.util.Attributes:putAll (java.util.Map) { -<~; .*<~@ }
+// void java.util.EnumMap:putAll (java.util.Map) { -<~; .*<~@ }
+// void java.util.HashMap:putAll (java.util.Map) { -<~; .*<~@ }
+void java.util.Hashtable:putAll (java.util.Map) { -<~; .*<~@ }
+// void java.util.LinkedHashMap:putAll (java.util.Map) { -<~; .*<~@ }
+// void java.util.Properties:putAll (java.util.Map) { -<~; .*<~@ }
+// void java.util.TreeMap:putAll (java.util.Map) { -<~; .*<~@ }
+// void java.util.WeakHashMap:putAll (java.util.Map) { -<~; .*<~@ }
+// void java.util.concurrent.ConcurrentHashMap:putAll (java.util.Map) { -<~; .*<~@ }
+// void java.util.IdentityHashMap:putAll (java.util.Map) { -<~; .*<~@ }
+void java.util.jar.Attributes:putAll (java.util.Map) { -<~; .*<~@ }
+
+// java.lang.Object java.util.Map:remove (java.lang.Object) { -<~; .*<~L; return .*; }
+java.lang.Object java.util.AbstractMap:remove (java.lang.Object) { -<~; .*<~L; return .*; }
+java.lang.Object java.util.Attributes:remove (java.lang.Object) { -<~; .*<~L; return .*; }
+// java.lang.Object java.util.EnumMap:remove (java.lang.Object) { -<~; .*<~L; return .*; }
+// java.lang.Object java.util.HashMap:remove (java.lang.Object) { -<~; .*<~L; return .*; }
+java.lang.Object java.util.Hashtable:remove (java.lang.Object) { -<~; .*<~L; return .*; }
+// java.lang.Object java.util.LinkedHashMap:remove (java.lang.Object) { -<~; .*<~L; return .*; }
+// java.lang.Object java.util.Properties:remove (java.lang.Object) { -<~; .*<~L; return .*; }
+// java.lang.Object java.util.TreeMap:remove (java.lang.Object) { -<~; .*<~L; return .*; }
+// java.lang.Object java.util.WeakHashMap:remove (java.lang.Object) { -<~; .*<~L; return .*; }
+// java.lang.Object java.util.concurrent.ConcurrentHashMap:remove (java.lang.Object) { -<~; .*<~L; return .*; }
+// java.lang.Object java.util.IdentityHashMap:remove (java.lang.Object) { -<~; .*<~L; return .*; }
+java.lang.Object java.util.jar.Attributes:remove (java.lang.Object) { -<~; .*<~L; return .*; }
+
+// int java.util.Map:size () { -<~; return new(.*); }
+int java.util.AbstractMap:size () { -<~; return new(.*); }
+int java.util.Attributes:size () { -<~; return new(.*); }
+// int java.util.EnumMap:size () { -<~; return new(.*); }
+// int java.util.HashMap:size () { -<~; return new(.*); }
+int java.util.Hashtable:size () { -<~; return new(.*); }
+// int java.util.LinkedHashMap:size () { -<~; return new(.*); }
+// int java.util.Properties:size () { -<~; return new(.*); }
+// int java.util.TreeMap:size () { -<~; return new(.*); }
+// int java.util.WeakHashMap:size () { -<~; return new(.*); }
+// int java.util.concurrent.ConcurrentHashMap:size () { -<~; return new(.*); }
+// int java.util.IdentityHashMap:size () { -<~; return new(.*); }
+int java.util.jar.Attributes:size () { -<~; return new(.*); }
+
+// java.util.Collection java.util.Map:values () { -<~; return new(.*); }
+java.util.Collection java.util.AbstractMap:values () { -<~; return new(.*); }
+java.util.Collection java.util.Attributes:values () { -<~; return new(.*); }
+// java.util.Collection java.util.EnumMap:values () { -<~; return new(.*); }
+// java.util.Collection java.util.HashMap:values () { -<~; return new(.*); }
+java.util.Collection java.util.Hashtable:values () { -<~; return new(.*); }
+// java.util.Collection java.util.LinkedHashMap:values () { -<~; return new(.*); }
+// java.util.Collection java.util.Properties:values () { -<~; return new(.*); }
+// java.util.Collection java.util.TreeMap:values () { -<~; return new(.*); }
+// java.util.Collection java.util.WeakHashMap:values () { -<~; return new(.*); }
+// java.util.Collection java.util.concurrent.ConcurrentHashMap:values () { -<~; return new(.*); }
+// java.util.Collection java.util.IdentityHashMap:values () { -<~; return new(.*); }
+java.util.Collection java.util.jar.Attributes:values () { -<~; return new(.*); }
+
+// Map entries:
+
+java.lang.Object java.util.Hashtable$Entry:getKey () { -<~; return .* }
+java.lang.Object java.util.LinkedHashMap$Entry:getKey () { -<~; return .* }
+java.lang.Object java.util.WeakHashMap$Entry:getKey () { -<~; return .* }
+java.lang.Object java.util.concurrent.ConcurrentHashMap$Node:getKey () { -<~; return .* }
+
+java.lang.Object java.util.Hashtable$Entry:getValue () { -<~; return .* }
+java.lang.Object java.util.WeakHashMap$Entry:getValue () { -<~; return .* }
+java.lang.Object java.util.LinkedHashMap$Entry:getValue () { -<~; return .* }
+java.lang.Object java.util.concurrent.ConcurrentHashMap$Node:getValue () { -<~; return .* }
+
+
+// java.lang.Object
+
+java.lang.Object java.lang.Object:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.AbstractList:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.AbstractMap:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.ArrayList:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.Attributes:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.EnumMap:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.HashMap:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.HashSet:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.Hashtable:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.LinkedHashMap:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.LinkedHashSet:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.LinkedList:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.PriorityQueue:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.Properties:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.Stack:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.TreeMap:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.TreeSet:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.Vector:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.WeakHashMap:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.concurrent.ConcurrentHashMap$EntrySetView:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.concurrent.ConcurrentHashMap$KeySetView:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.concurrent.ConcurrentHashMap$ValuesView:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.concurrent.ConcurrentHashMap:clone() { -<~; return new(.*); }
+// java.lang.Object java.util.concurrent.CopyOnWriteArrayList:clone() { -<~; return new(.*); }
+
+
+// What about the level of time?
+int org.joda.time.DateTime:getMonthOfYear () { -<~; return new_L; }
+int org.joda.time.DateTime:getYear () { -<~; return new_L; }
+boolean org.joda.time.DateTime:isAfter (long) { -<~; return new(*); }
+boolean org.joda.time.DateTime:isAfter (org.joda.time.ReadableInstant) { -<~; return new(*); }
+boolean org.joda.time.DateTime:isAfterNow () { -<~; return new(.*); }
+boolean org.joda.time.DateTime:isBefore (long) { -<~; return new(*); }
+boolean org.joda.time.DateTime:isBefore (org.joda.time.ReadableInstant) { -<~; return new(*); }
+boolean org.joda.time.DateTime:isBeforeNow () { -<~; return new(.*); }
+boolean org.joda.time.DateTime:isEqual (long) { -<~; return new(*); }
+boolean org.joda.time.DateTime:isEqual (org.joda.time.ReadableInstant) { -<~; return new(*); }
+boolean org.joda.time.DateTime:isEqualNow () { -<~; return new(.*); }
+java.util.Date org.joda.time.DateTime:toDate () { -<~; return new(.*); }
+java.lang.String org.joda.time.DateTime:toString (org.joda.time.format.DateTimeFormatter) { -<~; return new(*); }
+
+// ---
+
+void java.io.FilterInputStream:close () throws java.io.IOException { -<~; .*<~L; }
+void java.io.FilterOuptutStream:close () throws java.io.IOException { -<~; .*<~L; }
+
+// 
+
+java.io.InputStream javax.sql.rowset.serial.SerialBlob:getBinaryStream () throws javax.sql.rowset.serial.SerialException { -<~; return @; }
+java.io.InputStream javax.sql.rowset.serial.SerialBlob:getBinaryStream (long, long) throws javax.sql.rowset.serial.SerialException { -<~; return new(*); }
+
+// ---
+
+boolean java.util.Iterator:hasNext() { -<~; return new(.*); }
+java.lang.Object java.util.Iterator:next() { -<~; .*<~@; return .*; }
+
+// ???
+boolean com.mongodb.QueryResultIterator:hasNext () { -<~; return new(.*); }
+java.lang.Object com.mongodb.QueryResultIterator:next () { -<~; .*<~@; return .*; }
+
+// ---
+
+// org.springframework.boot
+// org.springframework.boot.SpringApplication:run (java.lang.Object, java.lang.String[])
+
+// org.springframework.mail
+javax.mail.internet.MimeMessage org.springframework.mail.javamail.JavaMailSenderImpl:createMimeMessage () { -<~; return new(.*); }
+void org.springframework.mail.javamail.JavaMailSenderImpl:send (javax.mail.internet.MimeMessage) throws org.springframework.mail.MailException { -<~; .*<~@; output_L }

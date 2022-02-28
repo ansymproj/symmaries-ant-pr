@@ -1,0 +1,14 @@
+    public static com.grupooc.radiogrfm.dao.ModelMeta getInstance()
+    {
+        com.grupooc.radiogrfm.dao.ModelMeta $stack0;
+
+        $stack0 = new com.grupooc.radiogrfm.dao.ModelMeta;
+/*13*/
+
+        specialinvoke $stack0.<com.grupooc.radiogrfm.dao.ModelMeta: void <init>()>();
+/*13*/
+
+        return $stack0;
+/*13*/
+    }
+

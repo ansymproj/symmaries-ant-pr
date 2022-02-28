@@ -1,0 +1,36 @@
+    public static boolean validaFloat(java.lang.String)
+    {
+        java.lang.String floatValue;
+        boolean ok;
+        java.lang.Exception e;
+
+        floatValue := @parameter0: java.lang.String;
+
+        ok = 0;
+/*20*/
+
+     label1:
+        staticinvoke <java.lang.Float: float parseFloat(java.lang.String)>(floatValue);
+/*22*/
+
+        ok = 1;
+/*23*/
+
+     label2:
+        goto label4;
+/*26*/
+
+     label3:
+        e := @caughtexception;
+/*27*/
+
+        ok = 0;
+/*25*/
+
+     label4:
+        return ok;
+/*27*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

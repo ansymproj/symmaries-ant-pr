@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncnome (java.lang.String
+                                                                  encnome) {
+  guard = tt;
+  ret(obj_level(encnome)) = if ¬encnome.~>this ∨ pc ⊔ level(encnome) = ⊥ then obj_level(encnome) else if encnome.~>this ∧ pc ⊔ level(encnome) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(encnome) ⊔ obj_level(encnome) ⊔ obj_level(this);
+  ret(encnome.~>encnome) = encnome.~>encnome ∨ encnome.~>this;
+  ret(encnome.~>this) = encnome.~>this;
+  ret(this.~>encnome) = tt;
+  ret(this.~>this) = encnome.~>this ∨ this.~>this;
+}

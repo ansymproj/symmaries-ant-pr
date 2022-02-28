@@ -1,0 +1,16 @@
+    public void setEncmail(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encmail;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encmail := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encmail> = encmail;
+/*192*/
+
+        return;
+/*193*/
+    }
+

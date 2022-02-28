@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEnncgte (java.lang.String
+                                                                  enncgte) {
+  guard = tt;
+  ret(obj_level(enncgte)) = if ¬enncgte.~>this ∨ pc ⊔ level(enncgte) = ⊥ then obj_level(enncgte) else if enncgte.~>this ∧ pc ⊔ level(enncgte) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(enncgte) ⊔ obj_level(enncgte) ⊔ obj_level(this);
+  ret(enncgte.~>enncgte) = enncgte.~>enncgte ∨ enncgte.~>this;
+  ret(enncgte.~>this) = enncgte.~>this;
+  ret(this.~>enncgte) = tt;
+  ret(this.~>this) = enncgte.~>this ∨ this.~>this;
+}

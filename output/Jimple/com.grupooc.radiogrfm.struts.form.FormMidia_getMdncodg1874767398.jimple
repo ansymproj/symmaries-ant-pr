@@ -1,0 +1,14 @@
+    public java.lang.String getMdncodg()
+    {
+        com.grupooc.radiogrfm.struts.form.FormMidia this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormMidia;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormMidia: java.lang.String mdncodg>;
+/*34*/
+
+        return $stack1;
+/*34*/
+    }
+

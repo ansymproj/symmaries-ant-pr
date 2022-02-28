@@ -1,0 +1,16 @@
+    public void setAcncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato this;
+        java.lang.String acncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato;
+
+        acncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato: java.lang.String acncodg> = acncodg;
+/*19*/
+
+        return;
+/*20*/
+    }
+

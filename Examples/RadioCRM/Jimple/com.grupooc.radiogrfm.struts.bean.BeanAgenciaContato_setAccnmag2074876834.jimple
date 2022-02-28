@@ -1,0 +1,16 @@
+    public void setAccnmag(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato this;
+        java.lang.String accnmag;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato;
+
+        accnmag := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato: java.lang.String accnmag> = accnmag;
+/*43*/
+
+        return;
+/*44*/
+    }
+

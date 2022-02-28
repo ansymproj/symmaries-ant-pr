@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormMidia:setMdncgep (java.lang.String
+                                                               mdncgep) {
+  guard = tt;
+  ret(obj_level(mdncgep)) = if ¬mdncgep.~>this ∨ pc ⊔ level(mdncgep) = ⊥ then obj_level(mdncgep) else if mdncgep.~>this ∧ pc ⊔ level(mdncgep) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(mdncgep) ⊔ obj_level(mdncgep) ⊔ obj_level(this);
+  ret(mdncgep.~>mdncgep) = mdncgep.~>mdncgep ∨ mdncgep.~>this;
+  ret(mdncgep.~>this) = mdncgep.~>this;
+  ret(this.~>mdncgep) = tt;
+  ret(this.~>this) = mdncgep.~>this ∨ this.~>this;
+}

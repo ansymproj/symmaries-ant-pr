@@ -1,0 +1,20 @@
+java.util.ArrayList com.grupooc.radiogrfm.dao.ModelCondPagamento:getCondicoesDePagamento()
+{
+java.util.ArrayList dias;
+  java.sql.PreparedStatement st;
+  java.sql.Connection $stack5;
+  java.util.List $stack7;
+  java.lang.Exception $stack9;
+  dias=new java.util.ArrayList;
+ dias#java.util.ArrayList();
+ label0:$stack5 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack5.prepareStatement(" SELECT * FROM VW_CONDPAGAMENTO");
+ $stack7 = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanCondPagamento);
+ dias.addAll((java.util.Collection)$stack7);
+ label1:goto label2;
+ label3:$stack9 = catch;
+ $stack9.printStackTrace();
+ label2:return  dias;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

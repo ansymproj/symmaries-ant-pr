@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelEmpresa com.grupooc.radiogrfm.dao.ModelEmpresa:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelEmpresa $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelEmpresa;
+ $stack0#com.grupooc.radiogrfm.dao.ModelEmpresa();
+ return  $stack0;
+ } 
+

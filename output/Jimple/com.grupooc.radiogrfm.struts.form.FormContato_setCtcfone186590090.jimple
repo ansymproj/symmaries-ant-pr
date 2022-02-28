@@ -1,0 +1,16 @@
+    public void setCtcfone(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContato this;
+        java.lang.String ctcfone;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContato;
+
+        ctcfone := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String ctcfone> = ctcfone;
+/*80*/
+
+        return;
+/*81*/
+    }
+

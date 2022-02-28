@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContato:setCtdnasc (java.lang.String
+                                                                 ctdnasc) {
+  guard = tt;
+  ret(obj_level(ctdnasc)) = if ¬ctdnasc.~>this ∨ pc ⊔ level(ctdnasc) = ⊥ then obj_level(ctdnasc) else if ctdnasc.~>this ∧ pc ⊔ level(ctdnasc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(ctdnasc) ⊔ obj_level(ctdnasc) ⊔ obj_level(this);
+  ret(ctdnasc.~>ctdnasc) = ctdnasc.~>ctdnasc ∨ ctdnasc.~>this;
+  ret(ctdnasc.~>this) = ctdnasc.~>this;
+  ret(this.~>ctdnasc) = tt;
+  ret(this.~>this) = ctdnasc.~>this ∨ this.~>this;
+}

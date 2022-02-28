@@ -1,0 +1,25 @@
+com.grupooc.radiogrfm.struts.bean.BeanEmpresa com.grupooc.radiogrfm.dao.ModelEmpresa:getEmpresa(int epncodg)
+{
+com.grupooc.radiogrfm.struts.bean.BeanEmpresa empresa;
+  java.sql.PreparedStatement st;
+  java.util.List l;
+  java.sql.Connection $stack6;
+  boolean $stack9;
+  java.lang.Object $stack10;
+  java.lang.Exception $stack11;
+  empresa=null;
+ label0:$stack6 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack6.prepareStatement(" SELECT * FROM VW_EMPRESA WHERE EPNCODG = ?");
+ st.setInt(1,epncodg);
+ l = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanEmpresa);
+ $stack9 = l.isEmpty();
+ if ($stack9!=0) goto label1;
+ $stack10 = l.get(0);
+ empresa=(com.grupooc.radiogrfm.struts.bean.BeanEmpresa) $stack10;
+ label1:goto label2;
+ label3:$stack11 = catch;
+ $stack11.printStackTrace();
+ label2:return  empresa;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

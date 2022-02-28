@@ -1,0 +1,6 @@
+static com.grupooc.radiogrfm.dao.Banco
+{
+com.grupooc.radiogrfm.dao.Banco.con=null;
+ return;
+ } 
+

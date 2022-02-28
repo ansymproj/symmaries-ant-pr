@@ -1,0 +1,17 @@
+void com.grupooc.radiogrfm.dao.ModelUsuario:alteraSenha(int usncodg,java.lang.String novaSenha)
+{
+java.sql.PreparedStatement st;
+  java.sql.Connection $stack5;
+  java.lang.Exception $stack8;
+  label0:$stack5 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack5.prepareStatement(" UPDATE USUARIO SET USCSENH = ? WHERE USNCODG = ?");
+ st.setString(1,novaSenha);
+ st.setInt(2,usncodg);
+ st.executeUpdate();
+ label1:goto label2;
+ label3:$stack8 = catch;
+ $stack8.printStackTrace();
+ label2:return;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

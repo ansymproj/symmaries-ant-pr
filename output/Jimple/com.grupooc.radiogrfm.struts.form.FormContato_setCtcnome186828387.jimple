@@ -1,0 +1,16 @@
+    public void setCtcnome(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContato this;
+        java.lang.String ctcnome;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContato;
+
+        ctcnome := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String ctcnome> = ctcnome;
+/*50*/
+
+        return;
+/*51*/
+    }
+

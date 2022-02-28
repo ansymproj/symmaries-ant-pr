@@ -1,0 +1,74 @@
+    public void inserir(com.grupooc.radiogrfm.struts.bean.BeanMetaMes)
+    {
+        com.grupooc.radiogrfm.dao.ModelMetaMes this;
+        com.grupooc.radiogrfm.struts.bean.BeanMetaMes meta;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack4;
+        java.lang.String $stack7;
+        int $stack8;
+        float $stack15;
+        java.lang.Exception $stack17;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelMetaMes;
+
+        meta := @parameter0: com.grupooc.radiogrfm.struts.bean.BeanMetaMes;
+
+     label1:
+        $stack4 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*52*/
+
+        st = interfaceinvoke $stack4.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("INSERT INTO METAMES (MMNCGMT, MMNCGMS, MMNVALR) VALUES (?,?,?)");
+/*52*/
+/*52*/
+
+        $stack7 = virtualinvoke meta.<com.grupooc.radiogrfm.struts.bean.BeanMetaMes: java.lang.String getMmncgmt()>();
+/*53*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*53*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, $stack8);
+/*53*/
+
+        $stack7 = virtualinvoke meta.<com.grupooc.radiogrfm.struts.bean.BeanMetaMes: java.lang.String getMmncgms()>();
+/*54*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*54*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(2, $stack8);
+/*54*/
+
+        $stack7 = virtualinvoke meta.<com.grupooc.radiogrfm.struts.bean.BeanMetaMes: java.lang.String getMmnvalr()>();
+/*55*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String converteFloatBR(java.lang.String)>($stack7);
+/*55*/
+
+        $stack15 = staticinvoke <java.lang.Float: float parseFloat(java.lang.String)>($stack7);
+/*55*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setFloat(int,float)>(3, $stack15);
+/*55*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: int executeUpdate()>();
+/*57*/
+
+     label2:
+        goto label4;
+/*61*/
+
+     label3:
+        $stack17 := @caughtexception;
+/*63*/
+
+        virtualinvoke $stack17.<java.lang.Exception: void printStackTrace()>();
+/*60*/
+
+     label4:
+        return;
+/*63*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

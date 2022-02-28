@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClcufrg (java.lang.String
+                                                                 clcufrg) {
+  guard = tt;
+  ret(obj_level(clcufrg)) = if ¬clcufrg.~>this ∨ pc ⊔ level(clcufrg) = ⊥ then obj_level(clcufrg) else if clcufrg.~>this ∧ pc ⊔ level(clcufrg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcufrg) ⊔ obj_level(clcufrg) ⊔ obj_level(this);
+  ret(clcufrg.~>clcufrg) = clcufrg.~>clcufrg ∨ clcufrg.~>this;
+  ret(clcufrg.~>this) = clcufrg.~>this;
+  ret(this.~>clcufrg) = tt;
+  ret(this.~>this) = clcufrg.~>this ∨ this.~>this;
+}

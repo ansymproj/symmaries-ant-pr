@@ -1,0 +1,13 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanLocutor this;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanLocutor;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+/*5*/
+
+        return;
+/*5*/
+    }
+

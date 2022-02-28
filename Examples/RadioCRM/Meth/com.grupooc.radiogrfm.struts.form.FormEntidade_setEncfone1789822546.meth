@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEncfone(java.lang.String encfone)
+{
+this.encfone=encfone;
+ return;
+ } 
+

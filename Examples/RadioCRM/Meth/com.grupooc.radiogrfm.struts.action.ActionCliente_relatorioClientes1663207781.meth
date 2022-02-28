@@ -1,0 +1,27 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionCliente:relatorioClientes(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+com.grupooc.radiogrfm.struts.bean.BeanEmpresa beanEmpresa;
+  java.util.HashMap map;
+  javax.servlet.http.HttpSession $stack7;
+  java.lang.Object $stack8;
+  java.lang.Integer $stack11;
+  java.lang.String $stack13;
+  java.lang.Exception $stack15;
+  $stack7 = request.getSession();
+ $stack8 = $stack7.getAttribute("empresa");
+ beanEmpresa=(com.grupooc.radiogrfm.struts.bean.BeanEmpresa) $stack8;
+ label0:map=new java.util.HashMap;
+ map#java.util.HashMap();
+ map.put((java.lang.Object)"REPORT_NAME",(java.lang.Object)"clientes_ativos");
+ $stack11=new java.lang.Integer;
+ $stack13 = beanEmpresa.getEpncodg();
+ $stack11#java.lang.Integer($stack13);
+ map.put((java.lang.Object)"EMPRESA",(java.lang.Object)$stack11);
+ com.grupooc.radiogrfm.utils.GeraRelatorio.geracao(request,response,(java.util.Map)map,(boolean)0);
+ label1:goto label2;
+ label3:$stack15 = catch;
+ $stack15.printStackTrace();
+ label2:return  null;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

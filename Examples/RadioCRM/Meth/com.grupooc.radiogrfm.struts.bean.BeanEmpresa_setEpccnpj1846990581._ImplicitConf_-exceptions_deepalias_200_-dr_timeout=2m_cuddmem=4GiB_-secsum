@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpccnpj (java.lang.String
+                                                                 epccnpj) {
+  guard = tt;
+  ret(obj_level(epccnpj)) = if ¬epccnpj.~>this ∨ pc ⊔ level(epccnpj) = ⊥ then obj_level(epccnpj) else if epccnpj.~>this ∧ pc ⊔ level(epccnpj) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(epccnpj) ⊔ obj_level(epccnpj) ⊔ obj_level(this);
+  ret(epccnpj.~>epccnpj) = epccnpj.~>epccnpj ∨ epccnpj.~>this;
+  ret(epccnpj.~>this) = epccnpj.~>this;
+  ret(this.~>epccnpj) = tt;
+  ret(this.~>this) = epccnpj.~>this ∨ this.~>this;
+}

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.Cidade:setCdncodg(java.lang.Integer cdncodg)
+{
+this.cdncodg=cdncodg;
+ return;
+ } 
+

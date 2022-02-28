@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcdctl(java.lang.String clcdctl)
+{
+this.clcdctl=clcdctl;
+ return;
+ } 
+

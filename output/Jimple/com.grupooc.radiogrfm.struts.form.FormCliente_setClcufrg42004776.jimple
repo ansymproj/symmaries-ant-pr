@@ -1,0 +1,16 @@
+    public void setClcufrg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormCliente this;
+        java.lang.String clcufrg;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormCliente;
+
+        clcufrg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormCliente: java.lang.String clcufrg> = clcufrg;
+/*248*/
+
+        return;
+/*249*/
+    }
+

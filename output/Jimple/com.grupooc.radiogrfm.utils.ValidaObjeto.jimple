@@ -1,0 +1,13 @@
+    public void <init>()
+    {
+        com.grupooc.radiogrfm.utils.ValidaObjeto this;
+
+        this := @this: com.grupooc.radiogrfm.utils.ValidaObjeto;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+/*6*/
+
+        return;
+/*6*/
+    }
+

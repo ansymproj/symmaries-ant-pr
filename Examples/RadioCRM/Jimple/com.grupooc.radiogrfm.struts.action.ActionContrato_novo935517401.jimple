@@ -1,0 +1,172 @@
+    public org.apache.struts.action.ActionForward novo(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionContrato this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        com.grupooc.radiogrfm.struts.bean.BeanEmpresa beanEmpresa;
+        org.apache.struts.action.ActionForward fw;
+        javax.servlet.http.HttpSession $stack8;
+        java.lang.Object $stack9;
+        com.grupooc.radiogrfm.dao.ModelCliente $stack13;
+        java.lang.String $stack14;
+        int $stack15;
+        com.grupooc.radiogrfm.struts.bean.BeanCliente $stack16;
+        com.grupooc.radiogrfm.dao.ModelFormaPagamento $stack20;
+        java.util.ArrayList $stack21;
+        com.grupooc.radiogrfm.dao.ModelCondPagamento $stack24;
+        com.grupooc.radiogrfm.dao.ModelContrato $stack28;
+        com.grupooc.radiogrfm.dao.ModelAgencia $stack34;
+        com.grupooc.radiogrfm.dao.ModelMidia $stack40;
+        java.lang.Exception $stack44;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionContrato;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        $stack8 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*55*/
+
+        $stack9 = interfaceinvoke $stack8.<javax.servlet.http.HttpSession: java.lang.Object getAttribute(java.lang.String)>("empresa");
+/*55*/
+
+        beanEmpresa = (com.grupooc.radiogrfm.struts.bean.BeanEmpresa) $stack9;
+/*55*/
+
+        fw = new org.apache.struts.action.ActionForward;
+/*56*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*56*/
+
+     label1:
+        $stack8 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*58*/
+
+        $stack13 = staticinvoke <com.grupooc.radiogrfm.dao.ModelCliente: com.grupooc.radiogrfm.dao.ModelCliente getInstance()>();
+/*58*/
+
+        $stack14 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("clncodg");
+/*58*/
+
+        $stack15 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack14);
+/*58*/
+
+        $stack16 = virtualinvoke $stack13.<com.grupooc.radiogrfm.dao.ModelCliente: com.grupooc.radiogrfm.struts.bean.BeanCliente getCliente(int)>($stack15);
+/*58*/
+
+        interfaceinvoke $stack8.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("cliente", $stack16);
+/*58*/
+
+        $stack8 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*59*/
+
+        interfaceinvoke $stack8.<javax.servlet.http.HttpSession: void removeAttribute(java.lang.String)>("formContrato");
+/*59*/
+
+        $stack8 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*60*/
+
+        $stack20 = staticinvoke <com.grupooc.radiogrfm.dao.ModelFormaPagamento: com.grupooc.radiogrfm.dao.ModelFormaPagamento getInstance()>();
+/*60*/
+
+        $stack21 = virtualinvoke $stack20.<com.grupooc.radiogrfm.dao.ModelFormaPagamento: java.util.ArrayList getFormasDePagamento()>();
+/*60*/
+
+        interfaceinvoke $stack8.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_formapagamento", $stack21);
+/*60*/
+
+        $stack8 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*61*/
+
+        $stack24 = staticinvoke <com.grupooc.radiogrfm.dao.ModelCondPagamento: com.grupooc.radiogrfm.dao.ModelCondPagamento getInstance()>();
+/*61*/
+
+        $stack21 = virtualinvoke $stack24.<com.grupooc.radiogrfm.dao.ModelCondPagamento: java.util.ArrayList getCondicoesDePagamento()>();
+/*61*/
+
+        interfaceinvoke $stack8.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_condicaopagamento", $stack21);
+/*61*/
+
+        $stack8 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*62*/
+
+        $stack28 = staticinvoke <com.grupooc.radiogrfm.dao.ModelContrato: com.grupooc.radiogrfm.dao.ModelContrato getInstance()>();
+/*62*/
+
+        $stack14 = virtualinvoke beanEmpresa.<com.grupooc.radiogrfm.struts.bean.BeanEmpresa: java.lang.String getEpncodg()>();
+/*62*/
+
+        $stack15 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack14);
+/*62*/
+
+        $stack21 = virtualinvoke $stack28.<com.grupooc.radiogrfm.dao.ModelContrato: java.util.ArrayList getContratosAberto(int)>($stack15);
+/*62*/
+
+        interfaceinvoke $stack8.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_contatos", $stack21);
+/*62*/
+
+        $stack8 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*63*/
+
+        $stack34 = staticinvoke <com.grupooc.radiogrfm.dao.ModelAgencia: com.grupooc.radiogrfm.dao.ModelAgencia getInstance()>();
+/*63*/
+
+        $stack14 = virtualinvoke beanEmpresa.<com.grupooc.radiogrfm.struts.bean.BeanEmpresa: java.lang.String getEpncodg()>();
+/*63*/
+
+        $stack15 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack14);
+/*63*/
+
+        $stack21 = virtualinvoke $stack34.<com.grupooc.radiogrfm.dao.ModelAgencia: java.util.ArrayList getAgencias(int)>($stack15);
+/*63*/
+
+        interfaceinvoke $stack8.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_agencia", $stack21);
+/*63*/
+
+        $stack8 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*64*/
+
+        $stack40 = staticinvoke <com.grupooc.radiogrfm.dao.ModelMidia: com.grupooc.radiogrfm.dao.ModelMidia getInstance()>();
+/*64*/
+
+        $stack14 = virtualinvoke beanEmpresa.<com.grupooc.radiogrfm.struts.bean.BeanEmpresa: java.lang.String getEpncodg()>();
+/*64*/
+
+        $stack15 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack14);
+/*64*/
+
+        $stack21 = virtualinvoke $stack40.<com.grupooc.radiogrfm.dao.ModelMidia: java.util.ArrayList getMidias(int)>($stack15);
+/*64*/
+
+        interfaceinvoke $stack8.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_midia", $stack21);
+/*64*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/contratoNovo.do");
+/*67*/
+
+     label2:
+        goto label4;
+/*71*/
+
+     label3:
+        $stack44 := @caughtexception;
+/*73*/
+
+        virtualinvoke $stack44.<java.lang.Exception: void printStackTrace()>();
+/*70*/
+
+     label4:
+        return fw;
+/*73*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

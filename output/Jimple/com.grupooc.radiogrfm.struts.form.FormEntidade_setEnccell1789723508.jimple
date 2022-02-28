@@ -1,0 +1,16 @@
+    public void setEnccell(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String enccell;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        enccell := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String enccell> = enccell;
+/*186*/
+
+        return;
+/*187*/
+    }
+

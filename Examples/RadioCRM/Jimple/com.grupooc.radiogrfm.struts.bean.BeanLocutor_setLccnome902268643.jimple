@@ -1,0 +1,16 @@
+    public void setLccnome(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanLocutor this;
+        java.lang.String lccnome;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanLocutor;
+
+        lccnome := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanLocutor: java.lang.String lccnome> = lccnome;
+/*22*/
+
+        return;
+/*23*/
+    }
+

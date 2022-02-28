@@ -1,0 +1,16 @@
+    public void setPgyvalr(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormPrograma this;
+        java.lang.String pgyvalr;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormPrograma;
+
+        pgyvalr := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormPrograma: java.lang.String pgyvalr> = pgyvalr;
+/*51*/
+
+        return;
+/*52*/
+    }
+

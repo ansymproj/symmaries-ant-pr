@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAgcmail (java.lang.String
+                                                            agcmail) {
+  guard = tt;
+  ret(obj_level(agcmail)) = if ¬agcmail.~>this ∨ pc ⊔ level(agcmail) = ⊥ then obj_level(agcmail) else if agcmail.~>this ∧ pc ⊔ level(agcmail) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(agcmail) ⊔ obj_level(agcmail) ⊔ obj_level(this);
+  ret(agcmail.~>agcmail) = agcmail.~>agcmail ∨ agcmail.~>this;
+  ret(agcmail.~>this) = agcmail.~>this;
+  ret(this.~>agcmail) = tt;
+  ret(this.~>this) = agcmail.~>this ∨ this.~>this;
+}

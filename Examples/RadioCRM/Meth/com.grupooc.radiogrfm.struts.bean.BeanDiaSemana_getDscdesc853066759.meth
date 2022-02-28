@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanDiaSemana:getDscdesc()
+{
+java.lang.String $stack1;
+  $stack1=this.dscdesc;
+ return  $stack1;
+ } 
+

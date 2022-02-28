@@ -1,0 +1,16 @@
+    public void setAgcfone(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.Entity.Agencia this;
+        java.lang.String agcfone;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Agencia;
+
+        agcfone := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.Agencia: java.lang.String agcfone> = agcfone;
+/*73*/
+
+        return;
+/*74*/
+    }
+

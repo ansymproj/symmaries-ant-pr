@@ -1,0 +1,24 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Extenso:converte(java.math.BigInteger numero)
+{
+java.math.BigInteger $stack1;
+  boolean $stack2;
+  int $stack4;
+  java.lang.String $stack5;
+  java.lang.RuntimeException $stack8;
+  $stack1=java.math.BigInteger.ZERO;
+ $stack2 = numero.equals((java.lang.Object)$stack1);
+ if ($stack2==0) goto label0;
+ $stack5=com.grupooc.radiogrfm.utils.Extenso.ZERO;
+ return  $stack5;
+ label0:$stack1=com.grupooc.radiogrfm.utils.Extenso.NUMERO_MAXIMO;
+ $stack4 = $stack1.compareTo(numero);
+ if ($stack4>=0) goto label1;
+ $stack8=new java.lang.RuntimeException;
+ $stack8#java.lang.RuntimeException("Numero acima do permitido");
+ throw $stack8;
+ label1:$stack5 = com.grupooc.radiogrfm.utils.Extenso.ordens(numero,1);
+ $stack5 = $stack5.substring(3);
+ $stack5 = $stack5.replaceAll(" ,",",");
+ return  $stack5;
+ } 
+

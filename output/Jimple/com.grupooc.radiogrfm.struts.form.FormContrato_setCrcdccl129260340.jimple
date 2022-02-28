@@ -1,0 +1,16 @@
+    public void setCrcdccl(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContrato this;
+        java.lang.String crcdccl;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContrato;
+
+        crcdccl := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContrato: java.lang.String crcdccl> = crcdccl;
+/*95*/
+
+        return;
+/*96*/
+    }
+

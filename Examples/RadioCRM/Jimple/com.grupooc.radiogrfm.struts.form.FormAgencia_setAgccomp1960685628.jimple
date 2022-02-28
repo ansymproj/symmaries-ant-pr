@@ -1,0 +1,16 @@
+    public void setAgccomp(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormAgencia this;
+        java.lang.String agccomp;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormAgencia;
+
+        agccomp := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormAgencia: java.lang.String agccomp> = agccomp;
+/*110*/
+
+        return;
+/*111*/
+    }
+

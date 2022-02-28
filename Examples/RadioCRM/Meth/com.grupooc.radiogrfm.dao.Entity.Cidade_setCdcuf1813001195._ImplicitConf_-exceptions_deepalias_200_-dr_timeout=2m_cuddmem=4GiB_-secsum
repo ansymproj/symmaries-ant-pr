@@ -1,0 +1,9 @@
+void com.grupooc.radiogrfm.dao.Entity.Cidade:setCdcuf (java.lang.String cdcuf) {
+  guard = tt;
+  ret(obj_level(cdcuf)) = if ¬cdcuf.~>this ∨ pc ⊔ level(cdcuf) = ⊥ then obj_level(cdcuf) else if cdcuf.~>this ∧ pc ⊔ level(cdcuf) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(cdcuf) ⊔ obj_level(cdcuf) ⊔ obj_level(this);
+  ret(cdcuf.~>cdcuf) = cdcuf.~>cdcuf ∨ cdcuf.~>this;
+  ret(cdcuf.~>this) = cdcuf.~>this;
+  ret(this.~>cdcuf) = tt;
+  ret(this.~>this) = cdcuf.~>this ∨ this.~>this;
+}

@@ -1,0 +1,11 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:preencherEsquerda (
+  char valor, int tam, java.lang.String str) {
+  guard = tt;
+  ret(level()) = pc ⊔ level(str) ⊔ level(tam) ⊔ obj_level(str);
+  ret(obj_level()) = pc ⊔ level(tam) ⊔ obj_level(str);
+  ret(obj_level(str)) = if obj_level(str) = ⊤ ∨ pc ≠ ⊤ ∧ level(tam) = ⊤ ∧ obj_level(str) = ⊥ then ⊤ else ⊥;
+  ret(~str) = tt;
+  ret(.~>str) = str.~>str;
+  ret(str.~>) = str.~>str;
+  ret(str.~>str) = str.~>str;
+}

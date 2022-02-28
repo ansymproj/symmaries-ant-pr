@@ -1,0 +1,73 @@
+    public org.apache.struts.action.ActionForward exclui(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionContrato this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        java.lang.String crncodg;
+        com.grupooc.radiogrfm.struts.bean.BeanContrato contrato;
+        com.grupooc.radiogrfm.dao.ModelContrato $stack11;
+        java.lang.Exception $stack12;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionContrato;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*192*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*192*/
+
+     label1:
+        crncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("crncodg");
+/*195*/
+/*195*/
+
+        contrato = new com.grupooc.radiogrfm.struts.bean.BeanContrato;
+/*196*/
+
+        specialinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: void <init>()>();
+/*196*/
+
+        virtualinvoke contrato.<com.grupooc.radiogrfm.struts.bean.BeanContrato: void setCrncodg(java.lang.String)>(crncodg);
+/*197*/
+
+        $stack11 = staticinvoke <com.grupooc.radiogrfm.dao.ModelContrato: com.grupooc.radiogrfm.dao.ModelContrato getInstance()>();
+/*198*/
+
+        virtualinvoke $stack11.<com.grupooc.radiogrfm.dao.ModelContrato: void excluir(com.grupooc.radiogrfm.struts.bean.BeanContrato)>(contrato);
+/*198*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/home.do");
+/*199*/
+
+        interfaceinvoke request.<javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("msg", "Contrato Excluido com sucesso!");
+/*200*/
+
+     label2:
+        goto label4;
+/*203*/
+
+     label3:
+        $stack12 := @caughtexception;
+/*204*/
+
+        virtualinvoke $stack12.<java.lang.Exception: void printStackTrace()>();
+/*202*/
+
+     label4:
+        return fw;
+/*204*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

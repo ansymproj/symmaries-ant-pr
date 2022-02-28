@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormInsercao:setInnsoma (java.lang.String
+                                                                  innsoma) {
+  guard = tt;
+  ret(obj_level(innsoma)) = if ¬innsoma.~>this ∨ pc ⊔ level(innsoma) = ⊥ then obj_level(innsoma) else if innsoma.~>this ∧ pc ⊔ level(innsoma) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(innsoma) ⊔ obj_level(innsoma) ⊔ obj_level(this);
+  ret(innsoma.~>innsoma) = innsoma.~>innsoma ∨ innsoma.~>this;
+  ret(innsoma.~>this) = innsoma.~>this;
+  ret(this.~>innsoma) = tt;
+  ret(this.~>this) = innsoma.~>this ∨ this.~>this;
+}

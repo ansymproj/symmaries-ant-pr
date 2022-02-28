@@ -1,0 +1,16 @@
+    public void setCrcpgto(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crcpgto;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crcpgto := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crcpgto> = crcpgto;
+/*210*/
+
+        return;
+/*211*/
+    }
+

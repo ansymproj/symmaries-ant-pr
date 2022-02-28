@@ -1,0 +1,13 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:getDataHoraAtual()
+{
+java.text.SimpleDateFormat $stack0;
+  java.util.Date $stack1;
+  java.lang.String $stack2;
+  $stack0=new java.text.SimpleDateFormat;
+ $stack0#java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+ $stack1=new java.util.Date;
+ $stack1#java.util.Date();
+ $stack2 = $stack0.format($stack1);
+ return  $stack2;
+ } 
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContrato:setCrncgag (java.lang.String
+                                                                  crncgag) {
+  guard = tt;
+  ret(obj_level(crncgag)) = if ¬crncgag.~>this ∨ pc ⊔ level(crncgag) = ⊥ then obj_level(crncgag) else if crncgag.~>this ∧ pc ⊔ level(crncgag) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crncgag) ⊔ obj_level(crncgag) ⊔ obj_level(this);
+  ret(crncgag.~>crncgag) = crncgag.~>crncgag ∨ crncgag.~>this;
+  ret(crncgag.~>this) = crncgag.~>this;
+  ret(this.~>crncgag) = tt;
+  ret(this.~>this) = crncgag.~>this ∨ this.~>this;
+}

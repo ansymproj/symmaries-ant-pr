@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpcices (java.lang.String
+                                                                 epcices) {
+  guard = tt;
+  ret(obj_level(epcices)) = if ¬epcices.~>this ∨ pc ⊔ level(epcices) = ⊥ then obj_level(epcices) else if epcices.~>this ∧ pc ⊔ level(epcices) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(epcices) ⊔ obj_level(epcices) ⊔ obj_level(this);
+  ret(epcices.~>epcices) = epcices.~>epcices ∨ epcices.~>this;
+  ret(epcices.~>this) = epcices.~>this;
+  ret(this.~>epcices) = tt;
+  ret(this.~>this) = epcices.~>this ∨ this.~>this;
+}

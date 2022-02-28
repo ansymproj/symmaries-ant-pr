@@ -1,0 +1,66 @@
+    public static java.lang.String blobToStr(java.sql.Blob)
+    {
+        java.sql.Blob blob;
+        java.lang.StringBuilder 'ret';
+        java.io.InputStream in;
+        byte[] b;
+        int $stack8;
+        java.lang.String $stack9;
+        java.lang.Exception $stack15;
+
+        blob := @parameter0: java.sql.Blob;
+
+        'ret' = new java.lang.StringBuilder;
+/*277*/
+
+        specialinvoke 'ret'.<java.lang.StringBuilder: void <init>()>();
+/*277*/
+
+     label1:
+        in = interfaceinvoke blob.<java.sql.Blob: java.io.InputStream getBinaryStream()>();
+/*279*/
+/*279*/
+
+        b = newarray (byte)[2048];
+/*281*/
+
+     label2:
+        $stack8 = virtualinvoke in.<java.io.InputStream: int read(byte[])>(b);
+/*283*/
+
+        if $stack8 == -1 goto label3;
+/*283*/
+
+        $stack9 = new java.lang.String;
+/*284*/
+
+        specialinvoke $stack9.<java.lang.String: void <init>(byte[],int,int)>(b, 0, $stack8);
+/*284*/
+
+        virtualinvoke 'ret'.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack9);
+/*285*/
+
+        goto label2;
+/*285*/
+
+     label3:
+        goto label5;
+/*289*/
+
+     label4:
+        $stack15 := @caughtexception;
+/*283*/
+
+        virtualinvoke $stack15.<java.lang.Exception: void printStackTrace()>();
+/*288*/
+
+     label5:
+        $stack9 = virtualinvoke 'ret'.<java.lang.StringBuilder: java.lang.String toString()>();
+/*290*/
+
+        return $stack9;
+/*290*/
+
+        catch java.lang.Exception from label1 to label3 with label4;
+    }
+

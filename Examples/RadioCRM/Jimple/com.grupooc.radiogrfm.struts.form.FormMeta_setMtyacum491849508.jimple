@@ -1,0 +1,16 @@
+    public void setMtyacum(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormMeta this;
+        java.lang.String mtyacum;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormMeta;
+
+        mtyacum := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormMeta: java.lang.String mtyacum> = mtyacum;
+/*18*/
+
+        return;
+/*19*/
+    }
+

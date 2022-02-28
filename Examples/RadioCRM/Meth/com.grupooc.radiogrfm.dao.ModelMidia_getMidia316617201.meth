@@ -1,0 +1,25 @@
+com.grupooc.radiogrfm.struts.bean.BeanMidia com.grupooc.radiogrfm.dao.ModelMidia:getMidia(int mdncodg)
+{
+com.grupooc.radiogrfm.struts.bean.BeanMidia dia;
+  java.sql.PreparedStatement st;
+  java.util.List l;
+  java.sql.Connection $stack6;
+  boolean $stack9;
+  java.lang.Object $stack10;
+  java.lang.Exception $stack11;
+  dia=null;
+ label0:$stack6 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack6.prepareStatement("SELECT * FROM VW_MIDIA WHERE MDNCODG = ?");
+ st.setInt(1,mdncodg);
+ l = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanMidia);
+ $stack9 = l.isEmpty();
+ if ($stack9!=0) goto label1;
+ $stack10 = l.get(0);
+ dia=(com.grupooc.radiogrfm.struts.bean.BeanMidia) $stack10;
+ label1:goto label2;
+ label3:$stack11 = catch;
+ $stack11.printStackTrace();
+ label2:return  dia;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

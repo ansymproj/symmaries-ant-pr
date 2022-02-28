@@ -1,0 +1,21 @@
+java.util.ArrayList com.grupooc.radiogrfm.dao.ModelContrato:contratosDoCliente(int clncodg)
+{
+java.util.ArrayList contratos;
+  java.sql.PreparedStatement st;
+  java.sql.Connection $stack6;
+  java.util.List $stack8;
+  java.lang.Exception $stack10;
+  contratos=new java.util.ArrayList;
+ contratos#java.util.ArrayList();
+ label0:$stack6 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack6.prepareStatement(" SELECT * FROM VW_CONTRATO WHERE CRNCGCL = ? ORDER BY CRDTERM DESC");
+ st.setInt(1,clncodg);
+ $stack8 = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanContrato);
+ contratos.addAll((java.util.Collection)$stack8);
+ label1:goto label2;
+ label3:$stack10 = catch;
+ $stack10.printStackTrace();
+ label2:return  contratos;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

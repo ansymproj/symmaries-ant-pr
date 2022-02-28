@@ -1,0 +1,70 @@
+    public void update(com.grupooc.radiogrfm.struts.bean.BeanMeta)
+    {
+        com.grupooc.radiogrfm.dao.ModelMeta this;
+        com.grupooc.radiogrfm.struts.bean.BeanMeta meta;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack4;
+        java.lang.String $stack7;
+        int $stack8;
+        java.lang.Exception $stack16;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelMeta;
+
+        meta := @parameter0: com.grupooc.radiogrfm.struts.bean.BeanMeta;
+
+     label1:
+        $stack4 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*68*/
+
+        st = interfaceinvoke $stack4.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("UPDATE META SET MTNCGCT = ?, MTNANO = ? WHERE MTNCODG = ?");
+/*68*/
+/*68*/
+
+        $stack7 = virtualinvoke meta.<com.grupooc.radiogrfm.struts.bean.BeanMeta: java.lang.String getMtncgct()>();
+/*69*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*69*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, $stack8);
+/*69*/
+
+        $stack7 = virtualinvoke meta.<com.grupooc.radiogrfm.struts.bean.BeanMeta: java.lang.String getMtnano()>();
+/*70*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*70*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(2, $stack8);
+/*70*/
+
+        $stack7 = virtualinvoke meta.<com.grupooc.radiogrfm.struts.bean.BeanMeta: java.lang.String getMtncodg()>();
+/*71*/
+
+        $stack8 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($stack7);
+/*71*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(3, $stack8);
+/*71*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: int executeUpdate()>();
+/*73*/
+
+     label2:
+        goto label4;
+/*77*/
+
+     label3:
+        $stack16 := @caughtexception;
+/*78*/
+
+        virtualinvoke $stack16.<java.lang.Exception: void printStackTrace()>();
+/*76*/
+
+     label4:
+        return;
+/*78*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

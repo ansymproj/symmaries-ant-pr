@@ -1,0 +1,86 @@
+    public boolean estaPeriodoVigencia(int, java.util.Date)
+    {
+        com.grupooc.radiogrfm.dao.ModelContrato this;
+        int crncodg;
+        java.util.Date data;
+        boolean 'ret', $stack12;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack6;
+        java.sql.Date $stack8;
+        long $stack10;
+        java.util.List $stack11;
+        java.lang.Exception $stack14;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelContrato;
+
+        crncodg := @parameter0: int;
+
+        data := @parameter1: java.util.Date;
+
+        'ret' = 0;
+/*88*/
+
+     label1:
+        $stack6 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*93*/
+
+        st = interfaceinvoke $stack6.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" SELECT * FROM VW_CONTRATO WHERE CRNCODG = ? AND ? BETWEEN CRDINIC AND CRDTERM");
+/*93*/
+/*93*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, crncodg);
+/*95*/
+
+        $stack8 = new java.sql.Date;
+/*96*/
+
+        $stack10 = virtualinvoke data.<java.util.Date: long getTime()>();
+/*96*/
+
+        specialinvoke $stack8.<java.sql.Date: void <init>(long)>($stack10);
+/*96*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setDate(int,java.sql.Date)>(2, $stack8);
+/*96*/
+
+        $stack11 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.List getObjectsStr(java.sql.PreparedStatement,java.lang.Class)>(st, class "Lcom/grupooc/radiogrfm/struts/bean/BeanContrato;");
+/*98*/
+
+        $stack12 = interfaceinvoke $stack11.<java.util.List: boolean isEmpty()>();
+/*98*/
+
+        if $stack12 != 0 goto label2;
+/*98*/
+
+        $stack12 = 1;
+/*103*/
+
+        goto label3;
+/*103*/
+
+     label2:
+        $stack12 = 0;
+/*103*/
+
+     label3:
+        'ret' = $stack12;
+/*98*/
+
+     label4:
+        goto label6;
+/*102*/
+
+     label5:
+        $stack14 := @caughtexception;
+/*102*/
+
+        virtualinvoke $stack14.<java.lang.Exception: void printStackTrace()>();
+/*101*/
+
+     label6:
+        return 'ret';
+/*103*/
+
+        catch java.lang.Exception from label1 to label4 with label5;
+    }
+

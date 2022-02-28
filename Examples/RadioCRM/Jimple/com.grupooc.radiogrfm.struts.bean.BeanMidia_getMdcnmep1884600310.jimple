@@ -1,0 +1,14 @@
+    public java.lang.String getMdcnmep()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMidia this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMidia;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanMidia: java.lang.String mdcnmep>;
+/*22*/
+
+        return $stack1;
+/*22*/
+    }
+

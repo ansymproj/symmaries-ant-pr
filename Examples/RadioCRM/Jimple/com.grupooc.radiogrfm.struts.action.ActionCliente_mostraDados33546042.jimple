@@ -1,0 +1,68 @@
+    public org.apache.struts.action.ActionForward mostraDados(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionCliente this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        java.lang.String clncodg;
+        com.grupooc.radiogrfm.dao.ModelCliente $stack10;
+        int $stack11;
+        com.grupooc.radiogrfm.struts.bean.BeanCliente $stack12;
+        java.lang.Exception $stack13;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionCliente;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*114*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*114*/
+
+     label1:
+        clncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("clncodg");
+/*117*/
+/*117*/
+
+        $stack10 = staticinvoke <com.grupooc.radiogrfm.dao.ModelCliente: com.grupooc.radiogrfm.dao.ModelCliente getInstance()>();
+/*118*/
+
+        $stack11 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(clncodg);
+/*118*/
+
+        $stack12 = virtualinvoke $stack10.<com.grupooc.radiogrfm.dao.ModelCliente: com.grupooc.radiogrfm.struts.bean.BeanCliente getCliente(int)>($stack11);
+/*118*/
+
+        interfaceinvoke request.<javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("cliente", $stack12);
+/*118*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/clienteDados.do");
+/*119*/
+
+     label2:
+        goto label4;
+/*123*/
+
+     label3:
+        $stack13 := @caughtexception;
+/*125*/
+
+        virtualinvoke $stack13.<java.lang.Exception: void printStackTrace()>();
+/*122*/
+
+     label4:
+        return fw;
+/*125*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

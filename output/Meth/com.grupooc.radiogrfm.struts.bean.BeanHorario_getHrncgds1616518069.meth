@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanHorario:getHrncgds()
+{
+java.lang.String $stack1;
+  $stack1=this.hrncgds;
+ return  $stack1;
+ } 
+

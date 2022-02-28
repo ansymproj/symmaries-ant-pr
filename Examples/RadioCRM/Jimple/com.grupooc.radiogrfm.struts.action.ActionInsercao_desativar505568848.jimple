@@ -1,0 +1,88 @@
+    public org.apache.struts.action.ActionForward desativar(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionInsercao this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        java.lang.String inncodg, crncodg;
+        java.lang.StringBuilder $stack11;
+        com.grupooc.radiogrfm.dao.ModelInsercao $stack15;
+        int $stack16;
+        java.lang.Exception $stack20;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionInsercao;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*73*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*73*/
+
+     label1:
+        inncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("inncodg");
+/*77*/
+/*77*/
+
+        crncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("crncodg");
+/*78*/
+/*78*/
+
+        if inncodg == null goto label2;
+/*80*/
+
+        $stack15 = staticinvoke <com.grupooc.radiogrfm.dao.ModelInsercao: com.grupooc.radiogrfm.dao.ModelInsercao getInstance()>();
+/*81*/
+
+        $stack16 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(inncodg);
+/*81*/
+
+        virtualinvoke $stack15.<com.grupooc.radiogrfm.dao.ModelInsercao: void desativar(int)>($stack16);
+/*81*/
+
+     label2:
+        $stack11 = new java.lang.StringBuilder;
+/*84*/
+
+        specialinvoke $stack11.<java.lang.StringBuilder: void <init>()>();
+/*84*/
+
+        $stack11 = virtualinvoke $stack11.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("/actionInsercao.do?m=lista&crncodg=");
+/*84*/
+
+        $stack11 = virtualinvoke $stack11.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(crncodg);
+/*84*/
+
+        inncodg = virtualinvoke $stack11.<java.lang.StringBuilder: java.lang.String toString()>();
+/*84*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>(inncodg);
+/*84*/
+
+     label3:
+        goto label5;
+/*88*/
+
+     label4:
+        $stack20 := @caughtexception;
+/*88*/
+
+        virtualinvoke $stack20.<java.lang.Exception: void printStackTrace()>();
+/*87*/
+
+     label5:
+        return fw;
+/*90*/
+
+        catch java.lang.Exception from label1 to label3 with label4;
+    }
+

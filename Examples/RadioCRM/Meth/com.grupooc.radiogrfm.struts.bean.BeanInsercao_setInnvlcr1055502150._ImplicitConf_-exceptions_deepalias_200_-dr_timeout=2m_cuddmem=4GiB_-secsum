@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanInsercao:setInnvlcr (java.lang.String
+                                                                  innvlcr) {
+  guard = tt;
+  ret(obj_level(innvlcr)) = if ¬innvlcr.~>this ∨ pc ⊔ level(innvlcr) = ⊥ then obj_level(innvlcr) else if innvlcr.~>this ∧ pc ⊔ level(innvlcr) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(innvlcr) ⊔ obj_level(innvlcr) ⊔ obj_level(this);
+  ret(innvlcr.~>innvlcr) = innvlcr.~>innvlcr ∨ innvlcr.~>this;
+  ret(innvlcr.~>this) = innvlcr.~>this;
+  ret(this.~>innvlcr) = tt;
+  ret(this.~>this) = innvlcr.~>this ∨ this.~>this;
+}

@@ -1,0 +1,23 @@
+static boolean com.grupooc.radiogrfm.utils.CNPJ:validar(java.lang.String @s)
+{
+boolean $stack1;
+  int $stack3;
+  java.lang.String $stack4;
+  java.lang.String s;
+s=@s;
+if (s==null) goto label0;
+ $stack1 = com.grupooc.radiogrfm.utils.Utils.isDigit(s);
+ if ($stack1==0) goto label0;
+ $stack3 = s.length();
+ if ($stack3!=14) goto label0;
+ $stack4 = s.substring(0,12);
+ $stack4 = com.grupooc.radiogrfm.utils.CNPJ.dv($stack4);
+ s = s.substring(12);
+ $stack1 = $stack4.equals((java.lang.Object)s);
+ if ($stack1==0) goto label0;
+ $stack1=1;
+ goto label1;
+ label0:$stack1=0;
+ label1:return  $stack1;
+ } 
+

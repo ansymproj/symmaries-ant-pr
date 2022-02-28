@@ -1,0 +1,7 @@
+static boolean com.grupooc.radiogrfm.utils.ValidaObjeto:validaHora (java.lang.String
+                                                                    hora) {
+  guard = tt;
+  ret(level()) = pc ⊔ level(hora) ⊔ obj_level(hora);
+  ret(obj_level(hora)) = obj_level(hora);
+  ret(hora.~>hora) = hora.~>hora;
+}

@@ -1,0 +1,23 @@
+void com.grupooc.radiogrfm.dao.ModelMeta:inserir(com.grupooc.radiogrfm.struts.bean.BeanMeta meta)
+{
+java.sql.PreparedStatement st;
+  java.sql.Connection $stack4;
+  java.lang.String $stack7;
+  int $stack8;
+  java.lang.Exception $stack13;
+  label0:$stack4 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack4.prepareStatement("INSERT INTO META (MTNCGCT, MTNANO) VALUES (?,?)");
+ $stack7 = meta.getMtncgct();
+ $stack8 = java.lang.Integer.parseInt($stack7);
+ st.setInt(1,$stack8);
+ $stack7 = meta.getMtnano();
+ $stack8 = java.lang.Integer.parseInt($stack7);
+ st.setInt(2,$stack8);
+ st.executeUpdate();
+ label1:goto label2;
+ label3:$stack13 = catch;
+ $stack13.printStackTrace();
+ label2:return;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

@@ -1,0 +1,77 @@
+    public org.apache.struts.action.ActionForward imprimir(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionContrato this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        java.util.HashMap map;
+        java.lang.Integer $stack7;
+        java.lang.String $stack9;
+        java.lang.Exception $stack16;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionContrato;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+     label1:
+        map = new java.util.HashMap;
+/*298*/
+
+        specialinvoke map.<java.util.HashMap: void <init>()>();
+/*298*/
+
+        $stack7 = new java.lang.Integer;
+/*300*/
+
+        $stack9 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("epncodg");
+/*300*/
+
+        specialinvoke $stack7.<java.lang.Integer: void <init>(java.lang.String)>($stack9);
+/*300*/
+
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("EMPRESA", $stack7);
+/*300*/
+
+        $stack7 = new java.lang.Integer;
+/*301*/
+
+        $stack9 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("crncodg");
+/*301*/
+
+        specialinvoke $stack7.<java.lang.Integer: void <init>(java.lang.String)>($stack9);
+/*301*/
+
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("CRNCODG", $stack7);
+/*301*/
+
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("REPORT_NAME", "contrato");
+/*302*/
+
+        staticinvoke <com.grupooc.radiogrfm.utils.GeraRelatorio: void geracao(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map,boolean)>(request, response, map, 0);
+/*304*/
+
+     label2:
+        goto label4;
+/*308*/
+
+     label3:
+        $stack16 := @caughtexception;
+/*310*/
+
+        virtualinvoke $stack16.<java.lang.Exception: void printStackTrace()>();
+/*307*/
+
+     label4:
+        return null;
+/*310*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

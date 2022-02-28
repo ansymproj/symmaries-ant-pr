@@ -1,0 +1,16 @@
+    public void setCdcdesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.Entity.Cidade this;
+        java.lang.String cdcdesc;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Cidade;
+
+        cdcdesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.Cidade: java.lang.String cdcdesc> = cdcdesc;
+/*29*/
+
+        return;
+/*30*/
+    }
+

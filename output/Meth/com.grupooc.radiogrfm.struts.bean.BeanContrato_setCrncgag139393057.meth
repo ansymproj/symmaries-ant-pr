@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContrato:setCrncgag(java.lang.String crncgag)
+{
+this.crncgag=crncgag;
+ return;
+ } 
+

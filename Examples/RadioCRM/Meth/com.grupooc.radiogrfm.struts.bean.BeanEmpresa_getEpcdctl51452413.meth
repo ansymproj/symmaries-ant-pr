@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanEmpresa:getEpcdctl()
+{
+java.lang.String $stack1;
+  $stack1=this.epcdctl;
+ return  $stack1;
+ } 
+

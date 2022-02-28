@@ -1,0 +1,14 @@
+    public java.lang.String getOpchint()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanOperacao this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanOperacao;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanOperacao: java.lang.String opchint>;
+/*33*/
+
+        return $stack1;
+/*33*/
+    }
+

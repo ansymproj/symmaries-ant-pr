@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContato:setCtcfunc(java.lang.String ctcfunc)
+{
+this.ctcfunc=ctcfunc;
+ return;
+ } 
+

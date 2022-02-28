@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanOperacao:setOpncodg(java.lang.String opncodg)
+{
+this.opncodg=opncodg;
+ return;
+ } 
+

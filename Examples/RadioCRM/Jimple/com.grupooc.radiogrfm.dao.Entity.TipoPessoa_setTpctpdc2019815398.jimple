@@ -1,0 +1,16 @@
+    public void setTpctpdc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.Entity.TipoPessoa this;
+        java.lang.String tpctpdc;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.TipoPessoa;
+
+        tpctpdc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.TipoPessoa: java.lang.String tpctpdc> = tpctpdc;
+/*29*/
+
+        return;
+/*30*/
+    }
+

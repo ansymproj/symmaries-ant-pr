@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanContrato:getCrnperm()
+{
+java.lang.String $stack1;
+  $stack1=this.crnperm;
+ return  $stack1;
+ } 
+

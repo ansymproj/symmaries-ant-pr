@@ -1,0 +1,16 @@
+    public void setCtcmail(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContato this;
+        java.lang.String ctcmail;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContato;
+
+        ctcmail := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String ctcmail> = ctcmail;
+/*92*/
+
+        return;
+/*93*/
+    }
+

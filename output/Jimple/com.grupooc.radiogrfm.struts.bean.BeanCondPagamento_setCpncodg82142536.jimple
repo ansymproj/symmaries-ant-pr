@@ -1,0 +1,16 @@
+    public void setCpncodg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCondPagamento this;
+        java.lang.String cpncodg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCondPagamento;
+
+        cpncodg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCondPagamento: java.lang.String cpncodg> = cpncodg;
+/*16*/
+
+        return;
+/*17*/
+    }
+

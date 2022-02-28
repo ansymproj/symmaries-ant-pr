@@ -1,0 +1,20 @@
+static java.util.Date com.grupooc.radiogrfm.utils.Utils:stringToTimeSQL(java.lang.String datastr)
+{
+java.util.Date data;
+  boolean $stack3;
+  java.text.SimpleDateFormat $stack4;
+  java.lang.Exception $stack6;
+  data=null;
+ label0:if (datastr==null) goto label1;
+ $stack3 = datastr.equals((java.lang.Object)"");
+ if ($stack3!=0) goto label1;
+ $stack4=new java.text.SimpleDateFormat;
+ $stack4#java.text.SimpleDateFormat("HH:mm");
+ data = $stack4.parse(datastr);
+ label1:goto label2;
+ label3:$stack6 = catch;
+ $stack6.printStackTrace();
+ label2:return  data;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

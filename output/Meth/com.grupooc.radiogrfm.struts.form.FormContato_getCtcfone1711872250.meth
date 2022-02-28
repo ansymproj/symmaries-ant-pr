@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormContato:getCtcfone()
+{
+java.lang.String $stack1;
+  $stack1=this.ctcfone;
+ return  $stack1;
+ } 
+

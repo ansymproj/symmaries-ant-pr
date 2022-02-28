@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormUsuario:getUscpswd()
+{
+java.lang.String $stack1;
+  $stack1=this.uscpswd;
+ return  $stack1;
+ } 
+

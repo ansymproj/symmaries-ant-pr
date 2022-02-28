@@ -1,0 +1,7 @@
+static boolean com.grupooc.radiogrfm.utils.ValidaObjeto:validaString (
+  java.lang.String str) {
+  guard = tt;
+  ret(level()) = pc ⊔ level(str) ⊔ obj_level(str);
+  ret(obj_level(str)) = obj_level(str);
+  ret(str.~>str) = str.~>str;
+}

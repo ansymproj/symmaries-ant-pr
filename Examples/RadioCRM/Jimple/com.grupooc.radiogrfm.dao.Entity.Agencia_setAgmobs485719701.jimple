@@ -1,0 +1,16 @@
+    public void setAgmobs(java.lang.String)
+    {
+        com.grupooc.radiogrfm.dao.Entity.Agencia this;
+        java.lang.String agmobs;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.Agencia;
+
+        agmobs := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.dao.Entity.Agencia: java.lang.String agmobs> = agmobs;
+/*145*/
+
+        return;
+/*146*/
+    }
+

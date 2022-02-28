@@ -1,0 +1,68 @@
+    public org.apache.struts.action.ActionForward lista(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionHorario this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        java.lang.String pgncodg;
+        com.grupooc.radiogrfm.dao.ModelHorario $stack10;
+        int $stack11;
+        java.util.ArrayList $stack12;
+        java.lang.Exception $stack13;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionHorario;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*28*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*28*/
+
+     label1:
+        pgncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("pgncodg");
+/*31*/
+/*31*/
+
+        $stack10 = staticinvoke <com.grupooc.radiogrfm.dao.ModelHorario: com.grupooc.radiogrfm.dao.ModelHorario getInstance()>();
+/*32*/
+
+        $stack11 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(pgncodg);
+/*32*/
+
+        $stack12 = virtualinvoke $stack10.<com.grupooc.radiogrfm.dao.ModelHorario: java.util.ArrayList getHorariosDoPrograma(int)>($stack11);
+/*32*/
+
+        interfaceinvoke request.<javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("ls_horario", $stack12);
+/*32*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/horarioLista.do");
+/*33*/
+
+     label2:
+        goto label4;
+/*37*/
+
+     label3:
+        $stack13 := @caughtexception;
+/*39*/
+
+        virtualinvoke $stack13.<java.lang.Exception: void printStackTrace()>();
+/*36*/
+
+     label4:
+        return fw;
+/*39*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

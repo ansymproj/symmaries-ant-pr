@@ -1,0 +1,32 @@
+static java.lang.Object com.grupooc.radiogrfm.utils.Utils:getAtributo(java.lang.Class c,java.lang.String @atributo,java.lang.Class classTipo)
+{
+java.lang.Object ret;
+  java.lang.reflect.Method m;
+  java.lang.StringBuilder $stack5;
+  java.lang.Class[] $stack10;
+  java.lang.Object $stack12;
+  java.lang.Object[] $stack13;
+  java.lang.Exception $stack16;
+  java.lang.String atributo;
+atributo=@atributo;
+ret=null;
+ label0:$stack5=new java.lang.StringBuilder;
+ $stack5#java.lang.StringBuilder();
+ $stack5 = $stack5.append("get");
+ atributo = com.grupooc.radiogrfm.utils.Utils.toCapitalize(atributo);
+ $stack5 = $stack5.append(atributo);
+ atributo = $stack5.toString();
+ $stack10=new java.lang.Class[1];
+ $stack10[0]=classTipo;
+ m = c.getMethod(atributo,$stack10);
+ $stack12 = c.newInstance();
+ $stack13=new java.lang.Object[0];
+ $stack12 = m.invoke($stack12,$stack13);
+ ret = classTipo.cast($stack12);
+ label1:goto label2;
+ label3:$stack16 = catch;
+ $stack16.printStackTrace();
+ label2:return  ret;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

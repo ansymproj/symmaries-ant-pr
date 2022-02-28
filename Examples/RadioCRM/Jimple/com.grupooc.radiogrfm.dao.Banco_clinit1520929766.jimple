@@ -1,0 +1,9 @@
+    static void <clinit>()
+    {
+        <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection con> = null;
+/*8*/
+
+        return;
+/*8*/
+    }
+

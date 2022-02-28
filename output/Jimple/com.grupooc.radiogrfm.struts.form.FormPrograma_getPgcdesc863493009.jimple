@@ -1,0 +1,14 @@
+    public java.lang.String getPgcdesc()
+    {
+        com.grupooc.radiogrfm.struts.form.FormPrograma this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormPrograma;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormPrograma: java.lang.String pgcdesc>;
+/*42*/
+
+        return $stack1;
+/*42*/
+    }
+

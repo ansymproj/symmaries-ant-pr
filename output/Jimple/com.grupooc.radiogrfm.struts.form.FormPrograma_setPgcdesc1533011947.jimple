@@ -1,0 +1,16 @@
+    public void setPgcdesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormPrograma this;
+        java.lang.String pgcdesc;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormPrograma;
+
+        pgcdesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormPrograma: java.lang.String pgcdesc> = pgcdesc;
+/*45*/
+
+        return;
+/*46*/
+    }
+

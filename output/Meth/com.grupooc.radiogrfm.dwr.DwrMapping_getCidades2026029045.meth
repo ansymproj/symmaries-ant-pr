@@ -1,0 +1,51 @@
+static java.lang.String com.grupooc.radiogrfm.dwr.DwrMapping:getCidades(java.lang.String @UF,java.lang.String @campo)
+{
+java.util.ArrayList list;
+  java.util.Iterator iter;
+  com.grupooc.radiogrfm.struts.bean.BeanCidade cidade;
+  java.lang.StringBuilder $stack6;
+  com.grupooc.radiogrfm.dao.ModelCidade $stack11;
+  boolean $stack14;
+  java.lang.Object $stack19;
+  java.lang.Exception $stack31;
+  java.lang.String campo;
+java.lang.String UF;
+UF=@UF;
+campo=@campo;
+$stack6=new java.lang.StringBuilder;
+ $stack6#java.lang.StringBuilder();
+ $stack6 = $stack6.append("<select name=\"");
+ $stack6 = $stack6.append(campo);
+ $stack6 = $stack6.append("\" style=\"width: 375px\">\n");
+ campo = $stack6.toString();
+ label0:$stack11 = com.grupooc.radiogrfm.dao.ModelCidade.getInstance();
+ list = $stack11.getCidadesDoEstado(UF);
+ iter = list.iterator();
+ label1:$stack14 = iter.hasNext();
+ if ($stack14==0) goto label2;
+ $stack19 = iter.next();
+ cidade=(com.grupooc.radiogrfm.struts.bean.BeanCidade) $stack19;
+ $stack6=new java.lang.StringBuilder;
+ $stack6#java.lang.StringBuilder();
+ $stack6 = $stack6.append(campo);
+ $stack6 = $stack6.append("<option value=\"");
+ UF = cidade.getCdncodg();
+ $stack6 = $stack6.append(UF);
+ $stack6 = $stack6.append("\">");
+ UF = cidade.getCdcdesc();
+ $stack6 = $stack6.append(UF);
+ $stack6 = $stack6.append("</option>\n");
+ campo = $stack6.toString();
+ goto label1;
+ label2:goto label3;
+ label4:$stack31 = catch;
+ $stack31.printStackTrace();
+ label3:$stack6=new java.lang.StringBuilder;
+ $stack6#java.lang.StringBuilder();
+ $stack6 = $stack6.append(campo);
+ $stack6 = $stack6.append("</select>\n");
+ UF = $stack6.toString();
+ return  UF;
+ catch java.lang.Exception: label0 - label2 : label4;
+} 
+

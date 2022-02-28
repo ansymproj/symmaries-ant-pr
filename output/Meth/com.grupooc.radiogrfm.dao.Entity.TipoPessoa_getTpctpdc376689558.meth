@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.dao.Entity.TipoPessoa:getTpctpdc()
+{
+java.lang.String $stack1;
+  $stack1=this.tpctpdc;
+ return  $stack1;
+ } 
+

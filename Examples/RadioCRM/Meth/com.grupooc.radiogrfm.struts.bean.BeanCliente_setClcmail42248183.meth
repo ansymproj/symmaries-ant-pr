@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcmail(java.lang.String clcmail)
+{
+this.clcmail=clcmail;
+ return;
+ } 
+

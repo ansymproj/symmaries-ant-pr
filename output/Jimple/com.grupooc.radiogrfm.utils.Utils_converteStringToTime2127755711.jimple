@@ -1,0 +1,37 @@
+    public static java.sql.Time converteStringToTime(java.lang.String)
+    {
+        java.lang.String time;
+        java.sql.Time x;
+        java.lang.Exception $stack4;
+
+        time := @parameter0: java.lang.String;
+
+        x = null;
+/*60*/
+
+     label1:
+        if time == null goto label2;
+/*62*/
+
+        x = staticinvoke <java.sql.Time: java.sql.Time valueOf(java.lang.String)>(time);
+/*63*/
+/*63*/
+
+     label2:
+        goto label4;
+/*67*/
+
+     label3:
+        $stack4 := @caughtexception;
+/*67*/
+
+        virtualinvoke $stack4.<java.lang.Exception: void printStackTrace()>();
+/*66*/
+
+     label4:
+        return x;
+/*68*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

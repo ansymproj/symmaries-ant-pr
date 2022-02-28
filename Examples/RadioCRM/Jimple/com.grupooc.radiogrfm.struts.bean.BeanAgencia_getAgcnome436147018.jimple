@@ -1,0 +1,14 @@
+    public java.lang.String getAgcnome()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanAgencia this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanAgencia;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String agcnome>;
+/*52*/
+
+        return $stack1;
+/*52*/
+    }
+

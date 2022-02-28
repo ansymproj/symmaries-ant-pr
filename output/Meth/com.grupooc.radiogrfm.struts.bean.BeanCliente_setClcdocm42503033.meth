@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClcdocm(java.lang.String clcdocm)
+{
+this.clcdocm=clcdocm;
+ return;
+ } 
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCliente:setClccell (java.lang.String
+                                                                 clccell) {
+  guard = tt;
+  ret(obj_level(clccell)) = if ¬clccell.~>this ∨ pc ⊔ level(clccell) = ⊥ then obj_level(clccell) else if clccell.~>this ∧ pc ⊔ level(clccell) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clccell) ⊔ obj_level(clccell) ⊔ obj_level(this);
+  ret(clccell.~>clccell) = clccell.~>clccell ∨ clccell.~>this;
+  ret(clccell.~>this) = clccell.~>this;
+  ret(this.~>clccell) = tt;
+  ret(this.~>this) = clccell.~>this ∨ this.~>this;
+}

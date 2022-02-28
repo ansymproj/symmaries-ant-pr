@@ -1,0 +1,14 @@
+    public java.lang.Integer getTpncodg()
+    {
+        com.grupooc.radiogrfm.dao.Entity.TipoPessoa this;
+        java.lang.Integer $stack1;
+
+        this := @this: com.grupooc.radiogrfm.dao.Entity.TipoPessoa;
+
+        $stack1 = this.<com.grupooc.radiogrfm.dao.Entity.TipoPessoa: java.lang.Integer tpncodg>;
+/*14*/
+
+        return $stack1;
+/*14*/
+    }
+

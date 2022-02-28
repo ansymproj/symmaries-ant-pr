@@ -1,0 +1,16 @@
+    public void setCtcnmep(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContato this;
+        java.lang.String ctcnmep;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContato;
+
+        ctcnmep := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String ctcnmep> = ctcnmep;
+/*32*/
+
+        return;
+/*33*/
+    }
+

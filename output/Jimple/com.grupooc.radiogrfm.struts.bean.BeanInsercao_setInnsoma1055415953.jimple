@@ -1,0 +1,16 @@
+    public void setInnsoma(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao this;
+        java.lang.String innsoma;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanInsercao;
+
+        innsoma := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String innsoma> = innsoma;
+/*27*/
+
+        return;
+/*28*/
+    }
+

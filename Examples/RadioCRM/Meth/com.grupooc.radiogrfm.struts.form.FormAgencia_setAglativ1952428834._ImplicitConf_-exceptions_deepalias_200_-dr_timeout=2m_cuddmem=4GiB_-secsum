@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormAgencia:setAglativ (java.lang.String
+                                                                 aglativ) {
+  guard = tt;
+  ret(obj_level(aglativ)) = if ¬aglativ.~>this ∨ pc ⊔ level(aglativ) = ⊥ then obj_level(aglativ) else if aglativ.~>this ∧ pc ⊔ level(aglativ) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(aglativ) ⊔ obj_level(aglativ) ⊔ obj_level(this);
+  ret(aglativ.~>aglativ) = aglativ.~>aglativ ∨ aglativ.~>this;
+  ret(aglativ.~>this) = aglativ.~>this;
+  ret(this.~>aglativ) = tt;
+  ret(this.~>this) = aglativ.~>this ∨ this.~>this;
+}

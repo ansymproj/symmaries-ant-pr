@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanTipoPessoa:setTpctpdc(java.lang.String tpctpdc)
+{
+this.tpctpdc=tpctpdc;
+ return;
+ } 
+

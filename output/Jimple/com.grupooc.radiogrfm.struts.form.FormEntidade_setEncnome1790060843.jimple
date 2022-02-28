@@ -1,0 +1,16 @@
+    public void setEncnome(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encnome;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encnome := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encnome> = encnome;
+/*54*/
+
+        return;
+/*55*/
+    }
+

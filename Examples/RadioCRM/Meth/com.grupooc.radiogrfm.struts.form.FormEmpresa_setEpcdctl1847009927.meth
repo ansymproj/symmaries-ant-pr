@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEmpresa:setEpcdctl(java.lang.String epcdctl)
+{
+this.epcdctl=epcdctl;
+ return;
+ } 
+

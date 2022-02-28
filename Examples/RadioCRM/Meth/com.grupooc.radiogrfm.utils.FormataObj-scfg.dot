@@ -1,0 +1,105 @@
+digraph G {
+  node [shape=box, ];
+  "pc-1_js1" [label="〈com.grupooc.radiogrfm.utils.FormataObj ()〉\n\
+tt", ];
+  "pc0_js1" [label="〈this#java.lang.Object (), js1〉\n\
+tt", ];
+  "pc1_js1" [label="〈$stack1 = new java.util.Locale, js1〉", ];
+  "pc2_js1" [label="〈$stack1#java.util.Locale (\"pt\", \"BR\"), js1〉\n\
+tt",
+             ];
+  "pc3_js1" [label="〈this.local = $stack1, js1〉", ];
+  "pc4_js1" [label="〈$stack2 = new java.text.DecimalFormatSymbols, js1〉", ];
+  "pc5_js1" [label="〈$stack1 = this.local, js1〉", ];
+  "pc6_js1" [label="〈$stack2#java.text.DecimalFormatSymbols ($stack1), js1〉\n\
+tt",
+             ];
+  "pc7_js1" [label="〈this.formatSymbols = $stack2, js1〉", ];
+  "pc8_js1" [label="〈return, js1〉", ];
+  "pc9_js1" [label="〈sink, js1〉\n\
+obj_level(this) ⊑ ret(obj_level(this))' ∧ (ret(this.~>this)' ∨ ¬this.~>this)",
+             ];
+  
+  
+  "pc-1_js1" -> "pc0_js1" [label="ok(com.grupooc.radiogrfm.utils.FormataObj),\n\
+{ret(this.~>this)' := ret(this.~>this),\n\
+ ret(obj_level(this))' := ret(obj_level(this))}",
+                           ];
+  "pc0_js1" -> "pc1_js1" [label="tt,\n\
+{$stack1.~>$stack1 := ff,\n\
+ $stack1.~>$stack2 := ff,\n\
+ $stack2.~>$stack1 := ff,\n\
+ $stack2.~>$stack2 := ff,\n\
+ obj_level($stack1) := ⊥,\n\
+ obj_level($stack2) := ⊥,\n\
+ obj_level(this) := pc ⊔ level(this) ⊔ obj_level(this)}",
+                          ];
+  "pc1_js1" -> "pc2_js1" [label="tt,\n\
+{$stack1.~>$stack1 := ff,\n\
+ $stack1.~>$stack2 := ff,\n\
+ $stack1.~>this := ff,\n\
+ $stack2.~>$stack1 := ff,\n\
+ this.~>$stack1 := ff,\n\
+ level($stack1) := pc,\n\
+ obj_level($stack1) := pc}",
+                          ];
+  "pc2_js1" -> "pc3_js1" [label="tt,\n\
+{$stack2.~>$stack2 := ff,\n\
+ $stack2.~>this := ff,\n\
+ this.~>$stack2 := ff,\n\
+ obj_level($stack1) := pc,\n\
+ obj_level($stack2) := ⊥}",
+                          ];
+  "pc3_js1" -> "pc4_js1" [label="tt,\n\
+{$stack1.~>$stack1 := ff,\n\
+ $stack1.~>$stack2 := ff,\n\
+ $stack2.~>$stack1 := ff,\n\
+ $stack2.~>$stack2 := ff,\n\
+ $stack2.~>this := ff,\n\
+ this.~>$stack1 := tt,\n\
+ this.~>$stack2 := ff,\n\
+ obj_level($stack1) := pc,\n\
+ obj_level($stack2) := ⊥,\n\
+ obj_level(this) := pc ⊔ obj_level(this)}",
+                          ];
+  "pc4_js1" -> "pc5_js1" [label="tt,\n\
+{$stack1.~>$stack2 := ff,\n\
+ $stack2.~>$stack1 := ff,\n\
+ $stack2.~>$stack2 := ff,\n\
+ $stack2.~>this := ff,\n\
+ this.~>$stack2 := ff,\n\
+ level($stack2) := pc,\n\
+ obj_level($stack2) := pc}",
+                          ];
+  "pc5_js1" -> "pc6_js1" [label="tt,\n\
+{$stack1.~>$stack1 := tt,\n\
+ $stack1.~>$stack2 := ff,\n\
+ $stack1.~>this := this.~>this,\n\
+ $stack2.~>$stack1 := ff,\n\
+ this.~>$stack1 := tt,\n\
+ level($stack1) := pc ⊔ level(this) ⊔ obj_level(this),\n\
+ obj_level($stack1) := obj_level(this)}",
+                          ];
+  "pc6_js1" -> "pc7_js1" [label="tt,\n\
+{$stack1.~>$stack1 := tt,\n\
+ $stack2.~>$stack2 := ff,\n\
+ $stack2.~>this := ff,\n\
+ this.~>$stack1 := tt,\n\
+ this.~>$stack2 := ff,\n\
+ this.~>this := $stack1.~>this ∨ this.~>this,\n\
+ obj_level($stack2) := pc ⊔ level($stack1) ⊔ obj_level($stack1)}",
+                          ];
+  "pc7_js1" -> "pc8_js1" [label="tt,\n\
+{$stack1.~>$stack1 := tt,\n\
+ $stack1.~>$stack2 := $stack1.~>this,\n\
+ $stack2.~>$stack1 := ff,\n\
+ $stack2.~>$stack2 := ff,\n\
+ this.~>$stack1 := tt,\n\
+ this.~>$stack2 := tt,\n\
+ obj_level($stack1) := obj_level($stack1) ⊔ (if $stack1.~>this then pc ⊔ obj_level($stack2) else ⊥),\n\
+ obj_level(this) := pc ⊔ obj_level($stack2) ⊔ obj_level(this)}",
+                          ];
+  "pc8_js1" -> "pc9_js1" [label="tt,\n\
+{ϕ := S8}", ];
+  
+  }

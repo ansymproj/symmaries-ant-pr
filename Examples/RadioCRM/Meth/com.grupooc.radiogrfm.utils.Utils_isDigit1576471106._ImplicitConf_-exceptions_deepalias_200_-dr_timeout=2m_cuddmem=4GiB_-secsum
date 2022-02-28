@@ -1,0 +1,6 @@
+static boolean com.grupooc.radiogrfm.utils.Utils:isDigit (java.lang.String s) {
+  guard = tt;
+  ret(level()) = pc ⊔ level(s) ⊔ obj_level(s);
+  ret(obj_level(s)) = obj_level(s);
+  ret(s.~>s) = s.~>s;
+}

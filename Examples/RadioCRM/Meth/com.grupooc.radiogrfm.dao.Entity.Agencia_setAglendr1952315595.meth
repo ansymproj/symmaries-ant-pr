@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.Agencia:setAglendr(java.lang.String aglendr)
+{
+this.aglendr=aglendr;
+ return;
+ } 
+

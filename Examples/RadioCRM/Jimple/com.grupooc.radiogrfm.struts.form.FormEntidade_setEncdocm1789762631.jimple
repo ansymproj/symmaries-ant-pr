@@ -1,0 +1,16 @@
+    public void setEncdocm(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encdocm;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encdocm := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encdocm> = encdocm;
+/*114*/
+
+        return;
+/*115*/
+    }
+

@@ -1,0 +1,16 @@
+    public void setPgyvalr(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanPrograma this;
+        java.lang.String pgyvalr;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanPrograma;
+
+        pgyvalr := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanPrograma: java.lang.String pgyvalr> = pgyvalr;
+/*51*/
+
+        return;
+/*52*/
+    }
+

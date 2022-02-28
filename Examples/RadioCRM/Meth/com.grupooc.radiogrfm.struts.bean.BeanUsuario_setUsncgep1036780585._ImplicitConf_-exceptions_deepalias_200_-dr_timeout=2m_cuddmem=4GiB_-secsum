@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanUsuario:setUsncgep (java.lang.String
+                                                                 usncgep) {
+  guard = tt;
+  ret(obj_level(this)) = pc ⊔ level(usncgep) ⊔ obj_level(this) ⊔ obj_level(usncgep);
+  ret(obj_level(usncgep)) = if ¬usncgep.~>this ∨ pc ⊔ level(usncgep) = ⊥ then obj_level(usncgep) else if usncgep.~>this ∧ pc ⊔ level(usncgep) = ⊤ then ⊤ else ⊥;
+  ret(this.~>this) = this.~>this ∨ usncgep.~>this;
+  ret(this.~>usncgep) = tt;
+  ret(usncgep.~>this) = usncgep.~>this;
+  ret(usncgep.~>usncgep) = usncgep.~>this ∨ usncgep.~>usncgep;
+}

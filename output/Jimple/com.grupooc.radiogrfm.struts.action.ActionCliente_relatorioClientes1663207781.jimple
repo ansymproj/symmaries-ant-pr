@@ -1,0 +1,77 @@
+    public org.apache.struts.action.ActionForward relatorioClientes(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionCliente this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        com.grupooc.radiogrfm.struts.bean.BeanEmpresa beanEmpresa;
+        java.util.HashMap map;
+        javax.servlet.http.HttpSession $stack7;
+        java.lang.Object $stack8;
+        java.lang.Integer $stack11;
+        java.lang.String $stack13;
+        java.lang.Exception $stack15;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionCliente;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        $stack7 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*381*/
+
+        $stack8 = interfaceinvoke $stack7.<javax.servlet.http.HttpSession: java.lang.Object getAttribute(java.lang.String)>("empresa");
+/*381*/
+
+        beanEmpresa = (com.grupooc.radiogrfm.struts.bean.BeanEmpresa) $stack8;
+/*381*/
+
+     label1:
+        map = new java.util.HashMap;
+/*384*/
+
+        specialinvoke map.<java.util.HashMap: void <init>()>();
+/*384*/
+
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("REPORT_NAME", "clientes_ativos");
+/*387*/
+
+        $stack11 = new java.lang.Integer;
+/*388*/
+
+        $stack13 = virtualinvoke beanEmpresa.<com.grupooc.radiogrfm.struts.bean.BeanEmpresa: java.lang.String getEpncodg()>();
+/*388*/
+
+        specialinvoke $stack11.<java.lang.Integer: void <init>(java.lang.String)>($stack13);
+/*388*/
+
+        interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("EMPRESA", $stack11);
+/*388*/
+
+        staticinvoke <com.grupooc.radiogrfm.utils.GeraRelatorio: void geracao(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map,boolean)>(request, response, map, 0);
+/*390*/
+
+     label2:
+        goto label4;
+/*394*/
+
+     label3:
+        $stack15 := @caughtexception;
+/*396*/
+
+        virtualinvoke $stack15.<java.lang.Exception: void printStackTrace()>();
+/*393*/
+
+     label4:
+        return null;
+/*396*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

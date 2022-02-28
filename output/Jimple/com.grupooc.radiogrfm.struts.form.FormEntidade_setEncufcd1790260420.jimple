@@ -1,0 +1,16 @@
+    public void setEncufcd(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encufcd;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encufcd := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encufcd> = encufcd;
+/*204*/
+
+        return;
+/*205*/
+    }
+

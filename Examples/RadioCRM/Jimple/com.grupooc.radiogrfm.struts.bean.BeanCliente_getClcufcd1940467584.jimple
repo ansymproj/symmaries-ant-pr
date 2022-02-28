@@ -1,0 +1,14 @@
+    public java.lang.String getClcufcd()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clcufcd>;
+/*167*/
+
+        return $stack1;
+/*167*/
+    }
+

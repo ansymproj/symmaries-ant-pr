@@ -1,0 +1,14 @@
+    public java.lang.String getCtcmatr()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContato this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContato;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanContato: java.lang.String ctcmatr>;
+/*53*/
+
+        return $stack1;
+/*53*/
+    }
+

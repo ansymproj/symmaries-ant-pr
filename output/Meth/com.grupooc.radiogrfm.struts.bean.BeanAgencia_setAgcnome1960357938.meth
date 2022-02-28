@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAgcnome(java.lang.String agcnome)
+{
+this.agcnome=agcnome;
+ return;
+ } 
+

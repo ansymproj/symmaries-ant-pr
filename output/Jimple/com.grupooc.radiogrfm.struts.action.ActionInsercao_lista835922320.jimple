@@ -1,0 +1,80 @@
+    public org.apache.struts.action.ActionForward lista(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionInsercao this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        java.lang.String crncodg;
+        com.grupooc.radiogrfm.dao.ModelInsercao $stack10;
+        int $stack11;
+        java.util.ArrayList $stack12;
+        java.lang.Exception $stack17;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionInsercao;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*29*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*29*/
+
+     label1:
+        crncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("crncodg");
+/*32*/
+/*32*/
+
+        $stack10 = staticinvoke <com.grupooc.radiogrfm.dao.ModelInsercao: com.grupooc.radiogrfm.dao.ModelInsercao getInstance()>();
+/*33*/
+
+        $stack11 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(crncodg);
+/*33*/
+
+        $stack12 = virtualinvoke $stack10.<com.grupooc.radiogrfm.dao.ModelInsercao: java.util.ArrayList getInsercoesDoContrato(int)>($stack11);
+/*33*/
+
+        interfaceinvoke request.<javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("ls_insercao", $stack12);
+/*33*/
+
+        $stack10 = staticinvoke <com.grupooc.radiogrfm.dao.ModelInsercao: com.grupooc.radiogrfm.dao.ModelInsercao getInstance()>();
+/*34*/
+
+        $stack11 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(crncodg);
+/*34*/
+
+        crncodg = virtualinvoke $stack10.<com.grupooc.radiogrfm.dao.ModelInsercao: java.lang.String valorInsercoesDoContrato(int)>($stack11);
+/*34*/
+
+        interfaceinvoke request.<javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("valor", crncodg);
+/*34*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/insercaoLista.do");
+/*35*/
+
+     label2:
+        goto label4;
+/*39*/
+
+     label3:
+        $stack17 := @caughtexception;
+/*41*/
+
+        virtualinvoke $stack17.<java.lang.Exception: void printStackTrace()>();
+/*38*/
+
+     label4:
+        return fw;
+/*41*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

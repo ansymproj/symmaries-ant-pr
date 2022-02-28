@@ -1,0 +1,69 @@
+    public org.apache.struts.action.ActionForward novo(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionMetaMes this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        javax.servlet.http.HttpSession $stack8;
+        com.grupooc.radiogrfm.dao.ModelMeses $stack11;
+        java.util.ArrayList $stack12;
+        java.lang.Exception $stack13;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionMetaMes;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*71*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*71*/
+
+     label1:
+        $stack8 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*75*/
+
+        interfaceinvoke $stack8.<javax.servlet.http.HttpSession: void removeAttribute(java.lang.String)>("formMetaMes");
+/*75*/
+
+        $stack8 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*76*/
+
+        $stack11 = staticinvoke <com.grupooc.radiogrfm.dao.ModelMeses: com.grupooc.radiogrfm.dao.ModelMeses getInstance()>();
+/*76*/
+
+        $stack12 = virtualinvoke $stack11.<com.grupooc.radiogrfm.dao.ModelMeses: java.util.ArrayList getMeses()>();
+/*76*/
+
+        interfaceinvoke $stack8.<javax.servlet.http.HttpSession: void setAttribute(java.lang.String,java.lang.Object)>("ls_meses", $stack12);
+/*76*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/metaMesNovo.do");
+/*78*/
+
+     label2:
+        goto label4;
+/*82*/
+
+     label3:
+        $stack13 := @caughtexception;
+/*84*/
+
+        virtualinvoke $stack13.<java.lang.Exception: void printStackTrace()>();
+/*81*/
+
+     label4:
+        return fw;
+/*84*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

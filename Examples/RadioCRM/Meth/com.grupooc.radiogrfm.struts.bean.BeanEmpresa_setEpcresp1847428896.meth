@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpcresp(java.lang.String epcresp)
+{
+this.epcresp=epcresp;
+ return;
+ } 
+

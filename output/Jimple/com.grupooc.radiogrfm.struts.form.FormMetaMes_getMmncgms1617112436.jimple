@@ -1,0 +1,14 @@
+    public java.lang.String getMmncgms()
+    {
+        com.grupooc.radiogrfm.struts.form.FormMetaMes this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormMetaMes;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormMetaMes: java.lang.String mmncgms>;
+/*56*/
+
+        return $stack1;
+/*56*/
+    }
+

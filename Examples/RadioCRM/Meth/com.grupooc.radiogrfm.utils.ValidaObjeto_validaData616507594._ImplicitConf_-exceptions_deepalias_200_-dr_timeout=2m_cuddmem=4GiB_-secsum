@@ -1,0 +1,7 @@
+static boolean com.grupooc.radiogrfm.utils.ValidaObjeto:validaData (java.lang.String
+                                                                    data) {
+  guard = tt;
+  ret(level()) = pc ⊔ level(data) ⊔ obj_level(data);
+  ret(obj_level(data)) = obj_level(data);
+  ret(data.~>data) = data.~>data;
+}

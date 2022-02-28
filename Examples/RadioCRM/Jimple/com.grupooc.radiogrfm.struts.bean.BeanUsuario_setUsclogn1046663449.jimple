@@ -1,0 +1,16 @@
+    public void setUsclogn(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanUsuario this;
+        java.lang.String usclogn;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanUsuario;
+
+        usclogn := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanUsuario: java.lang.String usclogn> = usclogn;
+/*45*/
+
+        return;
+/*46*/
+    }
+

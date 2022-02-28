@@ -1,0 +1,69 @@
+    public org.apache.struts.action.ActionForward dados(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionAgencia this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        java.lang.String agncodg;
+        com.grupooc.radiogrfm.struts.bean.BeanAgencia agencia;
+        com.grupooc.radiogrfm.dao.ModelAgencia $stack10;
+        int $stack11;
+        java.lang.Exception $stack13;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionAgencia;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*95*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*95*/
+
+     label1:
+        agncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("agncodg");
+/*99*/
+/*99*/
+
+        $stack10 = staticinvoke <com.grupooc.radiogrfm.dao.ModelAgencia: com.grupooc.radiogrfm.dao.ModelAgencia getInstance()>();
+/*100*/
+
+        $stack11 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(agncodg);
+/*100*/
+
+        agencia = virtualinvoke $stack10.<com.grupooc.radiogrfm.dao.ModelAgencia: com.grupooc.radiogrfm.struts.bean.BeanAgencia getAgencia(int)>($stack11);
+/*100*/
+/*100*/
+
+        interfaceinvoke request.<javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("agencia", agencia);
+/*101*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/agenciaDados.do");
+/*103*/
+
+     label2:
+        goto label4;
+/*107*/
+
+     label3:
+        $stack13 := @caughtexception;
+/*109*/
+
+        virtualinvoke $stack13.<java.lang.Exception: void printStackTrace()>();
+/*106*/
+
+     label4:
+        return fw;
+/*109*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

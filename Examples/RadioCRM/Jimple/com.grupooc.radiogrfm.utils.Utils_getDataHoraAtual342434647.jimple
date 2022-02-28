@@ -1,0 +1,25 @@
+    public static java.lang.String getDataHoraAtual()
+    {
+        java.text.SimpleDateFormat $stack0;
+        java.util.Date $stack1;
+        java.lang.String $stack2;
+
+        $stack0 = new java.text.SimpleDateFormat;
+/*132*/
+
+        specialinvoke $stack0.<java.text.SimpleDateFormat: void <init>(java.lang.String)>("dd/MM/yyyy HH:mm:ss");
+/*132*/
+
+        $stack1 = new java.util.Date;
+/*132*/
+
+        specialinvoke $stack1.<java.util.Date: void <init>()>();
+/*132*/
+
+        $stack2 = virtualinvoke $stack0.<java.text.SimpleDateFormat: java.lang.String format(java.util.Date)>($stack1);
+/*132*/
+
+        return $stack2;
+/*132*/
+    }
+

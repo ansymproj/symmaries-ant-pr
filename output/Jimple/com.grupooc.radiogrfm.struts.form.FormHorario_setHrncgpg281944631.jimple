@@ -1,0 +1,16 @@
+    public void setHrncgpg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormHorario this;
+        java.lang.String hrncgpg;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormHorario;
+
+        hrncgpg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormHorario: java.lang.String hrncgpg> = hrncgpg;
+/*27*/
+
+        return;
+/*28*/
+    }
+

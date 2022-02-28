@@ -1,0 +1,68 @@
+    public org.apache.struts.action.ActionForward lista(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionMeta this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        java.lang.String ctncodg;
+        com.grupooc.radiogrfm.dao.ModelMeta $stack10;
+        int $stack11;
+        java.util.ArrayList $stack12;
+        java.lang.Exception $stack13;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionMeta;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*25*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*25*/
+
+     label1:
+        ctncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("ctncodg");
+/*28*/
+/*28*/
+
+        $stack10 = staticinvoke <com.grupooc.radiogrfm.dao.ModelMeta: com.grupooc.radiogrfm.dao.ModelMeta getInstance()>();
+/*29*/
+
+        $stack11 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(ctncodg);
+/*29*/
+
+        $stack12 = virtualinvoke $stack10.<com.grupooc.radiogrfm.dao.ModelMeta: java.util.ArrayList getMetasDoContato(int)>($stack11);
+/*29*/
+
+        interfaceinvoke request.<javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("ls_meta", $stack12);
+/*29*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/metaLista.do");
+/*30*/
+
+     label2:
+        goto label4;
+/*34*/
+
+     label3:
+        $stack13 := @caughtexception;
+/*36*/
+
+        virtualinvoke $stack13.<java.lang.Exception: void printStackTrace()>();
+/*33*/
+
+     label4:
+        return fw;
+/*36*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

@@ -1,0 +1,71 @@
+    public static java.lang.String toCapitazile(java.lang.String, java.util.Locale)
+    {
+        java.lang.String str, $stack4;
+        java.util.Locale locale;
+        int $stack2;
+        java.lang.StringBuilder $stack3;
+
+        str := @parameter0: java.lang.String;
+
+        locale := @parameter1: java.util.Locale;
+
+        if str == null goto label1;
+/*362*/
+
+        $stack2 = virtualinvoke str.<java.lang.String: int length()>();
+/*362*/
+
+        if $stack2 != 0 goto label2;
+/*362*/
+
+     label1:
+        goto label5;
+/*362*/
+
+     label2:
+        $stack3 = new java.lang.StringBuilder;
+/*362*/
+
+        specialinvoke $stack3.<java.lang.StringBuilder: void <init>()>();
+/*362*/
+
+        $stack4 = virtualinvoke str.<java.lang.String: java.lang.String substring(int,int)>(0, 1);
+/*362*/
+
+        $stack4 = virtualinvoke $stack4.<java.lang.String: java.lang.String toUpperCase(java.util.Locale)>(locale);
+/*362*/
+
+        $stack3 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack4);
+/*362*/
+
+        $stack2 = virtualinvoke str.<java.lang.String: int length()>();
+/*362*/
+
+        if $stack2 != 1 goto label3;
+/*362*/
+
+        str = "";
+/*362*/
+
+        goto label4;
+/*362*/
+
+     label3:
+        str = virtualinvoke str.<java.lang.String: java.lang.String substring(int)>(1);
+/*362*/
+
+        str = virtualinvoke str.<java.lang.String: java.lang.String toLowerCase(java.util.Locale)>(locale);
+/*362*/
+
+     label4:
+        $stack3 = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(str);
+/*362*/
+
+        str = virtualinvoke $stack3.<java.lang.StringBuilder: java.lang.String toString()>();
+/*362*/
+
+     label5:
+        return str;
+/*362*/
+    }
+

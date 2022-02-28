@@ -1,0 +1,14 @@
+    public java.lang.String getUscpsw2()
+    {
+        com.grupooc.radiogrfm.struts.form.FormUsuario this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormUsuario;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormUsuario: java.lang.String uscpsw2>;
+/*62*/
+
+        return $stack1;
+/*62*/
+    }
+

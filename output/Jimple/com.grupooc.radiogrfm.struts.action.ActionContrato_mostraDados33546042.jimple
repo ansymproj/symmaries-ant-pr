@@ -1,0 +1,69 @@
+    public org.apache.struts.action.ActionForward mostraDados(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionContrato this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        java.lang.String crncodg;
+        com.grupooc.radiogrfm.struts.bean.BeanContrato contrato;
+        com.grupooc.radiogrfm.dao.ModelContrato $stack10;
+        int $stack11;
+        java.lang.Exception $stack13;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionContrato;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*110*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*110*/
+
+     label1:
+        crncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("crncodg");
+/*114*/
+/*114*/
+
+        $stack10 = staticinvoke <com.grupooc.radiogrfm.dao.ModelContrato: com.grupooc.radiogrfm.dao.ModelContrato getInstance()>();
+/*115*/
+
+        $stack11 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(crncodg);
+/*115*/
+
+        contrato = virtualinvoke $stack10.<com.grupooc.radiogrfm.dao.ModelContrato: com.grupooc.radiogrfm.struts.bean.BeanContrato getContrato(int)>($stack11);
+/*115*/
+/*115*/
+
+        interfaceinvoke request.<javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("contrato", contrato);
+/*117*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/contratoDados.do");
+/*119*/
+
+     label2:
+        goto label4;
+/*123*/
+
+     label3:
+        $stack13 := @caughtexception;
+/*125*/
+
+        virtualinvoke $stack13.<java.lang.Exception: void printStackTrace()>();
+/*122*/
+
+     label4:
+        return fw;
+/*125*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

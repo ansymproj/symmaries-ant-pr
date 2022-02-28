@@ -1,0 +1,14 @@
+    public java.lang.String getEpcufcd()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanEmpresa this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanEmpresa;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanEmpresa: java.lang.String epcufcd>;
+/*106*/
+
+        return $stack1;
+/*106*/
+    }
+

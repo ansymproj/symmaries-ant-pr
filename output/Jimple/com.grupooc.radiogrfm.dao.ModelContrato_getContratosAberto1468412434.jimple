@@ -1,0 +1,55 @@
+    public java.util.ArrayList getContratosAberto(int)
+    {
+        com.grupooc.radiogrfm.dao.ModelContrato this;
+        int epncodg;
+        java.util.ArrayList contatos;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack6;
+        java.util.List $stack8;
+        java.lang.Exception $stack10;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelContrato;
+
+        epncodg := @parameter0: int;
+
+        contatos = new java.util.ArrayList;
+/*19*/
+
+        specialinvoke contatos.<java.util.ArrayList: void <init>()>();
+/*19*/
+
+     label1:
+        $stack6 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*22*/
+
+        st = interfaceinvoke $stack6.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" SELECT * FROM VW_CONTRATO WHERE \'NOW\' <= CRDTERM AND CRNCGEP = ? ORDER BY CRDTERM DESC");
+/*22*/
+/*22*/
+
+        interfaceinvoke st.<java.sql.PreparedStatement: void setInt(int,int)>(1, epncodg);
+/*23*/
+
+        $stack8 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.List getObjectsStr(java.sql.PreparedStatement,java.lang.Class)>(st, class "Lcom/grupooc/radiogrfm/struts/bean/BeanContrato;");
+/*25*/
+
+        virtualinvoke contatos.<java.util.ArrayList: boolean addAll(java.util.Collection)>($stack8);
+/*25*/
+
+     label2:
+        goto label4;
+/*29*/
+
+     label3:
+        $stack10 := @caughtexception;
+/*30*/
+
+        virtualinvoke $stack10.<java.lang.Exception: void printStackTrace()>();
+/*28*/
+
+     label4:
+        return contatos;
+/*30*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

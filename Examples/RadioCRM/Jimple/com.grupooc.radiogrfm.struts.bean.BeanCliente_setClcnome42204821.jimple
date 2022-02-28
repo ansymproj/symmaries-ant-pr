@@ -1,0 +1,16 @@
+    public void setClcnome(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanCliente this;
+        java.lang.String clcnome;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanCliente;
+
+        clcnome := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanCliente: java.lang.String clcnome> = clcnome;
+/*92*/
+
+        return;
+/*93*/
+    }
+

@@ -1,0 +1,195 @@
+    private static java.lang.String ordens(java.math.BigInteger, int)
+    {
+        java.math.BigInteger numero, $stack6;
+        int grandeza, menor, proximoMenor;
+        java.math.BigInteger[] resultado;
+        boolean $stack7;
+        long $stack13;
+        java.lang.StringBuilder $stack17;
+        java.lang.String $stack19;
+        java.lang.String[] $stack22;
+
+        numero := @parameter0: java.math.BigInteger;
+
+        grandeza := @parameter1: int;
+
+        $stack6 = <java.math.BigInteger: java.math.BigInteger ZERO>;
+/*108*/
+
+        $stack7 = virtualinvoke numero.<java.math.BigInteger: boolean equals(java.lang.Object)>($stack6);
+/*108*/
+
+        if $stack7 == 0 goto label1;
+/*108*/
+
+        return "";
+/*109*/
+
+     label1:
+        $stack6 = <com.grupooc.radiogrfm.utils.Extenso: java.math.BigInteger CEM>;
+/*110*/
+
+        menor = virtualinvoke numero.<java.math.BigInteger: int compareTo(java.math.BigInteger)>($stack6);
+/*110*/
+
+        if menor != -1 goto label2;
+/*110*/
+
+        $stack13 = virtualinvoke numero.<java.math.BigInteger: long longValue()>();
+/*111*/
+
+        grandeza = (int) $stack13;
+/*111*/
+
+        $stack19 = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String centenas(int)>(grandeza);
+/*111*/
+
+        return $stack19;
+/*111*/
+
+     label2:
+        $stack6 = <com.grupooc.radiogrfm.utils.Extenso: java.math.BigInteger CEM>;
+/*113*/
+
+        resultado = virtualinvoke numero.<java.math.BigInteger: java.math.BigInteger[] divideAndRemainder(java.math.BigInteger)>($stack6);
+/*113*/
+/*113*/
+
+        numero = resultado[1];
+/*115*/
+
+        $stack13 = virtualinvoke numero.<java.math.BigInteger: long longValue()>();
+/*115*/
+
+        menor = (int) $stack13;
+/*115*/
+
+        numero = resultado[0];
+/*116*/
+
+        $stack6 = <com.grupooc.radiogrfm.utils.Extenso: java.math.BigInteger CEM>;
+/*117*/
+
+        $stack6 = virtualinvoke numero.<java.math.BigInteger: java.math.BigInteger remainder(java.math.BigInteger)>($stack6);
+/*117*/
+
+        $stack13 = virtualinvoke $stack6.<java.math.BigInteger: long longValue()>();
+/*117*/
+
+        proximoMenor = (int) $stack13;
+/*117*/
+
+        if proximoMenor != 0 goto label3;
+/*119*/
+
+        $stack17 = new java.lang.StringBuilder;
+/*120*/
+
+        specialinvoke $stack17.<java.lang.StringBuilder: void <init>()>();
+/*120*/
+
+        grandeza = grandeza + 1;
+/*120*/
+
+        $stack19 = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String ordens(java.math.BigInteger,int)>(numero, grandeza);
+/*120*/
+
+        $stack17 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack19);
+/*120*/
+
+        $stack19 = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String centenas(int)>(menor);
+/*120*/
+
+        $stack17 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack19);
+/*120*/
+
+        $stack19 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.String toString()>();
+/*120*/
+
+        return $stack19;
+/*120*/
+
+     label3:
+        if proximoMenor != 1 goto label4;
+/*121*/
+
+        $stack17 = new java.lang.StringBuilder;
+/*122*/
+
+        specialinvoke $stack17.<java.lang.StringBuilder: void <init>()>();
+/*122*/
+
+        proximoMenor = grandeza + 1;
+/*122*/
+
+        $stack19 = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String ordens(java.math.BigInteger,int)>(numero, proximoMenor);
+/*122*/
+
+        $stack17 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack19);
+/*122*/
+
+        $stack17 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" ");
+/*122*/
+
+        $stack22 = <com.grupooc.radiogrfm.utils.Extenso: java.lang.String[] ordensSingular>;
+/*122*/
+
+        $stack19 = $stack22[grandeza];
+/*122*/
+
+        $stack17 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack19);
+/*122*/
+
+        $stack19 = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String centenas(int)>(menor);
+/*122*/
+
+        $stack17 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack19);
+/*122*/
+
+        $stack19 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.String toString()>();
+/*122*/
+
+        return $stack19;
+/*122*/
+
+     label4:
+        $stack17 = new java.lang.StringBuilder;
+/*123*/
+
+        specialinvoke $stack17.<java.lang.StringBuilder: void <init>()>();
+/*123*/
+
+        proximoMenor = grandeza + 1;
+/*123*/
+
+        $stack19 = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String ordens(java.math.BigInteger,int)>(numero, proximoMenor);
+/*123*/
+
+        $stack17 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack19);
+/*123*/
+
+        $stack17 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" ");
+/*123*/
+
+        $stack22 = <com.grupooc.radiogrfm.utils.Extenso: java.lang.String[] ordensPlural>;
+/*123*/
+
+        $stack19 = $stack22[grandeza];
+/*123*/
+
+        $stack17 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack19);
+/*123*/
+
+        $stack19 = staticinvoke <com.grupooc.radiogrfm.utils.Extenso: java.lang.String centenas(int)>(menor);
+/*123*/
+
+        $stack17 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack19);
+/*123*/
+
+        $stack19 = virtualinvoke $stack17.<java.lang.StringBuilder: java.lang.String toString()>();
+/*123*/
+
+        return $stack19;
+/*123*/
+    }
+

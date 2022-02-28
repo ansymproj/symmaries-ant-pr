@@ -1,0 +1,33 @@
+void com.grupooc.radiogrfm.dao.ModelHorario:update(com.grupooc.radiogrfm.struts.bean.BeanHorario horario)
+{
+java.sql.PreparedStatement st;
+  java.sql.Connection $stack4;
+  java.lang.String $stack7;
+  int $stack8;
+  java.sql.Time $stack14;
+  java.lang.Exception $stack22;
+  label0:$stack4 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack4.prepareStatement(" UPDATE HORARIO SET  HRNCGPG = ?, HRNCGDS = ?, HRHINIC = ?, HRHTERM = ? WHERE HRNCODG = ?");
+ $stack7 = horario.getHrncgpg();
+ $stack8 = java.lang.Integer.parseInt($stack7);
+ st.setInt(1,$stack8);
+ $stack7 = horario.getHrncgds();
+ $stack8 = java.lang.Integer.parseInt($stack7);
+ st.setInt(2,$stack8);
+ $stack7 = horario.getHrhinic();
+ $stack14 = java.sql.Time.valueOf($stack7);
+ st.setTime(3,$stack14);
+ $stack7 = horario.getHrhterm();
+ $stack14 = java.sql.Time.valueOf($stack7);
+ st.setTime(4,$stack14);
+ $stack7 = horario.getHrncodg();
+ $stack8 = java.lang.Integer.parseInt($stack7);
+ st.setInt(5,$stack8);
+ st.executeUpdate();
+ label1:goto label2;
+ label3:$stack22 = catch;
+ $stack22.printStackTrace();
+ label2:return;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormMidia:setMdcnmep(java.lang.String mdcnmep)
+{
+this.mdcnmep=mdcnmep;
+ return;
+ } 
+

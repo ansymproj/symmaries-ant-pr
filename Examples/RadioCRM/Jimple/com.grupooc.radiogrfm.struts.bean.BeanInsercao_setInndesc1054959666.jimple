@@ -1,0 +1,16 @@
+    public void setInndesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao this;
+        java.lang.String inndesc;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanInsercao;
+
+        inndesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String inndesc> = inndesc;
+/*93*/
+
+        return;
+/*94*/
+    }
+

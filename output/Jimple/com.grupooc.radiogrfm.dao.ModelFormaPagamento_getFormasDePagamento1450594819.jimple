@@ -1,0 +1,49 @@
+    public java.util.ArrayList getFormasDePagamento()
+    {
+        com.grupooc.radiogrfm.dao.ModelFormaPagamento this;
+        java.util.ArrayList dias;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack5;
+        java.util.List $stack7;
+        java.lang.Exception $stack9;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelFormaPagamento;
+
+        dias = new java.util.ArrayList;
+/*17*/
+
+        specialinvoke dias.<java.util.ArrayList: void <init>()>();
+/*17*/
+
+     label1:
+        $stack5 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*20*/
+
+        st = interfaceinvoke $stack5.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" SELECT * FROM VW_FORMAPAGAMENTO");
+/*20*/
+/*20*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.List getObjectsStr(java.sql.PreparedStatement,java.lang.Class)>(st, class "Lcom/grupooc/radiogrfm/struts/bean/BeanFormaPagamento;");
+/*22*/
+
+        virtualinvoke dias.<java.util.ArrayList: boolean addAll(java.util.Collection)>($stack7);
+/*22*/
+
+     label2:
+        goto label4;
+/*26*/
+
+     label3:
+        $stack9 := @caughtexception;
+/*27*/
+
+        virtualinvoke $stack9.<java.lang.Exception: void printStackTrace()>();
+/*25*/
+
+     label4:
+        return dias;
+/*27*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

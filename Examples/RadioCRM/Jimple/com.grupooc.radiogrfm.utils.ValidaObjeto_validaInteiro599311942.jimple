@@ -1,0 +1,36 @@
+    public static boolean validaInteiro(java.lang.String)
+    {
+        java.lang.String numero;
+        boolean ok;
+        java.lang.Exception e;
+
+        numero := @parameter0: java.lang.String;
+
+        ok = 0;
+/*9*/
+
+     label1:
+        staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(numero);
+/*11*/
+
+        ok = 1;
+/*12*/
+
+     label2:
+        goto label4;
+/*15*/
+
+     label3:
+        e := @caughtexception;
+/*16*/
+
+        ok = 0;
+/*14*/
+
+     label4:
+        return ok;
+/*16*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

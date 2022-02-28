@@ -1,0 +1,16 @@
+    public void setCrlativ(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crlativ;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crlativ := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crlativ> = crlativ;
+/*47*/
+
+        return;
+/*48*/
+    }
+

@@ -1,0 +1,29 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionPrograma:lista(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  com.grupooc.radiogrfm.struts.bean.BeanEmpresa beanEmpresa;
+  javax.servlet.http.HttpSession $stack9;
+  java.lang.Object $stack10;
+  com.grupooc.radiogrfm.dao.ModelPrograma $stack12;
+  java.lang.String $stack13;
+  int $stack14;
+  java.util.ArrayList $stack15;
+  java.lang.Exception $stack16;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ $stack9 = request.getSession();
+ $stack10 = $stack9.getAttribute("empresa");
+ beanEmpresa=(com.grupooc.radiogrfm.struts.bean.BeanEmpresa) $stack10;
+ label0:$stack12 = com.grupooc.radiogrfm.dao.ModelPrograma.getInstance();
+ $stack13 = beanEmpresa.getEpncodg();
+ $stack14 = java.lang.Integer.parseInt($stack13);
+ $stack15 = $stack12.getProgramas($stack14);
+ request.setAttribute("ls_programa",(java.lang.Object)$stack15);
+ fw.setPath("/programaLista.do");
+ label1:goto label2;
+ label3:$stack16 = catch;
+ $stack16.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

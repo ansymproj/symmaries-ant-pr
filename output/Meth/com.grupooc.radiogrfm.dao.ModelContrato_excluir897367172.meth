@@ -1,0 +1,20 @@
+void com.grupooc.radiogrfm.dao.ModelContrato:excluir(com.grupooc.radiogrfm.struts.bean.BeanContrato contrato)
+{
+java.sql.PreparedStatement st;
+  java.sql.Connection $stack4;
+  java.lang.String $stack7;
+  int $stack8;
+  java.lang.Exception $stack10;
+  label0:$stack4 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack4.prepareStatement(" DELETE FROM CONTRATO WHERE CRNCODG = (?)");
+ $stack7 = contrato.getCrncodg();
+ $stack8 = java.lang.Integer.parseInt($stack7);
+ st.setInt(1,$stack8);
+ st.executeUpdate();
+ label1:goto label2;
+ label3:$stack10 = catch;
+ $stack10.printStackTrace();
+ label2:return;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

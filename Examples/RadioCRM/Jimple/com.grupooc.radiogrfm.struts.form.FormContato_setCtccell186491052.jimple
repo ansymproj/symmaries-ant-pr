@@ -1,0 +1,16 @@
+    public void setCtccell(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContato this;
+        java.lang.String ctccell;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContato;
+
+        ctccell := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String ctccell> = ctccell;
+/*86*/
+
+        return;
+/*87*/
+    }
+

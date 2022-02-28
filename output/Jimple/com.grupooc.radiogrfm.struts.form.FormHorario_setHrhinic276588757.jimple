@@ -1,0 +1,16 @@
+    public void setHrhinic(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormHorario this;
+        java.lang.String hrhinic;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormHorario;
+
+        hrhinic := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormHorario: java.lang.String hrhinic> = hrhinic;
+/*51*/
+
+        return;
+/*52*/
+    }
+

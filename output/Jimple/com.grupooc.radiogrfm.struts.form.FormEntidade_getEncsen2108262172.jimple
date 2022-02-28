@@ -1,0 +1,14 @@
+    public java.lang.String getEncsen2()
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encsen2>;
+/*237*/
+
+        return $stack1;
+/*237*/
+    }
+

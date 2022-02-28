@@ -1,0 +1,14 @@
+    public java.lang.String getPgncgep()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanPrograma this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanPrograma;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanPrograma: java.lang.String pgncgep>;
+/*18*/
+
+        return $stack1;
+/*18*/
+    }
+

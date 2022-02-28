@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanCondPagamento:setCpncodg (
+  java.lang.String cpncodg) {
+  guard = tt;
+  ret(obj_level(cpncodg)) = if ¬cpncodg.~>this ∨ pc ⊔ level(cpncodg) = ⊥ then obj_level(cpncodg) else if cpncodg.~>this ∧ pc ⊔ level(cpncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(cpncodg) ⊔ obj_level(cpncodg) ⊔ obj_level(this);
+  ret(cpncodg.~>cpncodg) = cpncodg.~>cpncodg ∨ cpncodg.~>this;
+  ret(cpncodg.~>this) = cpncodg.~>this;
+  ret(this.~>cpncodg) = tt;
+  ret(this.~>this) = cpncodg.~>this ∨ this.~>this;
+}

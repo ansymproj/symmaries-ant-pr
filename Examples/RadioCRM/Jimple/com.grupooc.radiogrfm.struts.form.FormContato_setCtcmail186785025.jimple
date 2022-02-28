@@ -1,0 +1,16 @@
+    public void setCtcmail(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormContato this;
+        java.lang.String ctcmail;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormContato;
+
+        ctcmail := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormContato: java.lang.String ctcmail> = ctcmail;
+/*92*/
+
+        return;
+/*93*/
+    }
+

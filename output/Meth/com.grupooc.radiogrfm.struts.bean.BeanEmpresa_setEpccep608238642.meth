@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanEmpresa:setEpccep(java.lang.String epccep)
+{
+this.epccep=epccep;
+ return;
+ } 
+

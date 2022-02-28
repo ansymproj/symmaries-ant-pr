@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClcnmep (java.lang.String
+                                                                 clcnmep) {
+  guard = tt;
+  ret(obj_level(clcnmep)) = if ¬clcnmep.~>this ∨ pc ⊔ level(clcnmep) = ⊥ then obj_level(clcnmep) else if clcnmep.~>this ∧ pc ⊔ level(clcnmep) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcnmep) ⊔ obj_level(clcnmep) ⊔ obj_level(this);
+  ret(clcnmep.~>clcnmep) = clcnmep.~>clcnmep ∨ clcnmep.~>this;
+  ret(clcnmep.~>this) = clcnmep.~>this;
+  ret(this.~>clcnmep) = tt;
+  ret(this.~>this) = clcnmep.~>this ∨ this.~>this;
+}

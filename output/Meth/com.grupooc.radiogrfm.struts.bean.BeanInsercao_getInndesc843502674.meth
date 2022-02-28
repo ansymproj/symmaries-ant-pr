@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanInsercao:getInndesc()
+{
+java.lang.String $stack1;
+  $stack1=this.inndesc;
+ return  $stack1;
+ } 
+

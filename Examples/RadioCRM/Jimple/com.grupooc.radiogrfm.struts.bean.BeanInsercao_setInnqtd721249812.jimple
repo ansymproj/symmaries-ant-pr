@@ -1,0 +1,16 @@
+    public void setInnqtd(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao this;
+        java.lang.String innqtd;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanInsercao;
+
+        innqtd := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String innqtd> = innqtd;
+/*87*/
+
+        return;
+/*88*/
+    }
+

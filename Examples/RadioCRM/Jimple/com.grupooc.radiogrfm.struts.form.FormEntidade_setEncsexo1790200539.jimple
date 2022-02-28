@@ -1,0 +1,16 @@
+    public void setEncsexo(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encsexo;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encsexo := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encsexo> = encsexo;
+/*96*/
+
+        return;
+/*97*/
+    }
+

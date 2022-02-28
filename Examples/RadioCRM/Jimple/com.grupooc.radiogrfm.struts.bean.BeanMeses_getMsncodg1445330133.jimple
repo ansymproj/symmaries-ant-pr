@@ -1,0 +1,14 @@
+    public java.lang.String getMsncodg()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMeses this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMeses;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanMeses: java.lang.String msncodg>;
+/*13*/
+
+        return $stack1;
+/*13*/
+    }
+

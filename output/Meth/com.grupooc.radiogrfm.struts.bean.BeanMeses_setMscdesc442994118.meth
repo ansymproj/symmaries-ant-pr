@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanMeses:setMscdesc(java.lang.String mscdesc)
+{
+this.mscdesc=mscdesc;
+ return;
+ } 
+

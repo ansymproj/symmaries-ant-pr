@@ -1,0 +1,16 @@
+    public void setEnctpdc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String enctpdc;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        enctpdc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String enctpdc> = enctpdc;
+/*90*/
+
+        return;
+/*91*/
+    }
+

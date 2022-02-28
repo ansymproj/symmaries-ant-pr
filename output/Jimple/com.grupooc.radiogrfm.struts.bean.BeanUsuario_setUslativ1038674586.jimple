@@ -1,0 +1,16 @@
+    public void setUslativ(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanUsuario this;
+        java.lang.String uslativ;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanUsuario;
+
+        uslativ := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanUsuario: java.lang.String uslativ> = uslativ;
+/*58*/
+
+        return;
+/*59*/
+    }
+

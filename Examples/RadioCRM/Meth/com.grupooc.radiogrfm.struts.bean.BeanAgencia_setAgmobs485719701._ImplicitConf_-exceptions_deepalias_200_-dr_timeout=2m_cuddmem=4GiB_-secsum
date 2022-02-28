@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAgmobs (java.lang.String
+                                                                agmobs) {
+  guard = tt;
+  ret(obj_level(agmobs)) = if ¬agmobs.~>this ∨ pc ⊔ level(agmobs) = ⊥ then obj_level(agmobs) else if agmobs.~>this ∧ pc ⊔ level(agmobs) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(agmobs) ⊔ obj_level(agmobs) ⊔ obj_level(this);
+  ret(agmobs.~>agmobs) = agmobs.~>agmobs ∨ agmobs.~>this;
+  ret(agmobs.~>this) = agmobs.~>this;
+  ret(this.~>agmobs) = tt;
+  ret(this.~>this) = agmobs.~>this ∨ this.~>this;
+}

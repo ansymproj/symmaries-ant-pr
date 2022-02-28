@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAgcdccd(java.lang.String agcdccd)
+{
+this.agcdccd=agcdccd;
+ return;
+ } 
+

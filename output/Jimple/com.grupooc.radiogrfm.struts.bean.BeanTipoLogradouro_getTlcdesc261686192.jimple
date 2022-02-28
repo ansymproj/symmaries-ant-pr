@@ -1,0 +1,14 @@
+    public java.lang.String getTlcdesc()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanTipoLogradouro this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanTipoLogradouro;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanTipoLogradouro: java.lang.String tlcdesc>;
+/*19*/
+
+        return $stack1;
+/*19*/
+    }
+

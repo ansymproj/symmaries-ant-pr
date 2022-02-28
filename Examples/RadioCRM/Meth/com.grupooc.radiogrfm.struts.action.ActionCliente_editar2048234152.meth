@@ -1,0 +1,54 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionCliente:editar(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  com.grupooc.radiogrfm.struts.form.FormCliente formCliente;
+  com.grupooc.radiogrfm.struts.bean.BeanEmpresa beanEmpresa;
+  java.lang.String clncodg;
+  com.grupooc.radiogrfm.struts.bean.BeanCliente cliente;
+  javax.servlet.http.HttpSession $stack11;
+  java.lang.Object $stack12;
+  com.grupooc.radiogrfm.dao.ModelCliente $stack14;
+  int $stack15;
+  com.grupooc.radiogrfm.dao.ModelTipoLogradouro $stack19;
+  java.util.ArrayList $stack20;
+  com.grupooc.radiogrfm.dao.ModelContato $stack23;
+  com.grupooc.radiogrfm.dao.ModelCidade $stack29;
+  java.lang.Exception $stack36;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ formCliente=(com.grupooc.radiogrfm.struts.form.FormCliente) form;
+ $stack11 = request.getSession();
+ $stack12 = $stack11.getAttribute("empresa");
+ beanEmpresa=(com.grupooc.radiogrfm.struts.bean.BeanEmpresa) $stack12;
+ label0:clncodg = request.getParameter("clncodg");
+ $stack14 = com.grupooc.radiogrfm.dao.ModelCliente.getInstance();
+ $stack15 = java.lang.Integer.parseInt(clncodg);
+ cliente = $stack14.getCliente($stack15);
+ $stack11 = request.getSession();
+ $stack19 = com.grupooc.radiogrfm.dao.ModelTipoLogradouro.getInstance();
+ $stack20 = $stack19.getTiposLogradouro();
+ $stack11.setAttribute("ls_tipologradouro",(java.lang.Object)$stack20);
+ $stack11 = request.getSession();
+ $stack23 = com.grupooc.radiogrfm.dao.ModelContato.getInstance();
+ clncodg = beanEmpresa.getEpncodg();
+ $stack15 = java.lang.Integer.parseInt(clncodg);
+ $stack20 = $stack23.getContatos($stack15);
+ $stack11.setAttribute("ls_contato",(java.lang.Object)$stack20);
+ $stack11 = request.getSession();
+ $stack29 = com.grupooc.radiogrfm.dao.ModelCidade.getInstance();
+ $stack20 = $stack29.getEstados();
+ $stack11.setAttribute("ls_estado",(java.lang.Object)$stack20);
+ $stack11 = request.getSession();
+ $stack29 = com.grupooc.radiogrfm.dao.ModelCidade.getInstance();
+ clncodg = cliente.getClcufcd();
+ $stack20 = $stack29.getCidadesDoEstado(clncodg);
+ $stack11.setAttribute("ls_cidade",(java.lang.Object)$stack20);
+ org.apache.commons.beanutils.BeanUtils.copyProperties((java.lang.Object)formCliente,(java.lang.Object)cliente);
+ fw.setPath("/clienteEditar.do");
+ label1:goto label2;
+ label3:$stack36 = catch;
+ $stack36.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

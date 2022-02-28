@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato:setAcncgag (
+  java.lang.String acncgag) {
+  guard = tt;
+  ret(obj_level(acncgag)) = if ¬acncgag.~>this ∨ pc ⊔ level(acncgag) = ⊥ then obj_level(acncgag) else if acncgag.~>this ∧ pc ⊔ level(acncgag) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(acncgag) ⊔ obj_level(acncgag) ⊔ obj_level(this);
+  ret(acncgag.~>acncgag) = acncgag.~>acncgag ∨ acncgag.~>this;
+  ret(acncgag.~>this) = acncgag.~>this;
+  ret(this.~>acncgag) = tt;
+  ret(this.~>this) = acncgag.~>this ∨ this.~>this;
+}

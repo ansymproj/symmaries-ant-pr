@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormCliente:setClcramo (java.lang.String
+                                                                 clcramo) {
+  guard = tt;
+  ret(obj_level(clcramo)) = if ¬clcramo.~>this ∨ pc ⊔ level(clcramo) = ⊥ then obj_level(clcramo) else if clcramo.~>this ∧ pc ⊔ level(clcramo) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(clcramo) ⊔ obj_level(clcramo) ⊔ obj_level(this);
+  ret(clcramo.~>clcramo) = clcramo.~>clcramo ∨ clcramo.~>this;
+  ret(clcramo.~>this) = clcramo.~>this;
+  ret(this.~>clcramo) = tt;
+  ret(this.~>this) = clcramo.~>this ∨ this.~>this;
+}

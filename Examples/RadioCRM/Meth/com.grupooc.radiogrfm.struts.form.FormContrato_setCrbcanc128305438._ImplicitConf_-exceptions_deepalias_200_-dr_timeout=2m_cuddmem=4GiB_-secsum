@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrbcanc (java.lang.String
+                                                                  crbcanc) {
+  guard = tt;
+  ret(obj_level(crbcanc)) = if ¬crbcanc.~>this ∨ pc ⊔ level(crbcanc) = ⊥ then obj_level(crbcanc) else if crbcanc.~>this ∧ pc ⊔ level(crbcanc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crbcanc) ⊔ obj_level(crbcanc) ⊔ obj_level(this);
+  ret(crbcanc.~>crbcanc) = crbcanc.~>crbcanc ∨ crbcanc.~>this;
+  ret(crbcanc.~>this) = crbcanc.~>this;
+  ret(this.~>crbcanc) = tt;
+  ret(this.~>this) = crbcanc.~>this ∨ this.~>this;
+}

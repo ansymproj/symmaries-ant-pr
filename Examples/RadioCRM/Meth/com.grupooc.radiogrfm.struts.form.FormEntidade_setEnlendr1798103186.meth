@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEnlendr(java.lang.String enlendr)
+{
+this.enlendr=enlendr;
+ return;
+ } 
+

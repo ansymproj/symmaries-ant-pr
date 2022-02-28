@@ -1,0 +1,14 @@
+    public java.lang.String getAcncgct()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato: java.lang.String acncgct>;
+/*22*/
+
+        return $stack1;
+/*22*/
+    }
+

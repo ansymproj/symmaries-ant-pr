@@ -1,0 +1,25 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionPrograma:editar(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  com.grupooc.radiogrfm.struts.form.FormPrograma formPrograma;
+  java.lang.String pgncodg;
+  com.grupooc.radiogrfm.struts.bean.BeanPrograma programa;
+  com.grupooc.radiogrfm.dao.ModelPrograma $stack11;
+  int $stack12;
+  java.lang.Exception $stack14;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ formPrograma=(com.grupooc.radiogrfm.struts.form.FormPrograma) form;
+ label0:pgncodg = request.getParameter("pgncodg");
+ $stack11 = com.grupooc.radiogrfm.dao.ModelPrograma.getInstance();
+ $stack12 = java.lang.Integer.parseInt(pgncodg);
+ programa = $stack11.getPrograma($stack12);
+ org.apache.commons.beanutils.BeanUtils.copyProperties((java.lang.Object)formPrograma,(java.lang.Object)programa);
+ fw.setPath("/programaEditar.do");
+ label1:goto label2;
+ label3:$stack14 = catch;
+ $stack14.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

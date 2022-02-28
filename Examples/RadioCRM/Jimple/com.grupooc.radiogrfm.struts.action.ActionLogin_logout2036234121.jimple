@@ -1,0 +1,39 @@
+    public org.apache.struts.action.ActionForward logout(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionLogin this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        javax.servlet.http.HttpSession $stack7;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionLogin;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*68*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*68*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/login.do");
+/*70*/
+
+        $stack7 = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: javax.servlet.http.HttpSession getSession()>();
+/*72*/
+
+        interfaceinvoke $stack7.<javax.servlet.http.HttpSession: void invalidate()>();
+/*72*/
+
+        return fw;
+/*74*/
+    }
+

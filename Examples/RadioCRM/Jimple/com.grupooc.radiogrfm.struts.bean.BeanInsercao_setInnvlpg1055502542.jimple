@@ -1,0 +1,16 @@
+    public void setInnvlpg(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao this;
+        java.lang.String innvlpg;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanInsercao;
+
+        innvlpg := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String innvlpg> = innvlpg;
+/*57*/
+
+        return;
+/*58*/
+    }
+

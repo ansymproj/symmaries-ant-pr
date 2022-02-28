@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormLogin:setLogin (java.lang.String
+                                                             login) {
+  guard = tt;
+  ret(obj_level(login)) = if ¬login.~>this ∨ pc ⊔ level(login) = ⊥ then obj_level(login) else if login.~>this ∧ pc ⊔ level(login) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(login) ⊔ obj_level(login) ⊔ obj_level(this);
+  ret(login.~>login) = login.~>login ∨ login.~>this;
+  ret(login.~>this) = login.~>this;
+  ret(this.~>login) = tt;
+  ret(this.~>this) = login.~>this ∨ this.~>this;
+}

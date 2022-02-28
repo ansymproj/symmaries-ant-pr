@@ -1,0 +1,14 @@
+    public java.lang.String getEpcices()
+    {
+        com.grupooc.radiogrfm.struts.form.FormEmpresa this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEmpresa;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.form.FormEmpresa: java.lang.String epcices>;
+/*58*/
+
+        return $stack1;
+/*58*/
+    }
+

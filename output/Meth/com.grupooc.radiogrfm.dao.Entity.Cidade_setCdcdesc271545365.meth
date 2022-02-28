@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.dao.Entity.Cidade:setCdcdesc(java.lang.String cdcdesc)
+{
+this.cdcdesc=cdcdesc;
+ return;
+ } 
+

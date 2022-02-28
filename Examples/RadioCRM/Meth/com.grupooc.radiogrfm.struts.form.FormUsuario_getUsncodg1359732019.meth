@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.form.FormUsuario:getUsncodg()
+{
+java.lang.String $stack1;
+  $stack1=this.usncodg;
+ return  $stack1;
+ } 
+

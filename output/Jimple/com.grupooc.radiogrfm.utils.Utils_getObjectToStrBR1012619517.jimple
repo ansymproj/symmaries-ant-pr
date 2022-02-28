@@ -1,0 +1,24 @@
+    public static java.lang.String getObjectToStrBR(java.sql.ResultSet, java.lang.String) throws java.sql.SQLException
+    {
+        java.sql.ResultSet rs;
+        java.lang.String value;
+        float $stack2;
+        java.lang.Float $stack3;
+
+        rs := @parameter0: java.sql.ResultSet;
+
+        value := @parameter1: java.lang.String;
+
+        $stack2 = interfaceinvoke rs.<java.sql.ResultSet: float getFloat(java.lang.String)>(value);
+/*354*/
+
+        $stack3 = staticinvoke <java.lang.Float: java.lang.Float valueOf(float)>($stack2);
+/*354*/
+
+        value = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.lang.String objectToStrBR(java.lang.Float)>($stack3);
+/*354*/
+
+        return value;
+/*354*/
+    }
+

@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrdinic (java.lang.String
+                                                                  crdinic) {
+  guard = tt;
+  ret(obj_level(crdinic)) = if ¬crdinic.~>this ∨ pc ⊔ level(crdinic) = ⊥ then obj_level(crdinic) else if crdinic.~>this ∧ pc ⊔ level(crdinic) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crdinic) ⊔ obj_level(crdinic) ⊔ obj_level(this);
+  ret(crdinic.~>crdinic) = crdinic.~>crdinic ∨ crdinic.~>this;
+  ret(crdinic.~>this) = crdinic.~>this;
+  ret(this.~>crdinic) = tt;
+  ret(this.~>this) = crdinic.~>this ∨ this.~>this;
+}

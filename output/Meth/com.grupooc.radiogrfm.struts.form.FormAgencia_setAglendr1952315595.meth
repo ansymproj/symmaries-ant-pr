@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormAgencia:setAglendr(java.lang.String aglendr)
+{
+this.aglendr=aglendr;
+ return;
+ } 
+

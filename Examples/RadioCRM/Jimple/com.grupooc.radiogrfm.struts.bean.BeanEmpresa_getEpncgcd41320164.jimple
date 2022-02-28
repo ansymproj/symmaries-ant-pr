@@ -1,0 +1,14 @@
+    public java.lang.String getEpncgcd()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanEmpresa this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanEmpresa;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanEmpresa: java.lang.String epncgcd>;
+/*100*/
+
+        return $stack1;
+/*100*/
+    }
+

@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanOperacao:getOpchint()
+{
+java.lang.String $stack1;
+  $stack1=this.opchint;
+ return  $stack1;
+ } 
+

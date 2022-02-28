@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.bean.BeanPrograma:setPgyvalr (java.lang.String
+                                                                  pgyvalr) {
+  guard = tt;
+  ret(obj_level(pgyvalr)) = if ¬pgyvalr.~>this ∨ pc ⊔ level(pgyvalr) = ⊥ then obj_level(pgyvalr) else if pgyvalr.~>this ∧ pc ⊔ level(pgyvalr) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(pgyvalr) ⊔ obj_level(pgyvalr) ⊔ obj_level(this);
+  ret(pgyvalr.~>pgyvalr) = pgyvalr.~>pgyvalr ∨ pgyvalr.~>this;
+  ret(pgyvalr.~>this) = pgyvalr.~>this;
+  ret(this.~>pgyvalr) = tt;
+  ret(this.~>this) = pgyvalr.~>this ∨ this.~>this;
+}

@@ -1,0 +1,32 @@
+boolean com.grupooc.radiogrfm.dao.ModelContrato:estaPeriodoVigencia(int crncodg,java.util.Date data)
+{
+boolean ret;
+  java.sql.PreparedStatement st;
+  java.sql.Connection $stack6;
+  java.sql.Date $stack8;
+  long $stack10;
+  java.util.List $stack11;
+  boolean $stack12;
+  java.lang.Exception $stack14;
+  ret=0;
+ label0:$stack6 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack6.prepareStatement(" SELECT * FROM VW_CONTRATO WHERE CRNCODG = ? AND ? BETWEEN CRDINIC AND CRDTERM");
+ st.setInt(1,crncodg);
+ $stack8=new java.sql.Date;
+ $stack10 = data.getTime();
+ $stack8#java.sql.Date($stack10);
+ st.setDate(2,$stack8);
+ $stack11 = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanContrato);
+ $stack12 = $stack11.isEmpty();
+ if ($stack12!=0) goto label1;
+ $stack12=1;
+ goto label2;
+ label1:$stack12=0;
+ label2:ret=$stack12;
+ label3:goto label4;
+ label5:$stack14 = catch;
+ $stack14.printStackTrace();
+ label4:return  ret;
+ catch java.lang.Exception: label0 - label3 : label5;
+} 
+

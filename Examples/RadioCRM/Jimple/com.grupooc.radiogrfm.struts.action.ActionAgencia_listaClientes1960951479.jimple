@@ -1,0 +1,79 @@
+    public org.apache.struts.action.ActionForward listaClientes(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+    {
+        com.grupooc.radiogrfm.struts.action.ActionAgencia this;
+        org.apache.struts.action.ActionMapping mapping;
+        org.apache.struts.action.ActionForm form;
+        javax.servlet.http.HttpServletRequest request;
+        javax.servlet.http.HttpServletResponse response;
+        org.apache.struts.action.ActionForward fw;
+        java.lang.String agncodg;
+        com.grupooc.radiogrfm.dao.ModelAgencia $stack11;
+        int $stack12;
+        java.lang.Integer $stack13;
+        java.util.List $stack14;
+        java.lang.Exception $stack20;
+
+        this := @this: com.grupooc.radiogrfm.struts.action.ActionAgencia;
+
+        mapping := @parameter0: org.apache.struts.action.ActionMapping;
+
+        form := @parameter1: org.apache.struts.action.ActionForm;
+
+        request := @parameter2: javax.servlet.http.HttpServletRequest;
+
+        response := @parameter3: javax.servlet.http.HttpServletResponse;
+
+        fw = new org.apache.struts.action.ActionForward;
+/*49*/
+
+        specialinvoke fw.<org.apache.struts.action.ActionForward: void <init>()>();
+/*49*/
+
+        agncodg = interfaceinvoke request.<javax.servlet.http.HttpServletRequest: java.lang.String getParameter(java.lang.String)>("agncodg");
+/*50*/
+/*50*/
+
+     label1:
+        if agncodg == null goto label2;
+/*52*/
+
+        $stack11 = staticinvoke <com.grupooc.radiogrfm.dao.ModelAgencia: com.grupooc.radiogrfm.dao.ModelAgencia getInstance()>();
+/*53*/
+
+        $stack12 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(agncodg);
+/*53*/
+
+        $stack13 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($stack12);
+/*53*/
+
+        $stack14 = virtualinvoke $stack11.<com.grupooc.radiogrfm.dao.ModelAgencia: java.util.List getClienteDaAgencia(java.lang.Integer)>($stack13);
+/*53*/
+
+        interfaceinvoke request.<javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("ls_cliente", $stack14);
+/*53*/
+
+     label2:
+        interfaceinvoke request.<javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("agncodg", agncodg);
+/*55*/
+
+        virtualinvoke fw.<org.apache.struts.action.ActionForward: void setPath(java.lang.String)>("/pages/clienteAgencia.jsp");
+/*56*/
+
+     label3:
+        goto label5;
+/*60*/
+
+     label4:
+        $stack20 := @caughtexception;
+/*60*/
+
+        virtualinvoke $stack20.<java.lang.Exception: void printStackTrace()>();
+/*59*/
+
+     label5:
+        return fw;
+/*62*/
+
+        catch java.lang.Exception from label1 to label3 with label4;
+    }
+

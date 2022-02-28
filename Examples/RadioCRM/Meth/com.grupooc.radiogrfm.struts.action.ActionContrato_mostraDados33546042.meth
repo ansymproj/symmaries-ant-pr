@@ -1,0 +1,23 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionContrato:mostraDados(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  java.lang.String crncodg;
+  com.grupooc.radiogrfm.struts.bean.BeanContrato contrato;
+  com.grupooc.radiogrfm.dao.ModelContrato $stack10;
+  int $stack11;
+  java.lang.Exception $stack13;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ label0:crncodg = request.getParameter("crncodg");
+ $stack10 = com.grupooc.radiogrfm.dao.ModelContrato.getInstance();
+ $stack11 = java.lang.Integer.parseInt(crncodg);
+ contrato = $stack10.getContrato($stack11);
+ request.setAttribute("contrato",(java.lang.Object)contrato);
+ fw.setPath("/contratoDados.do");
+ label1:goto label2;
+ label3:$stack13 = catch;
+ $stack13.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

@@ -1,0 +1,14 @@
+    public java.lang.String getIncdcpg()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanInsercao this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanInsercao;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanInsercao: java.lang.String incdcpg>;
+/*96*/
+
+        return $stack1;
+/*96*/
+    }
+

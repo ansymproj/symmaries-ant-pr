@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormLocutor:setLcncodg (java.lang.String
+                                                                 lcncodg) {
+  guard = tt;
+  ret(obj_level(lcncodg)) = if ¬lcncodg.~>this ∨ pc ⊔ level(lcncodg) = ⊥ then obj_level(lcncodg) else if lcncodg.~>this ∧ pc ⊔ level(lcncodg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(lcncodg) ⊔ obj_level(lcncodg) ⊔ obj_level(this);
+  ret(lcncodg.~>lcncodg) = lcncodg.~>lcncodg ∨ lcncodg.~>this;
+  ret(lcncodg.~>this) = lcncodg.~>this;
+  ret(this.~>lcncodg) = tt;
+  ret(this.~>this) = lcncodg.~>this ∨ this.~>this;
+}

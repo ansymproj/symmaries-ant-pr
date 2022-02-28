@@ -1,0 +1,18 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Extenso:unidades(int numero)
+{
+java.lang.StringBuilder $stack1;
+  java.lang.String $stack2;
+  java.lang.String[] $stack4;
+  if (numero!=0) goto label0;
+ return  "";
+ label0:$stack1=new java.lang.StringBuilder;
+ $stack1#java.lang.StringBuilder();
+ $stack2=com.grupooc.radiogrfm.utils.Extenso.SEPARADOR_MENOR;
+ $stack1 = $stack1.append($stack2);
+ $stack4=com.grupooc.radiogrfm.utils.Extenso.unidades;
+ $stack2=$stack4[numero];
+ $stack1 = $stack1.append($stack2);
+ $stack2 = $stack1.toString();
+ return  $stack2;
+ } 
+

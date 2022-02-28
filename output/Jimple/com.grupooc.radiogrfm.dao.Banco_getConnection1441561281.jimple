@@ -1,0 +1,42 @@
+    public static java.sql.Connection getConnection()
+    {
+        java.sql.Connection $stack1;
+        java.lang.Exception $stack5;
+
+        $stack1 = <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection con>;
+/*11*/
+
+        if $stack1 != null goto label4;
+/*11*/
+
+     label1:
+        staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>("org.firebirdsql.jdbc.FBDriver");
+/*13*/
+
+        $stack1 = staticinvoke <java.sql.DriverManager: java.sql.Connection getConnection(java.lang.String,java.lang.String,java.lang.String)>("jdbc:firebirdsql:localhost:D:\\workspaces\\workspaceAltair\\radio\\banco\\sicom.gdb?defaultResultSetHoldable=True", "SYSDBA", "masterkey");
+/*14*/
+
+        <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection con> = $stack1;
+/*14*/
+
+     label2:
+        goto label4;
+/*18*/
+
+     label3:
+        $stack5 := @caughtexception;
+/*20*/
+
+        virtualinvoke $stack5.<java.lang.Exception: void printStackTrace()>();
+/*17*/
+
+     label4:
+        $stack1 = <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection con>;
+/*20*/
+
+        return $stack1;
+/*20*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

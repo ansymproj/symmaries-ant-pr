@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrnperm (java.lang.String
+                                                                  crnperm) {
+  guard = tt;
+  ret(obj_level(crnperm)) = if ¬crnperm.~>this ∨ pc ⊔ level(crnperm) = ⊥ then obj_level(crnperm) else if crnperm.~>this ∧ pc ⊔ level(crnperm) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(crnperm) ⊔ obj_level(crnperm) ⊔ obj_level(this);
+  ret(crnperm.~>crnperm) = crnperm.~>crnperm ∨ crnperm.~>this;
+  ret(crnperm.~>this) = crnperm.~>this;
+  ret(this.~>crnperm) = tt;
+  ret(this.~>this) = crnperm.~>this ∨ this.~>this;
+}

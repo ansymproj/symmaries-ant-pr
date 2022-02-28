@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormLocutor:setLccdesc (java.lang.String
+                                                                 lccdesc) {
+  guard = tt;
+  ret(obj_level(lccdesc)) = if ¬lccdesc.~>this ∨ pc ⊔ level(lccdesc) = ⊥ then obj_level(lccdesc) else if lccdesc.~>this ∧ pc ⊔ level(lccdesc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(lccdesc) ⊔ obj_level(lccdesc) ⊔ obj_level(this);
+  ret(lccdesc.~>lccdesc) = lccdesc.~>lccdesc ∨ lccdesc.~>this;
+  ret(lccdesc.~>this) = lccdesc.~>this;
+  ret(this.~>lccdesc) = tt;
+  ret(this.~>this) = lccdesc.~>this ∨ this.~>this;
+}

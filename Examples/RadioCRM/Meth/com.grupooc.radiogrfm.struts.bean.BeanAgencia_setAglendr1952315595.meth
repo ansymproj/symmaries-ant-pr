@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgencia:setAglendr(java.lang.String aglendr)
+{
+this.aglendr=aglendr;
+ return;
+ } 
+

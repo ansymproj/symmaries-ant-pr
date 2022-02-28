@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrlliqu(java.lang.String crlliqu)
+{
+this.crlliqu=crlliqu;
+ return;
+ } 
+

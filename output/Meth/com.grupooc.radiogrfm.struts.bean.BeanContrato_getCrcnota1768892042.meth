@@ -1,0 +1,7 @@
+java.lang.String com.grupooc.radiogrfm.struts.bean.BeanContrato:getCrcnota()
+{
+java.lang.String $stack1;
+  $stack1=this.crcnota;
+ return  $stack1;
+ } 
+

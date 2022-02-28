@@ -1,0 +1,14 @@
+    public java.lang.String getAgcufcd()
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanAgencia this;
+        java.lang.String $stack1;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanAgencia;
+
+        $stack1 = this.<com.grupooc.radiogrfm.struts.bean.BeanAgencia: java.lang.String agcufcd>;
+/*118*/
+
+        return $stack1;
+/*118*/
+    }
+

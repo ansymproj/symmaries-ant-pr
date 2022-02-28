@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanContrato:setCrncoms(java.lang.String crncoms)
+{
+this.crncoms=crncoms;
+ return;
+ } 
+

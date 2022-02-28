@@ -1,0 +1,16 @@
+    public void setCrcdcfp(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crcdcfp;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crcdcfp := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crcdcfp> = crcdcfp;
+/*150*/
+
+        return;
+/*151*/
+    }
+

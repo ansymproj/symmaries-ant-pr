@@ -1,0 +1,49 @@
+    public java.util.ArrayList getProgramasComValor()
+    {
+        com.grupooc.radiogrfm.dao.ModelPrograma this;
+        java.util.ArrayList programas;
+        java.sql.PreparedStatement st;
+        java.sql.Connection $stack5;
+        java.util.List $stack7;
+        java.lang.Exception $stack9;
+
+        this := @this: com.grupooc.radiogrfm.dao.ModelPrograma;
+
+        programas = new java.util.ArrayList;
+/*33*/
+
+        specialinvoke programas.<java.util.ArrayList: void <init>()>();
+/*33*/
+
+     label1:
+        $stack5 = staticinvoke <com.grupooc.radiogrfm.dao.Banco: java.sql.Connection getConnection()>();
+/*37*/
+
+        st = interfaceinvoke $stack5.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(" SELECT PGNCODG, PGCDESC||\' - (R$ \'|| CAST(PGYVALR AS DECIMAL(10,2))||\' - \'||PGNDURC||\' seg)\' PGCDESC,  PGYVALR,   PGNDURC FROM VW_PROGRAMA");
+/*37*/
+/*37*/
+
+        $stack7 = staticinvoke <com.grupooc.radiogrfm.utils.Utils: java.util.List getObjectsStr(java.sql.PreparedStatement,java.lang.Class)>(st, class "Lcom/grupooc/radiogrfm/struts/bean/BeanPrograma;");
+/*39*/
+
+        virtualinvoke programas.<java.util.ArrayList: boolean addAll(java.util.Collection)>($stack7);
+/*39*/
+
+     label2:
+        goto label4;
+/*43*/
+
+     label3:
+        $stack9 := @caughtexception;
+/*44*/
+
+        virtualinvoke $stack9.<java.lang.Exception: void printStackTrace()>();
+/*42*/
+
+     label4:
+        return programas;
+/*44*/
+
+        catch java.lang.Exception from label1 to label2 with label3;
+    }
+

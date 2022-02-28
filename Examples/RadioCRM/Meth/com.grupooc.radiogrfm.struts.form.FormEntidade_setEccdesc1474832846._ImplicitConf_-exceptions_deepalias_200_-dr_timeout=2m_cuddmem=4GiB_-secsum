@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormEntidade:setEccdesc (java.lang.String
+                                                                  eccdesc) {
+  guard = tt;
+  ret(obj_level(eccdesc)) = if ¬eccdesc.~>this ∨ pc ⊔ level(eccdesc) = ⊥ then obj_level(eccdesc) else if eccdesc.~>this ∧ pc ⊔ level(eccdesc) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(eccdesc) ⊔ obj_level(eccdesc) ⊔ obj_level(this);
+  ret(eccdesc.~>eccdesc) = eccdesc.~>eccdesc ∨ eccdesc.~>this;
+  ret(eccdesc.~>this) = eccdesc.~>this;
+  ret(this.~>eccdesc) = tt;
+  ret(this.~>this) = eccdesc.~>this ∨ this.~>this;
+}

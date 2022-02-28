@@ -1,0 +1,10 @@
+static java.lang.String com.grupooc.radiogrfm.utils.Utils:timestampToStrBR (
+  java.util.Date date) {
+  guard = pc ⊔ level(date) ⊔ obj_level(date) = ⊥;
+  ret(level()) = ⊤;
+  ret(obj_level()) = ⊤;
+  ret(obj_level(date)) = ⊤;
+  ret(.~>date) = ff;
+  ret(date.~>) = ff;
+  ret(date.~>date) = tt;
+}

@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.bean.BeanAgenciaContato:setAccnmag(java.lang.String accnmag)
+{
+this.accnmag=accnmag;
+ return;
+ } 
+

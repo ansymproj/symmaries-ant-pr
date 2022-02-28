@@ -1,0 +1,32 @@
+org.apache.struts.action.ActionForward com.grupooc.radiogrfm.struts.action.ActionAgencia:novo(org.apache.struts.action.ActionMapping mapping,org.apache.struts.action.ActionForm form,javax.servlet.http.HttpServletRequest request,javax.servlet.http.HttpServletResponse response)
+{
+org.apache.struts.action.ActionForward fw;
+  javax.servlet.http.HttpSession $stack8;
+  com.grupooc.radiogrfm.dao.ModelTipoLogradouro $stack11;
+  java.util.ArrayList $stack12;
+  com.grupooc.radiogrfm.dao.ModelCidade $stack15;
+  java.lang.Exception $stack21;
+  fw=new org.apache.struts.action.ActionForward;
+ fw#org.apache.struts.action.ActionForward();
+ label0:$stack8 = request.getSession();
+ $stack8.removeAttribute("formAgencia");
+ $stack8 = request.getSession();
+ $stack11 = com.grupooc.radiogrfm.dao.ModelTipoLogradouro.getInstance();
+ $stack12 = $stack11.getTiposLogradouro();
+ $stack8.setAttribute("ls_tipologradouro",(java.lang.Object)$stack12);
+ $stack8 = request.getSession();
+ $stack15 = com.grupooc.radiogrfm.dao.ModelCidade.getInstance();
+ $stack12 = $stack15.getEstados();
+ $stack8.setAttribute("ls_estado",(java.lang.Object)$stack12);
+ $stack8 = request.getSession();
+ $stack15 = com.grupooc.radiogrfm.dao.ModelCidade.getInstance();
+ $stack12 = $stack15.getCidadesDoEstado("PE");
+ $stack8.setAttribute("ls_cidade",(java.lang.Object)$stack12);
+ fw.setPath("/agenciaNovo.do");
+ label1:goto label2;
+ label3:$stack21 = catch;
+ $stack21.printStackTrace();
+ label2:return  fw;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

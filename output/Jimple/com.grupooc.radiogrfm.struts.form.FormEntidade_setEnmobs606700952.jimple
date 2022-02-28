@@ -1,0 +1,16 @@
+    public void setEnmobs(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String enmobs;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        enmobs := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String enmobs> = enmobs;
+/*228*/
+
+        return;
+/*229*/
+    }
+

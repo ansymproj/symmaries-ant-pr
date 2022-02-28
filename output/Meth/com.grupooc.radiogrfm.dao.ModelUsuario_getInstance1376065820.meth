@@ -1,0 +1,8 @@
+static com.grupooc.radiogrfm.dao.ModelUsuario com.grupooc.radiogrfm.dao.ModelUsuario:getInstance()
+{
+com.grupooc.radiogrfm.dao.ModelUsuario $stack0;
+  $stack0=new com.grupooc.radiogrfm.dao.ModelUsuario;
+ $stack0#com.grupooc.radiogrfm.dao.ModelUsuario();
+ return  $stack0;
+ } 
+

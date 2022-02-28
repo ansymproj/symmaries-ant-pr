@@ -1,0 +1,16 @@
+    public void setCrmtext(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanContrato this;
+        java.lang.String crmtext;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanContrato;
+
+        crmtext := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanContrato: java.lang.String crmtext> = crmtext;
+/*114*/
+
+        return;
+/*115*/
+    }
+

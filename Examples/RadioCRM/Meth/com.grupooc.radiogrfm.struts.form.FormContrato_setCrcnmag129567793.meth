@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormContrato:setCrcnmag(java.lang.String crcnmag)
+{
+this.crcnmag=crcnmag;
+ return;
+ } 
+

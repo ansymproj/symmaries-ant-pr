@@ -1,0 +1,25 @@
+com.grupooc.radiogrfm.struts.bean.BeanOperacao com.grupooc.radiogrfm.dao.ModelOperacao:getOperacao(int opncodg)
+{
+com.grupooc.radiogrfm.struts.bean.BeanOperacao operacao;
+  java.sql.PreparedStatement st;
+  java.util.List l;
+  java.sql.Connection $stack6;
+  boolean $stack9;
+  java.lang.Object $stack10;
+  java.lang.Exception $stack11;
+  operacao=null;
+ label0:$stack6 = com.grupooc.radiogrfm.dao.Banco.getConnection();
+ st = $stack6.prepareStatement("SELECT  OPNCODG, OPNPART, OPCDESC, OPCHINT, OPCLINK FROM VW_OPERACAO WHERE OPNCODG = ?");
+ st.setInt(1,opncodg);
+ l = com.grupooc.radiogrfm.utils.Utils.getObjectsStr(st,com.grupooc.radiogrfm.struts.bean.BeanOperacao);
+ $stack9 = l.isEmpty();
+ if ($stack9!=0) goto label1;
+ $stack10 = l.get(0);
+ operacao=(com.grupooc.radiogrfm.struts.bean.BeanOperacao) $stack10;
+ label1:goto label2;
+ label3:$stack11 = catch;
+ $stack11.printStackTrace();
+ label2:return  operacao;
+ catch java.lang.Exception: label0 - label1 : label3;
+} 
+

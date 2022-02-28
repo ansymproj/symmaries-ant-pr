@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormPrograma:setPglativ(java.lang.String pglativ)
+{
+this.pglativ=pglativ;
+ return;
+ } 
+

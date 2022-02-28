@@ -1,0 +1,16 @@
+    public void setEncmae(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.form.FormEntidade this;
+        java.lang.String encmae;
+
+        this := @this: com.grupooc.radiogrfm.struts.form.FormEntidade;
+
+        encmae := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.form.FormEntidade: java.lang.String encmae> = encmae;
+/*156*/
+
+        return;
+/*157*/
+    }
+

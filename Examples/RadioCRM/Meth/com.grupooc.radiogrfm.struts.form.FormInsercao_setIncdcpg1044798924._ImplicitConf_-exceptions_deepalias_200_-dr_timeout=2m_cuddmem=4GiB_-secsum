@@ -1,0 +1,10 @@
+void com.grupooc.radiogrfm.struts.form.FormInsercao:setIncdcpg (java.lang.String
+                                                                  incdcpg) {
+  guard = tt;
+  ret(obj_level(incdcpg)) = if ¬incdcpg.~>this ∨ pc ⊔ level(incdcpg) = ⊥ then obj_level(incdcpg) else if incdcpg.~>this ∧ pc ⊔ level(incdcpg) = ⊤ then ⊤ else ⊥;
+  ret(obj_level(this)) = pc ⊔ level(incdcpg) ⊔ obj_level(incdcpg) ⊔ obj_level(this);
+  ret(incdcpg.~>incdcpg) = incdcpg.~>incdcpg ∨ incdcpg.~>this;
+  ret(incdcpg.~>this) = incdcpg.~>this;
+  ret(this.~>incdcpg) = tt;
+  ret(this.~>this) = incdcpg.~>this ∨ this.~>this;
+}

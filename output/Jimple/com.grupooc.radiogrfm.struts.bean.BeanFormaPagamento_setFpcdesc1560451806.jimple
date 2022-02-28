@@ -1,0 +1,16 @@
+    public void setFpcdesc(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento this;
+        java.lang.String fpcdesc;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento;
+
+        fpcdesc := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanFormaPagamento: java.lang.String fpcdesc> = fpcdesc;
+/*22*/
+
+        return;
+/*23*/
+    }
+

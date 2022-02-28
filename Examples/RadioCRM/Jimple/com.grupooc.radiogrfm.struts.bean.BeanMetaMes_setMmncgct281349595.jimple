@@ -1,0 +1,16 @@
+    public void setMmncgct(java.lang.String)
+    {
+        com.grupooc.radiogrfm.struts.bean.BeanMetaMes this;
+        java.lang.String mmncgct;
+
+        this := @this: com.grupooc.radiogrfm.struts.bean.BeanMetaMes;
+
+        mmncgct := @parameter0: java.lang.String;
+
+        this.<com.grupooc.radiogrfm.struts.bean.BeanMetaMes: java.lang.String mmncgct> = mmncgct;
+/*35*/
+
+        return;
+/*36*/
+    }
+

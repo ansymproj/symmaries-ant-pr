@@ -1,0 +1,6 @@
+void com.grupooc.radiogrfm.struts.form.FormAgencia:setAgctpdc(java.lang.String agctpdc)
+{
+this.agctpdc=agctpdc;
+ return;
+ } 
+
